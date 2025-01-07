@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Autpunk.Space",
   description: "A VitePress Site",
+  srcDir: "./src",
+  srcExclude: ["**/README.md", "**/LICENSE.md"],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
