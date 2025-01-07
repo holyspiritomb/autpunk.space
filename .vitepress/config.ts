@@ -25,6 +25,19 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/holyspiritomb' }
-    ]
+    ],
+
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
+
+    footer: {
+      message: 'CC BY-NC-SA 4.0',
+      copyright: 'Copyright © 2025-present Hezekiah Michael'
+    }
   }
 })
