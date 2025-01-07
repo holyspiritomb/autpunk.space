@@ -1,7 +1,7 @@
 {
   "name": "autpunk.space",
   "version": "1.0.0",
-  "repository": "ssh://github.com/holyspiritomb/autpunk.space",
+  "repository": "https://github.com/holyspiritomb/autpunk.space",
   "author": "Hezekiah Michael <spiritomb@protonmail.com>",
   "private": true,
   "type": "module",
@@ -13,8 +13,8 @@
     "vitepress": "^1.5.0"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   }
 }
