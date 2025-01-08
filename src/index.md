@@ -18,5 +18,8 @@ features:
   - title: Potatoes
     icon: 🥔
     details: I just think they're neat
+  - title: Thought Fossils
+    icon: 🗑️
+    details: explore my brain dumpster
 ---
 
