@@ -8,18 +8,21 @@ hero:
   tagline: peperony and chease
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Unsorted Fragments
+      link: /unsorted-fragments
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Reference
+      link: /vp-links
 
 features:
-  - title: Potatoes
-    icon: 🥔
-    details: I just think they're neat
   - title: Thought Fossils
     icon: 🗑️
     details: explore my brain dumpster
----
+    link: /unsorted-fragments
+  - title: Other People
+    icon: 🥔
+    details: I just think they're neat
+    link: /other-people
 
+lastUpdated: true
+---
