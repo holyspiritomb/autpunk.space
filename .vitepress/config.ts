@@ -9,7 +9,10 @@ export default defineConfig({
   outDir: "../web/autpunk.space/public_html",
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
-    theme: 'catppuccin-mocha',
+    theme: {
+      light: 'catppuccin-latte',
+      dark: 'catppuccin-mocha'
+    },
     linkify: true,
   },
   themeConfig: {
@@ -30,8 +33,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/holyspiritomb' },
-      { icon: 'gitlab', link: 'https://gitlab.com/holyspiritomb' }
+      { icon: 'github', ariaLabel: 'my github profile', link: 'https://github.com/holyspiritomb' },
+      { icon: 'gitlab', ariaLabel: 'my gitlab profile', link: 'https://gitlab.com/holyspiritomb' }
     ],
 
     lastUpdated: {
