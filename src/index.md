@@ -21,7 +21,7 @@ features:
   - title: Numbers
     icon: 🔢
     details: 1234567890 π
-  - title: Letters
+  - title: Lowercase Letters
     details: abcdefghijklmnopqrstuvwxyz
   - title: Uppercase Letters
     details: ABCDEFGHIJKLMNOPQRSTUVWXYZ

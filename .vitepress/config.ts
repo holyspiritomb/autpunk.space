@@ -7,6 +7,10 @@ export default defineConfig({
   srcDir: "./src",
   outDir: "../web/autpunk.space/public_html",
   srcExclude: ["**/README.md", "**/LICENSE.md"],
+  markdown: {
+    theme: 'catppuccin-mocha',
+    linkify: true,
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -35,7 +39,6 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
-
     footer: {
       message: 'CC BY-NC-SA 4.0',
       copyright: 'Copyright © 2025-present Hezekiah Michael'
