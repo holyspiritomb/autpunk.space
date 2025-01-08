@@ -3,6 +3,8 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import "@catppuccin/vitepress/theme/mocha/red.css";
+import "inter-ui/inter-variable.css";
 
 export default {
   extends: DefaultTheme,

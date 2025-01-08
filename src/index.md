@@ -19,7 +19,12 @@ features:
     details: black white puerto-rican chinese beans
   - title: Essays
     details: treatises on things, stuff, and the difference between things and stuff
-  - title: Things I like
+  - title: Potatoes
+    icon: 🥔
     details: I just think they're neat 🥔
+  - title: Numbers
+    details: 1234567890
+  - title: Letters
+    details: abcdefghijklmnopqrstuvwxyz
 ---
 
