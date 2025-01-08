@@ -1,10 +1,12 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import './style.css'
 import "@catppuccin/vitepress/theme/mocha/red.css";
 import "inter-ui/inter-variable.css";
+import 'victormono';
+import './fonts.css';
 
 export default {
   extends: DefaultTheme,

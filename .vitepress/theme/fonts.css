@@ -1,0 +1,17 @@
+/* .vitepress/theme/fonts.css */
+
+html {
+  font-family: "Inter", "system-ui";
+  font-feature-settings: 'ss01' on, 'cv01' on, 'cv05' on, 'cv06' on;
+}
+:root {
+  --vp-font-family-base: "Inter";/* normal text font */
+  --vp-font-family-mono: "Victor Mono"; /* code font */
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: "InterVariable", "system-ui"; } /* If using the variable font */
+  :root {
+    --vp-font-family-base: 'InterVariable';/* normal text font */
+  }
+}
