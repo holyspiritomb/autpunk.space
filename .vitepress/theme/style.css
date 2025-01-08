@@ -136,8 +136,3 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
-
-:root {
-    /* font-family: InterVar; */
-    font-feature-settings: 'ss01' on, 'cv05' on, 'cv01' on, 'zero' on;
-}

@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Autpunk.Space"
-  text: "A VitePress Site under construction"
-  tagline: My corner of the internet
+  text: "A VitePress Site"
+  tagline: a corner of the internet
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,16 +15,18 @@ hero:
       link: /api-examples
 
 features:
-  - title: Beans
-    details: black white puerto-rican chinese beans
-  - title: Essays
-    details: treatises on things, stuff, and the difference between things and stuff
   - title: Potatoes
     icon: 🥔
     details: I just think they're neat 🥔
   - title: Numbers
-    details: 1234567890
+    icon: 🔢
+    details: 1234567890 π
   - title: Letters
     details: abcdefghijklmnopqrstuvwxyz
+  - title: Uppercase Letters
+    details: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  - title: Special characters
+    icon: 🆒
+    details: æ œ àáâäą èéêëę ìíîï ł òóöôø ß ùúûü ™©®
 ---
 
