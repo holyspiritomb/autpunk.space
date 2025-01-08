@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Autpunk.Space",
+  title: "Autpunk Dot Space",
   description: "A VitePress Site",
+  appearance: 'dark',
   srcDir: "./src",
   outDir: "../web/autpunk.space/public_html",
   srcExclude: ["**/README.md", "**/LICENSE.md"],
@@ -29,14 +30,15 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/holyspiritomb' }
+      { icon: 'github', link: 'https://github.com/holyspiritomb' },
+      { icon: 'gitlab', link: 'https://gitlab.com/holyspiritomb' }
     ],
 
     lastUpdated: {
       text: 'Updated at',
       formatOptions: {
         dateStyle: 'full',
-        timeStyle: 'medium'
+        timeStyle: 'short'
       }
     },
     footer: {

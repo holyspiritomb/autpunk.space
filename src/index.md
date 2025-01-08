@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Autpunk.Space"
-  text: "A VitePress Site"
-  tagline: a corner of the internet
+  name: "hello there"
+  text: here lies andy
+  tagline: peperony and chease
   actions:
     - theme: brand
       text: Markdown Examples
@@ -17,16 +17,6 @@ hero:
 features:
   - title: Potatoes
     icon: 🥔
-    details: I just think they're neat 🥔
-  - title: Numbers
-    icon: 🔢
-    details: 1234567890 π
-  - title: Lowercase Letters
-    details: abcdefghijklmnopqrstuvwxyz
-  - title: Uppercase Letters
-    details: ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  - title: Special characters
-    icon: 🆒
-    details: æ œ àáâäą èéêëę ìíîï ł òóöôø ß ùúûü ™©®
+    details: I just think they're neat
 ---
 
