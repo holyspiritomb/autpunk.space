@@ -15,4 +15,4 @@ jobs:
         script: |
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
-          which yarn
+          cd ~/autpunk.space && git pull && yarn
