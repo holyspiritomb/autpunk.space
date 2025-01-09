@@ -13,5 +13,6 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          ls -al .nvm
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh
           which yarn
