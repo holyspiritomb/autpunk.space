@@ -14,4 +14,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           whoami
-          which omz
+          ls -l
