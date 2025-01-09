@@ -6,7 +6,7 @@ export default defineConfig({
   titleTemplate: 'Autpunk Dot Space',
   description: "A VitePress Site",
   head: [
-    ['link', {rel: 'icon', href: '/vitepress-logo-mini.svg'}]
+    ['link', {rel: 'icon', href: '/rainbow_space.png'}]
   ],
   lang: 'en-US',
   lastUpdated: true,
@@ -23,29 +23,28 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/vitepress-logo-mini.svg',
+    logo: '/rainbow_space.png',
     externalLinkIcon: true,
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Thought Fossils', link: '/thought-fossils' },
       { text: 'Unsorted Fragments', link: '/unsorted-fragments' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Other People', link: '/other-people' },
     ],
 
     sidebar: [
       {
-        text: 'Unsorted Fragments',
+        text: 'Thought Fossils',
         items: [
-          { text: 'All', link: '/unsorted-fragments' },
-          { text: '2021', link: '/unsorted-fragments/2021' }
+          { text: 'Index', link: '/thought-fossils' },
         ]
       },
       {
-        text: 'Examples',
+        text: 'Unsorted Fragments',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Fragment Index', link: '/unsorted-fragments' },
         ]
-      }
+      },
     ],
 
     socialLinks: [

@@ -8,17 +8,17 @@ hero:
   tagline: peperony and chease
   actions:
     - theme: brand
+      text: Thought Fossils
+      link: /thought-fossils
+    - theme: alt
       text: Unsorted Fragments
       link: /unsorted-fragments
-    - theme: alt
-      text: Reference
-      link: /vp-links
 
 features:
   - title: Thought Fossils
     icon: 🗑️
     details: explore my brain dumpster
-    link: /unsorted-fragments
+    link: /thought-fossils
   - title: Other People
     icon: 🥔
     details: I just think they're neat
