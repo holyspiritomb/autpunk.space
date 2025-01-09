@@ -13,6 +13,5 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          hostname
-          which nvim
-
+          ls -al .nvm
+          which yarn
