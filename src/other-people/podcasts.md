@@ -17,7 +17,7 @@
 * <a href="https://www.patreon.com/Hellofawaytodie">Hell of a Way to Dad</a> is two leftist dads commenting on past experiences in the military, talking about military culture, and telling delightful stories about their kids.
 * <a href="https://www.patreon.com/TheYeerkyBoys?utm_campaign=creatorshare_fan">The Yeerky Boys</a> is what happened when two of my friends re-read Animorphs. They've finished all the books, and have moved on to doing episodes about other Animorphs media like the TV show and fanfiction.
 
-## Limguistics
+## Linguistics
 * <a href="https://becauselanguage.com/">Because Language</a>
 * <a href="https://lingthusiasm.com/">Lingthusiasm</a>
 
