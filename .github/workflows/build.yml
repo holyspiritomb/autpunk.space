@@ -7,12 +7,17 @@ jobs:
     steps:
     - name: execute deployment on server
       uses: appleboy/ssh-action@v1.2.0
+      env:
+        GITREPO: ${{ github.repository }}
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        fingerprint: ${{ secrets.FINGERPRINT }}
+        envs: GITREPO
         script: |
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
-          cd ~/autpunk.space && git pull && yarn
+          echo "$GITREPO"
