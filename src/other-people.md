@@ -20,7 +20,7 @@ outline: deep
 ### Podcasts
 
 * <a href="https://theacecouple.com/">The Ace Couple</a>
-* <a href="http://www.youtube.com/@becauselangpod">Because Language</a>
+* <a href="https://becauselanguage.com/">Because Language</a>
 * <a href="https://www.conspirituality.net/">Conspirituality</a>
 * <a href="https://www.patreon.com/Hellofawaytodie">Hell of a Way to Dad</a>
 * <a href="https://www.buzzsprout.com/2040953/about">If Books Could Kill</a>
@@ -40,6 +40,6 @@ outline: deep
 * <a href="https://www.strugglecare.com/podcast-rss">Struggle Care</a>
 * <a href="https://thispodcastwillkillyou.com/">This Podcast Will Kill You</a>
 * <a href="https://waywardchildren.buzzsprout.com/2208422/about">Wayward Children</a>
-* <a href="http://www.youtube.com/@welltheresyourproblempodca1465">Well There's Your Problem</a>
+* <a href="https://www.youtube.com/@welltheresyourproblempodca1465">Well There's Your Problem</a>
 * <a href="https://whatthefuckjusthappenedtoday.com/podcasts/">What The Fuck Just Happened Today?</a>
 
