@@ -13,5 +13,5 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          whoami
-          which zsh
+          echo $TERM
+          echo $TMUX
