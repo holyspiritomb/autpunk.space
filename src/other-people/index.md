@@ -19,4 +19,4 @@ outline: deep
 
 ### Podcasts
 
-<a href="podcasts">See my podcast recommendatioms here.</a>
+<a href="podcasts">See my podcast recommendations here.</a>
