@@ -24,7 +24,7 @@
 ## Jewish
 * <a href="https://www.judaismunbound.com/podcast">Judaism Unbound</a> explores Jewish life, practice and history from a perspective that embraces pluralism.
 * <a href="https://jewishcurrents.org/on-the-nose">On the Nose</a> is Jewish leftist commentary on global geopolitics and current events.
-* <a href="https://waywardchildren.buzzsprout.com/2208422/about">Jewish Monsters, Magic, and the Stories We Tell</a> is about all kinds of fantastical elements in Jewish folklore and midrash, and why modern Judaism is deeply enriched by them.
+* <a href="https://waywardchildren.buzzsprout.com/2208422/about">Wayward Children: Jewish Monsters, Magic, and the Stories We Tell</a> is about all kinds of fantastical elements in Jewish folklore and midrash, and why modern Judaism is deeply enriched by them.
 
 ## History
 * <a href="https://probsnotaliens.com">It's Probably Not Aliens</a> critically examines the evidence for claims made by the History Channel show <i>Ancient Aliens</i>, and in the process reveals that ancient peoples in fact figured out engineering feats like Move Big Rock in way more interesting ways than "aliens helped."
