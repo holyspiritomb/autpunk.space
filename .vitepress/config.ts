@@ -36,13 +36,20 @@ export default defineConfig({
       {
         text: 'Thought Fossils',
         items: [
-          { text: 'Index', link: '/thought-fossils' },
+          { text: 'Thought Fossil Index', link: '/thought-fossils' },
         ]
       },
       {
         text: 'Unsorted Fragments',
         items: [
           { text: 'Fragment Index', link: '/unsorted-fragments' },
+        ]
+      },
+      {
+        text: 'Links',
+        items: [
+          { text: 'Other People', link: '/other-people' },
+          { text: 'Podcasts', link: '/other-people/podcasts' },
         ]
       },
     ],
