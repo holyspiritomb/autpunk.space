@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: execute deployment on server
-      uses: appleboy/ssh-action@v1.3.0
+      uses: appleboy/ssh-action@v1.2.0
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
@@ -14,3 +14,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           whoami
+          which zsh
