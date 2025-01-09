@@ -13,5 +13,6 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          whoami
-          ls -l
+          which nvm
+          nvm use v22.12.0
+
