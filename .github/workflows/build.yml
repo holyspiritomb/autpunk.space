@@ -20,5 +20,5 @@ jobs:
         script: |
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
-          rm -rf "$BUILDFOLDER"
-          git clone "https://github.com/$GITREPO" "$BUILDFOLDER" && cd "$BUILDFOLDER" && yarn && yarn run build
+          rm -rf "~/$BUILDFOLDER"
+          git clone "https://github.com/$GITREPO" "~/$BUILDFOLDER" && cd "~/$BUILDFOLDER" && yarn && yarn run build
