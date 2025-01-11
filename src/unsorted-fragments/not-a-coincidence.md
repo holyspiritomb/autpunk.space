@@ -3,7 +3,7 @@ exclude: true
 prev: false
 next: false
 ---
-# It's not a coincidence that transmedicalists are often anti-self-diagnosis
+# It is not a coincidence that transmedicalists are frequently against self-diagnosis
 
 it is not a coincidence that people who openly self describe as transmedicalist are frequently also against self diagnosis, or who permit self diagnosis but consider a paper diagnosis to be inherently more accurate.
 

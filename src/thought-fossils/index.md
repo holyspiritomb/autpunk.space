@@ -6,4 +6,4 @@ lastUpdated: true
 
 Words are thought fossils. Here are some things I've written that I'm proud of.
 
-<a href="victim-mentality">Systemic Oppression and "Victim Mentality"</a>
+<a href="victim-mentality">On "Victim Mentality"</a>

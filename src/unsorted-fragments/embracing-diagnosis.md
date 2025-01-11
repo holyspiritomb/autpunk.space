@@ -3,7 +3,7 @@ exclude: true
 prev: false
 next: false
 ---
-# Embracing diagnosis: medical condition as identity
+# relating embracing an ADHD diagnosis to transness
 
 i started thinking about this great post about "embracing" your diagnosis by @thatadhdfeel on tumblr, and how it can apply to transness. a major conflict between transmedicalists and non-transmedicalists is transness as medical condition versus transness as identity.
 

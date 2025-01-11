@@ -1,13 +1,13 @@
 ---
-outline: deep
 title: Unsorted Fragments
-prev: false
-next: false
 lastUpdated: true
+layout: doc
+prev: true
+next: true
 ---
 # Unsorted Fragments
 
-This page is for unsorted, largely unpolished prose fragments that I've made on various topics, organized only by year. Titles are what I named the files in my text editor at the time, or the date it was last edited before I put it here.
+This place is for unsorted, largely unpolished prose fragments that I've made on various topics, organized only by year. Titles are what I named the files in my text editor at the time, or the date it was last edited before I put it here.
 
 ::: warning
 I will do my best to affix content warnings and labels of "No Content Warnings Apply." As a multiply disabled autistic person with executive dysfunction, however, I might forget to put warnings on occasion.
