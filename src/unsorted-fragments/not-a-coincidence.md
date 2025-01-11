@@ -1,5 +1,7 @@
 ---
 exclude: true
+prev: false
+next: false
 ---
 # It's not a coincidence that transmedicalists are often anti-self-diagnosis
 

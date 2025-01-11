@@ -1,5 +1,7 @@
 ---
 exclude: true
+prev: false
+next: false
 ---
 # Every time someone says medicalization is necessary for trans medical care to be covered by health insurers
 

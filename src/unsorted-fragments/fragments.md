@@ -1,8 +1,9 @@
 ---
 title: Fragment Index
-outline: none
+prev: false
+next: false
 ---
-# Fragment index
+# {{ frontmatter.title }}
 
 ## Date unknown
 * <a href="not-a-coincidence">It is not a coincidence that transmedicalists are frequently against self-diagnosis</a>

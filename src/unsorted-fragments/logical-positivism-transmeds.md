@@ -1,4 +1,6 @@
 ---
+prev: false
+next: false
 exclude: true
 ---
 # logical positivism & transmedicalism 
