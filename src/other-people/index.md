@@ -8,7 +8,7 @@ outline: deep
 
 * <a href="https://hamster.dance">Hamster Dance</a> is my lovely partner Dominique's website (see their music below).
 * <a href="https://gorzek.com">Gorzek</a> is my hosting provider and all-around Good Human.
-* <a href="https://bsky.app/profile/zadgravebone.bsky.social">Zad Gravebone</a> is a comic artist and drag performer I first met on the internet like 20 years ago.
+* <a href="https://bsky.app/profile/zadgravebone.bsky.social">Zad Gravebone</a> is a comic artist and drag performer I first met on the internet like 20 years ago. We bonded over Invader Zim slash fanart.
 
 ## Stuff by other people that I'd like to recommend
 
