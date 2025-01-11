@@ -26,6 +26,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/rainbow_space.png',
     externalLinkIcon: true,
+    editLink: {
+      pattern: "https://github.com/holyspiritomb/autpunk.space/edit/main/src/:path",
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Thought Fossils', link: '/thought-fossils' },
@@ -49,29 +52,6 @@ export default defineConfig({
       useTitleFromFrontmatter: true,
       manualSortFileNameByPriority: ["fragments.md"]
     }),
-
-    // sidebar: [
-    //   {
-    //     text: 'Thought Fossils',
-    //     items: [
-    //       { text: 'Thought Fossil Index', link: '/thought-fossils' },
-    //     ]
-    //   },
-    //   {
-    //     text: 'Unsorted Fragments',
-    //     items: [
-    //       { text: 'Fragment Index', link: '/unsorted-fragments' },
-    //     ]
-    //   },
-    //   {
-    //     text: 'Links',
-    //     items: [
-    //       { text: 'Other People', link: '/other-people' },
-    //       { text: 'Podcasts', link: '/other-people/podcasts' },
-    //     ]
-    //   },
-    // ],
-
     socialLinks: [
       { icon: 'github', ariaLabel: 'my github profile', link: 'https://github.com/holyspiritomb' },
       { icon: 'gitlab', ariaLabel: 'my gitlab profile', link: 'https://gitlab.com/holyspiritomb' },
@@ -85,7 +65,7 @@ export default defineConfig({
       }
     },
     footer: {
-      message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0</a> license',
+      message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
       copyright: 'Copyright © 2025-present Hezekiah Michael'
     }
   }
