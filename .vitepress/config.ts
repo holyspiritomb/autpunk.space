@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -31,28 +32,45 @@ export default defineConfig({
       { text: 'Unsorted Fragments', link: '/unsorted-fragments' },
       { text: 'Other People', link: '/other-people' },
     ],
+    sidebar: generateSidebar({
+      capitalizeFirst: true,
+      collapsed: false,
+      debugPrint: true,
+      documentRootPath: "/src",
+      excludeFilesByFrontmatterFieldName: "exclude" ,
+      excludePattern: ["README", "LICENSE", "vitepress-default", "fragments.md"],
+      includeEmptyFolder: false,
+      // includeFolderIndexFile: true,
+      includeRootIndexFile: true,
+      sortMenusByFrontmatterOrder: true,
+      useFolderLinkFromIndexFile: true,
+      useFolderTitleFromIndexFile: true,
+      useTitleFromFileHeading: true,
+      useTitleFromFrontmatter: true,
+      manualSortFileNameByPriority: ["fragments.md"]
+    }),
 
-    sidebar: [
-      {
-        text: 'Thought Fossils',
-        items: [
-          { text: 'Thought Fossil Index', link: '/thought-fossils' },
-        ]
-      },
-      {
-        text: 'Unsorted Fragments',
-        items: [
-          { text: 'Fragment Index', link: '/unsorted-fragments' },
-        ]
-      },
-      {
-        text: 'Links',
-        items: [
-          { text: 'Other People', link: '/other-people' },
-          { text: 'Podcasts', link: '/other-people/podcasts' },
-        ]
-      },
-    ],
+    // sidebar: [
+    //   {
+    //     text: 'Thought Fossils',
+    //     items: [
+    //       { text: 'Thought Fossil Index', link: '/thought-fossils' },
+    //     ]
+    //   },
+    //   {
+    //     text: 'Unsorted Fragments',
+    //     items: [
+    //       { text: 'Fragment Index', link: '/unsorted-fragments' },
+    //     ]
+    //   },
+    //   {
+    //     text: 'Links',
+    //     items: [
+    //       { text: 'Other People', link: '/other-people' },
+    //       { text: 'Podcasts', link: '/other-people/podcasts' },
+    //     ]
+    //   },
+    // ],
 
     socialLinks: [
       { icon: 'github', ariaLabel: 'my github profile', link: 'https://github.com/holyspiritomb' },

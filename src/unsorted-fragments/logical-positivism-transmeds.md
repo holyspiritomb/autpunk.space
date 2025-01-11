@@ -1,3 +1,6 @@
+---
+exclude: true
+---
 # logical positivism & transmedicalism 
 
 logical positivism's strict criterion of meaning is "a statement is meaningful if and only if it can be theoretically empirically verified or falsified." this criterion fails itself, and logical positivism was subsequently canceled in the 1950s.

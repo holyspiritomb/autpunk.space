@@ -1,3 +1,8 @@
+---
+exclude: true
+---
+# It's not a coincidence that transmedicalists are often anti-self-diagnosis
+
 it is not a coincidence that people who openly self describe as transmedicalist are frequently also against self diagnosis, or who permit self diagnosis but consider a paper diagnosis to be inherently more accurate.
 
 both positions require support of the idea of medical authority over how people should group themselves in society, rather than groups deciding for themselves what determines belonging.

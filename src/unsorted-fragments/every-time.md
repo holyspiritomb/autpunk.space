@@ -1,3 +1,8 @@
+---
+exclude: true
+---
+# Every time someone says medicalization is necessary for trans medical care to be covered by health insurers
+
 Every time someone argues to me that it's necessary for transness itself to be understood by everyone as a medical condition in order for trans people to get hormones and surgeries covered by insurance, I remember this blog post from 2010. Where I learned that prior to 1980, trans people *were* able to have trans health care, including surgeries, covered by insurance, and the care was considered medically necessary.
 
 The blanket exclusion on trans care in the U.S. didn't yet exist before 1980. It didn't always exist.

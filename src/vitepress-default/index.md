@@ -16,5 +16,5 @@ outline: deep
 * <a href="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs">List of Emojis</a>
 
 ## VitePress default boilerplate
-* <a href="/api-examples">API Examples</a>
-* <a href="/markdown-examples">Markdown Examples</a>
+* <a href="api-examples">API Examples</a>
+* <a href="markdown-examples">Markdown Examples</a>

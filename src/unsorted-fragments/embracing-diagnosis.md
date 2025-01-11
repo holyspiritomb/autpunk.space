@@ -1,3 +1,8 @@
+---
+exclude: true
+---
+# Embracing diagnosis: medical condition as identity
+
 i started thinking about this great post about "embracing" your diagnosis by @thatadhdfeel on tumblr, and how it can apply to transness. a major conflict between transmedicalists and non-transmedicalists is transness as medical condition versus transness as identity.
 
 adhd is one diagnosis i have. it describes several specific struggles i have in the world, and i do think the word disorder is appropriate for it in my life. i treat it with medication, and my family works to  accommodate me in the aspects of adhd that medication doesn't affect. to me, "medical condition" is a neutral rather than negative description, though i certainly experience many aspects of adhd as negative.
