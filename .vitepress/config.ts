@@ -22,6 +22,9 @@ export default defineConfig({
     },
     linkify: true,
   },
+  sitemap: {
+    hostname: "https://autpunk.space"
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/rainbow_space.png',
