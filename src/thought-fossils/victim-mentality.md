@@ -1,4 +1,4 @@
-# Systemic Oppression and "Victim Mentality"
+# On "Victim Mentality"
 
 I realized last night why it bothers me so much when I encounter the claim that regarding oppression as systemic results in marginalized people developing a helpless victim mentality.
 
