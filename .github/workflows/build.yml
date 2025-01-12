@@ -20,4 +20,6 @@ jobs:
         script: |
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
-          cd ~/git && git pull && yarn && yarn run build
+          cd ~/git && rm -rf node_modules
+          git pull
+          yarn && yarn run build
