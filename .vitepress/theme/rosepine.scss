@@ -1,0 +1,15 @@
+@use '../../node_modules/@rose-pine/palette/dist/css/rose-pine.css' as *;
+
+// :root {
+//   --vp-c-bg: var(--rp-dawn-surface);
+//   --vp-c-bg-alt: var(--rp-dawn-base);
+//   --vp-c-bg-elv: var(--rp-dawn-overlay);
+//   --vp-c-bg-soft: var(--rp-dawn-overlay);
+// }
+
+.dark {
+  --vp-c-bg: var(--rp-surface);
+  --vp-c-bg-alt: var(--rp-base);
+  --vp-c-bg-elv: var(--rp-overlay);
+  --vp-c-bg-soft: var(--rp-overlay);
+}

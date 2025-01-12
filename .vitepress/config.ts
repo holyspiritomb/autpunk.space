@@ -1,5 +1,7 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
+import progress from 'vite-plugin-progress';
+import Terminal from 'vite-plugin-terminal';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,6 +26,22 @@ export default defineConfig({
   },
   sitemap: {
     hostname: "https://autpunk.space"
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: "modern-compiler"
+      }
+    },
+    plugins: [
+      progress({
+        format: 'Building :bar :percent',
+      }),
+      Terminal({
+        console: 'terminal',
+        output: ['terminal', 'console'],
+      }),
+    ],
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
