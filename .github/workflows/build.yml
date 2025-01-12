@@ -7,19 +7,13 @@ jobs:
     steps:
     - name: execute deployment on server
       uses: appleboy/ssh-action@v1.2.0
-      env:
-        GITREPO: ${{ github.repository }}
-        BUILDFOLDER: ${{ secrets.BUILDFOLDER }}
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         passphrase: ${{ secrets.PASSPHRASE }}
-        envs: GITREPO, BUILDFOLDER
         script: |
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
-          cd ~/git && rm -rf node_modules
-          git pull
-          yarn && yarn run build
+          cd ~/git && git pull && yarn && GITHUBRUNNER="push" yarn run build

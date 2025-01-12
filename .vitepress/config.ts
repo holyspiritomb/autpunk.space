@@ -1,7 +1,33 @@
 import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
-// import progress from 'vite-plugin-progress';
+import type { PluginOption } from 'vite';
 import Terminal from 'vite-plugin-terminal';
+
+var pluginArray: PluginOption;
+var outDirVar: string;
+
+if (process.env.GITHUBRUNNER === "push") {
+  outDirVar = "../web/autpunk.space/public_html";
+  pluginArray = [
+    Terminal({
+      console: 'terminal',
+      output: ['terminal'],
+    }),
+  ]
+} else {
+  // I know this is hacky okay
+  if (process.env.ZSH === "/usr/share/oh-my-zsh") {
+    outDirVar = "./dist";
+  } else {
+    outDirVar = "../web/autpunk.space/public_html";
+  }
+  pluginArray = [
+    Terminal({
+      console: 'terminal',
+      output: ['terminal', 'console'],
+    }),
+  ];
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,7 +41,7 @@ export default defineConfig({
   lastUpdated: true,
   appearance: 'dark',
   srcDir: "./src",
-  outDir: "../web/autpunk.space/public_html",
+  outDir: outDirVar,
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
     theme: {
@@ -34,15 +60,7 @@ export default defineConfig({
         scss: {api: "modern-compiler"},
       }
     },
-    plugins: [
-      // progress({
-      //   format: 'Building :bar :percent',
-      // }),
-      Terminal({
-        console: 'terminal',
-        output: ['terminal', 'console'],
-      }),
-    ],
+    plugins: pluginArray,
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
