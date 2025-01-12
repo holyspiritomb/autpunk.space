@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
-import progress from 'vite-plugin-progress';
+// import progress from 'vite-plugin-progress';
 import Terminal from 'vite-plugin-terminal';
 
 // https://vitepress.dev/reference/site-config
@@ -35,9 +35,9 @@ export default defineConfig({
       }
     },
     plugins: [
-      progress({
-        format: 'Building :bar :percent',
-      }),
+      // progress({
+      //   format: 'Building :bar :percent',
+      // }),
       Terminal({
         console: 'terminal',
         output: ['terminal', 'console'],
