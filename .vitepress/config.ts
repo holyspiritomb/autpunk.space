@@ -30,8 +30,8 @@ export default defineConfig({
   vite: {
     css: {
       preprocessorOptions: {
-        sass: "modern-compiler",
-        scss: "modern-compiler",
+        sass: {api: "modern-compiler"},
+        scss: {api: "modern-compiler"},
       }
     },
     plugins: [
