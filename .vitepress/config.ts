@@ -46,7 +46,7 @@ export default defineConfig({
   markdown: {
     theme: {
       light: 'catppuccin-latte',
-      dark: 'catppuccin-mocha'
+      dark: 'rose-pine'
     },
     linkify: true,
   },
