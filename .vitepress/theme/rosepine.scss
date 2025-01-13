@@ -1,15 +1,17 @@
 @use '../../node_modules/@rose-pine/palette/dist/css/rose-pine.css' as *;
-
-// :root {
-//   --vp-c-bg: var(--rp-dawn-surface);
-//   --vp-c-bg-alt: var(--rp-dawn-base);
-//   --vp-c-bg-elv: var(--rp-dawn-overlay);
-//   --vp-c-bg-soft: var(--rp-dawn-overlay);
-// }
+@use 'sass:color';
 
 .dark {
   --vp-c-bg: var(--rp-surface);
   --vp-c-bg-alt: var(--rp-base);
   --vp-c-bg-elv: var(--rp-overlay);
   --vp-c-bg-soft: var(--rp-overlay);
+
+  --vp-c-border: var(--rp-highlight-low);
+  --vp-c-divider: var(--rp-highlight-med);
+  --vp-c-gutter: var(--rp-highlight-high);
+
+  --vp-c-text-1: var(--rp-text);
+  --vp-c-text-2: color.mix(var(--rp-text), var(--rp-subtle), 50%);
+  --vp-c-text-3: var(--rp-subtle);
 }
