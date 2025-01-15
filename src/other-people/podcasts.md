@@ -31,7 +31,7 @@
 * <a href="https://www.youtube.com/@welltheresyourproblempodca1465">Well There's Your Problem</a>: A Catholic, a Muslim, and a Jew walk into a bar and talk about engineering disaaters from a leftist perspective with an abundance of millennial humor and irreverence for capitalists' feelings. A podcast with slides!
 * <a href="https://www.youtube.com/@lionsledbydonkeyspodcast7424">Lions Led By Donkeys</a> is military history from a leftist perspective that focuses on incidents where military leadership just shoots itself in the foot and makes everything worse. The kind of critical military history that does the opposite of exonerating fascism and imperialism.
 * <a href="https://linktr.ee/murderhobos">MurderHobos</a> is about the history of masculinity as constructed through violence, by way of critical biographical deep dives into historical figures who were known for being good at Masculine™ things like swords, guns, fighting, or murder.
-* <a href="">Behind the Bastards</a>
+* <a href="https://www.iheart.com/podcast/105-behind-the-bastards-29236323/">Behind the Bastards</a> is an entertaining way to learn the origin stories of various villains from history and current events.
 
 ## Unsorted
 * <a href="https://theacecouple.com/">The Ace Couple</a>
