@@ -1,6 +1,6 @@
 # On "Victim Mentality"
 
-I realized last night why it bothers me so much when I encounter the claim that regarding oppression as systemic results in marginalized people developing a helpless victim mentality.
+I realized why it bothers me so much when I encounter the claim that regarding oppression as systemic results in marginalized people developing a helpless victim mentality.
 
 It's because until I stopped blaming myself for every instance of mistreatment I suffered that occurred along a power dynamic, I did feel powerless and helpless. Because it was all my fault and I didn't know how to fulfull my apparent responsibility to exist in a way palatable to any person who mistreated me. And the cultural messages surrounding us, like the ubiquity in 2005 of people using the word "gay" as a synonym for shitty without consequence, couldn't have encouraged them to devalue people like me, they just couldn't help reacting that way.
 
