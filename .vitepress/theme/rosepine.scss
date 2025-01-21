@@ -1,6 +1,20 @@
 @use '../../node_modules/@rose-pine/palette/dist/css/rose-pine.css' as *;
 @use 'sass:color';
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #ea76cb 30%,
+    #04a5e5
+  );
 
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #ea76cb 50%,
+    #04a5e5 50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
 .dark {
   --vp-c-bg: var(--rp-surface);
   --vp-c-bg-alt: var(--rp-base);
