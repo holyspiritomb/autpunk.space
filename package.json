@@ -8,6 +8,7 @@
   "devDependencies": {
     "@catppuccin/vitepress": "^0.1.0",
     "@rose-pine/palette": "^4.0.1",
+    "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^22.10.5",
     "inter-ui": "^4.1.0",
     "markdown-it-footnote": "^4.0.0",
