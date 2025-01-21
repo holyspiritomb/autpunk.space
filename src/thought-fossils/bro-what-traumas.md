@@ -1,5 +1,9 @@
 ---
 lastUpdated: true
+prev:
+    link: './index'
+    text: 'Thought Fossil Index'
+next: false
 ---
 # Extreme workaholic mindsets
 

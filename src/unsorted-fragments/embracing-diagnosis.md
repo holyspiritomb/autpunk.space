@@ -1,6 +1,8 @@
 ---
 exclude: true
-prev: false
+prev:
+    link: './fragments'
+    text: 'Index of fragments'
 next: false
 ---
 # relating embracing an ADHD diagnosis to transness

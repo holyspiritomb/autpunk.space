@@ -1,6 +1,8 @@
 ---
 exclude: true
-prev: false
+prev:
+    link: './fragments'
+    text: 'Index of fragments'
 next: false
 ---
 # It is not a coincidence that transmedicalists are frequently against self-diagnosis

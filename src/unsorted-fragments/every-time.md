@@ -1,6 +1,8 @@
 ---
 exclude: true
-prev: false
+prev:
+    link: './fragments'
+    text: 'Index of fragments'
 next: false
 ---
 # Every time someone argues to me that it's necessary for transness itself to be understood by everyone as a medical condition

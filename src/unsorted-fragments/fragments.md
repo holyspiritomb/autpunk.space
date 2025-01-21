@@ -1,7 +1,9 @@
 ---
 title: Fragment Index
-prev: true
-next: true
+prev:
+    link: './index'
+    text: 'Unsorted Fragments landing page'
+next: false
 ---
 # Fragments
 

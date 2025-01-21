@@ -1,3 +1,9 @@
+---
+prev:
+    link: './index'
+    text: 'Thought Fossil Index'
+next: false
+---
 # On "Victim Mentality"
 
 I realized why it bothers me so much when I encounter the claim that regarding oppression as systemic results in marginalized people developing a helpless victim mentality.

@@ -1,5 +1,7 @@
 ---
-prev: false
+prev:
+    link: './fragments'
+    text: 'Index of fragments'
 next: false
 exclude: true
 ---

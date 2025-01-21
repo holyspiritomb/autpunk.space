@@ -2,8 +2,10 @@
 title: Unsorted Fragments
 lastUpdated: true
 layout: doc
-prev: true
-next: true
+prev:
+    link: '../thought-fossils/index.md'
+    text: 'Thought Fossil Index'
+next: false
 ---
 # Unsorted Fragments
 
