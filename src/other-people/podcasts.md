@@ -1,4 +1,4 @@
-# Podcast recommendatioms
+# Podcast recommendations
 
 (Annotations are under construction)
 
