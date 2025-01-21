@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
 import type { PluginOption } from 'vite';
 import Terminal from 'vite-plugin-terminal';
+import markdownFootnote from 'markdown-it-footnote';
 
 var pluginArray: PluginOption;
 var outDirVar: string;
@@ -49,6 +50,15 @@ export default defineConfig({
       dark: 'rose-pine'
     },
     linkify: true,
+    config: (md) => {      
+      md.use(markdownFootnote)
+      md.renderer.rules.footnote_block_open = () => (
+        '<hr>\n' +
+        '<h4 class="mt-3">Footnotes</h4>\n' +
+        '<section class="footnotes">\n' +
+        '<ol class="footnotes-list">\n'
+      );
+    },
   },
   sitemap: {
     hostname: "https://autpunk.space"

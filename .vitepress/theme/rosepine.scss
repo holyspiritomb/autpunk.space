@@ -29,3 +29,10 @@
   --vp-c-text-2: color.mix(var(--rp-text), var(--rp-subtle), 50%);
   --vp-c-text-3: var(--rp-subtle);
 }
+
+.footnotes {
+  font-size: smaller;
+  .footnotes-list {
+    list-style-type: decimal;
+  }
+}
