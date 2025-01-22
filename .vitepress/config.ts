@@ -34,7 +34,7 @@ if (process.env.GITHUBRUNNER === "push") {
 export default defineConfig({
   title: "Autpunk Dot Space",
   titleTemplate: 'Autpunk Dot Space',
-  description: "A VitePress Site",
+  description: "idk what i'm doing",
   head: [
     ['link', {rel: 'icon', href: '/rainbow_space.png'}]
   ],
