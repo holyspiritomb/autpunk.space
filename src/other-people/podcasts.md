@@ -1,5 +1,12 @@
-# Podcast recommendations
+---
+prev:
+    link: './index'
+    text: 'Other People'
+next: false
+outline: deep
+---
 
+# Podcast recommendations
 (Annotations are under construction)
 
 ## Science and medicine
