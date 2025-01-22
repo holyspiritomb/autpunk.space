@@ -1,0 +1,10 @@
+export default [
+  {
+    "overrides": [{
+      "files": ["*.md"],
+      "parser": "eslint-plugin-markdownlint/parser",
+      "extends": ["plugin:markdownlint/recommended"]
+    }]
+  }
+];
+
