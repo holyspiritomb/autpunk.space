@@ -84,6 +84,7 @@ export default defineConfig({
       { text: 'Thought Fossils', link: '/thought-fossils' },
       { text: 'Unsorted Fragments', link: '/unsorted-fragments' },
       { text: 'Other People', link: '/other-people' },
+      { text: 'Vitepress Cheatsheet', link: '/vitepress-default' }
     ],
     sidebar: generateSidebar({
       capitalizeFirst: true,
@@ -103,7 +104,7 @@ export default defineConfig({
       manualSortFileNameByPriority: ["fragments.md"]
     }),
     socialLinks: [
-      { icon: 'githun', ariaLabel: 'source repository for this site', 'https://github.com/holyspiritomb/autpunk.space' },
+      { icon: 'github', ariaLabel: 'source repository for this site', 'https://github.com/holyspiritomb/autpunk.space' },
       { icon: 'github', ariaLabel: 'my github profile', link: 'https://github.com/holyspiritomb' },
       { icon: 'gitlab', ariaLabel: 'my gitlab profile', link: 'https://gitlab.com/holyspiritomb' },
     ],
