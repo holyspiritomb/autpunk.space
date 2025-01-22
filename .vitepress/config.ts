@@ -104,7 +104,7 @@ export default defineConfig({
       manualSortFileNameByPriority: ["fragments.md"]
     }),
     socialLinks: [
-      { icon: 'github', ariaLabel: 'source repository for this site', 'https://github.com/holyspiritomb/autpunk.space' },
+      { icon: 'github', ariaLabel: 'source repository for this site', link: 'https://github.com/holyspiritomb/autpunk.space' },
       { icon: 'github', ariaLabel: 'my github profile', link: 'https://github.com/holyspiritomb' },
       { icon: 'gitlab', ariaLabel: 'my gitlab profile', link: 'https://gitlab.com/holyspiritomb' },
     ],
