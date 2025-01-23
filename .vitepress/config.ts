@@ -1,8 +1,10 @@
 import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
-import type { PluginOption } from 'vite';
+import type { PluginOption, UserConfig } from 'vite';
+import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
 import Terminal from 'vite-plugin-terminal';
 import markdownFootnote from 'markdown-it-footnote';
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 var pluginArray: PluginOption;
 var outDirVar: string;
@@ -27,14 +29,31 @@ if (process.env.GITHUBRUNNER === "push") {
       console: 'terminal',
       output: ['terminal', 'console'],
     }),
+    vueDevTools(),
   ];
+}
+
+const vitePlugins: PluginOption = [
+  gitCommitHashPlugin({isLongHash: true}),
+]
+
+pluginArray.concat(vitePlugins);
+
+const viteOptions: UserConfig = {
+  css: {
+    preprocessorOptions: {
+      sass: {api: "modern-compiler"},
+      scss: {api: "modern-compiler"},
+    },
+  },
+  plugins: pluginArray,
 }
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Autpunk Dot Space",
-  titleTemplate: 'Autpunk Dot Space',
-  description: "idk what i'm doing",
+  title: "Autpunk Space",
+  // titleTemplate: 'Autpunk Dot Space',
+  description: "An autism with personhood rambles about things, stuff and the difference between them.",
   head: [
     ['link', {rel: 'icon', href: '/rainbow_space.png'}]
   ],
@@ -50,7 +69,7 @@ export default defineConfig({
       dark: 'rose-pine'
     },
     linkify: true,
-    config: (md) => {      
+    config: (md) => {
       md.use(markdownFootnote)
       md.renderer.rules.footnote_block_open = () => (
         '<hr>\n' +
@@ -63,15 +82,7 @@ export default defineConfig({
   sitemap: {
     hostname: "https://autpunk.space"
   },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        sass: {api: "modern-compiler"},
-        scss: {api: "modern-compiler"},
-      }
-    },
-    plugins: pluginArray,
-  },
+  vite: viteOptions,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/rainbow_space.png',
@@ -84,7 +95,7 @@ export default defineConfig({
       { text: 'Thought Fossils', link: '/thought-fossils' },
       { text: 'Unsorted Fragments', link: '/unsorted-fragments' },
       { text: 'Other People', link: '/other-people' },
-      { text: 'Vitepress Cheatsheet', link: '/vitepress-default' }
+      { text: 'Vitepress Resources', link: '/vitepress-default' }
     ],
     sidebar: generateSidebar({
       capitalizeFirst: true,
@@ -110,15 +121,15 @@ export default defineConfig({
     ],
 
     lastUpdated: {
-      text: 'Last updated at',
+      text: 'Last updated ',
       formatOptions: {
-        dateStyle: 'full',
+        dateStyle: "long",
         timeStyle: 'medium'
       }
     },
     footer: {
       message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
-      copyright: 'Copyright © 2025-present Hezekiah Michael'
+      copyright: 'Copyright © 2025-present Hezekiah Michael',
     }
   }
 })
