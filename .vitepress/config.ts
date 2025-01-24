@@ -34,10 +34,11 @@ if (process.env.GITHUBRUNNER === "push") {
 }
 
 const vitePlugins: PluginOption = [
+  ...pluginArray,
   gitCommitHashPlugin({isLongHash: true}),
 ]
 
-pluginArray.concat(vitePlugins);
+// pluginArray.concat(vitePlugins);
 
 const viteOptions: UserConfig = {
   css: {
@@ -46,7 +47,7 @@ const viteOptions: UserConfig = {
       scss: {api: "modern-compiler"},
     },
   },
-  plugins: pluginArray,
+  plugins: vitePlugins,
 }
 
 // https://vitepress.dev/reference/site-config
