@@ -3,9 +3,8 @@
 import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme-without-fonts';
 // import './style.css';
-import "inter-ui/inter-variable.css";
 import 'victormono';
-import './fonts.css';
+import './fonts.scss';
 import "@catppuccin/vitepress/theme/mocha/red.css";
 import './rosepine.scss';
 import LayoutBottom from './LayoutBottom.vue'
