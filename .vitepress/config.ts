@@ -93,6 +93,7 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Projects', link: '/projects' },
       { text: 'Thought Fossils', link: '/thought-fossils' },
       { text: 'Unsorted Fragments', link: '/unsorted-fragments' },
       { text: 'Other People', link: '/other-people' },
