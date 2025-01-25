@@ -2,40 +2,40 @@ import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
 import type { PluginOption, UserConfig } from 'vite';
 import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
-import Terminal from 'vite-plugin-terminal';
+import Terminal, {LogsOutput} from 'vite-plugin-terminal';
 import markdownFootnote from 'markdown-it-footnote';
-import vueDevTools from 'vite-plugin-vue-devtools'
+import vueDevTools from 'vite-plugin-vue-devtools';
+import { NodePackageImporter } from "sass-embedded";
 
 var pluginArray: PluginOption;
 var outDirVar: string;
+var terminalOutputOpts: LogsOutput = ['terminal'];
 
 if (process.env.GITHUBRUNNER === "push") {
   outDirVar = "../web/autpunk.space/public_html";
-  pluginArray = [
-    Terminal({
-      console: 'terminal',
-      output: ['terminal'],
-    }),
-  ]
+  pluginArray = [];
 } else {
   // I know this is hacky okay
   if (process.env.ZSH === "/usr/share/oh-my-zsh") {
     outDirVar = "./dist";
+    terminalOutputOpts.push("console");
   } else {
     outDirVar = "../web/autpunk.space/public_html";
   }
   pluginArray = [
-    Terminal({
-      console: 'terminal',
-      output: ['terminal', 'console'],
-    }),
     vueDevTools(),
   ];
 }
 
 const vitePlugins: PluginOption = [
   ...pluginArray,
-  gitCommitHashPlugin({isLongHash: true}),
+  Terminal({
+    console: 'terminal',
+    output: terminalOutputOpts,
+  }),
+  gitCommitHashPlugin({
+    isLongHash: true,
+  }),
 ]
 
 // pluginArray.concat(vitePlugins);
@@ -43,12 +43,29 @@ const vitePlugins: PluginOption = [
 const viteOptions: UserConfig = {
   css: {
     preprocessorOptions: {
-      sass: {api: "modern-compiler"},
-      scss: {api: "modern-compiler"},
+      scss: {
+        api: "modern-compiler",
+        importers: [new NodePackageImporter()],
+        additionalData: `@use 'sass:color';
+        @use 'pkg:@rose-pine/palette/dist/css/rose-pine.css' as *;
+        `
+      },
+      
     },
   },
+  define: {
+    BUILD_DATE: JSON.stringify(new Date().toUTCString()),
+  },
   plugins: vitePlugins,
+  resolve: {
+    alias: [{
+      find: /^~([^/])/, 
+      replacement: "$1"
+    }],
+  }
 }
+
+// console.log(JSON.stringify({viteOptions}, null, 2));
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -67,8 +84,9 @@ export default defineConfig({
   markdown: {
     theme: {
       light: 'catppuccin-latte',
-      dark: 'rose-pine'
+      dark: 'rose-pine-moon'
     },
+    typographer: true,
     linkify: true,
     config: (md) => {
       md.use(markdownFootnote)
@@ -84,8 +102,8 @@ export default defineConfig({
     hostname: "https://autpunk.space"
   },
   vite: viteOptions,
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+  themeConfig: { 
+    // {{{
     logo: '/rainbow_space.png',
     externalLinkIcon: true,
     editLink: {
@@ -123,7 +141,7 @@ export default defineConfig({
     ],
 
     lastUpdated: {
-      text: 'Last updated ',
+      text: 'Last updated',
       formatOptions: {
         dateStyle: "long",
         timeStyle: 'medium'
@@ -132,6 +150,6 @@ export default defineConfig({
     footer: {
       message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
       copyright: 'Copyright © 2025-present Hezekiah Michael',
-    }
+    } // }}}
   }
 })
