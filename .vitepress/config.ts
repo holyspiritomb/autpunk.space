@@ -46,12 +46,9 @@ const viteOptions: UserConfig = {
       scss: {
         api: "modern-compiler",
         importers: [new NodePackageImporter()],
-        additionalData: `@use 'sass:color';
-        @use 'pkg:@rose-pine/palette/dist/css/rose-pine.css' as *;
-        `
       },
-      
     },
+    devSourcemap: true,
   },
   define: {
     BUILD_DATE: JSON.stringify(new Date().toUTCString()),
@@ -107,6 +104,7 @@ export default defineConfig({
     logo: '/rainbow_space.png',
     externalLinkIcon: true,
     editLink: {
+      text: "Edit",
       pattern: "https://github.com/holyspiritomb/autpunk.space/edit/main/src/:path",
     },
     nav: [
@@ -120,7 +118,7 @@ export default defineConfig({
     sidebar: generateSidebar({
       capitalizeFirst: true,
       collapsed: false,
-      debugPrint: true,
+      // debugPrint: true,
       documentRootPath: "/src",
       excludeFilesByFrontmatterFieldName: "exclude" ,
       excludePattern: ["README", "LICENSE", "vitepress-default", "fragments.md"],

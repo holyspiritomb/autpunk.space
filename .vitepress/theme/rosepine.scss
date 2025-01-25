@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'pkg:@rose-pine/palette/dist/css/rose-pine.css' as *;
+
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
