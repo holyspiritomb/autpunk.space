@@ -1,3 +1,4 @@
+@use "pkg:@fontsource/zilla-slab/scss/mixins" as ZillaSlab;
 @use "~inter-ui/default" with (
   $inter-font-display: swap,
   $inter-font-path: '~inter-ui/web'
@@ -11,8 +12,18 @@
 @include default.all;
 @include variable.all;
 
+@include ZillaSlab.faces(
+  $subsets: latin,
+  $weights: (
+    300,
+    400,
+    600,
+  ),
+  $styles: all,
+);
+
 html {
-  font-family: "Inter", "system-ui";
+  font-family: "Inter", "Noto Color Emoji", "system-ui";
   font-feature-settings: 'cv01' on, 'cv02' on, 'cv03' on, 'cv04' on, 'cv05' on, 'cv07' on, 'cv08' on, 'cv09' on, 'cv10' on, 'ss03' on;
 }
 :root {
@@ -21,8 +32,32 @@ html {
 }
 
 @supports (font-variation-settings: normal) {
-  html { font-family: "InterVariable", "system-ui"; } /* If using the variable font */
+  html { font-family: "InterVariable", "Noto Color Emoji", "system-ui"; } /* If using the variable font */
   :root {
     --vp-font-family-base: 'InterVariable';/* normal text font */
+  }
+}
+
+div.icon{
+  font-family: "Noto Color Emoji";
+}
+
+.VPHomeHero {
+  h1.heading {
+    font-family: "Zilla Slab";
+    span.text {
+      font-family: "Zilla Slab";
+      font-weight: 400;
+    }
+  }
+  p.tagline {
+    font-family: "Zilla Slab";
+    font-weight: 400;
+    &::before {
+      content: "~ ";
+    }
+    &::after {
+      content: " ~";
+    }
   }
 }

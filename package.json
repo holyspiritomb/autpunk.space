@@ -9,6 +9,8 @@
     "@catppuccin/vitepress": "^0.1.0",
     "@eslint/js": "^9.18.0",
     "@eslint/markdown": "^6.2.1",
+    "@fontsource/zilla-slab": "^5.1.1",
+    "@infolektuell/noto-color-emoji": "^0.2.0",
     "@rose-pine/palette": "^4.0.1",
     "@types/eslint": "^9.6.1",
     "@types/markdown-it-footnote": "^3.0.4",

@@ -638,6 +638,11 @@
     "@eslint/core" "^0.10.0"
     levn "^0.4.1"
 
+"@fontsource/zilla-slab@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/zilla-slab/-/zilla-slab-5.1.1.tgz#19fb3420f6ba31241164d8f01af6917ea138f547"
+  integrity sha512-nvFBQ1YoEZVZBROXENTbR11MT1cdwFzekVqoXgjNohkfJT6Azbj+puZwYslYbiLQxbBfllmh0o+tt0DIN9Rdaw==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"
@@ -677,6 +682,11 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
+"@infolektuell/noto-color-emoji@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@infolektuell/noto-color-emoji/-/noto-color-emoji-0.2.0.tgz#d1c92f91234e1ab66a4bfd370805673aa3783196"
+  integrity sha512-B6kpvqeD0ukTR7sydGKpktvO3VhZkOwQxAdLLGPdSHxQxREa2+sH6B9ODop6quPGjhmsZkJ/hL01rQ8At5xDew==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"

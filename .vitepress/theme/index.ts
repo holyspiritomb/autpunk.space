@@ -1,9 +1,9 @@
-// https://vitepress.dev/guide/custom-theme
 // import { h } from 'vue';
 import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme-without-fonts';
 // import './style.css';
 import 'victormono';
+import "@infolektuell/noto-color-emoji";
 import './fonts.scss';
 import "@catppuccin/vitepress/theme/mocha/red.css";
 import './rosepine.scss';
