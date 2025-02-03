@@ -14,6 +14,7 @@ outline: deep
 * <a href="https://maximumfun.org/podcasts/sawbones/">Sawbones: A Marital Tour of Misguided Medicine</a> is about the history of bad ways to treat diseases, as told by a family doctor to her husband.
 * <a href="https://complexly.com/shows/scishow-tangents/">Scishow Tangents</a> is like the science communication Youtube show SciShow, but with more butt facts and after-dark humor.
 * <a href="https://maximumfun.org/podcasts/lets-learn-everything/">Let's Learn Everything</a> is three people infodumping to each other and loving it.
+* <a href="https://www.superduperstitious.com/">Superduperstitious</a> is about enjoying the stories of paranormal experiences while exploring scientific explanations for them.
 
 ## Culture
 * <a href="https://www.conspirituality.net/">Conspirituality</a> investigates the intersection of far-right conspiracism and New Age movements.
@@ -41,7 +42,7 @@ outline: deep
 * <a href="https://www.iheart.com/podcast/105-behind-the-bastards-29236323/">Behind the Bastards</a> is an entertaining way to learn the origin stories of various villains from history and current events.
 
 ## Unsorted
-* <a href="https://theacecouple.com/">The Ace Couple</a>
+* <a href="https://theacecouple.com/">The Ace Couple</a> is commentary by two aces on current events and other topics pertinent to asexual communities.
 * <a href="https://www.patreon.com/SomeMoreNews">Some More News</a> is leftist-oriented commentary on current events in the U.S. with a hearty dose of millennial humor to keep you from just screaming.
 * <a href="https://whatthefuckjusthappenedtoday.com/podcasts/">What The Fuck Just Happened Today?</a> is the audio version of the eponymous website, that presents U.S. politics news matter-of-factly. It is the only way I could handle the daily damage reports of the first Trump administration, and it is the only way I can handle daily news about the second.
 * <a href="https://www.strugglecare.com/podcast-rss">Struggle Care</a>
