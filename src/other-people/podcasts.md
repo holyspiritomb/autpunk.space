@@ -19,15 +19,15 @@ outline: deep
 ## Culture
 * <a href="https://www.conspirituality.net/">Conspirituality</a> investigates the intersection of far-right conspiracism and New Age movements.
 * <a href="https://www.buzzsprout.com/2040953/about">If Books Could Kill</a> reads and analyzes reactionary bestsellers so you don't have to, and breaks down their main arguments.
-* <a href="https://sifpod.fun">Secretly Incredibly Fascinating</a> is a delightful show that does deep dives inti topics suggested and decided-on by listeners.
+* <a href="https://sifpod.fun">Secretly Incredibly Fascinating</a> is a delightful show that does deep dives into topics suggested and decided-on by listeners.
 * <a href="https://www.maintenancephase.com/">Maintenance Phase</a> deconstructs weight-loss claims made by wellness culture and health claims made by diet culture.
 * <a href="https://maximumfun.org/podcasts/oh-no-ross-and-carrie/">Oh no, Ross and Carrie!</a> involved Ross and Carrie undercover-investigating various cults, pseudoscience communities and wellness trends, and reporting on their experiences. This is the kind of debunking podcast that *doesn't* take the position that people who believe in pseudoscience and pseudomedicine deserve mockery, which is a level of compassion I need when I listen to episodes about wellness trends that I once believed in. I highly recommend their investigative series about Scientology.
 * <a href="https://www.patreon.com/Hellofawaytodie">Hell of a Way to Dad</a> is two leftist dads commenting on past experiences in the military, talking about military culture, and telling delightful stories about their kids.
 * <a href="https://www.patreon.com/TheYeerkyBoys?utm_campaign=creatorshare_fan">The Yeerky Boys</a> is what happened when two of my friends re-read Animorphs. They've finished all the books, and have moved on to doing episodes about other Animorphs media like the TV show and fanfiction.
 
 ## Linguistics
-* <a href="https://becauselanguage.com/">Because Language</a>
-* <a href="https://lingthusiasm.com/">Lingthusiasm</a>
+* <a href="https://becauselanguage.com/">Because Language</a> is an entertaining and irreverent romp through current events pertaining to linguistics.
+* <a href="https://lingthusiasm.com/">Lingthusiasm</a> is the first linguistics podcast I ever listened to and it sparks so much joy in me.
 
 ## Jewish
 * <a href="https://www.judaismunbound.com/podcast">Judaism Unbound</a> explores Jewish life, practice and history from a perspective that embraces pluralism.
