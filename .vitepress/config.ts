@@ -7,6 +7,8 @@ import markdownFootnote from 'markdown-it-footnote';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import { NodePackageImporter } from "sass-embedded";
 
+// Vite options {{{
+// Vite plugin options {{{
 var pluginArray: PluginOption;
 var outDirVar: string;
 var terminalOutputOpts: LogsOutput = ['terminal'];
@@ -37,8 +39,7 @@ const vitePlugins: PluginOption = [
     isLongHash: true,
   }),
 ]
-
-// pluginArray.concat(vitePlugins);
+// }}}
 
 const viteOptions: UserConfig = {
   css: {
@@ -62,7 +63,7 @@ const viteOptions: UserConfig = {
   }
 }
 
-// console.log(JSON.stringify({viteOptions}, null, 2));
+// }}}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -81,8 +82,8 @@ export default defineConfig({
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
     theme: {
-      light: 'catppuccin-latte',
-      dark: 'rose-pine-moon'
+      light: 'snazzy-light',
+      dark: 'poimandres'
     },
     typographer: true,
     linkify: true,
