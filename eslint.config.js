@@ -64,12 +64,6 @@ export default [
     language: "markdown/gfm",
   },
   {
-    files: [".vitepress/config.ts"],
-    rules: {
-      "no-var": "off",
-    },
-  },
-  {
     files: ["eslint.config.js"],
     plugins: {
       stylistic: StylisticPlugin,
