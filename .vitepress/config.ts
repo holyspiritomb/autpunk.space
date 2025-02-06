@@ -1,18 +1,22 @@
-import { defineConfig } from 'vitepress';
-import { generateSidebar } from 'vitepress-sidebar';
-import type { PluginOption, UserConfig } from 'vite';
+import { defineConfig } from "vitepress";
+import { generateSidebar } from "vitepress-sidebar";
+import type { PluginOption, UserConfig } from "vite";
 import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
-import Terminal, {LogsOutput} from 'vite-plugin-terminal';
-import markdownFootnote from 'markdown-it-footnote';
-import vueDevTools from 'vite-plugin-vue-devtools';
+import Terminal, { LogsOutput } from "vite-plugin-terminal";
+import markdownFootnote from "markdown-it-footnote";
+import vueDevTools from "vite-plugin-vue-devtools";
 import { NodePackageImporter } from "sass-embedded";
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons';
+import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 
 // Vite options {{{
+
 // Vite plugin options {{{
+
+/* eslint-disable no-var */
 var pluginArray: PluginOption;
 var outDirVar: string;
-var terminalOutputOpts: LogsOutput = ['terminal'];
+var terminalOutputOpts: LogsOutput = ["terminal"];
+/* eslint-enable no-var */
 
 if (process.env.GITHUBRUNNER === "push") {
   outDirVar = "../web/autpunk.space/public_html";
@@ -34,13 +38,13 @@ const vitePlugins: PluginOption = [
   ...pluginArray,
   groupIconVitePlugin(),
   Terminal({
-    console: 'terminal',
+    console: "terminal",
     output: terminalOutputOpts,
   }),
   gitCommitHashPlugin({
     isLongHash: true,
   }),
-]
+];
 // }}}
 
 const viteOptions: UserConfig = {
@@ -60,10 +64,10 @@ const viteOptions: UserConfig = {
   resolve: {
     alias: [{
       find: /^~([^/])/, 
-      replacement: "$1"
+      replacement: "$1",
     }],
-  }
-}
+  },
+};
 
 // }}}
 
@@ -74,54 +78,56 @@ export default defineConfig({
   // titleTemplate: 'Autpunk Dot Space',
   description: "An autism with personhood rambles about things, stuff and the difference between them.",
   head: [
-    ['link', {rel: 'icon', href: '/rainbow_space.png'}]
+    ["link", { rel: "icon", href: "/rainbow_space.png" }],
   ],
-  lang: 'en-US',
+  lang: "en-US",
   lastUpdated: true,
-  appearance: 'dark',
+  appearance: "dark",
   srcDir: "./src",
   outDir: outDirVar,
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
     theme: {
-      light: 'snazzy-light',
-      dark: 'poimandres'
+      light: "snazzy-light",
+      dark: "poimandres",
     },
     typographer: true,
     linkify: true,
     config: (md) => {
-      md.use(markdownFootnote)
+      md.use(markdownFootnote);
       md.renderer.rules.footnote_block_open = () => (
+        /* eslint-disable stylistic/quotes */
         '<hr>\n' +
         '<h4 class="mt-3">Footnotes</h4>\n' +
         '<section class="footnotes">\n' +
         '<ol class="footnotes-list">\n'
+        /* eslint-enable stylistic/quotes */
       );
-      md.use(groupIconMdPlugin)
+      md.use(groupIconMdPlugin);
     },
   },
   sitemap: {
-    hostname: "https://autpunk.space"
+    hostname: "https://autpunk.space",
   },
   vite: viteOptions,
   themeConfig: { 
     // {{{
-    logo: '/rainbow_space.png',
+    logo: "/rainbow_space.png",
     externalLinkIcon: true,
     editLink: {
       text: "Edit",
       pattern: "https://github.com/holyspiritomb/autpunk.space/edit/main/src/:path",
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects' },
-      { text: 'Thought Fossils', link: '/thought-fossils' },
-      { text: 'Unsorted Fragments', link: '/unsorted-fragments' },
-      { text: 'Other People', link: '/other-people' },
-      { text: 'Vitepress Resources', link: '/vitepress-default' }
+      { text: "Home", link: "/" },
+      { text: "Projects", link: "/projects" },
+      { text: "Thought Fossils", link: "/thought-fossils" },
+      { text: "Unsorted Fragments", link: "/unsorted-fragments" },
+      { text: "Other People", link: "/other-people" },
+      { text: "Vitepress Resources", link: "/vitepress-default" },
     ],
     search: {
-      provider: 'local',
+      provider: "local",
       options: {
         miniSearch: {
           /**
@@ -137,16 +143,16 @@ export default defineConfig({
            */
           searchOptions: {
             /* ... */
-          }
-        }
-      }
+          },
+        },
+      },
     },
     sidebar: generateSidebar({
       capitalizeFirst: true,
       collapsed: false,
       // debugPrint: true,
       documentRootPath: "/src",
-      excludeFilesByFrontmatterFieldName: "exclude" ,
+      excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "vitepress-default", "fragments.md"],
       includeEmptyFolder: false,
       // includeFolderIndexFile: true,
@@ -156,24 +162,25 @@ export default defineConfig({
       useFolderTitleFromIndexFile: true,
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
-      manualSortFileNameByPriority: ["fragments.md"]
+      manualSortFileNameByPriority: ["fragments.md"],
     }),
     socialLinks: [
-      { icon: 'github', ariaLabel: 'source repository for this site', link: 'https://github.com/holyspiritomb/autpunk.space' },
-      { icon: 'github', ariaLabel: 'my github profile', link: 'https://github.com/holyspiritomb' },
-      { icon: 'gitlab', ariaLabel: 'my gitlab profile', link: 'https://gitlab.com/holyspiritomb' },
+      { icon: "github", ariaLabel: "source repository for this site", link: "https://github.com/holyspiritomb/autpunk.space" },
+      { icon: "github", ariaLabel: "my github profile", link: "https://github.com/holyspiritomb" },
+      { icon: "gitlab", ariaLabel: "my gitlab profile", link: "https://gitlab.com/holyspiritomb" },
     ],
 
     lastUpdated: {
-      text: 'Last updated',
+      text: "Last updated",
       formatOptions: {
         dateStyle: "long",
-        timeStyle: 'medium'
-      }
+        timeStyle: "medium",
+      },
     },
     footer: {
       message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
-      copyright: 'Copyright © 2025-present Hezekiah Michael',
-    } // }}}
-  }
-})
+      copyright: "Copyright © 2025-present Hezekiah Michael",
+    },
+    // }}}
+  },
+});
