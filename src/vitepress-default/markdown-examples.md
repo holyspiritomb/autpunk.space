@@ -80,6 +80,111 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+## Tables
+
+**Input**
+
+```md
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+```
+
+**Output**
+
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+
+## Emoji
+
+**Input**
+
+```md
+:tada: :100:
+```
+
+**Output**
+
+:tada: :100:
+
+A [list of all emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs) is available.
+
+## Table of Contents
+
+**Input**
+
+```
+[[toc]]
+```
+
+**Output**
+
+[[toc]]
+
+Rendering of the TOC can be configured using the `markdown.toc` option.
+
+## Code groups
+
+**Input**
+
+````md
+::: code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
+```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
+````
+
+**Output**
+::: code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
+```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
+
 ## Footnotes
 
 **Input**
