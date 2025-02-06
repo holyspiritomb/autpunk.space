@@ -80,6 +80,20 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+## Footnotes
+
+**Input**
+
+```md
+Normal text[^1]
+[^1]: a footnote
+```
+
+**Output**
+
+Normal text[^1]
+[^1]: a footnote
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
