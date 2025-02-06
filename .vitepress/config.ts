@@ -6,6 +6,7 @@ import Terminal, {LogsOutput} from 'vite-plugin-terminal';
 import markdownFootnote from 'markdown-it-footnote';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import { NodePackageImporter } from "sass-embedded";
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons';
 
 // Vite options {{{
 // Vite plugin options {{{
@@ -31,6 +32,7 @@ if (process.env.GITHUBRUNNER === "push") {
 
 const vitePlugins: PluginOption = [
   ...pluginArray,
+  groupIconVitePlugin(),
   Terminal({
     console: 'terminal',
     output: terminalOutputOpts,
@@ -95,6 +97,7 @@ export default defineConfig({
         '<section class="footnotes">\n' +
         '<ol class="footnotes-list">\n'
       );
+      md.use(groupIconMdPlugin)
     },
   },
   sitemap: {

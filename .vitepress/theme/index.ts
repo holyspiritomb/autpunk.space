@@ -1,6 +1,7 @@
 // import { h } from 'vue';
 import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme-without-fonts';
+import 'virtual:group-icons.css';
 // import './style.css';
 import 'victormono';
 import "@infolektuell/noto-color-emoji";
