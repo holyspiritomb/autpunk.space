@@ -8,23 +8,15 @@
   "dependencies": {
     "@catppuccin/palette": "^1.7.1",
     "@catppuccin/vitepress": "^0.1.0",
-    "@eslint/js": "^9.18.0",
-    "@eslint/markdown": "^6.2.1",
     "@fontsource/zilla-slab": "^5.1.1",
     "@infolektuell/noto-color-emoji": "^0.2.0",
     "@rose-pine/palette": "^4.0.1",
     "@sirenia/markdown-it-label": "^2.0.4",
-    "@stylistic/eslint-plugin": "^3.0.1",
-    "@types/eslint": "^9.6.1",
-    "@types/markdown-it-footnote": "^3.0.4",
-    "@types/node": "^22.10.10",
-    "eslint": "^9.18.0",
-    "eslint-plugin-markdown": "^5.1.0",
+    "@vue/tsconfig": "^0.7.0",
     "inter-ui": "^4.1.0",
     "markdown-it-footnote": "^4.0.0",
     "sass-embedded": "^1.83.1",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.21.0",
     "victormono": "^1.5.6",
     "vite-plugin-git-commit-hash": "^1.0.7",
     "vite-plugin-terminal": "^1.2.0",
@@ -42,5 +34,18 @@
     "lint:all": "eslint",
     "preview": "vitepress preview"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.6.0",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@eslint/markdown": "^6.2.1",
+    "@stylistic/eslint-plugin": "^3.0.1",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-plugin-markdown": "^2.0.2",
+    "@types/eslint__js": "^8.42.3",
+    "@types/markdown-it-footnote": "^3.0.4",
+    "@types/node": "^22.10.10",
+    "eslint": "^9.18.0",
+    "eslint-plugin-markdown": "^5.1.0",
+    "typescript-eslint": "^8.21.0"
+  }
 }
