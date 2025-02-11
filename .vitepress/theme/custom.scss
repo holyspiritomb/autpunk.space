@@ -1,5 +1,6 @@
 @use 'sass:color';
 @use 'pkg:@rose-pine/palette/dist/css/rose-pine.css' as *;
+@use 'pkg:@catppuccin/palette/css/catppuccin.css' as *;
 
 :root {
   --vp-home-hero-name-color: transparent;
@@ -36,4 +37,33 @@
   .footnotes-list {
     list-style-type: decimal;
   }
+}
+
+.mdi-label {
+    padding: .2em .6em .3em;
+    font-size: 85%;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .85em;
+}
+
+.mdi-label[style="background-color:rgb(255, 255, 0);"]{
+  background-color: var(--rp-gold) !important;
+}
+.mdi-label[style="background-color:rgb(255, 0, 255);"]{
+  background-color: var(--rp-moon-love) !important;
+}
+.mdi-label[style="background-color:rgb(0, 255, 255);"]{
+  background-color: var(--ctp-mocha-sky) !important;
+}
+.mdi-label[style="background-color:rgb(0, 255, 0);"]{
+  background-color: var(--ctp-mocha-green) !important;
+}
+
+.mdi-label-text-dark {
+  color: black;
+}
+.mdi-label-text-light {
+  color: white;
 }
