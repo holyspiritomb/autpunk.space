@@ -7,6 +7,7 @@ import "@infolektuell/noto-color-emoji";
 import "./fonts.scss";
 import "@catppuccin/vitepress/theme/mocha/red.css";
 import "./custom.scss";
+/* @ts-expect-error vitepress understands this import */
 import LayoutBottom from "./components/LayoutBottom.vue";
 
 export default {

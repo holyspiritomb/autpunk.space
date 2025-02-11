@@ -2,7 +2,8 @@ import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 import type { PluginOption, UserConfig } from "vite";
 import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
-import Terminal, { LogsOutput } from "vite-plugin-terminal";
+import Terminal from "vite-plugin-terminal";
+import type { LogsOutput } from "vite-plugin-terminal";
 import markdownFootnote from "markdown-it-footnote";
 import vueDevTools from "vite-plugin-vue-devtools";
 import { NodePackageImporter } from "sass-embedded";
@@ -63,10 +64,12 @@ const viteOptions: UserConfig = {
   },
   plugins: vitePlugins,
   resolve: {
-    alias: [{
-      find: /^~([^/])/, 
-      replacement: "$1",
-    }],
+    alias: [
+      {
+        find: /^~([^/])/, 
+        replacement: "$1",
+      },
+    ],
   },
 };
 
