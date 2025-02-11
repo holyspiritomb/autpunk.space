@@ -40,5 +40,9 @@
     "lint:all": "eslint",
     "preview": "vitepress preview"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "@catppuccin/palette": "^1.7.1",
+    "@sirenia/markdown-it-label": "^2.0.4"
+  }
 }

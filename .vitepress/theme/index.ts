@@ -6,7 +6,7 @@ import "victormono";
 import "@infolektuell/noto-color-emoji";
 import "./fonts.scss";
 import "@catppuccin/vitepress/theme/mocha/red.css";
-import "./rosepine.scss";
+import "./custom.scss";
 import LayoutBottom from "./components/LayoutBottom.vue";
 
 export default {

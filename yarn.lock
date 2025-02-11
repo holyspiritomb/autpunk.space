@@ -558,6 +558,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@catppuccin/palette@npm:^1.7.1":
+  version: 1.7.1
+  resolution: "@catppuccin/palette@npm:1.7.1"
+  checksum: 10c0/b4577ad742310ccfd3394791be96ef8787fc6c3e90c7b9ca6dfbe12fb5e63ad8c7d1627846df4744b8edaee19ed98a2c34a292dc5e4ae8a3e877c5afafcc62d2
+  languageName: node
+  linkType: hard
+
 "@catppuccin/vitepress@npm:^0.1.0":
   version: 0.1.0
   resolution: "@catppuccin/vitepress@npm:0.1.0"
@@ -1368,6 +1375,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sirenia/markdown-it-label@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@sirenia/markdown-it-label@npm:2.0.4"
+  peerDependencies:
+    markdown-it: ">=5"
+  checksum: 10c0/3084aa3081d08a5a132890491d3113333c90a0a8d4a31a405a734dd482568117c23faf9c298e673ae21fcef4d87248fe9811fcf4f2bee1110ed76aa341aa9b3a
+  languageName: node
+  linkType: hard
+
 "@stylistic/eslint-plugin@npm:^3.0.1":
   version: 3.1.0
   resolution: "@stylistic/eslint-plugin@npm:3.1.0"
@@ -2066,12 +2082,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "autpunk.space@workspace:."
   dependencies:
+    "@catppuccin/palette": "npm:^1.7.1"
     "@catppuccin/vitepress": "npm:^0.1.0"
     "@eslint/js": "npm:^9.18.0"
     "@eslint/markdown": "npm:^6.2.1"
     "@fontsource/zilla-slab": "npm:^5.1.1"
     "@infolektuell/noto-color-emoji": "npm:^0.2.0"
     "@rose-pine/palette": "npm:^4.0.1"
+    "@sirenia/markdown-it-label": "npm:^2.0.4"
     "@stylistic/eslint-plugin": "npm:^3.0.1"
     "@types/eslint": "npm:^9.6.1"
     "@types/markdown-it-footnote": "npm:^3.0.4"

@@ -7,6 +7,7 @@ import markdownFootnote from "markdown-it-footnote";
 import vueDevTools from "vite-plugin-vue-devtools";
 import { NodePackageImporter } from "sass-embedded";
 import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
+import MarkdownItLabel from "@sirenia/markdown-it-label";
 
 // Vite options {{{
 
@@ -95,6 +96,11 @@ export default defineConfig({
     linkify: true,
     config: (md) => {
       md.use(markdownFootnote);
+      md.use(MarkdownItLabel, {
+        cssClassLabel: "mdi-label",
+        cssClassTextLight: "mdi-label-text-light",
+        cssClassTextDark: "mdi-label-text-dark",
+      });
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +
