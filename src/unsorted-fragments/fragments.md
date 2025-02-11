@@ -7,6 +7,8 @@ next: false
 ---
 # Fragments
 
+[[toc]]
+
 ## Date unknown
 <a href="not-a-coincidence">It is not a coincidence that transmedicalists are frequently against self-diagnosis</a>
 
@@ -15,3 +17,8 @@ next: false
 <a href="embracing-diagnosis">relating embracing an ADHD diagnosis to transness</a>
 
 <a href="logical-positivism-transmeds">logical positivism & transmedicalism</a>
+
+## 2018
+<a href="2018-book-club">The Neighbor</a>
+
+<a href="2018-sex-gender">Biology is socially constructed y'all</a>
