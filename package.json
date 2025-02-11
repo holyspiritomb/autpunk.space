@@ -39,5 +39,6 @@
     "lint:pages": "eslint src",
     "lint:all": "eslint",
     "preview": "vitepress preview"
-  }
+  },
+  "packageManager": "yarn@4.6.0"
 }
