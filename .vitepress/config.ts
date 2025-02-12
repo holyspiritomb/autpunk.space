@@ -9,6 +9,9 @@ import vueDevTools from "vite-plugin-vue-devtools";
 import { NodePackageImporter } from "sass-embedded";
 import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import MarkdownItLabel from "@sirenia/markdown-it-label";
+import markdownItAttrs from "markdown-it-attrs";
+import Components from "unplugin-vue-components/vite";
+import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 
 // Vite options {{{
 
@@ -39,6 +42,13 @@ if (process.env.GITHUBRUNNER === "push") {
 const vitePlugins: PluginOption = [
   ...pluginArray,
   groupIconVitePlugin(),
+  Components({
+    dirs: "./theme/components",
+    dts: true,
+    resolvers: [
+      VueUseComponentsResolver(),
+    ],
+  }),
   Terminal({
     console: "terminal",
     output: terminalOutputOpts,
@@ -104,6 +114,7 @@ export default defineConfig({
         cssClassTextLight: "mdi-label-text-light",
         cssClassTextDark: "mdi-label-text-dark",
       });
+      md.use(markdownItAttrs);
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +
