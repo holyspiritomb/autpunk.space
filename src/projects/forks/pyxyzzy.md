@@ -4,7 +4,7 @@ title: pyXyzzy
 lastUpdated: true
 prev:
     text: 'Projects'
-    link: './index'
+    link: '/projects'
 next: false
 ---
 

@@ -4,7 +4,7 @@ title: Available Reads
 lastUpdated: true
 prev:
     text: 'Projects'
-    link: './index'
+    link: '/projects'
 next: false
 ---
 # Available Reads Forked
