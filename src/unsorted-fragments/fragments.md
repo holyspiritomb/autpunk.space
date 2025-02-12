@@ -19,6 +19,6 @@ next: false
 <a href="logical-positivism-transmeds">logical positivism & transmedicalism</a>
 
 ## 2018
-<a href="2018-book-club">The Neighbor</a>{.new}
+<a href="2018-book-club">The Neighbor</a>{.new .inlinepill}
 
-<a href="2018-sex-gender">Biology is socially constructed y'all</a>{.new}
+<a href="2018-sex-gender">Biology is socially constructed y'all</a>{.new .inlinepill}

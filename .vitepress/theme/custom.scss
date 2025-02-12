@@ -79,12 +79,21 @@
   color: white;
 }
 
-p.new::after {
+.inlinepill::after {
   @extend .mdi-label;
+  margin-left: 0.5em;
+}
+
+.new::after {
   content: "new";
   background-color: var(--vp-custom-block-info-bg);
   color: var(--vp-custom-block-info-text);
-  margin-left: 0.5em;
+}
+
+.construction::after {
+  content: "under construction";
+  background-color: var(--vp-custom-block-warning-bg);
+  color: var(--vp-custom-block-warning-text);
 }
 
 .group:has([role='button']) .VPSidebarItem.level-0 .items {
