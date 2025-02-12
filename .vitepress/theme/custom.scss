@@ -86,3 +86,10 @@ p.new::after {
   color: var(--vp-custom-block-info-text);
   margin-left: 0.5em;
 }
+
+.group:has([role='button']) .VPSidebarItem.level-0 .items {
+  padding-left: 16px !important;
+  border-left: 1px solid var(--vp-c-divider);
+  border-radius: 2px;
+  transition: background-color 0.25s;
+}
