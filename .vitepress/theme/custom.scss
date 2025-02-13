@@ -16,7 +16,6 @@
     #04a5e5 50%
   );
   --vp-home-hero-image-filter: blur(44px);
-  --vp-custom-block-warning-bg: var(--rp-gold);
 }
 .dark {
   --vp-c-bg: var(--rp-surface);
@@ -31,15 +30,15 @@
   --vp-c-text-1: var(--rp-text);
   --vp-c-text-2: color.mix(var(--rp-text), var(--rp-subtle), 50%);
   --vp-c-text-3: var(--rp-subtle);
-  --vp-custom-block-info-bg: var(--ctp-mocha-sky);
-  --vp-custom-block-tip-bg: var(--ctp-mocha-green);
-  --vp-custom-block-warning-bg: var(--ctp-mocha-yellow);
-  --vp-custom-block-danger-bg: var(--ctp-mocha-red);
-  --vp-custom-block-details-bg: var(--rp-highlight-med);
-  --vp-custom-block-info-text: var(--ctp-mocha-base);
-  --vp-custom-block-tip-text: var(--ctp-mocha-base);
-  --vp-custom-block-warning-text: var(--ctp-mocha-base);
-  --vp-custom-block-danger-text: var(--ctp-mocha-base);
+  /* --vp-custom-block-info-bg: rgb(var(--ctp-mocha-sky-rgb) / 0.30); */
+  /* --vp-custom-block-tip-bg: rgb(var(--ctp-mocha-green-rgb) / 0.40); */
+  /* --vp-custom-block-warning-bg: rgb(var(--ctp-mocha-yellow-rgb) / 0.40); */
+  /* --vp-custom-block-danger-bg: rgb(var(--ctp-mocha-red-rgb) / 0.50); */
+  /* --vp-custom-block-details-bg: var(--rp-highlight-med); */
+  --vp-custom-block-info-text: var(--ctp-mocha-sky);
+  --vp-custom-block-tip-text: var(--ctp-mocha-green);
+  --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
+  --vp-custom-block-danger-text: var(--ctp-mocha-red);
   --vp-custom-block-details-text: var(--rp-text);
 }
 
@@ -86,14 +85,14 @@
 
 .new::after {
   content: "new";
-  background-color: var(--vp-custom-block-info-bg);
-  color: var(--vp-custom-block-info-text);
+  background-color: var(--ctp-mocha-sky);
+  color: var(--ctp-mocha-base);
 }
 
 .construction::after {
   content: "under construction";
-  background-color: var(--vp-custom-block-warning-bg);
-  color: var(--vp-custom-block-warning-text);
+  background-color: var(--ctp-mocha-yellow);
+  color: var(--ctp-mocha-base);
 }
 
 .group:has([role='button']) .VPSidebarItem.level-0 .items {
