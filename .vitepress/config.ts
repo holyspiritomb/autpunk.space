@@ -98,6 +98,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/rainbow_space.png" }],
   ],
+  ignoreDeadLinks: true,
   lang: "en-US",
   lastUpdated: true,
   appearance: "dark",
