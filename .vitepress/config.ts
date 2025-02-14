@@ -13,6 +13,8 @@ import markdownItAttrs from "markdown-it-attrs";
 import Components from "unplugin-vue-components/vite";
 import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 import UnoCSS from "unocss/vite";
+import IconsResolver from 'unplugin-icons/resolver';
+import Icons from 'unplugin-icons/vite';
 
 // Vite options {{{
 
@@ -51,8 +53,10 @@ const vitePlugins: PluginOption = [
     dts: true,
     resolvers: [
       VueUseComponentsResolver(),
+      IconsResolver(),
     ],
   }),
+  Icons(),
   Terminal({
     console: "terminal",
     output: terminalOutputOpts,
