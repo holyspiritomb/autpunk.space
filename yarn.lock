@@ -2756,6 +2756,7 @@ __metadata:
     "@types/node": "npm:^22.10.10"
     "@vue/tsconfig": "npm:^0.7.0"
     "@vueuse/core": "npm:^12.5.0"
+    easy-speech: "npm:^2.4.0"
     eslint: "npm:^9.18.0"
     eslint-plugin-markdown: "npm:^5.1.0"
     inter-ui: "npm:^4.1.0"
@@ -3248,6 +3249,13 @@ __metadata:
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
   checksum: 10c0/26f364ebcdb6395f95124fda411f63137a4bfb5d3a06453f7f23dfe52502905bd84e0488172e0f9ec295fdc45f05c23d5d91baf16bd26f0fe9acd777a188dc39
+  languageName: node
+  linkType: hard
+
+"easy-speech@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "easy-speech@npm:2.4.0"
+  checksum: 10c0/af3d70d6ea2d584ebbed32e03e8b2e63b7ed6cd529fcbfb55f4266b83632ddca1f18077c0f420832f8909435d9c733661c8ca2367d8228c8649f8d6dbf2623d8
   languageName: node
   linkType: hard
 
