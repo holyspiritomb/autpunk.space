@@ -7,7 +7,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    CustomLink: typeof import('./../.vitepress/theme/components/CustomLink.vue')['default']
     LayoutBottom: typeof import('./../.vitepress/theme/components/LayoutBottom.vue')['default']
     Read: typeof import('./../.vitepress/theme/components/Read.vue')['default']
   }
