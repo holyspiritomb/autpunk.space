@@ -4,6 +4,7 @@
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
     "src/**/*",
-    "src/**/*.md"
+    "src/**/*.md",
+    "src/components.d.ts"
   ],
 }

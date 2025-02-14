@@ -12,6 +12,7 @@ import MarkdownItLabel from "@sirenia/markdown-it-label";
 import markdownItAttrs from "markdown-it-attrs";
 import Components from "unplugin-vue-components/vite";
 import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
+import UnoCSS from "unocss/vite";
 
 // Vite options {{{
 
@@ -42,8 +43,11 @@ if (process.env.GITHUBRUNNER === "push") {
 const vitePlugins: PluginOption = [
   ...pluginArray,
   groupIconVitePlugin(),
+  UnoCSS(),
   Components({
-    dirs: "./theme/components",
+    dirs: [".vitepress/theme/components"],
+    extensions: ["vue", "md"],
+    include: [/\.(vue|md)($|\?)/],
     dts: true,
     resolvers: [
       VueUseComponentsResolver(),

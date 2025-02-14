@@ -7,8 +7,11 @@ import "@infolektuell/noto-color-emoji";
 import "./fonts.scss";
 import "@catppuccin/vitepress/theme/mocha/red.css";
 import "./custom.scss";
+import "uno.css";
 /* @ts-expect-error vitepress understands this import */
 import LayoutBottom from "./components/LayoutBottom.vue";
+import Read from "./components/Read.vue";
+import { VPButton } from "vitepress/theme-without-fonts";
 
 export default {
   extends: DefaultTheme,
@@ -20,6 +23,7 @@ export default {
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.component("Read", Read).
+      component("VPButton", VPButton);
   },
 } satisfies Theme // eslint-disable-line stylistic/semi

@@ -16,6 +16,14 @@
     #04a5e5 50%
   );
   --vp-home-hero-image-filter: blur(44px);
+  --vp-badge-info-text: var(--vp-custom-block-info-text);
+  --vp-badge-info-bg: var(--vp-custom-block-info-bg);
+  --vp-badge-warning-text: var(--vp-custom-block-warning-text);
+  --vp-badge-warning-bg: var(--vp-custom-block-warning-bg);
+  --vp-badge-tip-text: var(--vp-custom-block-tip-text);
+  --vp-badge-tip-bg: var(--vp-custom-block-tip-bg);
+  --vp-badge-danger-text: var(--vp-custom-block-danger-text);
+  --vp-badge-danger-bg: var(--vp-custom-block-danger-bg);
 }
 .dark {
   --vp-c-bg: var(--rp-surface);
@@ -76,17 +84,6 @@
 }
 .mdi-label-text-light {
   color: white;
-}
-
-.inlinepill::after {
-  @extend .mdi-label;
-  margin-left: 0.5em;
-}
-
-.new::after {
-  content: "new";
-  background-color: var(--ctp-mocha-sky);
-  color: var(--ctp-mocha-base);
 }
 
 .construction::after {
