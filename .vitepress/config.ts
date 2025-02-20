@@ -15,13 +15,11 @@ import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 import UnoCSS from "unocss/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
-import { fileURLToPath, URL } from "node:url";
+// import { fileURLToPath, URL } from "node:url";
 
-const testUrl = fileURLToPath(
-  new URL("./theme/components/VPDocCustom.vue", import.meta.url),
-);
-
-console.log(testUrl);
+// const testUrl = fileURLToPath(
+//   new URL("./theme/components/VPDocCustom.vue", import.meta.url),
+// );
 
 // Vite options {{{
 
@@ -94,10 +92,10 @@ const viteOptions: UserConfig = {
         find: /^~([^/])/, 
         replacement: "$1",
       },
-      {
-        find: /^.\/VPDoc\.vue$/,
-        replacement: testUrl,
-      },
+      // {
+      //   find: /^.\/VPDoc\.vue$/,
+      //   replacement: testUrl,
+      // },
     ],
   },
 };

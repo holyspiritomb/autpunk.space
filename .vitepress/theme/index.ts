@@ -11,7 +11,6 @@ import "uno.css";
 import { VPButton } from "vitepress/theme-without-fonts";
 import LayoutBottom from "./components/LayoutBottom.vue";
 import SpeechEasy from "./components/SpeechEasy.vue";
-import VPDocCustom from "./components/VPDocCustom.vue";
 
 export default {
   extends: DefaultTheme,
@@ -24,7 +23,6 @@ export default {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enhanceApp({ app, router, siteData }) {
     app.component("VPButton", VPButton).
-      component("VPDocCustom", VPDocCustom).
       component("SpeechEasy", SpeechEasy);
   },
 } satisfies Theme // eslint-disable-line stylistic/semi
