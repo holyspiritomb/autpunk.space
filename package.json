@@ -29,12 +29,15 @@
     "vitepress": "^1.6.3",
     "vitepress-plugin-group-icons": "^1.3.5",
     "vitepress-sidebar": "^1.30.2",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue3-toastify": "^0.2.8"
   },
   "scripts": {
     "dev": "vitepress dev --host",
+    "cache:rm": "rm -rf .vitepress/cache/*",
     "build": "vitepress build",
-    "lint:config": "eslint .vitepress",
+    "lint:config": "eslint .vitepress/config.ts .vitepress/**/*.{ts,js,vue}",
+    "lint:vue": "eslint .vitepress/theme/components/*.vue .vitepress/**/*.vue",
     "lint:pages": "eslint src",
     "lint:all": "eslint",
     "preview": "vitepress preview"
@@ -52,7 +55,10 @@
     "@types/node": "^22.10.10",
     "eslint": "^9.18.0",
     "eslint-plugin-markdown": "^5.1.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.15.0",
     "typescript-eslint": "^8.21.0",
-    "unocss": "^65.4.3"
+    "unocss": "^65.4.3",
+    "vue-eslint-parser": "^9.4.3"
   }
 }

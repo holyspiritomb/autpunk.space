@@ -131,4 +131,4 @@ Output:
 
 ## Speech
 
-<Speech/>
+<SpeechEasy/>

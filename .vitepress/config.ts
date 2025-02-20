@@ -13,8 +13,15 @@ import markdownItAttrs from "markdown-it-attrs";
 import Components from "unplugin-vue-components/vite";
 import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 import UnoCSS from "unocss/vite";
-import IconsResolver from 'unplugin-icons/resolver';
-import Icons from 'unplugin-icons/vite';
+import IconsResolver from "unplugin-icons/resolver";
+import Icons from "unplugin-icons/vite";
+import { fileURLToPath, URL } from "node:url";
+
+const testUrl = fileURLToPath(
+  new URL("./theme/components/VPDocCustom.vue", import.meta.url),
+);
+
+console.log(testUrl);
 
 // Vite options {{{
 
@@ -86,6 +93,10 @@ const viteOptions: UserConfig = {
       {
         find: /^~([^/])/, 
         replacement: "$1",
+      },
+      {
+        find: /^.\/VPDoc\.vue$/,
+        replacement: testUrl,
       },
     ],
   },
