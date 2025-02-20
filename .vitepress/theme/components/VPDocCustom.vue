@@ -50,13 +50,6 @@ function testFunction() {
         <div class="content-container">
           <slot name="doc-before" />
           <main class="main">
-            <VPButton
-              ref="read-button"
-              class="float-right"
-              :text="buttonText"
-              theme="brand"
-              @click="testFunction"
-            />
             <Content
               ref="read-aloud"
               class="vp-doc"
@@ -64,6 +57,13 @@ function testFunction() {
                 pageName,
                 theme.externalLinkIcon && 'external-link-icon-enabled'
               ]"
+            />
+            <VPButton
+              ref="read-button"
+              class="hidden"
+              :text="buttonText"
+              theme="brand"
+              @click="testFunction"
             />
           </main>
           <VPDocFooter>
