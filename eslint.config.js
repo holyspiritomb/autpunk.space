@@ -1,10 +1,14 @@
 // @ts-check
 
-import eslint from '@eslint/js';
 import tseslint from "typescript-eslint";
 import markdown from "@eslint/markdown";
 import StylisticPlugin from '@stylistic/eslint-plugin';
+import globals from 'globals';
+import eslint from '@eslint/js';
+import pluginVue from 'eslint-plugin-vue';
+import vueParser from "vue-eslint-parser";
 
+const tsParser = tseslint.parser;
 /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
 export default [
   eslint.configs.recommended,
@@ -12,6 +16,10 @@ export default [
   ...tseslint.configs.recommended.map(config => ({
     ...config,
     files: ["**/*.ts"],
+  })),
+  ...pluginVue.configs['flat/recommended'].map(config => ({
+    ...config,
+    files: ["**/*.vue", ".vitepress/**/*.vue"],
   })),
   {
     ignores: [
@@ -29,7 +37,7 @@ export default [
     },
     rules: {
       "stylistic/comma-dangle": [1, "always-multiline"],
-      "stylistic/comma-spacing": ["error", { "before": false, "after": true }],
+      "stylistic/comma-spacing": [1, { "before": false, "after": true }],
       "stylistic/indent": [1, 2, { "ignoreComments": true }],
       "stylistic/key-spacing": [1],
       "stylistic/no-tabs": 2,
@@ -40,8 +48,8 @@ export default [
       "stylistic/no-extra-semi": [2],
       "stylistic/semi-style": [1],
       "stylistic/spaced-comment": [1, "always"],
-      "stylistic/object-curly-spacing": [2, "always", { "arraysInObjects": false, "objectsInObjects": false }],
-      "stylistic/array-bracket-spacing": [2, "never", { "arraysInArrays": false }],
+      "stylistic/object-curly-spacing": [1, "always", { "arraysInObjects": false, "objectsInObjects": false }],
+      "stylistic/array-bracket-spacing": [1, "never", { "arraysInArrays": false }],
     },
   },
   {
@@ -71,6 +79,28 @@ export default [
     rules: {
       "stylistic/indent": [2, 2, { "ignoreComments": true }],
       "stylistic/quotes": [0],
+    },
+  },
+  {
+    files: ["*.vue", "**/*.vue", ".vitepress/**/*.vue"],
+    languageOptions: {
+      parser: vueParser,
+      sourceType: "module",
+      parserOptions: {
+        parser: {
+          "js": "espree",
+          "ts": tsParser,
+          "<template>": "espree",
+        },
+      },
+    },
+    rules: {
+      "stylistic/indent": 0,
+      "vue/script-indent": [1, 2],
+      "vue/html-indent": [1, 2],
+      "vue/singleline-html-element-content-newline": 0,
+      "vue/no-v-html": 0,
+      "vue/html-self-closing": 0,
     },
   },
 ];
