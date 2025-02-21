@@ -41,7 +41,7 @@ onMounted(() => {
   <div>
     <input
       ref="read-this-aloud"
-      class="rounded-md border w-100 text-xs"
+      class="rounded-md border-1 w-100 text-xs focus:shadow-[var(--vp-c-text-3)]/50 shadow-md mb-[0.5rem]"
       value="Workers of the world, unite! You have nothing to lose but your chains!"
     />
     <VPButton
