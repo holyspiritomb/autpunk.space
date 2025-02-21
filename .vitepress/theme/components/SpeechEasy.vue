@@ -41,13 +41,14 @@ onMounted(() => {
   <div>
     <input
       ref="read-this-aloud"
-      class="rounded-md border-1 w-100 text-xs focus:shadow-[var(--vp-c-text-3)]/50 shadow-md mb-[0.5rem]"
+      class="rounded-md border-1 w-65 text-xs focus:shadow-[var(--vp-c-text-3)]/50 shadow-md m-[0.5rem]"
       value="Workers of the world, unite! You have nothing to lose but your chains!"
     />
-    <VPButton
-      theme="brand"
-      :text="buttonText"
+    <button
+      class="rounded-lg p-3 border-1 text-sm focus:shadow-[var(--vp-c-text-3)]/50 shadow-md m-[0.5rem]"
       @click="speechMe(textToSynthesize.value)"
-    />
+    >
+      {{ buttonText }}
+    </button>
   </div>
 </template>
