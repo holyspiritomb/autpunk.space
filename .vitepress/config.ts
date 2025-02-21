@@ -1,54 +1,32 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
-import type { PluginOption, UserConfig } from "vite";
-import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
-import Terminal from "vite-plugin-terminal";
-import type { LogsOutput } from "vite-plugin-terminal";
-import markdownFootnote from "markdown-it-footnote";
-import vueDevTools from "vite-plugin-vue-devtools";
-import { NodePackageImporter } from "sass-embedded";
 import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import MarkdownItLabel from "@sirenia/markdown-it-label";
 import markdownItAttrs from "markdown-it-attrs";
+import markdownFootnote from "markdown-it-footnote";
+import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
+import Terminal from "vite-plugin-terminal";
+import vueDevTools from "vite-plugin-vue-devtools";
+import { NodePackageImporter } from "sass-embedded";
 import Components from "unplugin-vue-components/vite";
-import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
-import UnoCSS from "unocss/vite";
-import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
-// import { fileURLToPath, URL } from "node:url";
+import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
+import IconsResolver from "unplugin-icons/resolver";
+import UnoCSS from "unocss/vite";
 
-// const testUrl = fileURLToPath(
-//   new URL("./theme/components/VPDocCustom.vue", import.meta.url),
-// );
+import type { PluginOption, UserConfig } from "vite";
+import type { LogsOutput } from "vite-plugin-terminal";
 
-// Vite options {{{
-
-// Vite plugin options {{{
-
-/* eslint-disable no-var */
-var pluginArray: PluginOption;
-var outDirVar: string;
-var terminalOutputOpts: LogsOutput = ["terminal"];
-/* eslint-enable no-var */
-
-if (process.env.GITHUBRUNNER === "push") {
-  outDirVar = "../web/autpunk.space/public_html";
-  pluginArray = [];
-} else {
-  // I know this is hacky okay
-  if (process.env.ZSH === "/usr/share/oh-my-zsh") {
-    outDirVar = "./dist";
-    terminalOutputOpts.push("console");
-  } else {
-    outDirVar = "../web/autpunk.space/public_html";
-  }
-  pluginArray = [
-    vueDevTools(),
-  ];
-}
+const extraPlugins: PluginOption = process.env.GITHUBRUNNER === "push" ? [] : [vueDevTools()];
+const terminalOutputOpts: LogsOutput = process.env.GITHUBRUNNER === "push" ? ["terminal"]
+  : process.env.ZSH === "/usr/share/oh-my-zsh" ? ["terminal", "console"]
+    : ["terminal"];
+const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.space/public_html"
+  : process.env.ZSH === "/usr/share/oh-my-zsh" ? "./dist"
+    : "../web/autpunk.space/public_html";
 
 const vitePlugins: PluginOption = [
-  ...pluginArray,
+  ...extraPlugins,
   groupIconVitePlugin(),
   UnoCSS(),
   Components({
@@ -70,7 +48,6 @@ const vitePlugins: PluginOption = [
     isLongHash: true,
   }),
 ];
-// }}}
 
 const viteOptions: UserConfig = {
   css: {
@@ -92,18 +69,13 @@ const viteOptions: UserConfig = {
         find: /^~([^/])/, 
         replacement: "$1",
       },
-      // {
-      //   find: /^.\/VPDoc\.vue$/,
-      //   replacement: testUrl,
-      // },
     ],
   },
 };
 
-// }}}
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: viteOptions,
   title: "Autpunk Space",
   base: "/",
   // titleTemplate: 'Autpunk Dot Space',
@@ -116,9 +88,10 @@ export default defineConfig({
   lastUpdated: true,
   appearance: "dark",
   srcDir: "./src",
-  outDir: outDirVar,
+  outDir: distDir,
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
+    // {{{
     theme: {
       light: "snazzy-light",
       dark: "poimandres",
@@ -142,15 +115,14 @@ export default defineConfig({
         '<ol class="footnotes-list">\n'
         /* eslint-enable stylistic/quotes */
       );
-    },
+    }, // }}}
   },
   sitemap: {
     hostname: "https://autpunk.space",
   },
-  vite: viteOptions,
+
   themeConfig: { 
-    // {{{
-    logo: "/rainbow_space.png",
+    logo: "/rainbow_space.png", // TODO: add sizes
     externalLinkIcon: true,
     editLink: {
       text: "Edit",
@@ -165,6 +137,7 @@ export default defineConfig({
       // { text: "Vitepress Resources", link: "/vitepress-default" },
     ],
     search: {
+      // {{{
       provider: "local",
       options: {
         miniSearch: {
@@ -183,10 +156,10 @@ export default defineConfig({
             /* ... */
           },
         },
-      },
+      }, // }}}
     },
-    sidebar: generateSidebar({
-      capitalizeFirst: true,
+    sidebar: generateSidebar({ 
+      capitalizeFirst: true, // {{{
       collapsed: true,
       // debugPrint: true,
       documentRootPath: "/src",
@@ -200,12 +173,13 @@ export default defineConfig({
       useFolderTitleFromIndexFile: true,
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
-      manualSortFileNameByPriority: ["fragments.md"],
+      manualSortFileNameByPriority: ["fragments.md"], // }}}
     }),
     socialLinks: [
       { icon: "vitepress", ariaLabel: "source repository for this site", link: "https://github.com/holyspiritomb/autpunk.space" },
       { icon: "github", ariaLabel: "my github profile", link: "https://github.com/holyspiritomb" },
       { icon: "gitlab", ariaLabel: "my gitlab profile", link: "https://gitlab.com/holyspiritomb" },
+      { icon: "bluesky", ariaLabel: "my bluesky", link: "https://bsky.app/profile/spiritomb.bsky.social" },
     ],
 
     lastUpdated: {
@@ -219,6 +193,5 @@ export default defineConfig({
       message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
       copyright: "Copyright © 2025-present Hezekiah Michael",
     },
-    // }}}
   },
 });
