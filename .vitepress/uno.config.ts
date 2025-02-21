@@ -10,6 +10,7 @@ import {
 export default defineConfig({
   shortcuts: {
     "border-main": "border-$vp-c-divider",
+    "btn": "rounded-full shadow-md",
   },
   presets: [
     presetUno(),

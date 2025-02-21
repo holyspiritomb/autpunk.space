@@ -1,6 +1,6 @@
-@use 'sass:color';
-@use 'pkg:@rose-pine/palette/dist/css/rose-pine.css' as *;
-@use 'pkg:@catppuccin/palette/css/catppuccin.css' as *;
+@use "sass:color";
+@use "pkg:@rose-pine/palette/dist/css/rose-pine.css" as *;
+@use "pkg:@catppuccin/palette/css/catppuccin.css" as *;
 
 :root {
   --vp-code-font-size: 0.77rem;
@@ -11,11 +11,7 @@
     #04a5e5
   );
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #ea76cb 50%,
-    #04a5e5 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%);
   --vp-home-hero-image-filter: blur(44px);
   --vp-badge-info-text: var(--vp-custom-block-info-text);
   --vp-badge-info-bg: var(--vp-custom-block-info-bg);
@@ -61,24 +57,24 @@
 }
 
 .mdi-label {
-    padding: .2em .6em .3em;
-    font-size: 85%;
-    font-weight: 600;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .85em;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 85%;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.85em;
 }
 
-.mdi-label[style="background-color:rgb(255, 255, 0);"]{
+.mdi-label[style="background-color:rgb(255, 255, 0);"] {
   background-color: var(--rp-gold) !important;
 }
-.mdi-label[style="background-color:rgb(255, 0, 255);"]{
+.mdi-label[style="background-color:rgb(255, 0, 255);"] {
   background-color: var(--rp-moon-love) !important;
 }
-.mdi-label[style="background-color:rgb(0, 255, 255);"]{
+.mdi-label[style="background-color:rgb(0, 255, 255);"] {
   background-color: var(--ctp-mocha-sky) !important;
 }
-.mdi-label[style="background-color:rgb(0, 255, 0);"]{
+.mdi-label[style="background-color:rgb(0, 255, 0);"] {
   background-color: var(--ctp-mocha-green) !important;
 }
 
@@ -95,7 +91,7 @@
   color: var(--ctp-mocha-base);
 }
 
-.group:has([role='button']) .VPSidebarItem.level-0 .items {
+.group:has([role="button"]) .VPSidebarItem.level-0 .items {
   padding-left: 16px !important;
   border-left: 1px solid var(--vp-c-divider);
   border-radius: 2px;
@@ -107,4 +103,20 @@
   background: var(--vp-c-bg-elv);
   padding: 1em;
   margin-right: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .VPHero.has-image.VPHomeHero > .container > .image > .image-container {
+    & > .VPImage.image-src {
+      clip-path: url("/heart.svg#heartClip");
+    }
+  }
+}
+
+@supports (-moz-animation-delay:initial) {
+  .VPHero.has-image.VPHomeHero > .container > .image > .image-container {
+    background-image: url("/blur.svg");
+    background-position: center center;
+    background-repeat: none;
+  }
 }

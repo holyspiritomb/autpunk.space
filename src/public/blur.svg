@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="400px" width="400px">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="30%" stop-color="#ea76cb" />
+      <stop offset="100%" stop-color="#00000000" />
+    </radialGradient>
+    <radialGradient id="bluegrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="30%" stop-color="#04a5e5" />
+      <stop offset="100%" stop-color="#04a5e500" />
+    </radialGradient>
+    <filter id="gblur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+    </filter>
+  </defs>
+  <!-- <circle cx="50%" cy="50%" r="75" fill="url(#grad2)" filter="url(#gblur)"/> -->
+  <circle cx="50%" cy="50%" r="200" fill="url(#grad1)" fill-opacity="0.8" filter="url(#gblur)"/>
+  <circle cx="45%" cy="45%" r="150" fill="url(#bluegrad)" fill-opacity="0.8" transform="120 120" filter="url(#gblur)"/>
+</svg>
