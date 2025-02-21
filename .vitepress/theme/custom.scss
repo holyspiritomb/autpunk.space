@@ -105,7 +105,7 @@
   margin-right: 1em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .VPHero.has-image.VPHomeHero > .container > .image > .image-container {
     & > .VPImage.image-src {
       clip-path: url("/heart.svg#heartClip");
@@ -118,5 +118,10 @@
     background-image: url("/blur.svg");
     background-position: center center;
     background-repeat: none;
+    background-size: contain;
+
+    /* & > .VPImage.image-src { */
+    /*   clip-path: url("/heart.svg#heartClip"); */
+    /* } */
   }
 }
