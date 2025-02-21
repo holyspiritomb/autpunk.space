@@ -127,12 +127,13 @@ export default defineConfig({
     linkify: true,
     config: (md) => {
       md.use(markdownFootnote);
+      md.use(markdownItAttrs);
+      md.use(groupIconMdPlugin);
       md.use(MarkdownItLabel, {
         cssClassLabel: "mdi-label",
         cssClassTextLight: "mdi-label-text-light",
         cssClassTextDark: "mdi-label-text-dark",
       });
-      md.use(markdownItAttrs);
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +
@@ -141,7 +142,6 @@ export default defineConfig({
         '<ol class="footnotes-list">\n'
         /* eslint-enable stylistic/quotes */
       );
-      md.use(groupIconMdPlugin);
     },
   },
   sitemap: {
@@ -161,8 +161,8 @@ export default defineConfig({
       { text: "Projects", link: "/projects" },
       { text: "Thought Fossils", link: "/thought-fossils" },
       { text: "Unsorted Fragments", link: "/unsorted-fragments" },
-      { text: "Other People", link: "/other-people" },
-      { text: "Vitepress Resources", link: "/vitepress-default" },
+      // { text: "Other People", link: "/other-people" },
+      // { text: "Vitepress Resources", link: "/vitepress-default" },
     ],
     search: {
       provider: "local",
