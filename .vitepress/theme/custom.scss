@@ -25,7 +25,6 @@
 .dark {
   --vp-c-bg: var(--rp-surface);
   --vp-nav-bg-color: var(--rp-base);
-  /* --vp-local-nav-bg-color: var(--rp-base); */
   --vp-c-bg-alt: var(--rp-base);
   --vp-c-bg-elv: var(--rp-overlay);
   --vp-c-bg-soft: var(--rp-overlay);
@@ -70,6 +69,7 @@
 }
 .mdi-label[style="background-color:rgb(255, 0, 255);"] {
   background-color: var(--rp-moon-love) !important;
+  color: #000000;
 }
 .mdi-label[style="background-color:rgb(0, 255, 255);"] {
   background-color: var(--ctp-mocha-sky) !important;
@@ -85,32 +85,11 @@
   color: white;
 }
 
-.construction::after {
-  content: "under construction";
-  background-color: var(--ctp-mocha-yellow);
-  color: var(--ctp-mocha-base);
-}
-
 .group:has([role="button"]) .VPSidebarItem.level-0 .items {
   padding-left: 16px !important;
   border-left: 1px solid var(--vp-c-divider);
   border-radius: 2px;
   transition: background-color 0.25s;
-}
-
-.vp-doc h2#speech + div input {
-  /* border: 1px solid var(--ctp-mocha-red); */
-  background: var(--vp-c-bg-elv);
-  padding: 1em;
-  margin-right: 1em;
-}
-
-@media only screen and (max-width: 500px) {
-  .VPHero.has-image.VPHomeHero > .container > .image > .image-container {
-    & > .VPImage.image-src {
-      clip-path: url("/heart.svg#heartClip");
-    }
-  }
 }
 
 @supports (-moz-animation-delay:initial) {
@@ -119,9 +98,5 @@
     background-position: center center;
     background-repeat: none;
     background-size: contain;
-
-    /* & > .VPImage.image-src { */
-    /*   clip-path: url("/heart.svg#heartClip"); */
-    /* } */
   }
 }

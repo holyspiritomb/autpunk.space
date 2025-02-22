@@ -8,7 +8,7 @@ hero:
   text: here lies andy
   tagline: peperony and chease
   image:
-    src: /rainbow_space.png
+    src: /heart.svg
     alt: A Milky Way galaxy emoji with a rainbow filter over it, clipped into a heart shape at .
   # actions:
   #   - theme: brand

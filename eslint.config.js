@@ -7,10 +7,12 @@ import globals from 'globals';
 import eslint from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
 import vueParser from "vue-eslint-parser";
+import unocss from '@unocss/eslint-config/flat';
 
 const tsParser = tseslint.parser;
 /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
 export default [
+  unocss,
   eslint.configs.recommended,
   // StylisticPlugin.configs['recommended-flat'],
   ...tseslint.configs.recommended.map(config => ({

@@ -9,8 +9,7 @@ import {
 
 export default defineConfig({
   shortcuts: {
-    "border-main": "border-$vp-c-divider",
-    "btn": "rounded-full shadow-md",
+    "btn": "rounded-lg shadow-md py-2 px-4 font-bold",
   },
   presets: [
     presetUno(),

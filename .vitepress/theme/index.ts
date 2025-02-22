@@ -11,6 +11,7 @@ import "uno.css";
 import { VPButton } from "vitepress/theme-without-fonts";
 import LayoutBottom from "./components/LayoutBottom.vue";
 import SpeechEasy from "./components/SpeechEasy.vue";
+import CustomHeroImg from "./components/CustomHeroImg.vue";
 
 export default {
   extends: DefaultTheme,
@@ -18,6 +19,7 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       "layout-bottom": () => h(LayoutBottom),
+      "home-hero-image": () => h(CustomHeroImg),
     });
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -13,6 +13,7 @@ import Icons from "unplugin-icons/vite";
 import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 import IconsResolver from "unplugin-icons/resolver";
 import UnoCSS from "unocss/vite";
+import svgLoader from "vite-svg-loader";
 
 import type { PluginOption, UserConfig } from "vite";
 import type { LogsOutput } from "vite-plugin-terminal";
@@ -29,6 +30,7 @@ const vitePlugins: PluginOption = [
   ...extraPlugins,
   groupIconVitePlugin(),
   UnoCSS(),
+  svgLoader(),
   Components({
     dirs: [".vitepress/theme/components"],
     extensions: ["vue", "md"],
