@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import EasySpeech from "easy-speech";
-import { VPButton } from "vitepress/theme-without-fonts";
 import { useTemplateRef, onMounted, ref } from 'vue';
 
 const speechMe = (textInput) => {
@@ -41,11 +40,11 @@ onMounted(() => {
   <div>
     <input
       ref="read-this-aloud"
-      class="rounded-md border-1 focus:outline-1 focus:outline-blue-400 w-60 text-sm shadow-blue-400/50 focus:shadow-blue-400 shadow-md m-[0.5rem] h-[3rem]"
+      class="w-70 input"
       value="Workers of the world, unite! You have nothing to lose but your chains!"
     />
     <button
-      class="rounded-xl float-right bg-blue-400 text-bold text-black p-3 border-1 text-sm focus:shadow-blue-500/50 shadow-md m-[0.5rem] h-[3rem] pl-4 pr-4"
+      class="float-right max-w-20 text-sm btn"
       @click="speechMe(textToSynthesize.value)"
     >
       {{ buttonText }}

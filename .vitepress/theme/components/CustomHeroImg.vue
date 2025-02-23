@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HeroSvg from "../../../src/heart.svg?component";
+import HeroSvg from "../../../heart.svg?component";
 </script>
 
 <template>

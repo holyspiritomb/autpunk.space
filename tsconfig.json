@@ -3,8 +3,16 @@
   "include": [
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
-    "src/**/*",
-    "src/**/*.md",
-    "src/components.d.ts"
+    "other-people/**/*.md",
+    "projects/**/*.md",
+    "thought-fossils/**/*.md",
+    "unsorted-fragments/**/*.md",
+    "vitepress-default/**/*.md",
+    "components.d.ts"
   ],
+  "vueCompilerOptions": {
+    "vitePressExtensions": [
+      ".md"
+    ]
+  }
 }

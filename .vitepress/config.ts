@@ -1,83 +1,21 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
-import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
-import MarkdownItLabel from "@sirenia/markdown-it-label";
+import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
+// import MarkdownItLabel from "@sirenia/markdown-it-label";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
-import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
-import Terminal from "vite-plugin-terminal";
-import vueDevTools from "vite-plugin-vue-devtools";
-import { NodePackageImporter } from "sass-embedded";
-import Components from "unplugin-vue-components/vite";
-import Icons from "unplugin-icons/vite";
-import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
-import IconsResolver from "unplugin-icons/resolver";
-import UnoCSS from "unocss/vite";
-import svgLoader from "vite-svg-loader";
 
-import type { PluginOption, UserConfig } from "vite";
-import type { LogsOutput } from "vite-plugin-terminal";
 
-const extraPlugins: PluginOption = process.env.GITHUBRUNNER === "push" ? [] : [vueDevTools()];
-const terminalOutputOpts: LogsOutput = process.env.GITHUBRUNNER === "push" ? ["terminal"]
-  : process.env.ZSH === "/usr/share/oh-my-zsh" ? ["terminal", "console"]
-    : ["terminal"];
+if (process.env.NODE_ENV === "development") {
+  console.debug("Vitepress env:\n", process.env);
+}
+
 const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.space/public_html"
   : process.env.ZSH === "/usr/share/oh-my-zsh" ? "./dist"
     : "../web/autpunk.space/public_html";
 
-const vitePlugins: PluginOption = [
-  ...extraPlugins,
-  groupIconVitePlugin(),
-  UnoCSS(),
-  svgLoader(),
-  Components({
-    dirs: [".vitepress/theme/components"],
-    extensions: ["vue", "md"],
-    include: [/\.(vue|md)($|\?)/],
-    dts: true,
-    resolvers: [
-      VueUseComponentsResolver(),
-      IconsResolver(),
-    ],
-  }),
-  Icons(),
-  Terminal({
-    console: "terminal",
-    output: terminalOutputOpts,
-  }),
-  gitCommitHashPlugin({
-    isLongHash: true,
-  }),
-];
-
-const viteOptions: UserConfig = {
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: "modern-compiler",
-        importers: [new NodePackageImporter()],
-      },
-    },
-    devSourcemap: true,
-  },
-  define: {
-    BUILD_DATE: JSON.stringify(new Date().toUTCString()),
-  },
-  plugins: vitePlugins,
-  resolve: {
-    alias: [
-      {
-        find: /^~([^/])/, 
-        replacement: "$1",
-      },
-    ],
-  },
-};
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  vite: viteOptions,
   title: "Autpunk Space",
   base: "/",
   // titleTemplate: 'Autpunk Dot Space',
@@ -89,7 +27,6 @@ export default defineConfig({
   lang: "en-US",
   lastUpdated: true,
   appearance: "dark",
-  srcDir: "./src",
   outDir: distDir,
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
@@ -104,11 +41,11 @@ export default defineConfig({
       md.use(markdownFootnote);
       md.use(markdownItAttrs);
       md.use(groupIconMdPlugin);
-      md.use(MarkdownItLabel, {
-        cssClassLabel: "mdi-label",
-        cssClassTextLight: "mdi-label-text-light",
-        cssClassTextDark: "mdi-label-text-dark",
-      });
+      // md.use(MarkdownItLabel, {
+      //   cssClassLabel: "mdi-label",
+      //   cssClassTextLight: "mdi-label-text-light",
+      //   cssClassTextDark: "mdi-label-text-dark",
+      // });
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +
@@ -136,7 +73,7 @@ export default defineConfig({
       { text: "Thought Fossils", link: "/thought-fossils" },
       { text: "Unsorted Fragments", link: "/unsorted-fragments" },
       // { text: "Other People", link: "/other-people" },
-      // { text: "Vitepress Resources", link: "/vitepress-default" },
+      { text: "Demo", link: "/vitepress-default/components" },
     ],
     search: {
       // {{{

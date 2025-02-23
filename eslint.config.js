@@ -74,7 +74,7 @@ export default [
     language: "markdown/gfm",
   },
   {
-    files: ["eslint.config.js"],
+    files: ["eslint.config.js", ".vitepress/uno.config.ts"],
     plugins: {
       stylistic: StylisticPlugin,
     },
