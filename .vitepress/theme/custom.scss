@@ -21,10 +21,10 @@
   --vp-badge-warning-bg: var(--vp-custom-block-warning-bg);
   --vp-badge-warning-text: var(--vp-custom-block-warning-text);
   --vp-button-alt-bg: rgb(var(--ctp-mocha-pink-rgb) / 1 );
-  --vp-c-bg-soft: rgb(var(--ctp-mocha-pink-rgb) / .5);
+  /* --vp-c-bg-soft: rgb(var(--ctp-mocha-pink-rgb) / .5); */
   /* --vp-c-gutter: rgb(var(--ctp-latte-base-rgb) / 1); */
   /* --vp-code-block-bg: rgb(var(--ctp-latte-pink-rgb) / 1); */
-  /* --vp-code-lang-color: var(--ctp-latte-sky); */
+  --vp-code-lang-color: var(--ctp-latte-sky);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
@@ -33,17 +33,17 @@
   --vp-button-alt-text: var(--ctp-mocha-base);
   /* --vp-c-bg-alt: rgb(var(--ctp-mocha-pink-rgb) / 0.05); */
   /* --vp-c-bg-elv: var(--rp-overlay); */
-  --vp-c-bg-soft: rgb(var(--ctp-mocha-mantle-rgb));
+  /* --vp-c-bg-soft: rgb(var(--ctp-mocha-mantle-rgb)); */
   /* --vp-c-bg: var(--rp-surface); */
-  --vp-c-border: rgb(var(--ctp-mocha-sky-rgb) / 0.5);
-  /* --vp-c-divider: var(--rp-highlight-med); */
+  /* --vp-c-border: rgb(var(--ctp-mocha-sky-rgb) / 0.2); */
+  /* --vp-c-divider: rgb(var(--ctp-mocha-sky-rgb) / 0.4); */
   /* --vp-c-gutter: rgb(var(--ctp-mocha-sky) / 1); */
   --vp-code-lang-color: var(--ctp-macchiato-sky);
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
   --vp-custom-block-info-text: var(--ctp-mocha-sky);
   --vp-custom-block-tip-text: var(--ctp-mocha-green);
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
-  --vp-nav-bg-color: var(--rp-base);
+  /* --vp-nav-bg-color: var(--rp-base); */
 }
 
 .footnotes {
@@ -58,6 +58,25 @@
   border-left: 1px solid var(--vp-c-divider);
   border-radius: 2px;
   transition: background-color 0.25s;
+}
+
+.VPHomeFeatures {
+  .VPFeature.VPLink {
+    background-color: rgb(var(--ctp-mocha-pink-rgb) / .5);
+    border-color: rgb(var(--ctp-mocha-pink-rgb) / .7);
+  }
+  div.icon {
+    background-color: rgb(var(--ctp-mocha-pink-rgb) / .5);
+  }
+}
+.dark .VPHomeFeatures {
+  .VPFeature.VPLink {
+    background-color: rgb(var(--ctp-mocha-crust-rgb) / .3);
+    border-color: rgb(var(--ctp-mocha-crust-rgb) / .5);
+  }
+  div.icon {
+    background-color: rgb(var(--ctp-mocha-crust-rgb) / .5);
+  }
 }
 
 @supports (-moz-animation-delay:initial) {
