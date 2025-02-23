@@ -10,6 +10,11 @@
     "vitepress-default/**/*.md",
     "components.d.ts"
   ],
+  "compilerOptions": {
+    "types": [
+      "unplugin-icons/types/vue"
+    ]
+  },
   "vueCompilerOptions": {
     "vitePressExtensions": [
       ".md"

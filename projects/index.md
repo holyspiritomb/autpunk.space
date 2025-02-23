@@ -13,6 +13,6 @@ Sometimes I do things.
 
 [Available Reads](forks/available-reads) <Badge type="info">webextension</Badge>
 
-[pyXyzzy](forks/pyxyzzy) <Badge type="info">game</Badge> <i-devicon-react />
+[pyXyzzy](forks/pyxyzzy) <Badge type="info">game</Badge>
 
 ## Original <Badge type="warning">under construction</Badge>

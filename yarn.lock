@@ -961,6 +961,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/mdi@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@iconify-json/mdi@npm:1.2.3"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/4d11426abba03464e5ebe4675c87cc39c720e54b7c28265ff9ccd93f229a51f7616bb0a8f1c01412eac3cc9a1ebdc0a122bbaa3395c14d30834d96f8a141e96d
+  languageName: node
+  linkType: hard
+
 "@iconify-json/simple-icons@npm:^1.2.21":
   version: 1.2.24
   resolution: "@iconify-json/simple-icons@npm:1.2.24"
@@ -1407,15 +1416,6 @@ __metadata:
   version: 4.0.0
   resolution: "@sindresorhus/merge-streams@npm:4.0.0"
   checksum: 10c0/482ee543629aa1933b332f811a1ae805a213681ecdd98c042b1c1b89387df63e7812248bb4df3910b02b3cc5589d3d73e4393f30e197c9dde18046ccd471fc6b
-  languageName: node
-  linkType: hard
-
-"@sirenia/markdown-it-label@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@sirenia/markdown-it-label@npm:2.0.4"
-  peerDependencies:
-    markdown-it: ">=5"
-  checksum: 10c0/3084aa3081d08a5a132890491d3113333c90a0a8d4a31a405a734dd482568117c23faf9c298e673ae21fcef4d87248fe9811fcf4f2bee1110ed76aa341aa9b3a
   languageName: node
   linkType: hard
 
@@ -2595,9 +2595,9 @@ __metadata:
     "@fontsource/zilla-slab": "npm:^5.1.1"
     "@iconify-json/carbon": "npm:^1.2.7"
     "@iconify-json/devicon": "npm:^1.2.16"
+    "@iconify-json/mdi": "npm:^1.2.3"
     "@infolektuell/noto-color-emoji": "npm:^0.2.0"
     "@rose-pine/palette": "npm:^4.0.1"
-    "@sirenia/markdown-it-label": "npm:^2.0.4"
     "@stylistic/eslint-plugin": "npm:^3.0.1"
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-plugin-markdown": "npm:^2.0.2"

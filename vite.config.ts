@@ -12,7 +12,6 @@ import { NodePackageImporter } from "sass-embedded";
 import svgLoader from "vite-svg-loader";
 import type { PluginOption } from "vite";
 import type { LogsOutput } from "vite-plugin-terminal";
-import tsConfigPaths from "vite-tsconfig-paths";
 
 // if (process.env.NODE_ENV === "development") {
 //   console.debug("Vite env:\n", process.env);
@@ -23,10 +22,10 @@ const terminalOutputOpts: LogsOutput = process.env.NODE_ENV === "development" ? 
 
 const vitePlugins: PluginOption = [
   ...devOnlyPlugins,
-  tsConfigPaths(),
   UnoCSS(),
   groupIconVitePlugin(),
   svgLoader(),
+  Icons(),
   Components({
     dirs: [".vitepress/theme/components"],
     extensions: ["vue", "md"],
@@ -37,7 +36,6 @@ const vitePlugins: PluginOption = [
       IconsResolver(),
     ],
   }),
-  Icons(),
   Terminal({
     console: "terminal",
     output: terminalOutputOpts,

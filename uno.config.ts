@@ -1,11 +1,9 @@
 import {
   defineConfig,
   presetAttributify,
-  presetIcons,
   transformerDirectives,
   transformerVariantGroup,
 } from "unocss";
-import presetTagify from "@unocss/preset-tagify";
 import presetWind from "@unocss/preset-wind3";
 import { presetCatppuccin } from "unocss-catppuccin";
 
@@ -17,11 +15,6 @@ export default defineConfig({
       prefix: false,
     }),
     presetAttributify(),
-    presetTagify(),
-    presetIcons({
-      scale: 1.2,
-      warn: true,
-    }),
   ],
   shortcuts: {
     "btn": "rounded-full shadow-md py-2 px-4 bg-pink-200 dark:bg-pink-500 font-bold border-pink outline-pink outline-1 shadow-pink-500/50 m-[0.5rem] h-[3rem] focus:shadow-pink-500 active:shadow-lg border-1 p-3",

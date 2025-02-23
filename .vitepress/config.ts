@@ -27,6 +27,7 @@ export default defineConfig({
   lang: "en-US",
   lastUpdated: true,
   appearance: "dark",
+  srcDir: "./",
   outDir: distDir,
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
@@ -65,7 +66,7 @@ export default defineConfig({
     externalLinkIcon: true,
     editLink: {
       text: "Edit",
-      pattern: "https://github.com/holyspiritomb/autpunk.space/edit/main/src/:path",
+      pattern: "https://github.com/holyspiritomb/autpunk.space/edit/main/:path",
     },
     nav: [
       { text: "Home", link: "/" },
@@ -100,10 +101,10 @@ export default defineConfig({
     sidebar: generateSidebar({ 
       capitalizeFirst: true, // {{{
       collapsed: true,
-      // debugPrint: true,
-      documentRootPath: "/src",
+      debugPrint: true,
+      documentRootPath: "./",
       excludeFilesByFrontmatterFieldName: "exclude",
-      excludePattern: ["README", "LICENSE", "vitepress-default", "fragments.md"],
+      excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
       includeEmptyFolder: false,
       // includeFolderIndexFile: true,
       includeRootIndexFile: true,
