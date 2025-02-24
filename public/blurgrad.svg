@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="400px" width="400px">
+  <defs>
+    <linearGradient id="lineargrad" gradientTransform="rotate(45)">
+      <stop offset="55%" stop-color="#ea76cb" />
+      <stop offset="95%" stop-color="#04a5e5" />
+    </linearGradient>
+    <filter id="filterblur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="44" />
+    </filter>
+  </defs>
+  <circle cx="45%" cy="45%" r="150" fill="url(#lineargrad)" fill-opacity="0.9" filter="url(#filterblur)" transform=""/>
+</svg>

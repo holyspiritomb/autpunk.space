@@ -81,9 +81,11 @@
 
 @supports (-moz-animation-delay:initial) {
   .VPHero.has-image.VPHomeHero > .container > .image > .image-container {
-    /* background-image: url("/blur.svg"); */
-    /* background-position: center center; */
-    /* background-repeat: none; */
-    /* background-size: contain; */
+    .image-bg {
+      background-image: url("/blurgrad.svg");
+      /* background-position: center center; */
+      /* background-repeat: none; */
+      /* background-size: contain; */
+    }
   }
 }
