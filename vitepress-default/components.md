@@ -67,3 +67,22 @@ Output:
 ## Speech
 
 <SpeechEasy/>
+
+## Icons via UnoCSS
+
+<div i-carbon-play-filled></div>
+<div i-carbon-pause-outline-filled></div>
+<div i-carbon-stop-filled></div>
+<div i-carbon-stop-outline-filled></div>
+<div i-carbon-logo-vue></div>
+<div i-mdi-play-circle></div>
+<div i-mdi-pause-circle></div>
+<div i-mdi-stop-circle></div>
+<div i-mdi-language-markdown></div>
+<div i-devicon-vitejs></div>
+<div i-devicon-archlinux></div>
+<div i-devicon-react></div>
+<div i-devicon-npm></div>
+<div i-devicon-vscode></div>
+<div i-devicon-vuejs></div>
+<div i-catppuccin-vue></div>

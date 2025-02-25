@@ -6,9 +6,9 @@ import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
 
 
-if (process.env.NODE_ENV === "development") {
-  console.debug("Vitepress env:\n", process.env);
-}
+// if (process.env.NODE_ENV === "development") {
+//   console.debug("Vitepress env:\n", process.env);
+// }
 
 const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.space/public_html"
   : process.env.ZSH === "/usr/share/oh-my-zsh" ? "./dist"
@@ -101,7 +101,7 @@ export default defineConfig({
     sidebar: generateSidebar({ 
       capitalizeFirst: true, // {{{
       collapsed: true,
-      debugPrint: true,
+      // debugPrint: true,
       documentRootPath: "./",
       excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
