@@ -1,12 +1,26 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="400px" width="400px">
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
   <defs>
     <linearGradient id="lineargrad" gradientTransform="rotate(45)">
-      <stop offset="55%" stop-color="#ea76cb" />
-      <stop offset="95%" stop-color="#04a5e5" />
+      <stop offset="30%" stop-color="#04a5e5"/>
+      <stop offset="100%" stop-color="#ea76cb"/>
     </linearGradient>
-    <filter id="filterblur">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="44" />
+    <radialGradient id="radpink">
+      <stop offset="0%" stop-color="#ea76cb" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ea76cb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radblue">
+      <stop offset="0%" stop-color="#04a5e5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#04a5e5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="15" />
     </filter>
   </defs>
-  <circle cx="45%" cy="45%" r="150" fill="url(#lineargrad)" fill-opacity="0.9" filter="url(#filterblur)" transform=""/>
+  <!-- <rect x="150" y="150" width="500" height="500" fill="white" stroke="black" id="rectangle"/> -->
+  <!-- <circle cx="350" cy="350" r="125" fill="url(#radblue)" /> -->
+  <!-- <circle cx="450" cy="450" r="125" fill="url(#radpink)" /> -->
+  <circle cx="400" cy="400" r="400" fill="url(#radpink)" />
+  <!-- <circle cx="375" cy="425" r="125" fill="url(#lineargrad)" filter="url(#blur)" fill-opacity="0.5" /> -->
+  <!-- <circle cx="425" cy="375" r="125" fill="url(#lineargrad)" filter="url(#blur)" fill-opacity="0.5"/> -->
 </svg>
