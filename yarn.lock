@@ -2935,7 +2935,6 @@ __metadata:
     typescript-eslint: "npm:^8.21.0"
     unocss: "npm:66.0.0"
     unocss-preset-catppuccin: "npm:^0.1.0"
-    unplugin-icons: "npm:22.1.0"
     unplugin-vue-components: "npm:28.4.0"
     victormono: "npm:^1.5.6"
     vite: "npm:^6.2.0"
@@ -7152,39 +7151,6 @@ __metadata:
     vite:
       optional: true
   checksum: 10c0/93f092f5b186e314b98fb873c03945976d1aacd366acc795dc8e48c09198b5a44c618a0275ac802438c1955f1ca8750cb0583a8d0c14bf793330ec4afa052225
-  languageName: node
-  linkType: hard
-
-"unplugin-icons@npm:22.1.0":
-  version: 22.1.0
-  resolution: "unplugin-icons@npm:22.1.0"
-  dependencies:
-    "@antfu/install-pkg": "npm:^1.0.0"
-    "@iconify/utils": "npm:^2.3.0"
-    debug: "npm:^4.4.0"
-    local-pkg: "npm:^1.0.0"
-    unplugin: "npm:^2.2.0"
-  peerDependencies:
-    "@svgr/core": ">=7.0.0"
-    "@svgx/core": ^1.0.1
-    "@vue/compiler-sfc": ^3.0.2 || ^2.7.0
-    svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
-    vue-template-compiler: ^2.6.12
-    vue-template-es2015-compiler: ^1.9.0
-  peerDependenciesMeta:
-    "@svgr/core":
-      optional: true
-    "@svgx/core":
-      optional: true
-    "@vue/compiler-sfc":
-      optional: true
-    svelte:
-      optional: true
-    vue-template-compiler:
-      optional: true
-    vue-template-es2015-compiler:
-      optional: true
-  checksum: 10c0/febed00f6e65bc0ef0e07005d7bef3ec0dbb7a8077bd73c7ad798c705814a40b3172d5f3e7df0d9f9fdfda1b6dd1a31922c0f9f32123623872bb7117c35545cc
   languageName: node
   linkType: hard
 

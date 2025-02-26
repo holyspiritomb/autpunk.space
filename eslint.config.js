@@ -28,7 +28,8 @@ export default [
       ".vitepress/cache/",
       "LICENSE.md",
       "dist/",
-      "src/public/",
+      "public/",
+      "node_modules/",
     ],
   },
   {
@@ -55,7 +56,7 @@ export default [
     },
   },
   {
-    files: ["src/**.md"],
+    files: ["**.md"],
     plugins: {
       markdown,
     },
@@ -74,7 +75,7 @@ export default [
     language: "markdown/gfm",
   },
   {
-    files: ["eslint.config.js", ".vitepress/uno.config.ts"],
+    files: ["eslint.config.js", "uno.config.ts"],
     plugins: {
       stylistic: StylisticPlugin,
     },

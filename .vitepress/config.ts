@@ -1,7 +1,6 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
-// import MarkdownItLabel from "@sirenia/markdown-it-label";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
 
@@ -42,11 +41,6 @@ export default defineConfig({
       md.use(markdownFootnote);
       md.use(markdownItAttrs);
       md.use(groupIconMdPlugin);
-      // md.use(MarkdownItLabel, {
-      //   cssClassLabel: "mdi-label",
-      //   cssClassTextLight: "mdi-label-text-light",
-      //   cssClassTextDark: "mdi-label-text-dark",
-      // });
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +

@@ -2,9 +2,7 @@ import { defineConfig } from "vite";
 import { gitCommitHashPlugin } from "vite-plugin-git-commit-hash";
 import Components from "unplugin-vue-components/vite";
 import { groupIconVitePlugin } from "vitepress-plugin-group-icons";
-// import Icons from "unplugin-icons/vite";
 import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
-// import IconsResolver from "unplugin-icons/resolver";
 import UnoCSS from "unocss/vite";
 import Terminal from "vite-plugin-terminal";
 import vueDevTools from "vite-plugin-vue-devtools";
@@ -25,7 +23,6 @@ const vitePlugins: PluginOption = [
   UnoCSS(),
   groupIconVitePlugin(),
   svgLoader(),
-  // Icons(),
   Components({
     dirs: [".vitepress/theme/components"],
     extensions: ["vue", "md"],
@@ -33,7 +30,6 @@ const vitePlugins: PluginOption = [
     dts: true,
     resolvers: [
       VueUseComponentsResolver(),
-      // IconsResolver(),
     ],
   }),
   Terminal({

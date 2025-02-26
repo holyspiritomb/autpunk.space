@@ -20,7 +20,7 @@
   <!-- <rect x="150" y="150" width="500" height="500" fill="white" stroke="black" id="rectangle"/> -->
   <!-- <circle cx="350" cy="350" r="125" fill="url(#radblue)" /> -->
   <!-- <circle cx="450" cy="450" r="125" fill="url(#radpink)" /> -->
-  <circle cx="400" cy="400" r="400" fill="url(#radpink)" />
+  <circle cx="400" cy="400" r="400" fill="url(#radpink)" id="pinkglow" />
   <!-- <circle cx="375" cy="425" r="125" fill="url(#lineargrad)" filter="url(#blur)" fill-opacity="0.5" /> -->
   <!-- <circle cx="425" cy="375" r="125" fill="url(#lineargrad)" filter="url(#blur)" fill-opacity="0.5"/> -->
 </svg>

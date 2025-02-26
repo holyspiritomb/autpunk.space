@@ -1,0 +1,187 @@
+<script setup lang="ts">
+import { useSpeechSynthesis } from '@vueuse/core'
+import { ref as deepRef, onMounted, shallowRef } from 'vue'
+
+// eslint-disable-next-line no-undef
+const voice = deepRef<SpeechSynthesisVoice>(undefined as unknown as SpeechSynthesisVoice)
+const text = shallowRef('Hello, everyone! Good morning!')
+const pitch = shallowRef(1)
+const rate = shallowRef(1)
+
+const speech = useSpeechSynthesis(text, {
+  voice,
+  pitch,
+  rate,
+})
+
+// eslint-disable-next-line no-undef
+let synth: SpeechSynthesis
+
+// eslint-disable-next-line no-undef
+const voices = shallowRef<SpeechSynthesisVoice[]>([])
+
+onMounted(() => {
+  if (speech.isSupported.value) {
+    // load at last
+    setTimeout(() => {
+      synth = window.speechSynthesis
+      voices.value = synth.getVoices()
+      voice.value = voices.value[0]
+    })
+  }
+})
+
+function play() {
+  if (speech.status.value === 'pause') {
+    console.log('resume')
+    window.speechSynthesis.resume()
+  }
+  else {
+    speech.speak()
+  }
+}
+
+function pause() {
+  window.speechSynthesis.pause()
+}
+
+function stop() {
+  speech.stop()
+}
+</script>
+
+<template>
+  <div>
+    <div v-if="!speech.isSupported">
+      Your browser does not support SpeechSynthesis API,
+      <a
+        href="https://caniuse.com/mdn-api_speechsynthesis"
+        target="_blank"
+      >more details</a>
+    </div>
+    <div v-else>
+      <label class="mr-2 font-bold">Spoken Text</label>
+      <input
+        v-model="text"
+        class="!inline-block"
+        type="text"
+      >
+
+      <br>
+      <label class="mr-2 font-bold">Language</label>
+      <div
+        bg="$vp-c-bg"
+        border="$vp-c-divider 1"
+        relative
+        inline-flex
+        items-center
+        rounded
+      >
+        <i
+          i-carbon-language
+          pointer-events-none
+          absolute
+          left-2
+          opacity-80
+        />
+        <select
+          v-model="voice"
+          h-9
+          appearance-none
+          border-0
+          rounded
+          bg-transparent
+          px-8
+        >
+          <option
+            bg="$vp-c-bg"
+            disabled
+          >
+            Select Language
+          </option>
+          <!-- eslint-disable vue/no-template-shadow -->
+          <option
+            v-for="(voice, i) in voices"
+            :key="i"
+            bg="$vp-c-bg"
+            :value="voice"
+          >
+            {{ `${voice.name} (${voice.lang})` }}
+          </option>
+          <!-- eslint-enable vue/no-template-shadow -->
+        </select>
+        <i
+          i-carbon-chevron-down
+          pointer-events-none
+          absolute
+          right-2
+          opacity-80
+        />
+      </div>
+
+      <br>
+      <div
+        inline-flex
+        items-center
+      >
+        <label class="mr-2 font-bold">Pitch</label>
+        <div
+          class="mt-1"
+          inline-flex
+        >
+          <input
+            v-model="pitch"
+            type="range"
+            min="0.5"
+            max="2"
+            step="0.1"
+          >
+        </div>
+      </div>
+
+      <br>
+      <div
+        inline-flex
+        items-center
+      >
+        <label class="mr-3 font-bold">Rate</label>
+        <div
+          class="mt-1"
+          inline-flex
+        >
+          <input
+            v-model="rate"
+            type="range"
+            min="0.5"
+            max="2"
+            step="0.1"
+          >
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <button
+          class="bg-green"
+          :disabled="speech.isPlaying.value"
+          @click="play"
+        >
+          {{ speech.status.value === 'pause' ? 'Resume' : 'Speak' }}
+        </button>
+        <button
+          :disabled="!speech.isPlaying.value"
+          class="bg-orange"
+          @click="pause"
+        >
+          Pause
+        </button>
+        <button
+          :disabled="!speech.isPlaying.value"
+          class="bg-red"
+          @click="stop"
+        >
+          Stop
+        </button>
+      </div>
+    </div>
+  </div>
+</template>

@@ -66,19 +66,82 @@ Output:
 
 ## Speech
 
+### EasySpech
+
+https://github.com/leaonline/easy-speech
+
 <SpeechEasy/>
+
+### useSpeechSynthesis from VueUse
+
+https://vueuse.org/core/useSpeechSynthesis
+
+<UseSpeech />
 
 ## Icons via UnoCSS
 
+https://unocss.dev/presets/icons
+
+### The long way
+
+::: info Input
+```vue-html
+<div class="i-carbon-play-filled"></div>
+<div class="i-carbon-logo-vue"></div>
+```
+:::
+
+::: info Output
+<div class="i-carbon-play-filled"></div>
+<div class="i-carbon-logo-vue"></div>
+:::
+
+### Attributify
+
+https://unocss.dev/presets/attributify
+
+::: info Input
+
+```vue-html
 <div i-carbon-play-filled></div>
 <div i-carbon-pause-outline-filled></div>
 <div i-carbon-stop-filled></div>
 <div i-carbon-stop-outline-filled></div>
 <div i-carbon-logo-vue></div>
-<div i-mdi-play-circle></div>
-<div i-mdi-pause-circle></div>
-<div i-mdi-stop-circle></div>
-<div i-mdi-language-markdown></div>
+<span i-mdi-pause-circle>pause</span>
+<span i-mdi-stop-circle>stop</span>
+```
+:::
+
+::: info Output
+<div i-carbon-play-filled></div>
+<div i-carbon-pause-outline-filled></div>
+<div i-carbon-stop-filled></div>
+<div i-carbon-stop-outline-filled></div>
+<div i-carbon-logo-vue></div>
+<span i-mdi-pause-circle>pause</span>
+<span i-mdi-stop-circle>stop</span>
+:::
+
+### Tagify
+
+https://unocss.dev/presets/tagify
+
+::: info Input
+```vue-html vue
+<i-mdi-play-circle /> <i-mdi-pause-circle /> <i-mdi-stop-circle />
+
+Markdown <i-mdi-language-markdown />
+```
+:::
+
+::: info Output
+<i-mdi-play-circle /> <i-mdi-pause-circle /> <i-mdi-stop-circle />
+
+Markdown <i-mdi-language-markdown />
+:::
+
+
 <div i-devicon-vitejs></div>
 <div i-devicon-archlinux></div>
 <div i-devicon-react></div>

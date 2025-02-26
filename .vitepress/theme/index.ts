@@ -14,6 +14,7 @@ import SpeechEasy from "./components/SpeechEasy.vue";
 import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
+import UseSpeech from "./components/UseSpeech.vue";
 
 // devtools stuff {{{
 if (process.env.NODE_ENV === "development") {
@@ -64,6 +65,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
+      component("UseSpeech", UseSpeech).
       component("SpeechEasy", SpeechEasy);
   },
 } satisfies Theme // eslint-disable-line stylistic/semi
