@@ -100,7 +100,7 @@
 @supports (-moz-animation-delay:initial) {
   @media (max-width: 959px) {
     :root {
-      --vp-home-hero-image-background-image: url("/blurgrad.svg");
+      --vp-home-hero-image-background-image: none;
       --vp-home-hero-image-filter: none;
     }
     .dark {
