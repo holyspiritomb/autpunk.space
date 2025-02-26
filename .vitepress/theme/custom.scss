@@ -26,11 +26,15 @@
   /* --vp-code-block-bg: rgb(var(--ctp-latte-pink-rgb) / 1); */
   --vp-code-lang-color: var(--ctp-latte-sky);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%);
-  --vp-home-hero-image-filter: blur(44px);
+  --vp-home-hero-image-filter:blur(44px);
+  /* --vp-header-anchor-symbol: '×'; */
+  --vp-header-anchor-symbol: '‼';
+  --vp-code-block-bg: rgb(var(--ctp-mocha-pink-rgb) / 0.25);
 }
 .dark {
   /* --vp-button-alt-bg: rgb(var(--ctp-mocha-pink-rgb) / 1 ); */
   --vp-button-alt-text: var(--ctp-mocha-base);
+  --vp-code-block-bg: rgb(var(--ctp-mocha-crust-rgb) / 0.8);
   /* --vp-c-bg-alt: rgb(var(--ctp-mocha-pink-rgb) / 0.05); */
   /* --vp-c-bg-elv: var(--rp-overlay); */
   /* --vp-c-bg-soft: rgb(var(--ctp-mocha-mantle-rgb)); */
@@ -40,7 +44,7 @@
   /* --vp-c-gutter: rgb(var(--ctp-mocha-sky) / 1); */
   --vp-code-lang-color: var(--ctp-macchiato-sky);
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
-  --vp-custom-block-info-text: var(--ctp-mocha-sky);
+  /* --vp-custom-block-info-text: var(--ctp-mocha-sky); */
   --vp-custom-block-tip-text: var(--ctp-mocha-green);
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
   /* --vp-nav-bg-color: var(--rp-base); */
@@ -64,6 +68,12 @@
   .VPFeature.VPLink {
     background-color: rgb(var(--ctp-mocha-pink-rgb) / .5);
     border-color: rgb(var(--ctp-mocha-pink-rgb) / .7);
+    &:hover {
+      border-color: rgb(var(--ctp-mocha-pink-rgb) / .9);
+    }
+    &:active {
+      border-color: rgb(var(--ctp-mocha-pink-rgb) / 1);
+    }
   }
   div.icon {
     background-color: rgb(var(--ctp-mocha-pink-rgb) / .5);
@@ -73,20 +83,28 @@
   .VPFeature.VPLink {
     background-color: rgb(var(--ctp-mocha-crust-rgb) / .3);
     border-color: rgb(var(--ctp-mocha-crust-rgb) / .5);
+    &:hover {
+      border-color: rgb(var(--ctp-mocha-pink-rgb) / .5);
+    }
+    &:active {
+      border-color: rgb(var(--ctp-mocha-pink-rgb) / 1);
+    }
   }
   div.icon {
     background-color: rgb(var(--ctp-mocha-crust-rgb) / .5);
   }
 }
 
-/* @supports (-moz-animation-delay:initial) { */
-/*   .VPHero.has-image.VPHomeHero > .container > .image > .image-container { */
-/*     background-image: url("/blurgrad.svg") !important; */
-/*     background-position: center center; */
-/*     background-repeat: no-repeat; */
-/*     background-size: cover; */
-/*     .image-bg { */
-/*       visibility: hidden; */
-/*     } */
-/*   } */
-/* } */
+/* TODO: figure out fallback for when blur() is not supported */
+
+@supports (-moz-animation-delay:initial) {
+  @media (max-width: 959px) {
+    :root {
+      --vp-home-hero-image-background-image: url("/blurgrad.svg");
+      --vp-home-hero-image-filter: none;
+    }
+    .dark {
+      --vp-home-hero-image-background-image: none;
+    }
+  }
+}

@@ -3,5 +3,8 @@ import HeroSvg from "../../../heart.svg?component";
 </script>
 
 <template>
-    <HeroSvg class="image-src" role="img" />
+  <HeroSvg
+    class="image-src"
+    role="img"
+  />
 </template>

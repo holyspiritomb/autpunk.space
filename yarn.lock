@@ -2922,6 +2922,7 @@ __metadata:
     "@vue/tsconfig": "npm:^0.7.0"
     "@vueuse/core": "npm:12.7.0"
     easy-speech: "npm:^2.4.0"
+    eruda: "npm:^3.4.1"
     eslint: "npm:9.21.0"
     eslint-plugin-markdown: "npm:^5.1.0"
     eslint-plugin-vue: "npm:^9.32.0"
@@ -3610,6 +3611,13 @@ __metadata:
   version: 0.1.5
   resolution: "error-stack-parser-es@npm:0.1.5"
   checksum: 10c0/60331183269d5d5f2d80ce01be58387e7f7ef86ec821db7bba3e7aad201174b3f1b561973c678af7ec945542de8f2d1d23d5152ff8adf6154080eff02cd0e0b5
+  languageName: node
+  linkType: hard
+
+"eruda@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "eruda@npm:3.4.1"
+  checksum: 10c0/815e86c708f494ee3e36dabc5bb75b6a5ac35bc2bd212b25dbe5b5527b1c0b116f03c7659b0186dd915f26e2380e1eae7e51ce79582991703bac45ed6788e043
   languageName: node
   linkType: hard
 
