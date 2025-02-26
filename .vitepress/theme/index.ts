@@ -14,7 +14,6 @@ import SpeechEasy from "./components/SpeechEasy.vue";
 import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
-import eruda from "eruda";
 
 // devtools stuff {{{
 if (process.env.NODE_ENV === "development") {
@@ -33,39 +32,8 @@ if (process.env.NODE_ENV === "development") {
       </div>
     </template>
   `;
-  const erudaOpts = {
-    autoScale: true,
-    defaults: {
-      theme: "Night Owl",
-      displaySize: 40,
-      transparency: 0.9,
-    },
-  };
-
   onDevToolsClientConnected(() => {
     console.debug("devtools client connected");
-    eruda.init(erudaOpts);
-    eruda.position({ x: 300, y: 100 });
-    const eConsole = eruda.get("console");
-    eConsole.config.set("displayExtraInfo", true);
-    eConsole.config.set("overrideConsole", true);
-    eConsole.config.set("displayIfErr", true);
-    console.log("eruda is a console for %s.", "mobile browsers");
-    console.table([{ test: 1 }, { test: 2 }, { test2: 3 }], "test");
-    console.error(new Error("eruda"));
-    const snippets = eruda.get("snippets");
-    snippets.add("enhuge", function () {
-      eruda.scale(2);
-    }, "Make eruda big");
-    snippets.add("debiggerize", function () {
-      eruda.scale(1);
-    }, "Make eruda original size");
-    snippets.add("Shut down eruda", function () {
-      eruda.destroy();
-    }, "Close eruda");
-    snippets.add("Reset icon position", function () {
-      eruda.position({ x: 300, y: 100 });
-    }, "Yep");
     addCustomTab({
       // unique identifier
       name: "unocss",
