@@ -23,7 +23,7 @@
   /* --vp-code-block-bg: rgb(var(--ctp-latte-pink-rgb) / 1); */
   --vp-code-lang-color: var(--ctp-latte-sky);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%);
-  --vp-home-hero-image-filter:blur(44px);
+  --vp-home-hero-image-filter: blur(44px);
   /* --vp-header-anchor-symbol: '×'; */
   --vp-header-anchor-symbol: '‼';
   --vp-code-block-bg: rgb(var(--ctp-mocha-pink-rgb) / 0.25);
@@ -94,20 +94,15 @@
 
 /* TODO: figure out fallback for when blur() is not supported */
 
-@supports (-moz-animation-delay:initial) {
-  :root {
-    --vp-home-hero-image-background-image: none;
-  }
-  @media (max-width: 600px) {
-    :root {
-      --vp-home-hero-image-background-image: url("/blurgrad.svg");
-      --vp-home-hero-image-filter: none;
-    }
-    .dark {
-      --vp-home-hero-image-background-image: none;
-    }
-  }
-}
+/* @supports not (filter: blur(44px)) { */
+/*   :root { */
+/*     --vp-home-hero-image-background-image: -wekbit-radial-gradient(#ea76cbdd 0%,#ea76cb00 65%); */
+/*     --vp-home-hero-image-filter: none; */
+/*   } */
+/*   .dark { */
+/*     --vp-home-hero-image-background-image: -webkit-radial-gradient(#04a5e5dd 0%,#04a5e500 65%); */
+/*   } */
+/* } */
 
 /* unocss stuff */
 
