@@ -10,6 +10,8 @@ import { NodePackageImporter } from "sass-embedded";
 import svgLoader from "vite-svg-loader";
 import type { PluginOption } from "vite";
 import type { LogsOutput } from "vite-plugin-terminal";
+import postcssFilterFallback from "postcss-filter-fallback";
+// import postCssUnoCSS from "@unocss/postcss";
 
 // if (process.env.NODE_ENV === "development") {
 //   console.debug("Vite env:\n", process.env);
@@ -53,6 +55,16 @@ export default defineConfig({
     },
   },
   css: {
+    postcss: {
+      plugins: [
+        // postCssUnoCSS(),
+        postcssFilterFallback({
+          oldIE: false,
+          svg: true,
+          webkit: true,
+        }),
+      ],
+    },
     preprocessorOptions: {
       scss: {
         api: "modern-compiler",

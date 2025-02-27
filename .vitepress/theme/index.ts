@@ -6,7 +6,8 @@ import "victormono";
 import "@infolektuell/noto-color-emoji";
 import "./fonts.scss";
 import "@catppuccin/vitepress/theme/mocha/sky.css";
-import "uno.css";
+// import "uno.css";
+import "virtual:uno.css";
 import "./custom.scss";
 import { VPButton } from "vitepress/theme-without-fonts";
 import LayoutBottom from "./components/LayoutBottom.vue";
@@ -27,8 +28,17 @@ if (process.env.NODE_ENV === "development") {
         <div>
           <a href="/__unocss" target="_blank">Inspector 🆕</a>
         </div>
+      </div>
+    </template>
+  `;
+  const viteSFC = /* vue */ `
+    <template>
+      <div class="h-full w-full flex flex-col items-center justify-center">
         <div>
-          <a href="/vitepress-default/components" target="_blank">Demo page</a>
+          <a href="/__inspect">Vite Inspect</a>
+        </div>
+        <div>
+          <a href="/__inspect" target="_blank">Vite Inspect 🆕</a>
         </div>
       </div>
     </template>
@@ -45,6 +55,19 @@ if (process.env.NODE_ENV === "development") {
       view: {
         type: "sfc",
         sfc: SFC,
+      },
+      category: "app",
+    });
+    addCustomTab({
+      // unique identifier
+      name: "vite-inspect-better",
+      // title to display in the tab
+      title: "Vite Inspect",
+      // any icon from material design icons or a URL to an image
+      icon: "https://vite.dev/logo.svg",
+      view: {
+        type: "sfc",
+        sfc: viteSFC,
       },
       category: "app",
     });

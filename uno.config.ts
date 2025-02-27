@@ -11,6 +11,9 @@ import presetWind from "@unocss/preset-wind3";
 import { presetCatppuccin } from "unocss-preset-catppuccin";
 
 export default defineConfig({
+  content: {
+    filesystem: ["**/*.{html,js,ts,vue,scss,css}"],
+  },
   presets: [
     presetCatppuccin({
       defaultFlavour: "mocha",

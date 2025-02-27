@@ -2149,10 +2149,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unocss/config@npm:66.1.0-beta.3":
+  version: 66.1.0-beta.3
+  resolution: "@unocss/config@npm:66.1.0-beta.3"
+  dependencies:
+    "@unocss/core": "npm:66.1.0-beta.3"
+    unconfig: "npm:~7.0.0"
+  checksum: 10c0/46af06557be615d3e841cc5a6f1ad07871d1f1ce3fd467fb741c0f867b590f5a5a214395b0eb4c0025a9c7e4edf5fee87be01f9f0ff2ab32890a214dfcdc9d17
+  languageName: node
+  linkType: hard
+
 "@unocss/core@npm:66.0.0, @unocss/core@npm:^66.0.0":
   version: 66.0.0
   resolution: "@unocss/core@npm:66.0.0"
   checksum: 10c0/639dcf3ca5375baf820c679e5886559502f62c31b8b68ac13c74db5e71bfcb9c79bce5e60736066d5c72a4bdbabcac9639c47bd4931c03ddd613e55639818fbc
+  languageName: node
+  linkType: hard
+
+"@unocss/core@npm:66.1.0-beta.3, @unocss/core@npm:^66.1.0-beta.3":
+  version: 66.1.0-beta.3
+  resolution: "@unocss/core@npm:66.1.0-beta.3"
+  checksum: 10c0/da7b63d3cce7af560c6acc502b006f230a5c8cf2072e53cc8e3ffcb46500d2d8e0574c6e1d13634aca01c976bed3c57e4bfabf8f5be1dbc68fec9cd8806c96d0
   languageName: node
   linkType: hard
 
@@ -2215,6 +2232,22 @@ __metadata:
   peerDependencies:
     postcss: ^8.4.21
   checksum: 10c0/424e1b053026ddf2ebda0e3cae7918c0b6b8028700e93ed7ecccb18bbe789f5d03539ce497b3287bc23f65ad8fc996cc362d18cdef1a8bc0483c825e873dc65b
+  languageName: node
+  linkType: hard
+
+"@unocss/postcss@npm:^66.1.0-beta.3":
+  version: 66.1.0-beta.3
+  resolution: "@unocss/postcss@npm:66.1.0-beta.3"
+  dependencies:
+    "@unocss/config": "npm:66.1.0-beta.3"
+    "@unocss/core": "npm:66.1.0-beta.3"
+    "@unocss/rule-utils": "npm:66.1.0-beta.3"
+    css-tree: "npm:^3.1.0"
+    postcss: "npm:^8.5.2"
+    tinyglobby: "npm:^0.2.10"
+  peerDependencies:
+    postcss: ^8.4.21
+  checksum: 10c0/0d40f241bcb3e748445a4c896fc8e55d64b6c4c8928533cc4a552c7cf64e4f7ac7f19cd4b29b2a72e9a83f22dc6845eeaf81994c16ea4ecdadfaa565be991d09
   languageName: node
   linkType: hard
 
@@ -2324,6 +2357,16 @@ __metadata:
     "@unocss/core": "npm:^66.0.0"
     magic-string: "npm:^0.30.17"
   checksum: 10c0/f6c768273da1a207ca2783e947b291fcf8b4d18661cbdf68112c796930678af8617958a58d400c47c2b9f784a71c20733511045ea6c8908942b3349436c8aed1
+  languageName: node
+  linkType: hard
+
+"@unocss/rule-utils@npm:66.1.0-beta.3":
+  version: 66.1.0-beta.3
+  resolution: "@unocss/rule-utils@npm:66.1.0-beta.3"
+  dependencies:
+    "@unocss/core": "npm:^66.1.0-beta.3"
+    magic-string: "npm:^0.30.17"
+  checksum: 10c0/ce7ca921038876407f613b25fd0f063eb291f9372444efbd4791652f4349197c1e78928b33a45382d2490859d931cd659e6e5f5fea8ee0dd2debb4aaea97db76
   languageName: node
   linkType: hard
 
@@ -2915,6 +2958,7 @@ __metadata:
     "@types/markdown-it-footnote": "npm:^3.0.4"
     "@types/node": "npm:^22.10.10"
     "@unocss/eslint-config": "npm:^66.0.0"
+    "@unocss/postcss": "npm:^66.1.0-beta.3"
     "@unocss/preset-mini": "npm:^66.0.0"
     "@unocss/preset-tagify": "npm:^66.0.0"
     "@unocss/preset-wind3": "npm:^66.0.0"
@@ -2930,6 +2974,7 @@ __metadata:
     markdown-it: "npm:^14.1.0"
     markdown-it-attrs: "npm:^4.3.1"
     markdown-it-footnote: "npm:^4.0.0"
+    postcss-filter-fallback: "npm:^1.0.0"
     sass-embedded: "npm:^1.83.1"
     typescript: "npm:^5.7.3"
     typescript-eslint: "npm:^8.21.0"
@@ -5731,6 +5776,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"onecolor@npm:^3.0.4":
+  version: 3.1.0
+  resolution: "onecolor@npm:3.1.0"
+  checksum: 10c0/1075122e21807bd88941821448f4af319c6c5dcba3a4db66e80c48e7daf3717a07e7413cf39305ade003d6b704fe3587f2cd1e26e9af5e097b976799a3770d57
+  languageName: node
+  linkType: hard
+
 "oniguruma-to-es@npm:^3.1.0":
   version: 3.1.0
   resolution: "oniguruma-to-es@npm:3.1.0"
@@ -5921,6 +5973,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-filter-fallback@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "postcss-filter-fallback@npm:1.0.0"
+  dependencies:
+    onecolor: "npm:^3.0.4"
+    postcss-value-parser: "npm:^4.2.0"
+  checksum: 10c0/972a5383d21c6391fd7c55a1f275a3a239bdd544ae3da5308f5cb0d455351de6da82f8278260edca912b10fbe31c5dc3e1ebc79b105a769e6589276088f34e51
+  languageName: node
+  linkType: hard
+
 "postcss-selector-parser@npm:^6.0.15":
   version: 6.1.2
   resolution: "postcss-selector-parser@npm:6.1.2"
@@ -5928,6 +5990,13 @@ __metadata:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10c0/523196a6bd8cf660bdf537ad95abd79e546d54180f9afb165a4ab3e651ac705d0f8b8ce6b3164fb9e3279ce482c5f751a69eb2d3a1e8eb0fd5e82294fb3ef13e
+  languageName: node
+  linkType: hard
+
+"postcss-value-parser@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "postcss-value-parser@npm:4.2.0"
+  checksum: 10c0/f4142a4f56565f77c1831168e04e3effd9ffcc5aebaf0f538eee4b2d465adfd4b85a44257bb48418202a63806a7da7fe9f56c330aebb3cac898e46b4cbf49161
   languageName: node
   linkType: hard
 
