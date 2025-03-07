@@ -149,3 +149,7 @@ Markdown <i-mdi-language-markdown />
 <div i-devicon-vscode></div>
 <div i-devicon-vuejs></div>
 <div i-catppuccin-vue></div>
+
+## Pizza
+
+<GalaxyPizza/>

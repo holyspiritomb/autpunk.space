@@ -16,6 +16,7 @@ import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import UseSpeech from "./components/UseSpeech.vue";
+import GalaxyPizza from "./components/GalaxyPizza.vue";
 
 // devtools stuff {{{
 if (process.env.NODE_ENV === "development") {
@@ -89,6 +90,7 @@ export default {
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
       component("UseSpeech", UseSpeech).
+      component("GalaxyPizza", GalaxyPizza).
       component("SpeechEasy", SpeechEasy);
   },
 } satisfies Theme // eslint-disable-line stylistic/semi

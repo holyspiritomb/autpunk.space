@@ -25,13 +25,17 @@ features:
     link: /thought-fossils
   - title: Projects
     details: a few things I've made
-    icon: 💻
+    icon:
+        src: /galaxylaptop.png
+        alt: "galaxy laptop emoji"
     link: /projects
   - title: Unsorted Fragments
-    icon: 🗑️
+    icon:
+        src: /rainbowtrash.png
+        alt: "emoji of garbage can at the end of a rainbow"
     details: dive into my brain dumpster
     link: /unsorted-fragments
-  - title: Other People
+  - title: Links to Other People
     icon: 🥔
     details: I just think they're neat
     link: /other-people
