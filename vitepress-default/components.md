@@ -150,6 +150,18 @@ Markdown <i-mdi-language-markdown />
 <div i-devicon-vuejs></div>
 <div i-catppuccin-vue></div>
 
-## Pizza
+## Galaxy Pizza!!
 
-<GalaxyPizza/>
+::: info Input
+```vue-html vue
+<GalaxyPizza />
+<GalaxyPizza size="48" />
+<GalaxyPizza size="128" />
+```
+:::
+
+::: info Output
+<GalaxyPizza />
+<GalaxyPizza size="48" />
+<GalaxyPizza size="128" />
+:::
