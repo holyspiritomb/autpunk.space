@@ -1,4 +1,5 @@
-@use "pkg:@fontsource/zilla-slab/scss/mixins" as ZillaSlab;
+@use "pkg:@fontsource-utils/scss" as fontsource;
+@use "pkg:@fontsource/zilla-slab/scss" as ZillaSlab;
 @use "~inter-ui/default" with (
   $inter-font-display: swap,
   $inter-font-path: '~inter-ui/web'
@@ -11,8 +12,8 @@
 
 @include default.all;
 @include variable.all;
-
-@include ZillaSlab.faces(
+@include fontsource.faces(
+  $metadata: ZillaSlab.$metadata,
   $subsets: latin,
   $weights: (
     400,

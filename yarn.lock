@@ -1071,10 +1071,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/zilla-slab@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "@fontsource/zilla-slab@npm:5.1.1"
-  checksum: 10c0/7511c7eeb0f6d07b9ef53d1868ddb97b55c90a21cb830e07447824991f9ce6b26bea9fb426ccb614fff6327a82fbd2449ff6969709830ca57300690d3554c092
+"@fontsource-utils/scss@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@fontsource-utils/scss@npm:0.2.1"
+  checksum: 10c0/372d19cd1b3554cfe656f974fbbe4d8cd62de4c4f595244509dda1e2a7580e6fb81dd303f752e89077cb17e73e09d021a94a3d8630ab63f20659d1f898fd057c
+  languageName: node
+  linkType: hard
+
+"@fontsource/zilla-slab@npm:^5.2.5":
+  version: 5.2.5
+  resolution: "@fontsource/zilla-slab@npm:5.2.5"
+  checksum: 10c0/255e9fe4d6190b3643ce8f72e4ae5f536d0cf7818404d4d4fdd215d2b001f02f0742c5604d5b2db1627f393fcebac376c29301702218d74b9aa758a7b5e0152e
   languageName: node
   linkType: hard
 
@@ -2943,7 +2950,8 @@ __metadata:
     "@catppuccin/vitepress": "npm:^0.1.0"
     "@eslint/js": "npm:9.21.0"
     "@eslint/markdown": "npm:^6.2.1"
-    "@fontsource/zilla-slab": "npm:^5.1.1"
+    "@fontsource-utils/scss": "npm:^0.2.1"
+    "@fontsource/zilla-slab": "npm:^5.2.5"
     "@iconify-json/carbon": "npm:^1.2.7"
     "@iconify-json/devicon": "npm:^1.2.16"
     "@iconify-json/mdi": "npm:^1.2.3"

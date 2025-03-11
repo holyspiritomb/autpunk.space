@@ -8,7 +8,6 @@
   "dependencies": {
     "@catppuccin/palette": "^1.7.1",
     "@catppuccin/vitepress": "^0.1.0",
-    "@fontsource/zilla-slab": "^5.1.1",
     "@infolektuell/noto-color-emoji": "^0.2.0",
     "@rose-pine/palette": "^4.0.1",
     "@vue/tsconfig": "^0.7.0",
@@ -44,6 +43,8 @@
   "devDependencies": {
     "@eslint/js": "9.21.0",
     "@eslint/markdown": "^6.2.1",
+    "@fontsource-utils/scss": "^0.2.1",
+    "@fontsource/zilla-slab": "^5.2.5",
     "@iconify-json/carbon": "^1.2.7",
     "@iconify-json/devicon": "^1.2.16",
     "@iconify-json/mdi": "^1.2.3",
