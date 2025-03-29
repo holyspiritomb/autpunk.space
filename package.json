@@ -11,7 +11,7 @@
     "@infolektuell/noto-color-emoji": "^0.2.0",
     "@rose-pine/palette": "^4.0.1",
     "@vue/tsconfig": "^0.7.0",
-    "@vueuse/core": "12.7.0",
+    "@vueuse/core": "13.0.0",
     "easy-speech": "^2.4.0",
     "inter-ui": "^4.1.0",
     "markdown-it-attrs": "^4.3.1",
