@@ -1123,21 +1123,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/carbon@npm:^1.2.7":
-  version: 1.2.7
-  resolution: "@iconify-json/carbon@npm:1.2.7"
+"@iconify-json/carbon@npm:1.2.8":
+  version: 1.2.8
+  resolution: "@iconify-json/carbon@npm:1.2.8"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/dabafeb4935b884aad48127dd0fdab0564c5caad36de7b3174b4a0f549f592b38163b4f6b17404cb413b450e2a66de7d996bc83d575abeb23471693f8398d539
+  checksum: 10c0/2944b0c34a68a2fb99579f655d1bedfe6b675f96d8cbbdf9063d43c6c3eae202347f8c127ba444a9ada2e9eddffc33deb7928d988ef0ba9da1b34d9516b8ff01
   languageName: node
   linkType: hard
 
-"@iconify-json/devicon@npm:^1.2.16":
-  version: 1.2.16
-  resolution: "@iconify-json/devicon@npm:1.2.16"
+"@iconify-json/devicon@npm:1.2.22":
+  version: 1.2.22
+  resolution: "@iconify-json/devicon@npm:1.2.22"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/cc2e7777e79b92b10017ac44b00ceb806a1e9fc316aa0dae37da3d69b557bfbf0c6ec4ab44b346b129654f6662c2a8de63d6996a167baf556731dc6732edb16d
+  checksum: 10c0/198e26458888df1e019f3cb8351215140d5deccc5c9a2cb9efac1f39bd2f352d575dbe97d45e6242b886a3d97b45e7c684c1b17f0d8a647e808ec9b1e2b0311f
   languageName: node
   linkType: hard
 
@@ -2960,8 +2960,8 @@ __metadata:
     "@eslint/markdown": "npm:^6.2.1"
     "@fontsource-utils/scss": "npm:^0.2.1"
     "@fontsource/zilla-slab": "npm:^5.2.5"
-    "@iconify-json/carbon": "npm:^1.2.7"
-    "@iconify-json/devicon": "npm:^1.2.16"
+    "@iconify-json/carbon": "npm:1.2.8"
+    "@iconify-json/devicon": "npm:1.2.22"
     "@iconify-json/mdi": "npm:^1.2.3"
     "@infolektuell/noto-color-emoji": "npm:^0.2.0"
     "@rose-pine/palette": "npm:^4.0.1"
@@ -3005,7 +3005,7 @@ __metadata:
     vite-svg-loader: "npm:^5.1.0"
     vite-tsconfig-paths: "npm:^5.1.4"
     vitepress: "npm:^1.6.3"
-    vitepress-plugin-group-icons: "npm:1.3.6"
+    vitepress-plugin-group-icons: "npm:1.3.8"
     vitepress-sidebar: "npm:^1.30.2"
     vue: "npm:^3.5.13"
     vue-eslint-parser: "npm:^9.4.3"
@@ -7585,14 +7585,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitepress-plugin-group-icons@npm:1.3.6":
-  version: 1.3.6
-  resolution: "vitepress-plugin-group-icons@npm:1.3.6"
+"vitepress-plugin-group-icons@npm:1.3.8":
+  version: 1.3.8
+  resolution: "vitepress-plugin-group-icons@npm:1.3.8"
   dependencies:
     "@iconify-json/logos": "npm:^1.2.4"
     "@iconify-json/vscode-icons": "npm:^1.2.14"
     "@iconify/utils": "npm:^2.3.0"
-  checksum: 10c0/d959b462b193fd8f7d11d47c45efd8e1794df971e39707f26baad779c84793fea599dad2cb080b9fc10d2837e4eb22481d0475d515aec1f9305a8396a6b5e336
+  checksum: 10c0/e0462e61d70c0b0cb63ee13466c9a49e045d0a10a3234b951f0405f13d5595c94a64a5f434ea2740dc4cc327658dd61ff5b7afafd9402c4abf830dba3ee4c9d5
   languageName: node
   linkType: hard
 
