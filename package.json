@@ -16,7 +16,7 @@
     "inter-ui": "^4.1.0",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-footnote": "^4.0.0",
-    "sass-embedded": "^1.83.1",
+    "sass-embedded": "1.86.0",
     "typescript": "^5.7.3",
     "unocss": "66.0.0",
     "unplugin-vue-components": "28.4.0",
