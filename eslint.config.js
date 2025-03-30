@@ -33,6 +33,11 @@ export default [
     ],
   },
   {
+    languageOptions: {
+      globals: globals.browser,
+    },
+  },
+  {
     files: ["**/*.ts", "**/*.js"],
     // ...StylisticPlugin.configs['recommended-flat'],
     plugins: {
@@ -56,7 +61,7 @@ export default [
     },
   },
   {
-    files: ["**.md"],
+    files: ["**/**.md"],
     plugins: {
       markdown,
     },
