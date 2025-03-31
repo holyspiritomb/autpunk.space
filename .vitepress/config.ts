@@ -113,6 +113,7 @@ export default defineConfig({
       { icon: "vitepress", ariaLabel: "source repository for this site", link: "https://github.com/holyspiritomb/autpunk.space" },
       { icon: "github", ariaLabel: "my github profile", link: "https://github.com/holyspiritomb" },
       { icon: "gitlab", ariaLabel: "my gitlab profile", link: "https://gitlab.com/holyspiritomb" },
+      { icon: "archlinux", ariaLabel: "my arch user repository packages", link: "https://aur.archlinux.org/packages?SeB=m&K=spiritomb" },
       { icon: "bluesky", ariaLabel: "my bluesky", link: "https://bsky.app/profile/spiritomb.bsky.social" },
     ],
 
