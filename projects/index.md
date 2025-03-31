@@ -15,4 +15,10 @@ Sometimes I do things.
 
 [pyXyzzy](forks/pyxyzzy) <Badge type="info">webapp</Badge> <Badge>game</Badge>
 
+[Libby Userscript](forks/libby-userscript) <Badge type="info">userscript</Badge>
+
 ## Original <Badge type="warning">under construction</Badge>
+
+[Userscripts](https://github.com/holyspiritomb/userscripts)
+
+[Userstyles](https://github.com/holyspiritomb/userstyles)
