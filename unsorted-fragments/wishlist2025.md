@@ -6,7 +6,7 @@ next: false
 # Hezekiah's Wish List 2025
 
 * books of poetry by Sharon Olds and Mark Doty
-* The Guide to the Perplexed: a new translation (Maimonedes, translated by Lenn E. Goodman)
+* The Guide to the Perplexed: a new translation (Maimonides, translated by Lenn E. Goodman)
 * shamisen music, any genre, vinyl or CD
 * wireless earbuds with small ear cushions
 * a minidisc player
