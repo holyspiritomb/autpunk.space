@@ -126,7 +126,7 @@ export default defineConfig({
     },
     footer: {
       message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
-      copyright: "Copyright © 2025-present Hezekiah Michael",
+      copyright: "Copyright © 2025-present Hezekiah Michael and 100% human",
     },
   },
 });
