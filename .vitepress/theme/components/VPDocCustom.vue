@@ -30,7 +30,11 @@ function testFunction() {
   >
     <slot name="doc-top" />
     <div class="container">
-      <div v-if="hasAside" class="aside" :class="{'left-aside': leftAside}">
+      <div
+        v-if="hasAside"
+        class="aside"
+        :class="{'left-aside': leftAside}"
+      >
         <div class="aside-curtain" />
         <div class="aside-container">
           <div class="aside-content">

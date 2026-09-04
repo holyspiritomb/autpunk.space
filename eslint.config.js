@@ -30,6 +30,7 @@ export default [
       "dist/",
       "public/",
       "node_modules/",
+      "vitepress-default/markdown-examples.md",
     ],
   },
   {

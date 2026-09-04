@@ -11,7 +11,11 @@ const props = withDefaults(defineProps<Props>(), {
 
 </script>
 <template>
-  <label class="label" v-if="label" for="">{{ label }}</label>
+  <label
+    v-if="label"
+    class="label"
+    for=""
+  >{{ label }}</label>
   <input
     type="text"
     class="input"

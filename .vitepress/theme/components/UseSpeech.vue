@@ -2,7 +2,7 @@
 import { useSpeechSynthesis } from '@vueuse/core'
 import { ref as deepRef, onMounted, shallowRef } from 'vue'
 
-// eslint-disable-next-line no-undef
+ 
 const voice = deepRef<SpeechSynthesisVoice>(undefined as unknown as SpeechSynthesisVoice)
 const text = shallowRef('Hello, everyone! Good morning!')
 const pitch = shallowRef(1)
@@ -14,10 +14,10 @@ const speech = useSpeechSynthesis(text, {
   rate,
 })
 
-// eslint-disable-next-line no-undef
+ 
 let synth: SpeechSynthesis
 
-// eslint-disable-next-line no-undef
+ 
 const voices = shallowRef<SpeechSynthesisVoice[]>([])
 
 onMounted(() => {
@@ -60,7 +60,7 @@ function stop() {
       >more details</a>
     </div>
     <div v-else>
-      <label class="mr-2 font-bold">Spoken Text</label>
+      <label class="font-bold mr-2">Spoken Text</label>
       <input
         v-model="text"
         class="!inline-block"
@@ -68,30 +68,42 @@ function stop() {
       >
 
       <br>
-      <label class="mr-2 font-bold">Language</label>
+      <label class="font-bold mr-2">Language</label>
       <div
         bg="$vp-c-bg"
         border="$vp-c-divider 1"
-        relative
+        
+        
+        
+        rounded
         inline-flex
         items-center
-        rounded
+        relative 
       >
         <i
+          
+          
+          
+          
           i-carbon-language
-          pointer-events-none
-          absolute
-          left-2
           opacity-80
+          pointer-events-none
+          left-2
+          absolute 
         />
         <select
           v-model="voice"
-          h-9
+          
+          
+          
+          
+          
+          px-8
           appearance-none
           border-0
           rounded
           bg-transparent
-          px-8
+          h-9 
         >
           <option
             bg="$vp-c-bg"
@@ -111,11 +123,15 @@ function stop() {
           <!-- eslint-enable vue/no-template-shadow -->
         </select>
         <i
+          
+          
+          
+          
           i-carbon-chevron-down
-          pointer-events-none
-          absolute
-          right-2
           opacity-80
+          pointer-events-none
+          right-2
+          absolute 
         />
       </div>
 
@@ -124,7 +140,7 @@ function stop() {
         inline-flex
         items-center
       >
-        <label class="mr-2 font-bold">Pitch</label>
+        <label class="font-bold mr-2">Pitch</label>
         <div
           class="mt-1"
           inline-flex
@@ -144,7 +160,7 @@ function stop() {
         inline-flex
         items-center
       >
-        <label class="mr-3 font-bold">Rate</label>
+        <label class="font-bold mr-3">Rate</label>
         <div
           class="mt-1"
           inline-flex
