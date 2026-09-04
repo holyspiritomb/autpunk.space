@@ -2,12 +2,12 @@
 
 import MadeByHuman from "../../../madebyhumanw.svg?component";
 interface Props {
-  height?: number,
-  width?: number
+  height?: string,
+  width?: string
 }
 withDefaults(defineProps<Props>(), {
-  height: 60,
-  width: 180
+  height: "120px",
+  width: "360px"
 });
 </script>
 
@@ -26,4 +26,3 @@ withDefaults(defineProps<Props>(), {
     </a>
   </div>
 </template>
-
