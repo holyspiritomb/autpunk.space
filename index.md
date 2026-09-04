@@ -9,11 +9,11 @@ hero:
   tagline: peperony and chease
   image:
     src: /heart.svg
-    alt: A Milky Way galaxy emoji with a rainbow filter over it, clipped into a heart shape at .
-  # actions:
-  #   - theme: brand
-  #     text: Projects
-  #     link: /projects
+    alt: A Milky Way galaxy emoji with a rainbow filter over it, clipped into a heart shape
+  actions:
+    - theme: brand
+      text: About
+      link: /about
   #   - theme: alt
   #     text: Thought Fossils
   #     link: /thought-fossils

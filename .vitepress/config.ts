@@ -64,9 +64,9 @@ export default defineConfig({
     },
     nav: [
       { text: "Home", link: "/" },
+      { text: "About", link: "/about" },
       { text: "Projects", link: "/projects" },
       { text: "Writing", link: "/thought-fossils" },
-      // { text: "Unsorted Fragments", link: "/unsorted-fragments" },
       { text: "Links", link: "/other-people" },
       { text: "Demo", link: "/vitepress-default/components" },
     ],
@@ -127,7 +127,7 @@ export default defineConfig({
     },
     footer: {
       message: 'Released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license',
-      copyright: "Copyright © 2025-present Hezekiah Michael and 100% human",
+      copyright: "Copyright © 2025-present Hezekiah Michael",
     },
   },
 });

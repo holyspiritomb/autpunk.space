@@ -17,6 +17,7 @@ import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import UseSpeech from "./components/UseSpeech.vue";
 import GalaxyPizza from "./components/GalaxyPizza.vue";
+import MadeByHuman from "./components/MadeByHuman.vue";
 
 // devtools stuff {{{
 if (process.env.NODE_ENV === "development") {
@@ -91,6 +92,7 @@ export default {
       component("TextInput", TextInput).
       component("UseSpeech", UseSpeech).
       component("GalaxyPizza", GalaxyPizza).
+      component("MadeByHuman", MadeByHuman).
       component("SpeechEasy", SpeechEasy);
   },
 } satisfies Theme // eslint-disable-line stylistic/semi
