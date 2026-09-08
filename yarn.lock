@@ -606,15 +606,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dev.icons/vue@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@dev.icons/vue@npm:1.1.0"
-  peerDependencies:
-    vue: ">= 3.3"
-  checksum: 10c0/2da32f224ef388e73a59ca9cbfb84acd48154a4a2fb6e3a06d1d3417ea5e883b6bdeef32636addfee93ebb5c0a9b0e6a87e87d55ab2e1dca27847b25454fca28
-  languageName: node
-  linkType: hard
-
 "@devframes/hub@npm:^0.9.12":
   version: 0.9.12
   resolution: "@devframes/hub@npm:0.9.12"
@@ -1225,13 +1216,6 @@ __metadata:
     "@eslint/core": "npm:^0.17.0"
     levn: "npm:^0.4.1"
   checksum: 10c0/51600f78b798f172a9915dffb295e2ffb44840d583427bc732baf12ecb963eb841b253300e657da91d890f4b323d10a1bd12934bf293e3018d8bb66fdce5217b
-  languageName: node
-  linkType: hard
-
-"@fontsource-utils/scss@npm:0.2.4":
-  version: 0.2.4
-  resolution: "@fontsource-utils/scss@npm:0.2.4"
-  checksum: 10c0/4f67d1bd4068a7fd1a72eea7ba2f5b9b2fe315ecf8da85cd7354f4ebd8004455f7eece829a900333d99b04263d4aacb467bee7b0c301e0528a9f8431acc019af
   languageName: node
   linkType: hard
 
@@ -3229,10 +3213,8 @@ __metadata:
     "@catppuccin/palette": "npm:1.8.0"
     "@catppuccin/unocss": "npm:^3.0.0"
     "@catppuccin/vitepress": "npm:0.1.4"
-    "@dev.icons/vue": "npm:^1.1.0"
     "@eslint/js": "npm:9.39.5"
     "@eslint/markdown": "npm:6.6.0"
-    "@fontsource-utils/scss": "npm:0.2.4"
     "@fontsource/zilla-slab": "npm:5.3.0"
     "@iconify-json/arcticons": "npm:^1.2.57"
     "@iconify-json/carbon": "npm:1.2.26"
@@ -3273,6 +3255,7 @@ __metadata:
     unplugin-icons: "npm:^23.0.1"
     unplugin-vue-components: "npm:28.4.1"
     victormono: "npm:^1.5.6"
+    viewerjs: "npm:^1.13.0"
     vite: "npm:7.0.0"
     vite-plugin-git-commit-hash: "npm:^1.0.7"
     vite-plugin-terminal: "npm:1.4.0"
@@ -3281,6 +3264,7 @@ __metadata:
     vite-tsconfig-paths: "npm:^5.1.4"
     vitepress: "npm:1.6.4"
     vitepress-plugin-group-icons: "npm:1.7.6"
+    vitepress-plugin-viewerjs: "npm:^2.0.1"
     vitepress-sidebar: "npm:1.39.0"
     vue: "npm:^3.5.13"
     vue-eslint-parser: "npm:10.4.1"
@@ -7517,6 +7501,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"viewerjs@npm:^1.11.7, viewerjs@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "viewerjs@npm:1.13.0"
+  checksum: 10c0/7112f1373f8004a560309a70e8762c89ffb984fae74ceccd4c0ea2d0d58309ba09fce9b6d5853ef80b5393c15a0807e379ddbbaa649feeeda55c30cbaa0830a6
+  languageName: node
+  linkType: hard
+
 "vite-hot-client@npm:^2.0.4":
   version: 2.2.0
   resolution: "vite-hot-client@npm:2.2.0"
@@ -7747,6 +7738,18 @@ __metadata:
     vite:
       optional: true
   checksum: 10c0/7d5a1b8a3c59ce934dd27865e35abdbf502560f6e0712033a00c89394dba83e1bdf62076a03f1e2daf78968ecf9fcc33a0e5f173c5bc7b6a1c2a64da26c8219c
+  languageName: node
+  linkType: hard
+
+"vitepress-plugin-viewerjs@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "vitepress-plugin-viewerjs@npm:2.0.1"
+  dependencies:
+    viewerjs: "npm:^1.11.7"
+  peerDependencies:
+    vitepress: ^1.0.0 || ^2.0.0-alpha.0
+    vue: ^3.4.0
+  checksum: 10c0/f1e5da22b2af00e36e75d524872aec26a63ac4542a9812cc48e4a0195e8fe42b8e02ff87a1ae64fda8f3547aad9f0ba220f411d9794c89d8022e5d2a7e577c3d
   languageName: node
   linkType: hard
 

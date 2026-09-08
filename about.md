@@ -27,7 +27,7 @@ svg#humancrafted {
 
 ## About this site
 
-[<HumanCrafted id="humancrafted" width="120px" height="auto" />](https://madebyhuman.iamjarl.com)
+[<HumanCrafted id="humancrafted" width="120px" height="auto" class="no-viewer" />](https://madebyhuman.iamjarl.com)
 
 ::: details technologies used
 Package manager:

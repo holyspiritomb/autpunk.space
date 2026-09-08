@@ -6,7 +6,6 @@ prev:
     text: VP Resources
 next: false
 ---
-
 # Components and elements <Badge>demo</Badge>
 
 ## Badges <Badge type="warning">one badge</Badge> <Badge>two badge</Badge> <Badge type="danger">red badge</Badge> <Badge type="info">blue badge</Badge>
@@ -155,13 +154,11 @@ Markdown <i-mdi-language-markdown />
 ::: info Input
 ```vue-html vue
 <GalaxyPizza />
-<GalaxyPizza size=48 />
-<GalaxyPizza size=128 />
+<GalaxyPizza size="48" />
+<GalaxyPizza size="128" />
 ```
 :::
 
 ::: info Output
-<GalaxyPizza />
-<GalaxyPizza size=48 />
-<GalaxyPizza size=128 />
+GalaxyPizza is currently being refactored.
 :::

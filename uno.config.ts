@@ -37,6 +37,11 @@ export default defineConfig({
     "btn": "rounded-full shadow-md py-2 px-4 font-bold border-ctp-mocha-pink outline-ctp-latte-pink outline-1 shadow-ctp-mocha-pink m-[0.5rem] h-[3rem] active:shadow-lg border-1 p-3 text-black bg-ctp-mocha-pink",
     "input": "py-2 px-4 rounded-sm shadow-md focus:shadow-lg focus:shadow-ctp-frappe-sky shadow-ctp-mocha-sky py-2 px-4 border-1 border-pink-400 focus:border-pink-700 bg-pink-100 dark:bg-gray-700/50 dark:shadow-ctp-mocha-sky caret-pink dark:caret-ctp-mocha-sky m-[0.5rem] h-[3rem] focus:outline-1 focus:outline-blue-400",
     "label": "py-2 px-4",
+    "viewerjs": "bg-ctp-mocha-base",
+    "homefeaturelink": "bg-ctp-mocha-pink/50 border-ctp-mocha-pink/70 hover:border-ctp-mocha-pink/90 active:border-ctp-mocha-pink/100 active:bg-ctp-mocha-pink/60 dark:bg-ctp-mocha-crust/30 dark:border-ctp-mocha-crust/50 dark:hover:border-ctp-mocha-pink/70 dark:active:border-ctp-mocha-pink/100 dark:active:bg-ctp-mocha-crust/80",
+    "homefeatureimg": "bg-ctp-mocha-pink/50 dark:bg-ctp-mocha-crust/50 p-[6px] border-rd-1",
+    "codelangblock": "bg-white/90 border-1 border-ctp-mocha-sky/90 dark:(bg-ctp-mocha-base border-ctp-mocha-sky/50)",
+    "sidebarLinks": "border-l-1 pl-[16px] border-rd-[2px] border-l-pink",
   },
   transformers: [
     transformerDirectives(),

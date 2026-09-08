@@ -8,7 +8,9 @@ import "@fontsource/zilla-slab/600.css"; // Specify weight
 import "inter-ui/inter.css";
 import "inter-ui/inter-variable.css";
 import "@infolektuell/noto-color-emoji";
+import "@catppuccin/palette/css/catppuccin.css";
 import "@catppuccin/vitepress/theme/mocha/sky.css";
+import "viewerjs/dist/viewer.css";
 // import "uno.css";
 import "virtual:uno.css";
 import "./fonts.scss";
@@ -21,9 +23,9 @@ import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import UseSpeech from "./components/UseSpeech.vue";
-import GalaxyPizza from "./components/GalaxyPizza.vue";
 import MyBadge from "./components/MyBadge.vue";
 import DarkBox from "./components/DarkBox.vue";
+import useImageViewer from "vitepress-plugin-viewerjs";
 
 
 // devtools stuff {{{
@@ -32,10 +34,10 @@ if (process.env.NODE_ENV === "development") {
     <template>
       <div class="h-full w-full flex flex-col items-center justify-center">
         <div>
-          <a href="/__unocss">Inspector</a>
+          <a href="/__unocss">open in this window</a>
         </div>
         <div>
-          <a href="/__unocss" target="_blank">Inspector 🆕</a>
+          <a href="/__unocss" target="_blank">open in 🆕 window</a>
         </div>
       </div>
     </template>
@@ -98,9 +100,18 @@ export default {
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
       component("UseSpeech", UseSpeech).
-      component("GalaxyPizza", GalaxyPizza).
       component("MyBadge", MyBadge).
       component("DarkBox", DarkBox).
       component("SpeechEasy", SpeechEasy);
+  },
+  setup() {
+    useImageViewer({
+      selector: '.vp-doc',   // container(s) to scan; every match gets its own viewer
+      svg: true,             // also open inline <svg> (mermaid diagrams, etc.)
+      viewer: {
+        backdrop: true,
+        button: true,
+      },            // https://github.com/fengyuanchen/viewerjs#options
+    });
   },
 } satisfies Theme // eslint-disable-line stylistic/semi

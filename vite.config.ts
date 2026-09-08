@@ -24,9 +24,7 @@ const vitePlugins: PluginOption = [
   ...devOnlyPlugins,
   UnoCSS(),
   groupIconVitePlugin(),
-  svgLoader({
-    defaultImport: "component",
-  }),
+  svgLoader(),
   Components({
     dirs: [".vitepress/theme/components"],
     extensions: ["vue", "md"],
@@ -69,7 +67,6 @@ export default defineConfig({
     // },
     preprocessorOptions: {
       scss: {
-        // api: "modern-compiler",
         importers: [new NodePackageImporter()],
       },
     },

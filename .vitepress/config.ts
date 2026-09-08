@@ -3,7 +3,6 @@ import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
-import type { CompilerOptions } from "vue/compiler-sfc";
 
 
 // if (process.env.NODE_ENV === "development") {
@@ -33,10 +32,8 @@ export default defineConfig({
   markdown: {
     // {{{
     theme: {
-      // light: "snazzy-light",
-      light: "catppuccin-latte",
-      // dark: "poimandres",
-      dark: "catppuccin-mocha",
+      light: "snazzy-light",
+      dark: "poimandres",
     },
     typographer: true,
     linkify: true,
@@ -68,9 +65,10 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "About", link: "/about" },
       { text: "Projects", link: "/projects" },
+      { text: "Wordart", link: "/pages/wordart" },
       { text: "Writing", link: "/thought-fossils" },
-      { text: "Links", link: "/other-people" },
-      { text: "Demo", link: "/vitepress-default/components" },
+      { text: "Links", link: "/pages/other-people" },
+      { text: "Demos", link: "/pages/vitepress-default/components" },
     ],
     search: {
       // {{{

@@ -3,7 +3,6 @@
   "include": [
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
-    "other-people/**/*.md",
     "projects/**/*.md",
     "pages/**/*.md",
     "thought-fossils/**/*.md",
