@@ -7,13 +7,8 @@ prev:
     link: '/projects'
 next: false
 ---
-<script setup lang="ts">
-import { Lua } from "@dev.icons/vue/mono";
-</script>
-
 # {{ $frontmatter.title }}
-
-<MyBadge><Lua /></MyBadge>
+<div i-catppuccin-lua />
 
 Repo: https://github.com/holyspiritomb/weather.koplugin
 

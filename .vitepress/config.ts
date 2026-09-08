@@ -10,21 +10,12 @@ import type { CompilerOptions } from "vue/compiler-sfc";
 //   console.debug("Vitepress env:\n", process.env);
 // }
 
-const vueCompilerOptions: CompilerOptions = {
-  compilerOptions: {
-    isCustomElement: (tag) => {
-      return tag.startsWith("tsvg"); // (return true)
-    },
-  },
-};
-
 const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.space/public_html"
   : process.env.ZSH === "/usr/share/oh-my-zsh" ? "./dist"
     : "../web/autpunk.space/public_html";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // vue: {},
   title: "Autpunk Space",
   base: "/",
   // titleTemplate: 'Autpunk Dot Space',

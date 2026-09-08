@@ -7,13 +7,10 @@ prev:
     link: '/projects'
 next: false
 ---
-<script setup lang="ts">
-import { Javascript } from "@dev.icons/vue/mono";
-</script>
-
 # {{ $frontmatter.title }}
 
-<MyBadge><Javascript /></MyBadge>
+<div i-catppuccin-javascript />
+
 
 * Repository: https://github.com/holyspiritomb/libby-userscript
 

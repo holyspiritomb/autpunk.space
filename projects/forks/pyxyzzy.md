@@ -7,18 +7,13 @@ prev:
     link: '/projects'
 next: false
 ---
-<script setup lang="ts">
-import { Python, TypescriptIcon, Sass, SqliteIcon, Vite, _React as React} from "@dev.icons/vue/mono";
-</script>
-
 # {{ $frontmatter.title }}
 
-<MyBadge><Vite /></MyBadge>
-<MyBadge><React /></MyBadge>
-<MyBadge><Python /></MyBadge>
-<MyBadge><TypescriptIcon /></MyBadge>
-<MyBadge><Sass /></MyBadge>
-<MyBadge><SqliteIcon /></MyBadge>
+<div i-catppuccin-vite />
+<div i-catppuccin-typescript-react />
+<div i-catppuccin-typescript />
+<div i-catppuccin-sass />
+<div i-catppuccin-python />
 
 * Repository: https://gitlab.com/holyspiritomb/pyxyzzy-custom
 * Deployment: https://pyx.hamster.dance

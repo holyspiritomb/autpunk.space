@@ -7,20 +7,13 @@ prev:
     link: '/projects'
 next: false
 ---
-<script setup lang="ts">
-import { RaspberryPi, Flask, Python, RedisIcon, Bootstrap, ChartJs } from "@dev.icons/vue/mono";
-</script>
-
 # {{ $frontmatter.title }}
 
-<MyBadge><RaspberryPi /></MyBadge>
-<MyBadge><Python /></MyBadge>
-<MyBadge><Flask /></MyBadge>
-<MyBadge><RedisIcon /></MyBadge>
-<MyBadge><Bootstrap /></MyBadge>
-<MyBadge><ChartJs /></MyBadge>
-<Badge>SDS011 sensor</Badge>
-
+<div i-catppuccin-python />
+<div i-simple-icons-flask />
+<div i-devicon-plain-raspberrypi />
+<div i-devicon-plain-bootstrap />
+<div i-devicon-chartjs-wordmark />
 
 
 Repo: https://github.com/holyspiritomb/pi_air_quality_monitor

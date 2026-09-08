@@ -7,14 +7,9 @@ prev:
     link: '/projects'
 next: false
 ---
-<script setup lang="ts">
-import { Javascript, Firefox } from "@dev.icons/vue/mono";
-</script>
-
 # {{ $frontmatter.title }}
 
-<MyBadge><Javascript /></MyBadge>
-<MyBadge><Firefox /></MyBadge>
+<div i-catppuccin-javascript />
 
 * Repository: https://github.com/holyspiritomb/goodreads
 * AMO: https://addons.mozilla.org/en-US/addon/available-reads-forked/

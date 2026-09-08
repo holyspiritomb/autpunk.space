@@ -7,13 +7,9 @@ prev:
     link: '/projects'
 next: false
 ---
-<script setup lang="ts">
-import { Python } from "@dev.icons/vue/mono";
-</script>
-
 # {{ $frontmatter.title }}
 
-<MyBadge><Python /></MyBadge>
+<div i-catppuccin-python />
 
 Repo: https://github.com/holyspiritomb/YuleLog
 
