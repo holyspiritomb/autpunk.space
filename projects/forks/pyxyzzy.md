@@ -7,11 +7,22 @@ prev:
     link: '/projects'
 next: false
 ---
+<script setup lang="ts">
+import { Python, TypescriptIcon, Sass, SqliteIcon, Vite, _React as React} from "@dev.icons/vue/mono";
+</script>
 
-# pyXyzzy Custom
+# {{ $frontmatter.title }}
+
+<MyBadge><Vite /></MyBadge>
+<MyBadge><React /></MyBadge>
+<MyBadge><Python /></MyBadge>
+<MyBadge><TypescriptIcon /></MyBadge>
+<MyBadge><Sass /></MyBadge>
+<MyBadge><SqliteIcon /></MyBadge>
 
 * Repository: https://gitlab.com/holyspiritomb/pyxyzzy-custom
-* Deployment (not current): https://pyx.hamster.dance
+* Deployment: https://pyx.hamster.dance
+
 
 A fork of a clone of Cards Against Humanity, that I'm doing my best to develop and maintain in my spare time. It's been a steep learning curve: I started learning typescript purely to understand the old frontend code, and I don't know enough python to mess around with the backend. Someday™ I intend to figure out
 

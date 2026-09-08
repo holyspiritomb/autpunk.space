@@ -3,11 +3,20 @@ import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
+import type { CompilerOptions } from "vue/compiler-sfc";
 
 
 // if (process.env.NODE_ENV === "development") {
 //   console.debug("Vitepress env:\n", process.env);
 // }
+
+const vueCompilerOptions: CompilerOptions = {
+  compilerOptions: {
+    isCustomElement: (tag) => {
+      return tag.startsWith("tsvg"); // (return true)
+    },
+  },
+};
 
 const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.space/public_html"
   : process.env.ZSH === "/usr/share/oh-my-zsh" ? "./dist"
@@ -15,6 +24,7 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // vue: {},
   title: "Autpunk Space",
   base: "/",
   // titleTemplate: 'Autpunk Dot Space',
@@ -32,8 +42,10 @@ export default defineConfig({
   markdown: {
     // {{{
     theme: {
-      light: "snazzy-light",
-      dark: "poimandres",
+      // light: "snazzy-light",
+      light: "catppuccin-latte",
+      // dark: "poimandres",
+      dark: "catppuccin-mocha",
     },
     typographer: true,
     linkify: true,
@@ -54,7 +66,6 @@ export default defineConfig({
   sitemap: {
     hostname: "https://autpunk.space",
   },
-
   themeConfig: { 
     logo: "/rainbow_space.png", // TODO: add sizes
     externalLinkIcon: true,

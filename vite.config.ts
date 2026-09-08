@@ -10,11 +10,11 @@ import { NodePackageImporter } from "sass-embedded";
 import svgLoader from "vite-svg-loader";
 import type { PluginOption } from "vite";
 import type { LogsOutput } from "vite-plugin-terminal";
-import postcssFilterFallback from "postcss-filter-fallback";
+// import postcssFilterFallback from "postcss-filter-fallback";
 // import postCssUnoCSS from "@unocss/postcss";
 
 // if (process.env.NODE_ENV === "development") {
-//   console.debug("Vite env:\n", process.env);
+  // console.debug("Vite env:\n", process.env);
 // }
 
 const devOnlyPlugins: PluginOption = process.env.NODE_ENV === "development" ? [vueDevTools()] : [];
@@ -24,7 +24,9 @@ const vitePlugins: PluginOption = [
   ...devOnlyPlugins,
   UnoCSS(),
   groupIconVitePlugin(),
-  svgLoader(),
+  svgLoader({
+    defaultImport: "component",
+  }),
   Components({
     dirs: [".vitepress/theme/components"],
     extensions: ["vue", "md"],
@@ -55,19 +57,19 @@ export default defineConfig({
     },
   },
   css: {
-    postcss: {
-      plugins: [
-        // postCssUnoCSS(),
-        postcssFilterFallback({
-          oldIE: false,
-          svg: true,
-          webkit: true,
-        }),
-      ],
-    },
+    // postcss: {
+    //   plugins: [
+    //     postCssUnoCSS(),
+    //     postcssFilterFallback({
+    //       oldIE: false,
+    //       svg: true,
+    //       webkit: true,
+    //     }),
+    //   ],
+    // },
     preprocessorOptions: {
       scss: {
-        api: "modern-compiler",
+        // api: "modern-compiler",
         importers: [new NodePackageImporter()],
       },
     },

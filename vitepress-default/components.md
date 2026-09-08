@@ -53,8 +53,8 @@ Output:
 
 <VPButton theme="brand" text="brand button" />
 <VPButton theme="alt" text="alt button" />
-
 <button>A regular button</button>
+<button class="btn">A button by unocss</button>
 
 ## Inputs
 
@@ -155,13 +155,13 @@ Markdown <i-mdi-language-markdown />
 ::: info Input
 ```vue-html vue
 <GalaxyPizza />
-<GalaxyPizza size="48" />
-<GalaxyPizza size="128" />
+<GalaxyPizza size=48 />
+<GalaxyPizza size=128 />
 ```
 :::
 
 ::: info Output
 <GalaxyPizza />
-<GalaxyPizza size="48" />
-<GalaxyPizza size="128" />
+<GalaxyPizza size=48 />
+<GalaxyPizza size=128 />
 :::

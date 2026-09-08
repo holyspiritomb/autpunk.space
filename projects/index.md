@@ -11,6 +11,12 @@ Sometimes I do things.
 
 ## Forks
 
+[Raspberry Pi Air Quality Monitor](forks/pi_aqm) <Badge type="info">gadget</Badge>
+
+[YuleLog](forks/yule_log) <Badge type="info">terminal</Badge>
+
+[weather.koplugin](forks/kobo_weather) <Badge type="info">eink</Badge>
+
 [Available Reads](forks/available-reads) <Badge type="info">webextension</Badge>
 
 [pyXyzzy](forks/pyxyzzy) <Badge type="info">webapp</Badge> <Badge>game</Badge>
@@ -22,3 +28,5 @@ Sometimes I do things.
 [Userscripts](https://github.com/holyspiritomb/userscripts)
 
 [Userstyles](https://github.com/holyspiritomb/userstyles)
+
+[Wordart](/pages/wordart)

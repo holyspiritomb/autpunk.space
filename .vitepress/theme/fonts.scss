@@ -1,26 +1,15 @@
-@use "pkg:@fontsource-utils/scss" as fontsource;
-@use "pkg:@fontsource/zilla-slab/scss" as ZillaSlab;
-@use "~inter-ui/default" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/web'
-);
+// @use "~inter-ui/default" with (
+//   $inter-font-display: swap,
+//   $inter-font-path: '~inter-ui/web'
+// );
+//
+// @use "~inter-ui/variable" with (
+//   $inter-font-display: swap,
+//   $inter-font-path: '~inter-ui/variable'
+// );
 
-@use "~inter-ui/variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/variable'
-);
-
-@include default.all;
-@include variable.all;
-@include fontsource.faces(
-  $metadata: ZillaSlab.$metadata,
-  $subsets: latin,
-  $weights: (
-    400,
-    600,
-  ),
-  $styles: all,
-);
+// @include default.all;
+// @include variable.all;
 
 html {
   font-family: "Inter", "Noto Color Emoji", "system-ui";
@@ -29,12 +18,21 @@ html {
 :root {
   --vp-font-family-base: "Inter";/* normal text font */
   --vp-font-family-mono: "Victor Mono"; /* code font */
+  --default-monoFont-family: "Victor Mono"; /* code font */
+  --default-monoFont-featureSettings: 'ss06' on, 'ss01' off, 'ss07' on;
 }
 
 @supports (font-variation-settings: normal) {
-  html { font-family: "InterVariable", "Noto Color Emoji", "system-ui"; } /* If using the variable font */
+  html {
+    font-family: InterVariable, "Noto Color Emoji", "system-ui";
+    font-feature-settings: 'cv01' on, 'cv02' on, 'cv03' on, 'cv04' on, 'cv05' on, 'cv07' on, 'cv08' on, 'cv09' on, 'cv10' on, 'ss03' on;
+    .vp-doc, .is-home, nav, footer, header, .home {
+      font-family: InterVariable, "Noto Color Emoji", "system-ui";
+      font-feature-settings: 'cv01' on, 'cv02' on, 'cv03' on, 'cv04' on, 'cv05' on, 'cv07' on, 'cv08' on, 'cv09' on, 'cv10' on, 'ss03' on;
+    }
+  } /* If using the variable font */
   :root {
-    --vp-font-family-base: 'InterVariable';/* normal text font */
+    --vp-font-family-base: 'Inter Variable', InterVariable;/* normal text font */
   }
 }
 
@@ -62,6 +60,7 @@ div.icon{
   }
 }
 
-.vp-code {
+code,kbd,samp,pre,.vp-code {
+  font-family: "Victor Mono" !important;
   font-feature-settings: 'ss06' on, 'ss01' off, 'ss07' on;
 }

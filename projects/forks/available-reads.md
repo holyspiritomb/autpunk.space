@@ -7,7 +7,14 @@ prev:
     link: '/projects'
 next: false
 ---
-# Available Reads Forked
+<script setup lang="ts">
+import { Javascript, Firefox } from "@dev.icons/vue/mono";
+</script>
+
+# {{ $frontmatter.title }}
+
+<MyBadge><Javascript /></MyBadge>
+<MyBadge><Firefox /></MyBadge>
 
 * Repository: https://github.com/holyspiritomb/goodreads
 * AMO: https://addons.mozilla.org/en-US/addon/available-reads-forked/

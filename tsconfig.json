@@ -5,15 +5,17 @@
     ".vitepress/**/*.vue",
     "other-people/**/*.md",
     "projects/**/*.md",
+    "pages/**/*.md",
     "thought-fossils/**/*.md",
     "unsorted-fragments/**/*.md",
     "vitepress-default/**/*.md",
-    "components.d.ts"
+    "components.d.ts",
+    "about.md"
   ],
   "compilerOptions": {
     "types": [
       "unplugin-icons/types/vue"
-    ]
+    ],
   },
   "vueCompilerOptions": {
     "vitePressExtensions": [
