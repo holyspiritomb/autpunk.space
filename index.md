@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: About
-      link: /pages/about
+      link: /about
 
 features:
   - title: Wordart
