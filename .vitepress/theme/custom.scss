@@ -57,8 +57,13 @@
   }
 }
 
-.vp-doc .custom-block div[class*="language"] {
-  @apply codelangblock;
+.vp-doc .custom-block {
+  &.details {
+    @apply detailscustom;
+  }
+  div[class*="language"] {
+    @apply codelangblock;
+  }
 }
 
 

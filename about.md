@@ -9,60 +9,58 @@ next: false
 ---
 <script setup>
 import HumanCrafted from "/src/craftedbyhuman.svg?skipsvgo"
-import VitePressIcon from "/src/vitepress-logo-mini.svg"
 </script>
 
-<style module>
+<style scoped>
 svg#humancrafted {
-    fill: var(--ctp-latte-crust);
+    fill: rgb(var(--ctp-mocha-lavender-rgb) / 0.2);
+    width: 120px !important;
+    height: auto;
 }
-.abouticons {
-    height: 16px;
-    width: auto;
-}
-
 </style>
 
 # {{ $frontmatter.title }}
 
+
 ## About this site
 
-[<HumanCrafted id="humancrafted" width="120px" height="auto" class="no-viewer" />](https://madebyhuman.iamjarl.com)
+::: details Technologies
 
-::: details technologies used
 Package manager:
-<div i-catppuccin-yarn />
+- <div i-catppuccin-yarn /> Yarn
 
 Vitepress' stack:
-<div i-catppuccin-vite />
-<div i-catppuccin-vue />
-<div i-catppuccin-markdown />
+- <div i-devicon-vitejs /> Vite
+- <div i-devicon-vuejs /> Vue 3
+- <div i-catppuccin-markdown /> Markdown
 
 My choices:
-<div i-catppuccin-typescript />
-<div i-catppuccin-sass />
-<div i-catppuccin-unocss />
+- <div i-devicon-typescript /> TypeScript
+- <div i-devicon-sass /> Sass
+- <div i-catppuccin-unocss /> Unocss
 
 Linting:
-<div i-catppuccin-eslint />
-<div i-catppuccin-stylelint />
+- <div i-catppuccin-eslint /> ESLint
+- <div i-catppuccin-stylelint /> StyleLint
+
+Text editors:
+- <div i-devicon-neovim /> neovim
+- <div i-catppuccin-vscode /> vscode
 :::
+[<HumanCrafted id="humancrafted" width="120px" height="auto" class="no-viewer" />](https://madebyhuman.iamjarl.com)
 
 
 ## About me
 
 What, are you a cop?
 
-<div i-devicon-plain-archlinux text-ctp-latte-sky dark:text-ctp-mocha-sky />
-<div i-devicon-plain-neovim text-ctp-latte-green dark:text-ctp-mocha-green />
-<div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow />
-<div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo />
+<!-- <div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow /> -->
+<!-- <div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo /> -->
 
-Devices:
-<div i-arcticons-kobo-books text-ctp-latte-lavender dark:text-ctp-mocha-lavender />
-<div i-devicon-plain-raspberrypi text-ctp-latte-red dark:text-ctp-mocha-red />
+## Devices I heck around on
 
-- Kobo Clara Colour
 - Raspberry Pi 3A+
 - Raspberry Pi 3B+
-- Homebuilt desktop computer
+- Kobo Clara Colour
+- Android phone via Termux
+- Homebuilt desktop computer <span i-devicon-plain-archlinux text-ctp-latte-sky dark:text-ctp-mocha-sky />

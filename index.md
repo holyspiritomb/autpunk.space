@@ -29,13 +29,13 @@ features:
   - title: Thought Fossils
     icon: 💭
     details: words are thought fossils
-    link: /thought-fossils
+    link: /pages/thought-fossils
   - title: Unsorted Fragments
     icon:
         src: /rainbowtrash.png
         alt: "emoji of garbage can at the end of a rainbow"
     details: dive into my brain dumpster
-    link: /unsorted-fragments
+    link: /pages/unsorted-fragments
   - title: Links to Other People
     icon: 🥔
     details: I just think they're neat

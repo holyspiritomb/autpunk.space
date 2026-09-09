@@ -42,6 +42,7 @@ export default defineConfig({
     "homefeatureimg": "bg-ctp-mocha-pink/50 dark:bg-ctp-mocha-crust/50 p-[6px] border-rd-1",
     "codelangblock": "bg-white/90 border-1 border-ctp-mocha-sky/90 dark:(bg-ctp-mocha-base border-ctp-mocha-sky/50)",
     "sidebarLinks": "border-l-1 pl-[16px] border-rd-[2px] border-l-pink",
+    "detailscustom": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-lavender/10",
   },
   transformers: [
     transformerDirectives(),

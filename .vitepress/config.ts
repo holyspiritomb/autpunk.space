@@ -66,7 +66,7 @@ export default defineConfig({
       { text: "About", link: "/about" },
       { text: "Projects", link: "/projects" },
       { text: "Wordart", link: "/pages/wordart" },
-      { text: "Writing", link: "/thought-fossils" },
+      { text: "Writing", link: "/pages/thought-fossils" },
       { text: "Links", link: "/pages/other-people" },
       { text: "Demos", link: "/pages/vitepress-default/components" },
     ],

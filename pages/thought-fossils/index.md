@@ -5,7 +5,7 @@ lastUpdated: true
 next: false
 prev:
     text: 'Home'
-    link: '../index'
+    link: '/index'
 ---
 # Thought Fossils
 
