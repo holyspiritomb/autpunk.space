@@ -3,7 +3,7 @@ import DefaultTheme from 'vitepress/theme-without-fonts';
 import { useData } from 'vitepress';
 
 const { theme, frontmatter } = useData()
-const { Layout } = DefaultTheme
+const { Layout } = DefaultTheme // eslint-disable-line no-unused-vars
 </script>
 
 <template>

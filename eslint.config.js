@@ -15,6 +15,7 @@ export default [
   unocss,
   eslint.configs.recommended,
   // StylisticPlugin.configs['recommended-flat'],
+  ...markdown.configs.processor,
   ...tseslint.configs.recommended.map(config => ({
     ...config,
     files: ["**/*.ts"],
@@ -30,7 +31,7 @@ export default [
       "dist/",
       "public/",
       "node_modules/",
-      "vitepress-default/markdown-examples.md",
+      "pages/vitepress-default/markdown-examples.md",
     ],
   },
   {
@@ -62,14 +63,19 @@ export default [
     },
   },
   {
-    files: ["**/**.md"],
+    files: ["**/**.md", "about.md", "pages/**/**.md"],
     plugins: {
       markdown,
     },
     processor: "markdown/markdown",
     language: "markdown/commonmark",
+    languageOptions: {
+      frontmatter: "yaml",
+    },
     rules: {
       "no-irregular-whitespace": 0,
+      "markdown/require-alt-text": "error",
+      "markdown/fenced-code-language": "warn",
     },
   },
   {

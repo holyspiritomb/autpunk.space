@@ -106,7 +106,7 @@ export default {
   },
   setup() {
     useImageViewer({
-      selector: '.vp-doc',   // container(s) to scan; every match gets its own viewer
+      selector: ".vp-doc",   // container(s) to scan; every match gets its own viewer
       svg: true,             // also open inline <svg> (mermaid diagrams, etc.)
       viewer: {
         backdrop: true,

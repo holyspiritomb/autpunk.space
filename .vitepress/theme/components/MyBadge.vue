@@ -2,6 +2,9 @@
 interface Props {
   text?: string
 }
+withDefaults(defineProps<Props>(), {
+  text: "Badge!",
+})
 </script>
 
 <template>

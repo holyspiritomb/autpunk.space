@@ -7,6 +7,7 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   value: '',
   placeholder: '',
+  label: "",
 })
 
 </script>
