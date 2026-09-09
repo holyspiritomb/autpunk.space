@@ -6,6 +6,10 @@ prev:
     text: VP Resources
 next: false
 ---
+<script setup>
+import UseSpeech from "../../.vitepress/theme/components/UseSpeech.vue";
+import SpeechEasy from "../../.vitepress/theme/components/SpeechEasy.vue";
+</script>
 # Components and elements <Badge>demo</Badge>
 
 ## Badges <Badge type="warning">one badge</Badge> <Badge>two badge</Badge> <Badge type="danger">red badge</Badge> <Badge type="info">blue badge</Badge>

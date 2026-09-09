@@ -18,11 +18,9 @@ import "./custom.scss";
 import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
 import LayoutBottom from "./components/LayoutBottom.vue";
-import SpeechEasy from "./components/SpeechEasy.vue";
 import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
-import UseSpeech from "./components/UseSpeech.vue";
 import MyBadge from "./components/MyBadge.vue";
 import DarkBox from "./components/DarkBox.vue";
 import useImageViewer from "vitepress-plugin-viewerjs";
@@ -99,10 +97,8 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
-      component("UseSpeech", UseSpeech).
       component("MyBadge", MyBadge).
-      component("DarkBox", DarkBox).
-      component("SpeechEasy", SpeechEasy);
+      component("DarkBox", DarkBox);
   },
   setup() {
     useImageViewer({
