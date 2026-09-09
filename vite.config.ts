@@ -8,20 +8,22 @@ import Terminal from "vite-plugin-terminal";
 import vueDevTools from "vite-plugin-vue-devtools";
 import { NodePackageImporter } from "sass-embedded";
 import svgLoader from "vite-svg-loader";
+import ViteRestart, { VitePluginRestartOptions } from "vite-plugin-restart";
 import type { PluginOption } from "vite";
 import type { LogsOutput } from "vite-plugin-terminal";
-// import postcssFilterFallback from "postcss-filter-fallback";
-// import postCssUnoCSS from "@unocss/postcss";
 
 // if (process.env.NODE_ENV === "development") {
   // console.debug("Vite env:\n", process.env);
 // }
 
-const devOnlyPlugins: PluginOption = process.env.NODE_ENV === "development" ? [vueDevTools()] : [];
+const restartOpts: VitePluginRestartOptions = {
+  restart: ["uno.config.ts"],
+  contentCheck: true,
+};
+const devOnlyPlugins: PluginOption = process.env.NODE_ENV === "development" ? [vueDevTools(), ViteRestart(restartOpts)] : [];
 const terminalOutputOpts: LogsOutput = process.env.NODE_ENV === "development" ? ["terminal", "console"] : ["terminal"];
 
 const vitePlugins: PluginOption = [
-  ...devOnlyPlugins,
   UnoCSS(),
   groupIconVitePlugin(),
   svgLoader(),
@@ -41,6 +43,7 @@ const vitePlugins: PluginOption = [
   gitCommitHashPlugin({
     isLongHash: true,
   }),
+  ...devOnlyPlugins,
 ];
 
 export default defineConfig({
@@ -55,16 +58,6 @@ export default defineConfig({
     },
   },
   css: {
-    // postcss: {
-    //   plugins: [
-    //     postCssUnoCSS(),
-    //     postcssFilterFallback({
-    //       oldIE: false,
-    //       svg: true,
-    //       webkit: true,
-    //     }),
-    //   ],
-    // },
     preprocessorOptions: {
       scss: {
         importers: [new NodePackageImporter()],

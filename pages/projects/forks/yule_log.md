@@ -7,6 +7,10 @@ prev:
     link: '/pages/projects'
 next: false
 ---
+<script setup>
+import Log from "/src/yule_log.svg?skipsvgo"
+</script>
+
 # {{ $frontmatter.title }}
 
 <div i-catppuccin-python />
@@ -14,3 +18,12 @@ next: false
 Repo: https://github.com/holyspiritomb/YuleLog
 
 The original project was made for python 3.5 in ~2016 and I wanted to bring it up to currently supported python versions and make the text customizable. An interesting thing I learned in the course of the project was that the fire's appearance changes based on whether the terminal is true color or not.
+
+<Log />
+
+<style module>
+svg {
+    width: 350px;
+    height: auto;
+}
+</style>

@@ -3258,6 +3258,7 @@ __metadata:
     viewerjs: "npm:^1.13.0"
     vite: "npm:7.0.0"
     vite-plugin-git-commit-hash: "npm:^1.0.7"
+    vite-plugin-restart: "npm:^2.0.0"
     vite-plugin-terminal: "npm:1.4.0"
     vite-plugin-vue-devtools: "npm:7.7.10"
     vite-svg-loader: "npm:^5.1.0"
@@ -3365,7 +3366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"braces@npm:~3.0.2":
+"braces@npm:^3.0.3, braces@npm:~3.0.2":
   version: 3.0.3
   resolution: "braces@npm:3.0.3"
   dependencies:
@@ -5748,6 +5749,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"micromatch@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "micromatch@npm:4.0.8"
+  dependencies:
+    braces: "npm:^3.0.3"
+    picomatch: "npm:^2.3.1"
+  checksum: 10c0/166fa6eb926b9553f32ef81f5f531d27b4ce7da60e5baf8c021d043b27a388fb95e46a8038d5045877881e673f8134122b59624d5cecbd16eb50a42e7a6b5ca8
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^10.2.2":
   version: 10.2.6
   resolution: "minimatch@npm:10.2.6"
@@ -6213,7 +6224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
   version: 2.3.2
   resolution: "picomatch@npm:2.3.2"
   checksum: 10c0/a554d1709e59be97d1acb9eaedbbc700a5c03dbd4579807baed95100b00420bc729335440ef15004ae2378984e2487a7c1cebd743cfdb72b6fa9ab69223c0d61
@@ -7545,6 +7556,17 @@ __metadata:
     "@nuxt/kit":
       optional: true
   checksum: 10c0/6ad775254b9ceaa63d17e6ef19fdf73c8d0c92cb51c379e8487c2d4e858b338f6a6199edf22d805179ef7b9511708f39e4f3fdff6fe2f4c6e3eac7f1ad010f91
+  languageName: node
+  linkType: hard
+
+"vite-plugin-restart@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "vite-plugin-restart@npm:2.0.0"
+  dependencies:
+    micromatch: "npm:^4.0.8"
+  peerDependencies:
+    vite: ^2.9.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+  checksum: 10c0/142378458b0a5312a3da4a3af7dcd23214b3588ba79133dc84137e84383c13bddf00d1e7c6d25935542e0dfecdc585b61eef2075a29bbd715a6923658f360900
   languageName: node
   linkType: hard
 

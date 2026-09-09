@@ -4,7 +4,7 @@ interface Props {
   value?: string
   placeholder?: string
 }
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   value: '',
   placeholder: '',
 })

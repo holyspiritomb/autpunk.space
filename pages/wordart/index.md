@@ -21,6 +21,7 @@ import OntarioLomg from "/src/ontario_lomg.svg?skipsvgo";
 import OntarioRainbow from "/src/ontario_rainbow_border_badge.svg?skipsvgo";
 import Luddites2 from "/src/luddites2.svg?skipsvgo";
 import TransPpl from "/src/trans_people_always.svg?skipsvgo";
+import MySwitchAppearance from "../../.vitepress/theme/components/MySwitchAppearance.vue";
 </script>
 
 # {{ $frontmatter.title }}
@@ -28,7 +29,9 @@ import TransPpl from "/src/trans_people_always.svg?skipsvgo";
 
 When I first used MS Office circa 1999, my favorite thing to do was make wordart. I rediscovered the joy of wordart on terminals as a means of visual stimming with Termux[^1] on my phone.
 
-Here's a bunch of ascii wordart I've made with various[^2] command-line tools.
+Here's a bunch of ascii wordart I've made with various[^2] command-line tools. Most look best on dark backgrounds.
+
+<MySwitchAppearance />
 
 [^1]: Android app for running a linux terminal emulator
 [^2]: [cfonts](https://github.com/dominikwilkowski/cfonts), [figlet](https://figlet.org), [pyfiglet](https://github.com/pwaller/pyfiglet), [blahaj](https://codeberg.org/GeopJr/BLAHAJ), [gay](https://github.com/ms-jpq/gay), [boxen](https://github.com/sindresorhus/boxen), [lolcrab](https://github.com/mazznoer/lolcrab), [terminal-svg](https://github.com/russmckendrick/terminal-svg), [neovim](https://neovim.io), and more!
@@ -44,15 +47,15 @@ Here's a bunch of ascii wordart I've made with various[^2] command-line tools.
 
 <Fiber />
 
-<DarkBox><MeatCoding /></DarkBox>[^4]
+<MeatCoding />[^4]
 [^4]: Meatcoding is the opposite of vibecoding. As in, using your brainmeats and not a chatbot to write the code.
 
 <Repent />[^5]
 [^5]: https://weatherishappening.com (epilepsy warning)
 
-<DarkBox><StopChatbots /></DarkBox>
+<StopChatbots />
 
-<DarkBox><WeWill /></DarkBox>
+<WeWill />
 
 <OntarioRainbow />[^6]
 [^6]: Contrary to what a certain American president thinks, one does not simply unilaterally rename geographical features by executive order. And no one is required to obey such an order, not even Google Maps. See also: Denali and the Gulf of Mexico.

@@ -43,6 +43,8 @@ export default defineConfig({
     "codelangblock": "bg-white/90 border-1 border-ctp-mocha-sky/90 dark:(bg-ctp-mocha-base border-ctp-mocha-sky/50)",
     "sidebarLinks": "border-l-1 pl-[16px] border-rd-[2px] border-l-pink",
     "detailscustom": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-lavender/10",
+    "customToggle": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-mantle border-rd-[5px] pr-[16px] mb-[1em] b-solid border-1 border-ctp-mocha-lavender/50 dark:border-ctp-mocha-surface1",
+    "customSwitch": "border-1 b-solid border-ctp-mocha-lavender/50 active:border-ctp-mocha-lavender focus:border-ctp-mocha-lavender dark:border-ctp-mocha-surface1",
   },
   transformers: [
     transformerDirectives(),
