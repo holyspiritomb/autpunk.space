@@ -1,4 +1,5 @@
 ---
+order: 2
 title: Wordart
 lastUpdated: true
 prev:
@@ -36,12 +37,12 @@ Here's a bunch of ascii wordart I've made with various[^2] command-line tools.
 
 <TransPpl />
 
-<DarkBox><MirVeln /></DarkBox>[^3]
+<MirVeln />[^3]
 [^3]: Yiddish slogan that means "we will outlive them."
 
 <NpfoRainbow />
 
-<DarkBox><Fiber /></DarkBox>
+<Fiber />
 
 <DarkBox><MeatCoding /></DarkBox>[^4]
 [^4]: Meatcoding is the opposite of vibecoding. As in, using your brainmeats and not a chatbot to write the code.

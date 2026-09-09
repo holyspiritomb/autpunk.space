@@ -63,9 +63,9 @@ export default defineConfig({
     },
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/pages/about" },
-      { text: "Projects", link: "/pages/projects" },
+      { text: "About", link: "/about" },
       { text: "Wordart", link: "/pages/wordart" },
+      { text: "Projects", link: "/pages/projects" },
       { text: "Writing", link: "/pages/thought-fossils" },
       { text: "Links", link: "/pages/other-people" },
       { text: "Demos", link: "/pages/vitepress-default/components" },
@@ -95,8 +95,8 @@ export default defineConfig({
     sidebar: generateSidebar({ 
       capitalizeFirst: true, // {{{
       collapsed: true,
-      // debugPrint: true,
-      documentRootPath: "./pages/",
+      debugPrint: true,
+      documentRootPath: "./",
       excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
       includeEmptyFolder: false,
