@@ -3,7 +3,7 @@ order: 1
 lastUpdated: true
 prev:
     text: 'Home'
-    link: '../index'
+    link: '/'
 next: false
 ---
 # Projects 
@@ -28,5 +28,3 @@ Sometimes I do things.
 [Userscripts](https://github.com/holyspiritomb/userscripts)
 
 [Userstyles](https://github.com/holyspiritomb/userstyles)
-
-[Wordart](/pages/wordart)

@@ -63,8 +63,8 @@ export default defineConfig({
     },
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about" },
-      { text: "Projects", link: "/projects" },
+      { text: "About", link: "/pages/about" },
+      { text: "Projects", link: "/pages/projects" },
       { text: "Wordart", link: "/pages/wordart" },
       { text: "Writing", link: "/pages/thought-fossils" },
       { text: "Links", link: "/pages/other-people" },
@@ -96,7 +96,7 @@ export default defineConfig({
       capitalizeFirst: true, // {{{
       collapsed: true,
       // debugPrint: true,
-      documentRootPath: "./",
+      documentRootPath: "./pages/",
       excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
       includeEmptyFolder: false,

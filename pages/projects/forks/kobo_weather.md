@@ -4,7 +4,7 @@ title: weather.koplugin
 lastUpdated: true
 prev:
     text: 'Projects'
-    link: '/projects'
+    link: '/pages/projects'
 next: false
 ---
 # {{ $frontmatter.title }}

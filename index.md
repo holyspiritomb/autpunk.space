@@ -13,19 +13,19 @@ hero:
   actions:
     - theme: brand
       text: About
-      link: /about
+      link: /pages/about
 
 features:
+  - title: Wordart
+    icon: ✨
+    details: wordart I made for visual stimming in terminals and text editors
+    link: /pages/wordart
   - title: Projects
     details: a few things I've made
     icon:
         src: /galaxylaptop.png
         alt: "galaxy laptop emoji"
-    link: /projects
-  - title: Ascii Wordart
-    icon: ✨
-    details: wordart I made for visual stimming in terminals and text editors
-    link: /pages/wordart
+    link: /pages/projects
   - title: Thought Fossils
     icon: 💭
     details: words are thought fossils
@@ -33,7 +33,7 @@ features:
   - title: Unsorted Fragments
     icon:
         src: /rainbowtrash.png
-        alt: "emoji of garbage can at the end of a rainbow"
+        alt: "emoji of a garbage can at the end of a rainbow"
     details: dive into my brain dumpster
     link: /pages/unsorted-fragments
   - title: Links to Other People

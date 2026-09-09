@@ -4,7 +4,7 @@ title: Raspberry Pi Air Quality Monitor
 lastUpdated: true
 prev:
     text: 'Projects'
-    link: '/projects'
+    link: '/pages/projects'
 next: false
 ---
 # {{ $frontmatter.title }}
