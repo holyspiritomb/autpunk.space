@@ -19,7 +19,6 @@
 .VPSwitch {
   @apply customSwitch;
   position: relative;
-  border-radius: 11px;
   display: block;
   width: 40px;
   height: 22px;

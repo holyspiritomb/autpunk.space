@@ -8,7 +8,7 @@ prev:
 next: false
 ---
 # {{ $frontmatter.title }}
-<div i-catppuccin-lua />
+<div i-catppuccin-lua aria-label="lua" />
 
 Repo: https://github.com/holyspiritomb/weather.koplugin
 

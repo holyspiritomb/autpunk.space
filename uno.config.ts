@@ -21,8 +21,11 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
       cdn: "https://esm.sh/",
+      warn: true,
       extraProperties: {
         "display": "inline-block",
+        "margin-right": "3px",
+        "vertical-align": "middle",
       },
       customizations: {
         transform(svg) {
@@ -44,7 +47,8 @@ export default defineConfig({
     "sidebarLinks": "border-l-1 pl-[16px] border-rd-[2px] border-l-pink",
     "detailscustom": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-lavender/10",
     "customToggle": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-mantle border-rd-[5px] pr-[16px] mb-[1em] b-solid border-1 border-ctp-mocha-lavender/50 dark:border-ctp-mocha-surface1",
-    "customSwitch": "border-1 b-solid border-ctp-mocha-lavender/50 active:border-ctp-mocha-lavender focus:border-ctp-mocha-lavender dark:border-ctp-mocha-surface1",
+    "customSwitch": "border-1 b-solid border-ctp-mocha-lavender/50 active:border-ctp-mocha-lavender focus:border-ctp-mocha-lavender dark:border-ctp-mocha-surface1 border-rd-[11px]",
+    "mySvg": "w-[350px] h-a",
   },
   transformers: [
     transformerDirectives(),
@@ -61,6 +65,7 @@ export default defineConfig({
     ],
     shorthands: {
       // equal to `opacity: "(0|10|20|30|40|50|60|70|90|100)"`
+      // @ts-expect-error it's fine
       'opacity': Array.from({ length: 11 }, (_, i) => i * 10),
       'font-size': '(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)',
     },

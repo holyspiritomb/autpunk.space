@@ -9,7 +9,7 @@ next: false
 ---
 # {{ $frontmatter.title }}
 
-<div i-catppuccin-javascript />
+<div i-catppuccin-javascript aria-label="javascript" />
 
 * Repository: https://github.com/holyspiritomb/goodreads
 * AMO: https://addons.mozilla.org/en-US/addon/available-reads-forked/

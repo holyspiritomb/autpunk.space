@@ -36,34 +36,33 @@ Here's a bunch of ascii wordart I've made with various[^2] command-line tools. M
 [^1]: Android app for running a linux terminal emulator
 [^2]: [cfonts](https://github.com/dominikwilkowski/cfonts), [figlet](https://figlet.org), [pyfiglet](https://github.com/pwaller/pyfiglet), [blahaj](https://codeberg.org/GeopJr/BLAHAJ), [gay](https://github.com/ms-jpq/gay), [boxen](https://github.com/sindresorhus/boxen), [lolcrab](https://github.com/mazznoer/lolcrab), [terminal-svg](https://github.com/russmckendrick/terminal-svg), [ascii-banner](https://ascii-banner.com/), [neovim](https://neovim.io), and more!
 
-<Luddites2 />
+<Luddites2 aria-label="The Luddites were right" />
 
-<TransPpl />
+<TransPpl  aria-label="Trans people have always existed" />
 
-<MirVeln />[^3]
+<MirVeln aria-label="Yiddish block letters: Mir veln zey iberleben" />[^3]
 [^3]: Yiddish slogan that means "we will outlive them."
 
-<NpfoRainbow />
+<NpfoRainbow aria-label="Nazi punks fuck off" />
 
-<Fiber />
+<Fiber aria-label="I desire the fibrous nutritive material" />
 
-<MeatCoding />[^4]
+<MeatCoding aria-label="Better living through meatcoding" />[^4]
 [^4]: Meatcoding is the opposite of vibecoding. As in, using your brainmeats and not a chatbot to write the code.
 
-<Repent />[^5]
+<Repent aria-label="Repent to your weather lords" />[^5]
 [^5]: https://weatherishappening.com (epilepsy warning)
 
-<StopChatbots />
+<StopChatbots aria-label="Stop believing chatbots" />
 
-<WeWill />
+<WeWill aria-label="Trans flag colors text: We will outlive them" />
 
-<OntarioRainbow />[^6]
+<OntarioRainbow aria-label="Her name is Lake Ontario" />[^6]
 [^6]: Contrary to what a certain American president thinks, one does not simply unilaterally rename geographical features by executive order. And no one is required to obey such an order, not even Google Maps. See also: Denali and the Gulf of Mexico.
 
 <style module>
 svg {
+    @apply mySvg;
     font-family: "Victor Mono" !important;
-    width: 350px;
-    height: auto;
 }
 </style>

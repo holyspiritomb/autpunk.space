@@ -9,11 +9,11 @@ next: false
 ---
 # {{ $frontmatter.title }}
 
-<div i-catppuccin-python />
-<div i-simple-icons-flask />
-<div i-devicon-plain-raspberrypi />
-<div i-devicon-plain-bootstrap />
-<div i-devicon-chartjs-wordmark />
+<div i-catppuccin-python aria-label="python" />
+<div i-simple-icons-flask aria-label="flask" />
+<div i-devicon-plain-raspberrypi aria-label="raspberry pi" />
+<div i-devicon-plain-bootstrap aria-label="bootstrap" />
+<div i-devicon-chartjs-wordmark aria-label="chart dot JS" />
 
 
 Repo: https://github.com/holyspiritomb/pi_air_quality_monitor

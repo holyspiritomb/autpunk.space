@@ -9,11 +9,11 @@ next: false
 ---
 # {{ $frontmatter.title }}
 
-<div i-catppuccin-vite />
-<div i-catppuccin-typescript-react />
-<div i-catppuccin-typescript />
-<div i-catppuccin-sass />
-<div i-catppuccin-python />
+<div i-catppuccin-vite aria-label="vite" />
+<div i-catppuccin-typescript-react aria-label="react" />
+<div i-catppuccin-typescript aria-label="typescript" />
+<div i-catppuccin-sass aria-label="sass" />
+<div i-catppuccin-python aria-label="python" />
 
 * Repository: https://gitlab.com/holyspiritomb/pyxyzzy-custom
 * Deployment: https://pyx.hamster.dance
