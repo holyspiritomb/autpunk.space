@@ -15,6 +15,12 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 550, // TODO: figure out better chunking
+      reportCompressedSize: true,
+    },
+  },
   title: "Autpunk Space",
   base: "/",
   // titleTemplate: 'Autpunk Dot Space',
@@ -62,6 +68,7 @@ export default defineConfig({
       pattern: "https://github.com/holyspiritomb/autpunk.space/edit/main/:path",
     },
     nav: [
+      // {{{
       { text: "Home", link: "/" },
       { text: "About", link: "/about" },
       { text: "Wordart", link: "/pages/wordart" },
@@ -69,6 +76,7 @@ export default defineConfig({
       { text: "Writing", link: "/pages/thought-fossils" },
       { text: "Links", link: "/pages/other-people" },
       { text: "Demos", link: "/pages/vitepress-default/components" },
+      // }}}
     ],
     search: {
       // {{{
@@ -93,9 +101,9 @@ export default defineConfig({
       }, // }}}
     },
     sidebar: generateSidebar({ 
-      capitalizeFirst: true, // {{{
+      capitalizeFirst: false, // {{{
       collapsed: true,
-      debugPrint: true,
+      // debugPrint: true,
       documentRootPath: "./",
       excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],

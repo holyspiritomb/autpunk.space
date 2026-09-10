@@ -1,16 +1,3 @@
-// @use "~inter-ui/default" with (
-//   $inter-font-display: swap,
-//   $inter-font-path: '~inter-ui/web'
-// );
-//
-// @use "~inter-ui/variable" with (
-//   $inter-font-display: swap,
-//   $inter-font-path: '~inter-ui/variable'
-// );
-
-// @include default.all;
-// @include variable.all;
-
 html {
   font-family: "Inter", "Noto Color Emoji", "system-ui";
   font-feature-settings: 'cv01' on, 'cv02' on, 'cv03' on, 'cv04' on, 'cv05' on, 'cv07' on, 'cv08' on, 'cv09' on, 'cv10' on, 'ss03' on;

@@ -63,6 +63,10 @@ export default defineConfig({
         importers: [new NodePackageImporter()],
       },
     },
+    transformer: "lightningcss",
+    lightningcss: {
+      errorRecovery: true,
+    },
     devSourcemap: true,
   },
   define: {
