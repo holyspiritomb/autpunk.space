@@ -32,9 +32,6 @@ if (process.env.NODE_ENV === "development") {
     <template>
       <div class="h-full w-full flex flex-col items-center justify-center">
         <div>
-          <a href="/__unocss">open in this window</a>
-        </div>
-        <div>
           <a href="/__unocss" target="_blank">open in 🆕 window</a>
         </div>
       </div>
@@ -60,7 +57,7 @@ if (process.env.NODE_ENV === "development") {
       // title to display in the tab
       title: "UnoCSS",
       // any icon from material design icons or a URL to an image
-      icon: "/__unocss/favicon.svg",
+      icon: "https://unocss.dev/logo.svg",
       view: {
         type: "sfc",
         sfc: SFC,
