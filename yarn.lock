@@ -202,16 +202,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/install-pkg@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@antfu/install-pkg@npm:1.1.0"
-  dependencies:
-    package-manager-detector: "npm:^1.3.0"
-    tinyexec: "npm:^1.0.1"
-  checksum: 10c0/140d5994c76fd3d0e824c88f1ce91b3370e8066a8bc2f5729ae133bf768caa239f7915e29c78f239b7ead253113ace51293e95127fafe2b786b88eb615b3be47
-  languageName: node
-  linkType: hard
-
 "@antfu/install-pkg@npm:^2.0.1":
   version: 2.0.1
   resolution: "@antfu/install-pkg@npm:2.0.1"
@@ -1340,7 +1330,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/utils@npm:^3.1.0, @iconify/utils@npm:^3.1.4":
+"@iconify/utils@npm:^3.1.4":
   version: 3.1.7
   resolution: "@iconify/utils@npm:3.1.7"
   dependencies:
@@ -2862,7 +2852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-api@npm:7.7.10, @vue/devtools-api@npm:^7.7.0":
+"@vue/devtools-api@npm:^7.7.0":
   version: 7.7.10
   resolution: "@vue/devtools-api@npm:7.7.10"
   dependencies:
@@ -3208,7 +3198,6 @@ __metadata:
     "@types/markdown-it-footnote": "npm:^3.0.4"
     "@types/node": "npm:22.13.14"
     "@unocss/eslint-config": "npm:66.10.1"
-    "@vue/devtools-api": "npm:7.7.10"
     "@vue/tsconfig": "npm:0.9.1"
     "@vueuse/core": "npm:14.4.0"
     easy-speech: "npm:^2.4.0"
@@ -3224,7 +3213,6 @@ __metadata:
     typescript: "npm:6.0.3"
     typescript-eslint: "npm:8.68.0"
     unocss: "npm:66.10.1"
-    unplugin-icons: "npm:^23.0.1"
     unplugin-vue-components: "npm:28.4.1"
     victormono: "npm:^1.5.6"
     viewerjs: "npm:^1.13.0"
@@ -5021,7 +5009,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"local-pkg@npm:^1.0.0, local-pkg@npm:^1.1.2, local-pkg@npm:^1.2.1":
+"local-pkg@npm:^1.0.0, local-pkg@npm:^1.2.1":
   version: 1.2.1
   resolution: "local-pkg@npm:1.2.1"
   dependencies:
@@ -5916,13 +5904,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"obug@npm:^2.1.1":
-  version: 2.1.4
-  resolution: "obug@npm:2.1.4"
-  checksum: 10c0/34a0ee97cd88573cfd97d384c2a79f07118ae5680d7e45d1de6e99c74eddefe145e8ca27a2db02195a1ee5fded5aa22b924869c842728c201b9f109a27d0ef19
-  languageName: node
-  linkType: hard
-
 "ofetch@npm:^1.5.1":
   version: 1.5.1
   resolution: "ofetch@npm:1.5.1"
@@ -6088,7 +6069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-manager-detector@npm:^1.3.0, package-manager-detector@npm:^1.7.0":
+"package-manager-detector@npm:^1.7.0":
   version: 1.8.0
   resolution: "package-manager-detector@npm:1.8.0"
   checksum: 10c0/4c8e2c47fdc874465d3b3b11934401db9d73470ccbdabeb092e46cb94abbc491d5befc8c271b5ea1ae9c6a881f44c2997e011873365bde9fd6c3dc001221ff7a
@@ -6986,7 +6967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyexec@npm:^1.0.1, tinyexec@npm:^1.2.4, tinyexec@npm:^1.3.0":
+"tinyexec@npm:^1.2.4, tinyexec@npm:^1.3.0":
   version: 1.3.1
   resolution: "tinyexec@npm:1.3.1"
   checksum: 10c0/c590369cb3fa73cc18a3998caec8a00f9712d91309c881be3ac52b160fb2f80c7b1fbf3591858ab6abab47ad55385b0c86ec19982e32441a01f55298dab9ccd2
@@ -7274,33 +7255,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^23.0.1":
-  version: 23.0.1
-  resolution: "unplugin-icons@npm:23.0.1"
-  dependencies:
-    "@antfu/install-pkg": "npm:^1.1.0"
-    "@iconify/utils": "npm:^3.1.0"
-    local-pkg: "npm:^1.1.2"
-    obug: "npm:^2.1.1"
-    unplugin: "npm:^2.3.11"
-  peerDependencies:
-    "@svgr/core": ">=7.0.0"
-    "@svgx/core": ^1.0.1
-    "@vue/compiler-sfc": ^3.0.2
-    svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
-  peerDependenciesMeta:
-    "@svgr/core":
-      optional: true
-    "@svgx/core":
-      optional: true
-    "@vue/compiler-sfc":
-      optional: true
-    svelte:
-      optional: true
-  checksum: 10c0/a4e39f973370989349e9cf8e9b5596ad0bf83e03e2cc79d196a5e063d9ba71bbdd3a7bc24b43be4378c9977e9247275fef3508e93a3023e0d82563ece6e97530
-  languageName: node
-  linkType: hard
-
 "unplugin-utils@npm:^0.2.4":
   version: 0.2.5
   resolution: "unplugin-utils@npm:0.2.5"
@@ -7346,7 +7300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^2.0.0, unplugin@npm:^2.2.0, unplugin@npm:^2.3.11":
+"unplugin@npm:^2.0.0, unplugin@npm:^2.2.0":
   version: 2.3.11
   resolution: "unplugin@npm:2.3.11"
   dependencies:
