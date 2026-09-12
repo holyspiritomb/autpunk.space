@@ -4,7 +4,7 @@
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
     "pages/**/*.md",
-    "pages/about.md",
+    "about.md",
     "components.d.ts"
   ],
   "compilerOptions": {
