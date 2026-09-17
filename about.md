@@ -49,7 +49,6 @@ Text editors:
 :::
 [<HumanCrafted id="humancrafted" width="120px" height="auto" class="no-viewer" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com)
 
-
 ## About me
 
 What, are you a cop?

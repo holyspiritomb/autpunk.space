@@ -8,9 +8,6 @@
     "components.d.ts"
   ],
   "compilerOptions": {
-    "types": [
-      "unplugin-icons/types/vue"
-    ],
     "allowJs": true,
   },
   "vueCompilerOptions": {

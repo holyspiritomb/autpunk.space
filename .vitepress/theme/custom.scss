@@ -1,11 +1,12 @@
 :root {
   --vp-code-font-size: 0.72rem;
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #ea76cb 30%,
-    #04a5e5
-  );
+  --vp-home-hero-name-background:
+    -webkit-linear-gradient(
+      120deg,
+      #ea76cb 30%,
+      #04a5e5
+    );
   --vp-badge-danger-bg: var(--vp-custom-block-danger-bg);
   --vp-badge-danger-text: var(--vp-custom-block-danger-text);
   --vp-badge-info-bg: var(--vp-custom-block-info-bg);
@@ -14,14 +15,16 @@
   --vp-badge-tip-text: var(--vp-custom-block-tip-text);
   --vp-badge-warning-bg: var(--vp-custom-block-warning-bg);
   --vp-badge-warning-text: var(--vp-custom-block-warning-text);
-  --vp-button-alt-bg: rgb(var(--ctp-mocha-pink-rgb) / 1 );
+  --vp-button-alt-bg: rgb(var(--ctp-mocha-pink-rgb) / 1);
   --vp-code-lang-color: var(--ctp-latte-pink);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%);
   --vp-home-hero-image-filter: blur(44px);
-/* TODO: figure out fallback for when blur() is not supported */
-  --vp-header-anchor-symbol: '‼';
+
+  /* TODO: figure out fallback for when blur() is not supported */
+  --vp-header-anchor-symbol: "‼";
   --vp-code-block-bg: rgb(var(--ctp-mocha-pink-rgb) / 0.28);
 }
+
 .dark {
   --vp-button-alt-text: var(--ctp-mocha-base);
   --vp-code-block-bg: rgb(var(--ctp-mocha-crust-rgb) / 0.8);
@@ -33,6 +36,7 @@
 
 .footnotes {
   font-size: smaller;
+
   .footnotes-list {
     list-style-type: decimal;
   }
@@ -40,6 +44,7 @@
 
 .group:has([role="button"]) .VPSidebarItem.level-0 .items {
   @apply sidebarLinks;
+
   transition: background-color 0.25s;
 }
 
@@ -48,10 +53,12 @@
 .VPHomeFeatures {
   .VPFeature.VPLink {
     @apply homefeaturelink;
+
     .box > img.VPImage {
       @apply homefeatureimg;
     }
   }
+
   div.icon {
     @apply homefeatureimg;
   }
@@ -61,15 +68,17 @@
   &.details {
     @apply detailscustom;
   }
+
   div[class*="language"] {
     @apply codelangblock;
   }
 }
 
-
+/* stylelint-disable selector-not-notation */
 *:not(.VPLocalNavOutlineDropdown):not(.VPNavBarExtra) > button:not([class^="VP"]):not([class^="vpi-"]):not([aria-controls^="VP"]):not(.DocSearch-Button):not(.copy) {
   @apply btn;
 }
+/* stylelint-enable selector-not-notation */
 
 .viewer-backdrop {
   @apply viewerjs;

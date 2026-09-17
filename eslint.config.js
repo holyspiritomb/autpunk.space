@@ -6,6 +6,7 @@ import StylisticPlugin from '@stylistic/eslint-plugin';
 import globals from 'globals';
 import eslint from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
+import eslintPluginVueScopedCSS from 'eslint-plugin-vue-scoped-css';
 import vueParser from "vue-eslint-parser";
 import unocss from "@unocss/eslint-config/flat";
 
@@ -19,6 +20,10 @@ export default [
     files: ["**/*.ts"],
   })),
   ...pluginVue.configs['flat/recommended'].map(config => ({
+    ...config,
+    files: ["**/*.vue", ".vitepress/**/*.vue"],
+  })),
+  ...eslintPluginVueScopedCSS.configs['recommended'].map(config => ({
     ...config,
     files: ["**/*.vue", ".vitepress/**/*.vue"],
   })),
@@ -39,7 +44,7 @@ export default [
     },
   },
   {
-    files: ["**/*.ts", "**/*.js"],
+    files: ["**/*.ts", "**/*.js", ".vitepress/theme/index.ts", ".vitepress/config.ts", ".vitepress/theme/**/*.ts"],
     plugins: {
       stylistic: StylisticPlugin,
     },
@@ -109,11 +114,21 @@ export default [
     },
     rules: {
       "stylistic/indent": 0,
-      "vue/script-indent": [1, 2],
+      "vue/array-bracket-spacing": [1, "never", { "arraysInArrays": false }],
+      "vue/comma-dangle": [1, "always-multiline"],
+      "vue/comma-spacing": [1, { "before": false, "after": true }],
+      "vue/html-comment-indent": [1, 2],
       "vue/html-indent": [1, 2],
-      "vue/singleline-html-element-content-newline": 0,
-      "vue/no-v-html": 0,
+      "vue/html-quotes": ["error", "double", { "avoidEscape": false }],
       "vue/html-self-closing": 0,
+      "vue/no-spaces-around-equal-signs-in-attribute": ["error"],
+      "vue/no-unused-vars": ["warn", { "ignorePattern": "^_" }],
+      "vue/no-v-html": 0,
+      "vue/object-curly-spacing": [1, "always", { "arraysInObjects": false, "objectsInObjects": false }],
+      "vue/script-indent": [1, 2],
+      "vue/singleline-html-element-content-newline": 0,
+      "vue/this-in-template": 0,
+      "vue-scoped-css/enforce-style-type": ["error", { "allows": ["scoped", "module"]}],
     },
   },
 ];

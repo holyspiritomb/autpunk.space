@@ -5,6 +5,7 @@ import "virtual:group-icons.css";
 import "victormono";
 import "@fontsource/zilla-slab/400.css"; // Specify weight
 import "@fontsource/zilla-slab/600.css"; // Specify weight
+import "@fontsource/jetbrains-mono/300.css";
 import "inter-ui/inter.css";
 import "inter-ui/inter-variable.css";
 import "@infolektuell/noto-color-emoji";
