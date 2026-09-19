@@ -29,7 +29,6 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "AMC Tubes": () => import("figlet/importable-fonts/AMC Tubes.js"),
   "AMC Untitled": () => import("figlet/importable-fonts/AMC Untitled.js"),
   "ANSI Compact": () => import("figlet/importable-fonts/ANSI Compact.js"),
-  "ANSI-Compact": () => import("figlet/importable-fonts/ANSI-Compact.js"),
   "ANSI Regular": () => import("figlet/importable-fonts/ANSI Regular.js"),
   "ANSI Shadow": () => import("figlet/importable-fonts/ANSI Shadow.js"),
   "Arrows": () => import("figlet/importable-fonts/Arrows.js"),
