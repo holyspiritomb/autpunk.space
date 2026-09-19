@@ -200,11 +200,12 @@ onMounted(() => {
         v-model="textToFiglet"
         @change="generateArt"
       ></textarea>
-      <textarea
+      <div
         v-if="figletText"
         id="outputFigDisplay"
-        v-text="figletText"
-      ></textarea>
+      >
+        <pre>{{ figletText }}</pre>
+      </div>
     </form>
   </div>
 </template>
@@ -225,9 +226,10 @@ div.myContainer {
 
   }
   #outputFigDisplay{
-    @apply customSelect w-[100%] h-[400px] overflow-y-auto overflow-x-scroll;
-    /* line-height: normal; */
-    font-family: "Victor Mono", 'JetBrains Mono', monospace !important;
+    @apply customSelect w-[100%] h-a p-3 overflow-y-auto overflow-x-scroll;
+    pre {
+      font-family: "Victor Mono", 'JetBrains Mono', monospace !important;
+    }
   }
 }
 </style>
