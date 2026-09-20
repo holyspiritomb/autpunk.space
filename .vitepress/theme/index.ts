@@ -3,12 +3,11 @@ import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme-without-fonts";
 import "virtual:group-icons.css";
 import "victormono";
-import "@fontsource/zilla-slab/400.css"; // Specify weight
-import "@fontsource/zilla-slab/600.css"; // Specify weight
-import "@fontsource/jetbrains-mono/300.css";
-import "inter-ui/inter.css";
-import "inter-ui/inter-variable.css";
-import "@infolektuell/noto-color-emoji";
+import "@fontsource/zilla-slab/latin-400.css"; // Specify weight
+import "@fontsource/zilla-slab/latin-600.css"; // Specify weight
+import "inter-ui/inter-latin.css";
+import "inter-ui/inter-variable-latin.css";
+// import "@infolektuell/noto-color-emoji"; // TODO: make dynamic
 import "@catppuccin/palette/css/catppuccin.css";
 import "@catppuccin/vitepress/theme/mocha/sky.css";
 import "viewerjs/dist/viewer.css";
@@ -19,11 +18,11 @@ import "./custom.scss";
 import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
 import LayoutBottom from "./components/LayoutBottom.vue";
-import CustomHeroImg from "./components/CustomHeroImg.vue";
+// import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import MyBadge from "./components/MyBadge.vue";
-import DarkBox from "./components/DarkBox.vue";
+// import DarkBox from "./components/DarkBox.vue";
 import useImageViewer from "vitepress-plugin-viewerjs";
 
 
@@ -88,15 +87,14 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       "layout-bottom": () => h(LayoutBottom),
-      "home-hero-image": () => h(CustomHeroImg),
+      // "home-hero-image": () => h(CustomHeroImg),
     });
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enhanceApp({ app, router, siteData }) {
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
-      component("MyBadge", MyBadge).
-      component("DarkBox", DarkBox);
+      component("MyBadge", MyBadge);
   },
   setup() {
     useImageViewer({

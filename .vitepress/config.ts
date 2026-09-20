@@ -17,8 +17,17 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
 export default defineConfig({
   vite: {
     build: {
-      chunkSizeWarningLimit: 550, // TODO: figure out better chunking
+      future: "warn",
+      chunkSizeWarningLimit: 500, // INFO: default value
       reportCompressedSize: true,
+      dynamicImportVarsOptions: {
+        include: ["pages/wordart/index.md"],
+      },
+      rollupOptions: {
+        output: {
+          minifyInternalExports: true,
+        },
+      },
     },
   },
   title: "Autpunk Space",
@@ -26,7 +35,7 @@ export default defineConfig({
   // titleTemplate: 'Autpunk Dot Space',
   description: "An autism with personhood rambles about things, stuff and the difference between them.",
   head: [
-    ["link", { rel: "icon", href: "/rainbow_space.png" }],
+    ["link", { rel: "icon", href: "/rainbow_galaxy_heart.png" }],
   ],
   ignoreDeadLinks: true,
   lang: "en-US",
@@ -61,7 +70,7 @@ export default defineConfig({
     hostname: "https://autpunk.space",
   },
   themeConfig: { 
-    logo: "/rainbow_space.png", // TODO: add sizes
+    logo: "/rainbow_galaxy_heart.png", // TODO: add sizes
     externalLinkIcon: true,
     editLink: {
       text: "Edit",
@@ -70,7 +79,7 @@ export default defineConfig({
     nav: [
       // {{{
       { text: "Home", link: "/" },
-      { text: "About", link: "/about" },
+      { text: "About", link: "/pages/about" },
       { text: "Wordart", link: "/pages/wordart" },
       { text: "Projects", link: "/pages/projects" },
       { text: "Writing", link: "/pages/thought-fossils" },

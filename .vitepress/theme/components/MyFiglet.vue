@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import figlet from "figlet";
+import "@fontsource/jetbrains-mono/300.css";
 import { ref as deepRef, onMounted } from "vue";
-import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "../util/fontLoader";
+import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "/.vitepress/theme/util/fontLoader";
+import { useClipboard } from "@vueuse/core";
 
 const chosenFont = deepRef()
 const listOfFonts = deepRef(getAvailableFonts())
@@ -16,6 +18,7 @@ const width = deepRef("none");
 const whitespaceBreak = deepRef(whitespaceBreaks[0]);
 const textToFiglet = deepRef("be gay\ndo art\ncrime");
 const figletText = deepRef("");
+const { copy, isSupported } = useClipboard({figletText});
 
 // significantly adapted from
 // https://github.com/zzgosh/ASCII-ART_SVG/blob/d000ca76afdad788cf0debed249cad1d4c3618f7/src/components/AsciiArtGenerator.vue
@@ -198,13 +201,26 @@ onMounted(() => {
       <textarea
         id="inputText"
         v-model="textToFiglet"
-        @change="generateArt"
+        @input="generateArt"
       ></textarea>
       <div
         v-if="figletText"
-        id="outputFigDisplay"
       >
-        <pre>{{ figletText }}</pre>
+        <div v-if="isSupported">
+          <button @click="copy(figletText)">
+            <!-- by default, `copied` will be reset in 1.5s -->
+            <span v-if="!copied">Copy</span>
+            <span v-else>Copied!</span>
+          </button>
+        </div>
+        <p v-if="!isSupported">
+          Sorry, Your browser does not support Clipboard API
+        </p>
+        <div
+          id="outputFigDisplay"
+        >
+          <pre><code>{{ figletText }}</code></pre>
+        </div>
       </div>
     </form>
   </div>
@@ -225,10 +241,10 @@ div.myContainer {
     font-family: 'JetBrains Mono', monospace !important;
 
   }
-  #outputFigDisplay{
+  #outputFigDisplay {
     @apply customSelect w-[100%] h-a p-3 overflow-y-auto overflow-x-scroll;
-    pre {
-      font-family: "Victor Mono", 'JetBrains Mono', monospace !important;
+    code {
+      @apply victor;
     }
   }
 }

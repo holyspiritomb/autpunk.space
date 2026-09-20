@@ -9,11 +9,21 @@ import {
   transformerVariantGroup,
 } from "unocss";
 import presetCatppuccin from "@catppuccin/unocss";
+import processorLightningCSS from '@unocss/processor-lightningcss';
+// import browserslist from 'browserslist';
+import { Features } from 'lightningcss';
+
+// let targets = browserslistToTargets(browserslist('>= 0.25%'));
 
 export default defineConfig({
   content: {
-    filesystem: ["**/*.{html,js,ts,vue,scss,css}"],
+    filesystem: ["**/*.{html,js,ts,vue,scss,css}", "pages/**/*.md"],
   },
+  processors: [
+    processorLightningCSS({
+      include: Features.VendorPrefixes,
+    }),
+  ],
   presets: [
     presetWind4(),
     presetCatppuccin(),
@@ -51,6 +61,7 @@ export default defineConfig({
     "mySvg": "w-[350px] h-a",
     "customContainer": "border-1 bg-ctp-mocha-lavender/20 active:border-ctp-mocha-lavender focus:border-ctp-mocha-lavender text-ctp-latte-text border-ctp-mocha-lavender/50 text-ctp-latte-text dark:(bg-ctp-mocha-mantle border-ctp-mocha-lavender/50 text-ctp-mocha-text) p-[1em]",
     "customSelect": "border-1 border-solid rounded border-ctp-mocha-lavender/40 bg-white/50 text-ctp-latte-text dark:(bg-ctp-mocha-crust text-ctp-mocha-text) p-[0.5em]",
+    "victor": "font-mono",
   },
   transformers: [
     transformerDirectives(),

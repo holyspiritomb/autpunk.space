@@ -8,16 +8,21 @@ hero:
   text: here lies andy
   tagline: peperony and chease
   image:
-    src: /src/heart.svg
+    src: /rainbow_galaxy_heart.png
     alt: A Milky Way galaxy emoji with a rainbow filter over it, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
   actions:
     - theme: brand
-      text: About
-      link: /about
+      text: about
+      link: /pages/about
+    - theme: alt
+      text: make wordart
+      link: /pages/wordart/figlet
 
 features:
   - title: Wordart
-    icon: ✨
+    icon:
+        src: /sparkle.png
+        alt: "sparkles emoji"
     details: wordart I made for visual stimming in terminals and text editors
     link: /pages/wordart
   - title: Projects
@@ -27,7 +32,9 @@ features:
         alt: "galaxy laptop emoji"
     link: /pages/projects
   - title: Thought Fossils
-    icon: 💭
+    icon:
+        src: /thought.png
+        alt: "thought bubble emoji"
     details: words are thought fossils
     link: /pages/thought-fossils
   - title: Unsorted Fragments
@@ -37,7 +44,9 @@ features:
     details: dive into my brain dumpster
     link: /pages/unsorted-fragments
   - title: Links to Other People
-    icon: 🥔
+    icon:
+        src: /potato.png
+        alt: "potato emoji"
     details: I just think they're neat
     link: /pages/other-people
 

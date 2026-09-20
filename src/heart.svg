@@ -10,8 +10,8 @@
     <image
         x="0"
         y="0"
-        height="534px"
-        width="534px"
+        height="534"
+        width="534"
         href="/rainbow_space.png"
         clip-path="url(#heartClip)"
     />
