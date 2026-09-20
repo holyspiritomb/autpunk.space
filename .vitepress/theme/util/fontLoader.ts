@@ -57,6 +57,7 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "Isometric3": () => import("figlet/importable-fonts/Isometric3.js"),
   "Isometric4": () => import("figlet/importable-fonts/Isometric4.js"),
   "Ivrit": () => import("figlet/importable-fonts/Ivrit.js"),
+  "Jerusalem": () => import("figlet/importable-fonts/Jerusalem.js"),
   "Morse2": () => import("figlet/importable-fonts/Morse2.js"),
   "Morse": () => import("figlet/importable-fonts/Morse.js"),
   "Octal": () => import("figlet/importable-fonts/Octal.js"),
