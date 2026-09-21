@@ -8,20 +8,20 @@ prev:
 next: false
 ---
 <script setup>
-import NpfoRainbow from "/src/npfo_rainbow_blocky.svg?skipsvgo";
-import Npfo from "/src/npfo_blocky.svg?skipsvgo";
-import Fiber from "/src/fiber_caps.svg?skipsvgo";
-import MeatCoding from "/src/meatcoding_trans.svg?skipsvgo";
-import WeWill from "/src/we_will_outlive_them_transf.svg?skipsvgo";
-import StopChatbots from "/src/stop_believing_chatbots_trans.svg?skipsvgo";
-import MirVeln from "/src/mir_veln_trans.svg?skipsvgo";
-import TheseColors from "/src/thesecolors_trans_dwc.svg?skipsvgo";
-import Repent from "/src/repent5.svg?skipsvgo";
-import OntarioLomg from "/src/ontario_lomg.svg?skipsvgo";
-import OntarioRainbow from "/src/ontario_rainbow_border_badge.svg?skipsvgo";
-import Luddites2 from "/src/luddites2.svg?skipsvgo";
-import TransPpl from "/src/trans_people_always.svg?skipsvgo";
-import MySwitchAppearance from "../../.vitepress/theme/components/MySwitchAppearance.vue";
+import MySwitchAppearance from "/.vitepress/theme/components/MySwitchAppearance.vue";
+import NpfoRainbow from "/src/wordart/npfo_rainbow_blocky.svg?skipsvgo";
+// import Npfo from "/src/wordart/npfo_blocky.svg?skipsvgo";
+import Fiber from "/src/wordart/fiber_caps.svg?skipsvgo";
+import MeatCoding from "/src/wordart/meatcoding_trans.svg?skipsvgo";
+import WeWill from "/src/wordart/we_will_outlive_them_transf.svg?skipsvgo";
+import StopChatbots from "/src/wordart/stop_believing_chatbots_trans.svg?skipsvgo";
+import MirVeln from "/src/wordart/mir_veln_trans.svg?skipsvgo";
+// import TheseColors from "/src/wordart/thesecolors_trans_dwc.svg?skipsvgo";
+import Repent from "/src/wordart/repent5.svg?skipsvgo";
+// import OntarioLomg from "/src/wordart/ontario_lomg.svg?skipsvgo";
+import OntarioRainbow from "/src/wordart/ontario_rainbow_border_badge.svg?skipsvgo";
+import Luddites2 from "/src/wordart/luddites2.svg?skipsvgo";
+import TransPpl from "/src/wordart/trans_people_always.svg?skipsvgo";
 </script>
 
 # {{ $frontmatter.title }}
