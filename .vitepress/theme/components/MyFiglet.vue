@@ -236,7 +236,7 @@ div.myContainer {
     position: relative;
     top: 1.2em;
     right: 0.2em;
-    z-index: 9999;
+    z-index: 2;
     button {
       @apply lavenderShadows;
     }
