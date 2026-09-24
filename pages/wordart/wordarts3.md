@@ -11,7 +11,7 @@ next: false
 import MySwitchAppearance from "/.vitepress/theme/components/MySwitchAppearance.vue";
 import AllCatsAreBeautiful from "../../src/wordart/AllCatsAreBeautiful.svg?skipsvgo";
 import TheseColorsDontRun from "../../src/wordart/TheseColorsDontRun.svg?skipsvgo";
-import NziPunksFckOff from "../../src/wordart/NziPunksFckOff.svg?skipsvgo";
+// import NziPunksFckOff from "../../src/wordart/NziPunksFckOff.svg?skipsvgo";
 </script>
 
 # {{ $frontmatter.title }}
@@ -21,8 +21,6 @@ import NziPunksFckOff from "../../src/wordart/NziPunksFckOff.svg?skipsvgo";
 <AllCatsAreBeautiful aria-label="All cats are beautiful" />
 
 <TheseColorsDontRun aria-label="These colors don't run" />
-
-<NziPunksFckOff aria-label="Nazi punks fuck off" />
 
 <style module>
 svg {
