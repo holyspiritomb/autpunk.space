@@ -75,7 +75,7 @@
 }
 
 /* stylelint-disable selector-not-notation */
-*:not(.VPLocalNavOutlineDropdown):not(.VPNavBarExtra) > button:not([class^="VP"]):not([class^="vpi-"]):not([aria-controls^="VP"]):not(.DocSearch-Button):not(.copy) {
+*:not(.VPLocalNavOutlineDropdown):not(.VPNavBarExtra) > button:not([class^="VP"]):not([class^="vpi-"]):not([aria-controls^="VP"]):not(.DocSearch-Button):not(.copy):not(.figcopy) {
   @apply btn;
 }
 /* stylelint-enable selector-not-notation */

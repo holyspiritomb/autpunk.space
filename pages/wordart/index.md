@@ -5,65 +5,18 @@ lastUpdated: true
 prev:
     text: 'Home'
     link: '/index'
-next: false
+next:
+    text: 'Wordart Page 1'
+    link: '/pages/wordart/wordarts1'
 ---
-<script setup>
-import MySwitchAppearance from "/.vitepress/theme/components/MySwitchAppearance.vue";
-import NpfoRainbow from "/src/wordart/npfo_rainbow_blocky.svg?skipsvgo";
-// import Npfo from "/src/wordart/npfo_blocky.svg?skipsvgo";
-import Fiber from "/src/wordart/fiber_caps.svg?skipsvgo";
-import MeatCoding from "/src/wordart/meatcoding_trans.svg?skipsvgo";
-import WeWill from "/src/wordart/we_will_outlive_them_transf.svg?skipsvgo";
-import StopChatbots from "/src/wordart/stop_believing_chatbots_trans.svg?skipsvgo";
-import MirVeln from "/src/wordart/mir_veln_trans.svg?skipsvgo";
-// import TheseColors from "/src/wordart/thesecolors_trans_dwc.svg?skipsvgo";
-import Repent from "/src/wordart/repent5.svg?skipsvgo";
-// import OntarioLomg from "/src/wordart/ontario_lomg.svg?skipsvgo";
-import OntarioRainbow from "/src/wordart/ontario_rainbow_border_badge.svg?skipsvgo";
-import Luddites2 from "/src/wordart/luddites2.svg?skipsvgo";
-import TransPpl from "/src/wordart/trans_people_always.svg?skipsvgo";
-</script>
-
 # {{ $frontmatter.title }}
 
 
 When I first used MS Office circa 1999, my favorite thing to do was make wordart. I rediscovered the joy of wordart on terminals as a means of visual stimming with Termux[^1] on my phone.
+[^1]: Android app for running a linux terminal emulator
 
-Here's a bunch of ascii wordart I've made with various[^2] command-line tools. Most look best on dark backgrounds.
+[Look upon my works](/pages/wordart/wordarts1)
+
+[Make your own wordart](/pages/wordart/figlet)
 
 <MySwitchAppearance />
-
-
-[^1]: Android app for running a linux terminal emulator
-[^2]: [cfonts](https://github.com/dominikwilkowski/cfonts), [figlet](https://figlet.org), [pyfiglet](https://github.com/pwaller/pyfiglet), [blahaj](https://codeberg.org/GeopJr/BLAHAJ), [gay](https://github.com/ms-jpq/gay), [boxen](https://github.com/sindresorhus/boxen), [lolcrab](https://github.com/mazznoer/lolcrab), [terminal-svg](https://github.com/russmckendrick/terminal-svg), [ascii-banner](https://ascii-banner.com/), [neovim](https://neovim.io), and more!
-
-<Luddites2 aria-label="The Luddites were right" />
-
-<TransPpl  aria-label="Trans people have always existed" />
-
-<MirVeln aria-label="Yiddish block letters: Mir veln zey iberleben" />[^3]
-[^3]: Yiddish slogan that means "we will outlive them."
-
-<NpfoRainbow aria-label="Nazi punks fuck off" />
-
-<Fiber aria-label="I desire the fibrous nutritive material" />
-
-<MeatCoding aria-label="Better living through meatcoding" />[^4]
-[^4]: Meatcoding is the opposite of vibecoding. As in, using your brainmeats and not a chatbot to write the code.
-
-<Repent aria-label="Repent to your weather lords" />[^5]
-[^5]: https://weatherishappening.com (epilepsy warning)
-
-<StopChatbots aria-label="Stop believing chatbots" />
-
-<WeWill aria-label="Trans flag colors text: We will outlive them" />
-
-<OntarioRainbow aria-label="Her name is Lake Ontario" />[^6]
-[^6]: Contrary to what a certain American president thinks, one does not simply unilaterally rename geographical features by executive order. And no one is required to obey such an order, not even Google Maps. See also: Denali and the Gulf of Mexico.
-
-<style module>
-svg {
-    @apply mySvg;
-    font-family: "Victor Mono" !important;
-}
-</style>

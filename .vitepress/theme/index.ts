@@ -7,7 +7,6 @@ import "@fontsource/zilla-slab/latin-400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-600.css"; // Specify weight
 import "inter-ui/inter-latin.css";
 import "inter-ui/inter-variable-latin.css";
-// import "@infolektuell/noto-color-emoji"; // TODO: make dynamic
 import "@catppuccin/palette/css/catppuccin.css";
 import "@catppuccin/vitepress/theme/mocha/sky.css";
 import "viewerjs/dist/viewer.css";

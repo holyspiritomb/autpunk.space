@@ -6,6 +6,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "7.css": "^0.21.1",
     "@catppuccin/palette": "1.8.0",
     "@catppuccin/unocss": "^3.0.0",
     "@catppuccin/vitepress": "0.1.4",

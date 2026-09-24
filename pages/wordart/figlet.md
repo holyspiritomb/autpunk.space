@@ -3,8 +3,8 @@ order: 2
 title: Figlet
 lastUpdated: true
 prev:
-    text: 'Wordart'
-    link: './index'
+    text: 'Wordart Home'
+    link: '/pages/wordart'
 next: false
 ---
 <script setup>

@@ -21,7 +21,7 @@ export default defineConfig({
       chunkSizeWarningLimit: 500, // INFO: default value
       reportCompressedSize: true,
       dynamicImportVarsOptions: {
-        include: ["pages/wordart/index.md"],
+        include: ["pages/wordart/wordarts1.md", "pages/wordart/wordarts2.md"],
       },
       rollupOptions: {
         output: {

@@ -4,21 +4,25 @@ import "@fontsource/jetbrains-mono/300.css";
 import { ref as deepRef, onMounted } from "vue";
 import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "/.vitepress/theme/util/fontLoader";
 import { useClipboard } from "@vueuse/core";
+import "7.css/dist/7.scoped.css";
 
-const chosenFont = deepRef()
-const listOfFonts = deepRef(getAvailableFonts())
-
-const loadedFonts = deepRef(getLoadedFonts())
+const chosenFont = deepRef("Calvin S");
+const listOfFonts = deepRef(getAvailableFonts());
+const loadedFonts = deepRef(getLoadedFonts());
 const layouts = ["default", "full", "fitted", "controlled smushing", "universal smushing"];
 const widths: any[] = ["none", 40, 41, 42, 43, 44, 45, 80, 81, 100, 120];
-const whitespaceBreaks: string[] = ["true", "false"];
 const hLayout = deepRef("default");
 const vLayout = deepRef("default");
 const width = deepRef("none");
-const whitespaceBreak = deepRef(whitespaceBreaks[0]);
 const textToFiglet = deepRef("be gay\ndo art\ncrime");
 const figletText = deepRef("");
-const { copy, isSupported } = useClipboard({figletText});
+
+const { copy, copied, isSupported } = useClipboard({
+  legacy: true,
+  copiedDuring: 5000,
+  read: false,
+  source: figletText,
+});
 
 // significantly adapted from
 // https://github.com/zzgosh/ASCII-ART_SVG/blob/d000ca76afdad788cf0debed249cad1d4c3618f7/src/components/AsciiArtGenerator.vue
@@ -28,10 +32,10 @@ const { copy, isSupported } = useClipboard({figletText});
 
 // Wrapper function for font loading
 const loadFont = async (fontName: string): Promise<boolean> => {
-  const result = await loadFontUtil(fontName)
+  const result = await loadFontUtil(fontName);
   // Trigger reactivity update
-  loadedFonts.value = getLoadedFonts()
-  return result
+  loadedFonts.value = getLoadedFonts();
+  return result;
 }
 
 
@@ -68,12 +72,7 @@ const generateArt = async () => {
           | "controlled smushing"
           | "universal smushing",
         width: width.value === "none" ? undefined : width.value,
-        whitespaceBreak:
-          width.value === "none"
-            ? undefined
-            : whitespaceBreak.value === "true"
-              ? true
-              : false,
+        whitespaceBreak: false
       },
       (err, data) => {
         if (err) {
@@ -94,7 +93,7 @@ const generateArt = async () => {
 // Initialize default fonts
 const initializeDefaultFonts = async () => {
   console.debug("Loading initial fonts...");
-  await loadFont("Slant");
+  await loadFont("Calvin S");
   console.debug("Initial fonts loaded");
   await generateArt()
 }
@@ -102,16 +101,14 @@ const initializeDefaultFonts = async () => {
 onMounted(() => {
   listOfFonts.value = getAvailableFonts();
   initializeDefaultFonts();
-  chosenFont.value = "Slant";
+  // chosenFont.value = "Calvin S";
 })
-
-
 </script>
 
 <template>
   <div class="myContainer">
     <form>
-      <div>
+      <div class="win7">
         <label for="font">Font:</label>
         <!-- eslint-disable vue/no-template-shadow -->
         <select
@@ -130,7 +127,8 @@ onMounted(() => {
         </select>
       </div>
       <details>
-        <div>
+        <summary>Advanced Options</summary>
+        <div class="win7">
           <label for="hLayout">Horizontal Layout:</label>
           <select
             id="hLayout"
@@ -147,7 +145,7 @@ onMounted(() => {
             </option>
           </select>
         </div>
-        <div>
+        <div class="win7">
           <label for="vLayout">Vertical Layout:</label>
           <select 
             id="vLayout"
@@ -163,7 +161,7 @@ onMounted(() => {
             </option>
           </select>
         </div>
-        <div>
+        <div class="win7">
           <label for="width">Width:</label>
           <select
             id="width"
@@ -179,42 +177,34 @@ onMounted(() => {
             </option>
           </select>
         </div>
-        <div>
-          <label for="whitespaceBreak">Break on whitespace (if width set):</label>
-          <select
-            id="whitespaceBreak"
-            v-model="whitespaceBreak"
-            @change="generateArt"
-          >
-            <option
-              v-for="whitespaceBreak in whitespaceBreaks"
-              :key="whitespaceBreak"
-              :value="whitespaceBreak"
-            >
-              {{ `${whitespaceBreak}` }}
-            </option>
-          </select>
-        </div>
       </details>
       <!-- eslint-enable vue/no-template-shadow -->
-      <label for="inputText">Input:</label>
-      <textarea
-        id="inputText"
-        v-model="textToFiglet"
-        @input="generateArt"
-      ></textarea>
+      <div>
+        <label for="inputText">Input:</label>
+        <textarea
+          id="inputText"
+          v-model="textToFiglet"
+          @input="generateArt"
+        ></textarea>
+      </div>
       <div
         v-if="figletText"
       >
-        <div v-if="isSupported">
-          <button @click="copy(figletText)">
+        <div
+          v-if="isSupported"
+          class="win7"
+        >
+          <button
+            class="figcopy"
+            @click="copy()" 
+          >
             <!-- by default, `copied` will be reset in 1.5s -->
             <span v-if="!copied">Copy</span>
             <span v-else>Copied!</span>
           </button>
         </div>
         <p v-if="!isSupported">
-          Sorry, Your browser does not support Clipboard API
+          Sorry, Your browser does not support Clipboard API.
         </p>
         <div
           id="outputFigDisplay"
@@ -231,18 +221,30 @@ div.myContainer {
   @apply customContainer border-ctp-mocha-lavender my-[1em] rounded;
   /* border-color: var(--ctp-mocha-lavender); */
   select {
-    @apply customSelect w-[45%] inline;
+    @apply w-[45%] inline;
   }
   label {
     @apply w-[45%] inline;
   }
   textarea {
-    @apply customSelect h-[100px] w-[200px] block my-1;
+    @apply customSelect h-[100px] w-[200px] block my-0 lavenderShadows;
     font-family: 'JetBrains Mono', monospace !important;
-
+  }
+  div:has(>button.figcopy) {
+    @apply my-0;
+    text-align: right;
+    position: relative;
+    top: 1.2em;
+    right: 0.2em;
+    z-index: 9999;
+    button {
+      @apply lavenderShadows;
+    }
   }
   #outputFigDisplay {
-    @apply customSelect w-[100%] h-a p-3 overflow-y-auto overflow-x-scroll;
+    @apply customSelect w-[100%] h-a p-3 overflow-y-auto overflow-x-scroll lavenderShadows;
+    position: relative;
+    bottom:0.5em;
     code {
       @apply victor;
     }

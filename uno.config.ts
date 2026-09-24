@@ -62,6 +62,8 @@ export default defineConfig({
     "customContainer": "border-1 bg-ctp-mocha-lavender/20 active:border-ctp-mocha-lavender focus:border-ctp-mocha-lavender text-ctp-latte-text border-ctp-mocha-lavender/50 text-ctp-latte-text dark:(bg-ctp-mocha-mantle border-ctp-mocha-lavender/50 text-ctp-mocha-text) p-[1em]",
     "customSelect": "border-1 border-solid rounded border-ctp-mocha-lavender/40 bg-white/50 text-ctp-latte-text dark:(bg-ctp-mocha-crust text-ctp-mocha-text) p-[0.5em]",
     "victor": "font-mono",
+    "customButton": "shadow-none border-1 border-solid rounded border-ctp-mocha-lavender/40 bg-white/50 text-ctp-latte-text dark:(bg-ctp-mocha-crust text-ctp-mocha-text) p-[0.5em] active:(border-ctp-mocha-lavender) focus:(border-ctp-mocha-lavender) my-1 shadow-sm",
+    "lavenderShadows": "shadow-sm shadow-ctp-mocha-lavender shadow-none active:(shadow-lg) focus:(shadow-lg)",
   },
   transformers: [
     transformerDirectives(),

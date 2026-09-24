@@ -5,6 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"7.css@npm:^0.21.1":
+  version: 0.21.1
+  resolution: "7.css@npm:0.21.1"
+  checksum: 10c0/68e9f2505b768836c6d58977abb6bdbe6e5cf5cf36cc346b6a761338afe9fd3e939fb1f166102074744e1b27aa313a3ea8ae46d6c829163a64635fb5fe542f32
+  languageName: node
+  linkType: hard
+
 "@algolia/abtesting@npm:1.23.0":
   version: 1.23.0
   resolution: "@algolia/abtesting@npm:1.23.0"
@@ -3098,6 +3105,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "autpunk.space@workspace:."
   dependencies:
+    7.css: "npm:^0.21.1"
     "@catppuccin/palette": "npm:1.8.0"
     "@catppuccin/unocss": "npm:^3.0.0"
     "@catppuccin/vitepress": "npm:0.1.4"
