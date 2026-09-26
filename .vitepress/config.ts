@@ -36,6 +36,7 @@ export default defineConfig({
   description: "An autism with personhood rambles about things, stuff and the difference between them.",
   head: [
     ["link", { rel: "icon", href: "/rainbow_galaxy_heart.png" }],
+    ["link", { rel: "me", href: "https://bsky.app/profile/spiritomb.bsky.social" }],
   ],
   ignoreDeadLinks: true,
   lang: "en-US",
