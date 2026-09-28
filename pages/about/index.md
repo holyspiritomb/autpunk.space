@@ -64,7 +64,7 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 
 דאַלױ פּאָליצײ
 
-I'm a fat disabled queer trans Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pokemon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather.
+I'm a fat disabled queer ace trans Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pokemon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather. My fursona is a crow.
 
 Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 
@@ -84,6 +84,14 @@ Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 - Homebuilt desktop computer
 
 ## Webrings
+
+<map name="genlissawidget">
+<area href="https://genlissa.baccyflap.com" shape="rect" coords="25,0,124,45" target="_blank" alt="Gen Lissa Webring" title="I'm Gen Lissa">
+<area href="https://genlissa.baccyflap.com/?prv&s=hez" target="_top" shape="rect" coords="0,17,24,45" alt="previous" title="Previous">
+<area href="https://genlissa.baccyflap.com/?rnd" target="_top" shape="rect" coords="133,0,149,16" alt="random" title="Random">
+<area href="https://genlissa.baccyflap.com/?nxt&s=hez" target="_top" shape="rect" coords="125,17,149,45" alt="next" title="Next">
+</map>
+<img usemap="#genlissawidget" class="no-viewer" src="https://genlissa.baccyflap.com/widget.gif" alt="a yellow rectangle with the words 'I'm generation Lissa' in pink and purple. to the left and right are double arrows in pink, and to the top right is a purple question mark">
 
 <map name="noaisys1widget">
 <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,341,38" alt="no ai webring" title="no ai webring">
