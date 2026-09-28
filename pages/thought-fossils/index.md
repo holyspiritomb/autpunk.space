@@ -1,7 +1,7 @@
 ---
 title: Thought Fossils
 outline: deep
-order: 3
+order: 4
 lastUpdated: true
 next: false
 prev:

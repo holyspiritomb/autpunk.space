@@ -83,9 +83,10 @@ export default defineConfig({
       // {{{
       { text: "Home", link: "/" },
       { text: "About", link: "/pages/about" },
+      { text: "Wordart", link: "/pages/wordart" },
+      { text: "Projects", link: "/pages/projects" },
       { text: "Resources", link: "/pages/resources" },
       { text: "Links", link: "/pages/other-people" },
-      { text: "Component Demos", link: "/pages/vitepress-default/components" },
       // }}}
     ],
     search: {

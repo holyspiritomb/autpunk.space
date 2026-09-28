@@ -1,4 +1,5 @@
 ---
+order: 7
 title: Resources
 lastUpdated: true
 prev:

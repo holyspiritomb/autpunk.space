@@ -1,5 +1,6 @@
 ---
 order: 1
+outline: deep
 title: About
 lastUpdated: true
 prev:
@@ -80,8 +81,7 @@ Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 
 <!-- <div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow /> -->
 <!-- <div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo /> -->
-
-## Devices I heck around on
+### Devices I heck around on
 
 - Raspberry Pi 3A+
 - Raspberry Pi 3B+
