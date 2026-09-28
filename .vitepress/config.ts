@@ -85,6 +85,7 @@ export default defineConfig({
       { text: "About", link: "/pages/about" },
       { text: "Wordart", link: "/pages/wordart" },
       { text: "Projects", link: "/pages/projects" },
+      { text: "Writing", link: "/pages/thought-fossils" },
       { text: "Resources", link: "/pages/resources" },
       { text: "Links", link: "/pages/other-people" },
       // }}}
