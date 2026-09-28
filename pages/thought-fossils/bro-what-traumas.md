@@ -1,11 +1,13 @@
 ---
+title: Extreme workaholic mindsets
 lastUpdated: true
 prev:
     link: './index'
     text: 'Thought Fossil Index'
 next: false
 ---
-# Extreme workaholic mindsets
+# {{ $frontmatter.title }}
+
 
 Bro, what problems and traumas are you using work to avoid dealing with? When you go beyond being a workaholic this hard, it is impossible to develop as a person because you are avoiding both being alone in your thoughts AND engaging in genuinely intimate personal relationships. You are deliberately stagnating as a human being when you're like this, and all your interpersonal interactions become transactions solely for your benefit.
 

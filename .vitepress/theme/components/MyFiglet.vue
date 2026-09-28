@@ -2,9 +2,10 @@
 import figlet from "figlet";
 import "@fontsource/jetbrains-mono/300.css";
 import { ref as deepRef, onMounted } from "vue";
-import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "/.vitepress/theme/util/fontLoader";
+import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "../util/fontLoader";
 import { useClipboard } from "@vueuse/core";
 import "7.css/dist/7.scoped.css";
+import MyFigletBoxMd from "./MyFigletBox.md";
 
 const chosenFont = deepRef("Calvin S");
 const listOfFonts = deepRef(getAvailableFonts());
@@ -24,7 +25,7 @@ const { copy, copied, isSupported } = useClipboard({
   source: figletText,
 });
 
-// significantly adapted from
+// significantly adapted from studying
 // https://github.com/zzgosh/ASCII-ART_SVG/blob/d000ca76afdad788cf0debed249cad1d4c3618f7/src/components/AsciiArtGenerator.vue
 
 // Get available fonts from utility
@@ -119,7 +120,6 @@ onMounted(() => {
           <option
             v-for="font in listOfFonts"
             :key="font"
-            bg="$vp-c-bg"
             :value="font"
           >
             {{ font }} {{ loadedFonts.has(font) ? "✓" : "" }}
@@ -138,7 +138,6 @@ onMounted(() => {
             <option
               v-for="hLayout in layouts"
               :key="hLayout"
-              bg="$vp-c-bg"
               :value="hLayout"
             >
               {{ `${hLayout}` }}
@@ -194,22 +193,23 @@ onMounted(() => {
           v-if="isSupported"
           class="win7"
         >
-          <button
+          <span
             class="figcopy"
-            @click="copy()" 
+            role="button"
+            @click="copy()"
           >
-            <!-- by default, `copied` will be reset in 1.5s -->
             <span v-if="!copied">Copy</span>
             <span v-else>Copied!</span>
-          </button>
+          </span>
         </div>
         <p v-if="!isSupported">
           Sorry, Your browser does not support Clipboard API.
         </p>
         <div
           id="outputFigDisplay"
+          @click="copy()"
         >
-          <pre><code>{{ figletText }}</code></pre>
+          <MyFigletBoxMd>{{ figletText }}</MyFigletBoxMd>
         </div>
       </div>
     </form>
@@ -219,7 +219,6 @@ onMounted(() => {
 <style scoped>
 div.myContainer {
   @apply customContainer border-ctp-mocha-lavender my-[1em] rounded;
-  /* border-color: var(--ctp-mocha-lavender); */
   select {
     @apply w-[45%] inline;
   }
@@ -227,18 +226,15 @@ div.myContainer {
     @apply w-[45%] inline;
   }
   textarea {
-    @apply customSelect h-[100px] w-[200px] block my-0 lavenderShadows;
-    font-family: 'JetBrains Mono', monospace !important;
+    @apply customSelect h-[100px] w-[200px] block my-0 lavenderShadows jetbrains;
   }
-  div:has(>button.figcopy) {
-    @apply my-0;
-    text-align: right;
+  div:has(>span.figcopy) {
+    @apply my-0 text-right z-2;
     position: relative;
-    top: 1.2em;
+    top: 1.1em;
     right: 0.2em;
-    z-index: 2;
-    button {
-      @apply lavenderShadows;
+    span.figcopy {
+      @apply py-[0.3em] lavenderShadows;
     }
   }
   #outputFigDisplay {

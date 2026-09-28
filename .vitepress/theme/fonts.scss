@@ -39,17 +39,15 @@ div.icon {
 
 .VPHomeHero {
   h1.heading {
-    font-family: "Zilla Slab";
+    @apply zilla;
 
     span.text {
-      font-family: "Zilla Slab";
-      font-weight: 400;
+      @apply zilla fw-400;
     }
   }
 
   p.tagline {
-    font-family: "Zilla Slab";
-    font-weight: 400;
+    @apply zilla fw-400;
 
     &::before {
       content: "~ ";
@@ -66,8 +64,5 @@ kbd,
 samp,
 pre,
 .vp-code {
-  font-family: "Victor Mono" !important;
-  font-feature-settings: "ss06" on, "ss01" off, "ss07" on;
+  @apply victor victorFeatures;
 }
-
-

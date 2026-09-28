@@ -17,11 +17,10 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
 export default defineConfig({
   vite: {
     build: {
-      future: "warn",
       chunkSizeWarningLimit: 500, // INFO: default value
       reportCompressedSize: true,
       dynamicImportVarsOptions: {
-        include: ["pages/wordart/wordarts1.md", "pages/wordart/wordarts2.md"],
+        include: ["pages/wordart/*.md"],
       },
       rollupOptions: {
         output: {
@@ -38,6 +37,7 @@ export default defineConfig({
     ["link", { rel: "icon", href: "/rainbow_galaxy_heart.png" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
+    ["meta", { name: "robots", content: "noai, noimageai" }],
   ],
   ignoreDeadLinks: true,
   lang: "en-US",
@@ -45,6 +45,7 @@ export default defineConfig({
   appearance: "dark",
   srcDir: "./",
   outDir: distDir,
+  metaChunk: true,
   srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
     // {{{
@@ -82,11 +83,9 @@ export default defineConfig({
       // {{{
       { text: "Home", link: "/" },
       { text: "About", link: "/pages/about" },
-      { text: "Wordart", link: "/pages/wordart" },
-      { text: "Projects", link: "/pages/projects" },
-      { text: "Writing", link: "/pages/thought-fossils" },
+      { text: "Resources", link: "/pages/resources" },
       { text: "Links", link: "/pages/other-people" },
-      { text: "Demos", link: "/pages/vitepress-default/components" },
+      { text: "Component Demos", link: "/pages/vitepress-default/components" },
       // }}}
     ],
     search: {
@@ -119,7 +118,6 @@ export default defineConfig({
       excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
       includeEmptyFolder: false,
-      // includeFolderIndexFile: true,
       includeRootIndexFile: true,
       sortMenusByFrontmatterOrder: true,
       useFolderLinkFromIndexFile: true,

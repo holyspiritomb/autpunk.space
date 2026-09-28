@@ -10,6 +10,7 @@ next: false
 # {{ $frontmatter.title }}
 
 <div i-catppuccin-python aria-label="python" />
+<div i-catppuccin-docker aria-label="docker" />
 <div i-simple-icons-flask aria-label="flask" />
 <div i-devicon-plain-raspberrypi aria-label="raspberry pi" />
 <div i-devicon-plain-bootstrap aria-label="bootstrap" />

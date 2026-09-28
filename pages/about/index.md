@@ -11,11 +11,16 @@ next: false
 import HumanCrafted from "/src/craftedbyhuman.svg?skipsvgo"
 </script>
 
-<style scoped>
+<style module>
 svg#humancrafted {
     fill: rgb(var(--ctp-mocha-lavender-rgb) / 0.2);
-    width: 120px !important;
-    height: auto;
+    width: 88px !important;
+    height: 31px !important;
+}
+img[src*=".jpg"],
+img[src*=".png"],
+img[src*=".gif"]{
+    @apply inline;
 }
 </style>
 
@@ -24,34 +29,48 @@ svg#humancrafted {
 
 ## About this site
 
-::: details Technologies
 
-Package manager:
+[<HumanCrafted id="humancrafted" width="88px" height="31px" class="no-viewer inline h-[31px] w-[88px]" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com)
+![cascading style sheets](/css3.gif){.no-viewer}
+![warning: this page contains javascript](/js-warning.gif){.no-viewer}
+![Creative Commons Attribution-NonCommercial-ShareAlike](/cc-by-nc-sa.gif){.no-viewer}
+![powered by vitepress](/poweredbyvp.png){.no-viewer}
+
+You can link to me with this button (save it to your own server): ![autpunk dot space](/autpunk_space.gif){.no-viewer}
+
+::: details Tech stack
 - <div i-catppuccin-yarn /> Yarn
-
-Vitepress' stack:
 - <div i-devicon-vitejs /> Vite
 - <div i-devicon-vuejs /> Vue 3
 - <div i-catppuccin-markdown /> Markdown
-
-My choices:
-- <div i-devicon-typescript /> TypeScript
+- <div i-catppuccin-typescript /> TypeScript
 - <div i-devicon-sass /> Sass
 - <div i-catppuccin-unocss /> Unocss
 
-Linting:
-- <div i-catppuccin-eslint /> ESLint
-- <div i-catppuccin-stylelint /> StyleLint
-
-Text editors:
-- <div i-devicon-neovim /> neovim
-- <div i-catppuccin-vscode /> vscode
 :::
-[<HumanCrafted id="humancrafted" width="120px" height="auto" class="no-viewer" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com)
+
+
+
 
 ## About me
 
-What, are you a cop?
+![trans rights now](/transnow2.gif){.no-viewer}
+![asexuals now](/asexuals_now.gif){.no-viewer}
+![long live MSPaint](/mspaint.gif){.no-viewer}
+![arch linux](/archlinux.gif){.no-viewer}
+![powered by the void](/thevoid.gif){.no-viewer}
+![I survived the 2018 tumblr apocalypse](/tumblr2018.gif){.no-viewer}
+![I support right to repair](/right_to_repair_01.jpg){.no-viewer}
+
+דאַלױ פּאָליצײ
+
+I'm a fat disabled queer trans Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pokemon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather.
+
+Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
+
+.איך רעד א ביסל יידיש
+
+!פּאלעסטינע װעט זיך באַפרײַען
 
 <!-- <div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow /> -->
 <!-- <div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo /> -->
@@ -62,4 +81,14 @@ What, are you a cop?
 - Raspberry Pi 3B+
 - Kobo Clara Colour
 - Android phone via Termux
-- Homebuilt desktop computer <span i-devicon-plain-archlinux text-ctp-latte-sky dark:text-ctp-mocha-sky />
+- Homebuilt desktop computer
+
+## Webrings
+
+<map name="noaisys1widget">
+<area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,341,38" alt="no ai webring" title="no ai webring">
+<area href="https://baccyflap.com/noai/?prv&s=hez" target="_top" shape="rect" coords="71,53,142,76" alt="previous" title="previous">
+<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="153,53,225,76" alt="random" title="random">
+<area href="https://baccyflap.com/noai/?nxt&s=hez" target="_top" shape="rect" coords="237,53,308,76" alt="next" title="next">
+</map>
+<img usemap="#noaisys1widget" class="no-viewer" src="https://baccyflap.com/noai/sys1widget.gif" alt="an 80s Macintosh System 1 style black-and-white dialog box titled 'The No AI Webring' with a little icon showing a dead computer. beside it are three clickable buttons, labeled Previous, Random and Next">

@@ -35,10 +35,10 @@
 }
 
 .footnotes {
-  font-size: smaller;
+  @apply smaller;
 
   .footnotes-list {
-    list-style-type: decimal;
+    @apply list-decimal;
   }
 }
 

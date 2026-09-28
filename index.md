@@ -4,9 +4,9 @@ title: Home
 layout: home
 
 hero:
-  name: "hello there"
-  text: here lies andy
-  tagline: peperony and chease
+  name: "autpunk"
+  text: space
+  tagline: be the autpunk you wish to see in the world
   image:
     src: /rainbow_galaxy_heart.png
     alt: A Milky Way galaxy emoji with a rainbow filter over it, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
@@ -15,15 +15,18 @@ hero:
       text: about
       link: /pages/about
     - theme: alt
-      text: make wordart
-      link: /pages/wordart/figlet
+      text: webrings
+      link: /pages/about/#webrings
+    - theme: brand
+      text: resources
+      link: /pages/resources/
 
 features:
   - title: Wordart
     icon:
         src: /sparkle.png
         alt: "sparkles emoji"
-    details: wordart I made for visual stimming in terminals and text editors
+    details: do some visual stimming!
     link: /pages/wordart
   - title: Projects
     details: a few things I've made
