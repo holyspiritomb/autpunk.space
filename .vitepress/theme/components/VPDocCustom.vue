@@ -33,7 +33,7 @@ function testFunction() {
       <div
         v-if="hasAside"
         class="aside"
-        :class="{'left-aside': leftAside}"
+        :class="{ 'left-aside': leftAside }"
       >
         <div class="aside-curtain" />
         <div class="aside-container">
@@ -59,7 +59,7 @@ function testFunction() {
               class="vp-doc"
               :class="[
                 pageName,
-                theme.externalLinkIcon && 'external-link-icon-enabled'
+                theme.externalLinkIcon && 'external-link-icon-enabled',
               ]"
             />
             <VPButton

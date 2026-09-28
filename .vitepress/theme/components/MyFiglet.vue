@@ -108,111 +108,108 @@ onMounted(() => {
 
 <template>
   <div class="myContainer">
-    <form>
+    <div class="win7">
+      <label for="font">Font:</label>
+      <!-- eslint-disable vue/no-template-shadow -->
+      <select
+        id="font"
+        v-model="chosenFont"
+        @change="generateArt"
+      >
+        <option
+          v-for="font in listOfFonts"
+          :key="font"
+          :value="font"
+        >
+          {{ font }} {{ loadedFonts.has(font) ? "✓" : "" }}
+        </option>
+      </select>
+    </div>
+    <details>
+      <summary>Advanced Options</summary>
       <div class="win7">
-        <label for="font">Font:</label>
-        <!-- eslint-disable vue/no-template-shadow -->
+        <label for="hLayout">Horizontal Layout:</label>
         <select
-          id="font"
-          v-model="chosenFont"
+          id="hLayout"
+          v-model="hLayout"
           @change="generateArt"
         >
           <option
-            v-for="font in listOfFonts"
-            :key="font"
-            :value="font"
+            v-for="hLayout in layouts"
+            :key="hLayout"
+            :value="hLayout"
           >
-            {{ font }} {{ loadedFonts.has(font) ? "✓" : "" }}
+            {{ `${hLayout}` }}
           </option>
         </select>
       </div>
-      <details>
-        <summary>Advanced Options</summary>
-        <div class="win7">
-          <label for="hLayout">Horizontal Layout:</label>
-          <select
-            id="hLayout"
-            v-model="hLayout"
-            @change="generateArt"
-          >
-            <option
-              v-for="hLayout in layouts"
-              :key="hLayout"
-              :value="hLayout"
-            >
-              {{ `${hLayout}` }}
-            </option>
-          </select>
-        </div>
-        <div class="win7">
-          <label for="vLayout">Vertical Layout:</label>
-          <select 
-            id="vLayout"
-            v-model="vLayout"
-            @change="generateArt"
-          >
-            <option
-              v-for="vLayout in layouts"
-              :key="vLayout"
-              :value="vLayout"
-            >
-              {{ `${vLayout}` }}
-            </option>
-          </select>
-        </div>
-        <div class="win7">
-          <label for="width">Width:</label>
-          <select
-            id="width"
-            v-model="width"
-            @change="generateArt"
-          >
-            <option
-              v-for="width in widths"
-              :key="width"
-              :value="width"
-            >
-              {{ `${width}` }}
-            </option>
-          </select>
-        </div>
-      </details>
-      <!-- eslint-enable vue/no-template-shadow -->
-      <div>
-        <label for="inputText">Input:</label>
-        <textarea
-          id="inputText"
-          v-model="textToFiglet"
-          @input="generateArt"
-        ></textarea>
-      </div>
-      <div
-        v-if="figletText"
-      >
-        <div
-          v-if="isSupported"
-          class="win7"
+      <div class="win7">
+        <label for="vLayout">Vertical Layout:</label>
+        <select 
+          id="vLayout"
+          v-model="vLayout"
+          @change="generateArt"
         >
-          <span
-            class="figcopy"
-            role="button"
-            @click="copy()"
+          <option
+            v-for="vLayout in layouts"
+            :key="vLayout"
+            :value="vLayout"
           >
-            <span v-if="!copied">Copy</span>
-            <span v-else>Copied!</span>
-          </span>
-        </div>
-        <p v-if="!isSupported">
-          Sorry, Your browser does not support Clipboard API.
-        </p>
-        <div
-          id="outputFigDisplay"
+            {{ `${vLayout}` }}
+          </option>
+        </select>
+      </div>
+      <div class="win7">
+        <label for="width">Width:</label>
+        <select
+          id="width"
+          v-model="width"
+          @change="generateArt"
+        >
+          <option
+            v-for="width in widths"
+            :key="width"
+            :value="width"
+          >
+            {{ `${width}` }}
+          </option>
+        </select>
+      </div>
+    </details>
+    <!-- eslint-enable vue/no-template-shadow -->
+    <div>
+      <label for="inputText">Input:</label>
+      <textarea
+        id="inputText"
+        v-model="textToFiglet"
+        @input="generateArt"
+      ></textarea>
+    </div>
+    <div
+      v-if="figletText"
+    >
+      <div
+        v-if="isSupported"
+        class="win7"
+      >
+        <button
+          class="figcopy"
           @click="copy()"
         >
-          <MyFigletBoxMd>{{ figletText }}</MyFigletBoxMd>
-        </div>
+          <span v-if="!copied">Copy</span>
+          <span v-else>Copied!</span>
+        </button>
       </div>
-    </form>
+      <p v-if="!isSupported">
+        Sorry, Your browser does not support Clipboard API.
+      </p>
+      <div
+        id="outputFigDisplay"
+        @click="copy()"
+      >
+        <MyFigletBoxMd>{{ figletText }}</MyFigletBoxMd>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -228,22 +225,16 @@ div.myContainer {
   textarea {
     @apply customSelect h-[100px] w-[200px] block my-0 lavenderShadows jetbrains;
   }
-  div:has(>span.figcopy) {
+  div:has(>button.figcopy) {
     @apply my-0 text-right z-2;
     position: relative;
     top: 1.1em;
     right: 0.2em;
-    span.figcopy {
-      @apply py-[0.3em] lavenderShadows;
-    }
   }
   #outputFigDisplay {
     @apply customSelect w-[100%] h-a p-3 overflow-y-auto overflow-x-scroll lavenderShadows;
     position: relative;
     bottom:0.5em;
-    code {
-      @apply victor;
-    }
   }
 }
 </style>

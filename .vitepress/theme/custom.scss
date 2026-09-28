@@ -4,8 +4,8 @@
   --vp-home-hero-name-background:
     -webkit-linear-gradient(
       120deg,
-      #ea76cb 30%,
-      #04a5e5
+      var(--ctp-latte-pink) 30%,
+      var(--ctp-latte-sky)
     );
   --vp-badge-danger-bg: var(--vp-custom-block-danger-bg);
   --vp-badge-danger-text: var(--vp-custom-block-danger-text);
@@ -17,7 +17,7 @@
   --vp-badge-warning-text: var(--vp-custom-block-warning-text);
   --vp-button-alt-bg: rgb(var(--ctp-mocha-pink-rgb) / 1);
   --vp-code-lang-color: var(--ctp-latte-pink);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-latte-pink) 50%, var(--ctp-latte-sky) 50%);
   --vp-home-hero-image-filter: blur(44px);
 
   /* TODO: figure out fallback for when blur() is not supported */
@@ -32,6 +32,10 @@
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
   --vp-custom-block-tip-text: var(--ctp-mocha-green);
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
+}
+
+a {
+  @apply crosshairLink;
 }
 
 .footnotes {

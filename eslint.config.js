@@ -23,10 +23,11 @@ export default [
     ...config,
     files: ["**/*.vue", ".vitepress/**/*.vue"],
   })),
-  ...eslintPluginVueScopedCSS.configs['recommended'].map(config => ({
-    ...config,
-    files: ["**/*.vue", ".vitepress/**/*.vue"],
-  })),
+  ...eslintPluginVueScopedCSS.configs['recommended'],
+  // ...eslintPluginVueScopedCSS.configs['recommended'].map(config => ({
+  //   ...config,
+  //   files: ["**/*.vue", ".vitepress/**/*.vue"],
+  // })),
   unocss,
   {
     ignores: [
@@ -126,7 +127,6 @@ export default [
       "vue/no-spaces-around-equal-signs-in-attribute": ["error"],
       "vue/no-unused-vars": ["warn", { "ignorePattern": "^_" }],
       "vue/object-curly-spacing": [1, "always", { "arraysInObjects": false, "objectsInObjects": false }],
-      // "vue/require-v-for-key": 0,
       "vue/script-indent": [1, 2],
       "vue/singleline-html-element-content-newline": 0,
       "vue/this-in-template": 0,

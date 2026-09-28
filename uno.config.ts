@@ -12,8 +12,14 @@ import presetCatppuccin from "@catppuccin/unocss";
 import processorLightningCSS from '@unocss/processor-lightningcss';
 // import browserslist from 'browserslist';
 import { Features } from 'lightningcss';
+import { flavors } from "@catppuccin/palette";
 
 // let targets = browserslistToTargets(browserslist('>= 0.25%'));
+const mocha = flavors.mocha.colors;
+const latte = flavors.latte.colors;
+const gradMocha = `linear-gradient(90deg, ${mocha.red.hex} 0%, ${mocha.peach.hex} 30%, ${mocha.yellow.hex} 40%, ${mocha.green.hex} 50%, ${mocha.teal.hex} 60%, ${mocha.sky.hex} 70%, ${mocha.sapphire.hex} 80%, ${mocha.blue.hex} 90% ${mocha.lavender.hex} 100%)`;
+
+const gradLatte = `linear-gradient(90deg, ${latte.red.hex} 0%, ${latte.peach.hex} 30%, ${latte.yellow.hex} 40%, ${latte.green.hex} 50%, ${latte.teal.hex} 60%, ${latte.sky.hex} 70%, ${latte.sapphire.hex} 80%, ${latte.blue.hex} 90% ${latte.lavender.hex} 100%)`;
 
 export default defineConfig({
   content: {
@@ -54,7 +60,13 @@ export default defineConfig({
     ["list-decimal", { "list-style-type": "decimal" }],
     ["smaller", { "font-size": "smaller" }],
     ["bg-gradient-pink-blue", { "background-image": "linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%)" }],
+    ["ctpGradMocha", { "background-image": gradMocha }],
+    ["ctpGradLatte", { "background-image": gradLatte }],
     ["zilla", { "font-family": "Zilla Slab" }],
+    ["ySerif", { "font-family": "Noto Serif Hebrew" }],
+    ["ySans", { "font-family": "Noto Sans Hebrew" }],
+    ["rtl", { "dir": "rtl" }],
+    ["crosshair", { "cursor": "crosshair" }],
   ],
   shortcuts: {
     "btn": "rounded-md shadow-md py-2 px-2 border-ctp-mocha-pink outline-ctp-latte-pink outline-1 shadow-ctp-mocha-pink m-[0.5rem] h-[3rem] active:shadow-lg border-1 text-black bg-ctp-mocha-pink",
@@ -73,6 +85,10 @@ export default defineConfig({
     "customSelect": "border-1 border-solid rounded border-ctp-mocha-lavender/40 bg-white/50 text-ctp-latte-text dark:(bg-ctp-mocha-crust text-ctp-mocha-text) p-[0.5em]",
     "customButton": "shadow-none border-1 border-solid rounded border-ctp-mocha-lavender/40 bg-white/50 text-ctp-latte-text dark:(bg-ctp-mocha-crust text-ctp-mocha-text) p-[0.5em] active:(border-ctp-mocha-lavender) focus:(border-ctp-mocha-lavender) my-1 shadow-sm",
     "lavenderShadows": "shadow-sm shadow-ctp-mocha-lavender shadow-none active:(shadow-lg) focus:(shadow-lg)",
+    "yiddishSerif": "ySerif rtl",
+    "yiddishSans": "ySans rtl",
+    "ctpGrad": "ctpGradLatte dark:ctpGradMocha",
+    "crosshairLink": "hover:crosshair",
   },
   transformers: [
     transformerDirectives(),

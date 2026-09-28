@@ -588,17 +588,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@catppuccin/palette@npm:1.8.0":
-  version: 1.8.0
-  resolution: "@catppuccin/palette@npm:1.8.0"
-  checksum: 10c0/6626496fd6e423e6b81da93bee9ac7efa3a96c51dc9aa2b199596c5a54343c57e389e89b0b12b40d5b67ca7d10ddb1585a1c54d375b6227e644b30e9ae7311be
-  languageName: node
-  linkType: hard
-
 "@catppuccin/palette@npm:2.0.0-beta.1":
   version: 2.0.0-beta.1
   resolution: "@catppuccin/palette@npm:2.0.0-beta.1"
   checksum: 10c0/3758b55276048376f083e76543d31f8cb3fb401624cca06dc1acb22af97e3992cd76f028010d4c507ff9c8411708b8dd696b8b207f8ec0f857d063e1437ef60e
+  languageName: node
+  linkType: hard
+
+"@catppuccin/palette@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@catppuccin/palette@npm:1.8.0"
+  checksum: 10c0/6626496fd6e423e6b81da93bee9ac7efa3a96c51dc9aa2b199596c5a54343c57e389e89b0b12b40d5b67ca7d10ddb1585a1c54d375b6227e644b30e9ae7311be
   languageName: node
   linkType: hard
 
@@ -616,7 +616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@catppuccin/vitepress@npm:0.1.4":
+"@catppuccin/vitepress@npm:^0.1.4":
   version: 0.1.4
   resolution: "@catppuccin/vitepress@npm:0.1.4"
   peerDependencies:
@@ -1124,7 +1124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:10.0.1":
+"@eslint/js@npm:^10.0.1":
   version: 10.0.1
   resolution: "@eslint/js@npm:10.0.1"
   peerDependencies:
@@ -1136,7 +1136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/markdown@npm:8.0.3":
+"@eslint/markdown@npm:^8.0.3":
   version: 8.0.3
   resolution: "@eslint/markdown@npm:8.0.3"
   dependencies:
@@ -1179,14 +1179,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/noto-color-emoji@npm:^5.3.2":
-  version: 5.3.2
-  resolution: "@fontsource/noto-color-emoji@npm:5.3.2"
-  checksum: 10c0/6a88a93a85d517c176e4abd8b7f1d339a2f750beb97f9bd727c7b671dd75f7d4881eec8fb9e898b75631259fea1479b165da20ec5cf054b8dd898e5ae69c0ccb
+"@fontsource/noto-sans-hebrew@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/noto-sans-hebrew@npm:5.3.0"
+  checksum: 10c0/ffaacd5a6f4f62b5ba06e202a845aed9b866009b3713b111a175c03696b181321ea5a1b3dc5afd52d658c7cb6ad1cb8e1e6046751c2d4a6b1c1da711234c26af
   languageName: node
   linkType: hard
 
-"@fontsource/zilla-slab@npm:5.3.0":
+"@fontsource/noto-serif-hebrew@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/noto-serif-hebrew@npm:5.3.0"
+  checksum: 10c0/e16640d5ba844cbdf70cf378f98a188aec7455213555ead40ee4c4ca21ff728cdc274a4ed97eb148406fdc12f9352034dabb34d47c28df860dfc82d6c7f40a6d
+  languageName: node
+  linkType: hard
+
+"@fontsource/zilla-slab@npm:^5.3.0":
   version: 5.3.0
   resolution: "@fontsource/zilla-slab@npm:5.3.0"
   checksum: 10c0/de9e11d85036ad87445cb1c777334c49b94bbde47239563e6a49e4324f03a47b8ad13c5754287e727ab27a7fdfabceaa79288438ea3fbf724deff601c1d9c5d0
@@ -1234,7 +1241,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/arcticons@npm:1.2.58":
+"@iconify-json/arcticons@npm:^1.2.58":
   version: 1.2.58
   resolution: "@iconify-json/arcticons@npm:1.2.58"
   dependencies:
@@ -1243,12 +1250,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/carbon@npm:1.2.27":
-  version: 1.2.27
-  resolution: "@iconify-json/carbon@npm:1.2.27"
+"@iconify-json/carbon@npm:^1.2.28":
+  version: 1.2.28
+  resolution: "@iconify-json/carbon@npm:1.2.28"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/b7cc617200b42504855722db46aba250ac596b3680c5a7ac70ed6da145c9d4ceb43c477ad89a6c8501341c7262c51fb0876f7e09321458c7a253df7fb5cedb37
+  checksum: 10c0/b20346ae324bfa554698587e350732bbd0e2aa5c39e22b53b370693fa0167f4d176a826cf3fa79cc283a8465cf5741d67896d1dd66fcc0dd1d0e0f4b29d54517
   languageName: node
   linkType: hard
 
@@ -1261,21 +1268,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/devicon-plain@npm:1.2.60":
-  version: 1.2.60
-  resolution: "@iconify-json/devicon-plain@npm:1.2.60"
+"@iconify-json/devicon-plain@npm:^1.2.60":
+  version: 1.2.61
+  resolution: "@iconify-json/devicon-plain@npm:1.2.61"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/9f72787a64c34052fc70534c90155e2e8ab75f83e020570eb98f54a4e434fc5bbd765d47b0a6f78ad358620767eee7056ae4c5d32137f70d7dec385238ce90d2
+  checksum: 10c0/2a3b6830a03ec0f3546ee2509661503bdc71e8f41baa7d7b8db25689a0034d05cdfa0e6dadc8ec5cf5d6f667592f94ae9055aab4001ebbcf527011cef6fc1627
   languageName: node
   linkType: hard
 
-"@iconify-json/devicon@npm:1.2.66":
-  version: 1.2.66
-  resolution: "@iconify-json/devicon@npm:1.2.66"
+"@iconify-json/devicon@npm:^1.2.68":
+  version: 1.2.68
+  resolution: "@iconify-json/devicon@npm:1.2.68"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/14d69b0c595a559c90928bd22e6b348193213c37fa7fd73915cd26763947de84e0246147638c12aacab6e36c211fd428fd05f30b3743b1234bb7d1055e7468b6
+  checksum: 10c0/d941fa8cc2b0583aeeaae12a93df5e822508e984fed18836263fb33a8948ffb8f40931df2e031cf4f81468a86fb7775357989fd35127446aee5f274bd658ee15
   languageName: node
   linkType: hard
 
@@ -1809,13 +1816,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rose-pine/palette@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@rose-pine/palette@npm:4.0.1"
-  checksum: 10c0/06e1cadb462799dabddab794f590cd293ae997602020bdddbf59f0085ba8330b160467d52aa5c5563a9272bb2ead39be89b8f4a0d5bd23dc627bc0103f2c740f
-  languageName: node
-  linkType: hard
-
 "@sec-ant/readable-stream@npm:^0.4.1":
   version: 0.4.1
   resolution: "@sec-ant/readable-stream@npm:0.4.1"
@@ -1910,7 +1910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin@npm:5.10.0":
+"@stylistic/eslint-plugin@npm:^5.10.0":
   version: 5.10.0
   resolution: "@stylistic/eslint-plugin@npm:5.10.0"
   dependencies:
@@ -2077,12 +2077,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.20.3":
-  version: 22.20.3
-  resolution: "@types/node@npm:22.20.3"
+"@types/node@npm:22.20.4":
+  version: 22.20.4
+  resolution: "@types/node@npm:22.20.4"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/27034f3f66d7044494f0be7b20b17eecbb1f6deab9e2ea8b004d79e896f4a90cde954da9a433a145e800f3db3e5c5c4761a65366434997c77102ba364dcbedd0
+  checksum: 10c0/3a17e19f7b7b7a6d6c695ef8b0a34b70f84829a1539f57d338487bc3b51ddd4ca86ffbcbcc4f1307a41de83d02c1b7dfbb16e8cb6a9c3a8360b4306ccf9ead2d
   languageName: node
   linkType: hard
 
@@ -2369,7 +2369,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unocss/eslint-config@npm:66.10.5":
+"@unocss/eslint-config@npm:^66.10.5":
   version: 66.10.5
   resolution: "@unocss/eslint-config@npm:66.10.5"
   dependencies:
@@ -2837,7 +2837,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/tsconfig@npm:0.9.1":
+"@vue/tsconfig@npm:^0.9.1":
   version: 0.9.1
   resolution: "@vue/tsconfig@npm:0.9.1"
   peerDependencies:
@@ -3106,40 +3106,40 @@ __metadata:
   resolution: "autpunk.space@workspace:."
   dependencies:
     7.css: "npm:^0.21.1"
-    "@catppuccin/palette": "npm:1.8.0"
+    "@catppuccin/palette": "npm:^1.8.0"
     "@catppuccin/unocss": "npm:^3.0.0"
-    "@catppuccin/vitepress": "npm:0.1.4"
-    "@eslint/js": "npm:10.0.1"
-    "@eslint/markdown": "npm:8.0.3"
+    "@catppuccin/vitepress": "npm:^0.1.4"
+    "@eslint/js": "npm:^10.0.1"
+    "@eslint/markdown": "npm:^8.0.3"
     "@fontsource/jetbrains-mono": "npm:^5.3.0"
-    "@fontsource/noto-color-emoji": "npm:^5.3.2"
-    "@fontsource/zilla-slab": "npm:5.3.0"
-    "@iconify-json/arcticons": "npm:1.2.58"
-    "@iconify-json/carbon": "npm:1.2.27"
+    "@fontsource/noto-sans-hebrew": "npm:^5.3.0"
+    "@fontsource/noto-serif-hebrew": "npm:^5.3.0"
+    "@fontsource/zilla-slab": "npm:^5.3.0"
+    "@iconify-json/arcticons": "npm:^1.2.58"
+    "@iconify-json/carbon": "npm:^1.2.28"
     "@iconify-json/catppuccin": "npm:^1.2.17"
-    "@iconify-json/devicon": "npm:1.2.66"
-    "@iconify-json/devicon-plain": "npm:1.2.60"
+    "@iconify-json/devicon": "npm:^1.2.68"
+    "@iconify-json/devicon-plain": "npm:^1.2.60"
     "@iconify-json/mdi": "npm:^1.2.3"
-    "@rose-pine/palette": "npm:^4.0.1"
-    "@stylistic/eslint-plugin": "npm:5.10.0"
+    "@stylistic/eslint-plugin": "npm:^5.10.0"
     "@stylistic/stylelint-config": "npm:^5.0.0"
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint__js": "npm:^8.42.3"
     "@types/markdown-it": "npm:^14.1.2"
     "@types/markdown-it-attrs": "npm:^4.1.3"
     "@types/markdown-it-footnote": "npm:^3.0.4"
-    "@types/node": "npm:22.20.3"
-    "@unocss/eslint-config": "npm:66.10.5"
+    "@types/node": "npm:22.20.4"
+    "@unocss/eslint-config": "npm:^66.10.5"
     "@unocss/processor-lightningcss": "npm:^66.10.5"
-    "@vue/tsconfig": "npm:0.9.1"
+    "@vue/tsconfig": "npm:^0.9.1"
     "@vueuse/core": "npm:14.4.0"
     easy-speech: "npm:^2.4.0"
-    eslint: "npm:10.10.0"
-    eslint-plugin-vue: "npm:10.11.0"
+    eslint: "npm:^10.11.0"
+    eslint-plugin-vue: "npm:^10.11.1"
     eslint-plugin-vue-scoped-css: "npm:^3.1.3"
-    figlet: "npm:^1.11.4"
-    globals: "npm:16.0.0"
-    inter-ui: "npm:4.1.1"
+    figlet: "npm:^1.12.0"
+    globals: "npm:^17.12.0"
+    inter-ui: "npm:^4.1.1"
     lightningcss: "npm:^1.33.0"
     markdown-it: "npm:^14.1.0"
     markdown-it-attrs: "npm:^4.3.1"
@@ -3151,7 +3151,7 @@ __metadata:
     stylelint-use-nesting: "npm:^6.0.2"
     typescript: "npm:6.0.3"
     typescript-eslint: "npm:8.68.0"
-    unocss: "npm:66.10.5"
+    unocss: "npm:^66.10.5"
     unplugin-vue-components: "npm:28.4.1"
     victormono: "npm:^1.5.6"
     viewerjs: "npm:^1.13.0"
@@ -3167,7 +3167,7 @@ __metadata:
     vitepress-plugin-viewerjs: "npm:^2.0.1"
     vitepress-sidebar: "npm:1.39.0"
     vue: "npm:^3.5.13"
-    vue-eslint-parser: "npm:10.4.1"
+    vue-eslint-parser: "npm:^10.4.1"
   languageName: unknown
   linkType: soft
 
@@ -4092,9 +4092,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:10.11.0":
-  version: 10.11.0
-  resolution: "eslint-plugin-vue@npm:10.11.0"
+"eslint-plugin-vue@npm:^10.11.1":
+  version: 10.11.1
+  resolution: "eslint-plugin-vue@npm:10.11.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.9.1"
     natural-compare: "npm:^1.4.0"
@@ -4112,7 +4112,7 @@ __metadata:
       optional: true
     "@typescript-eslint/parser":
       optional: true
-  checksum: 10c0/fd4786cadeb2240e52078edbb285adaf6f3dfaea1428daf32108bd6503bca33aa068301d440b3842ea997a3d52d2d9cce0b7e35558c20f3a38feea50654fd967
+  checksum: 10c0/3ea6027fbfc62e80afabd64ff50215312afe2512954505911820b2480842f432c559ed349a7c6c6655594416e2ddad7f45ba466a52ce1e68d44409715a458f6b
   languageName: node
   linkType: hard
 
@@ -4149,9 +4149,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:10.10.0":
-  version: 10.10.0
-  resolution: "eslint@npm:10.10.0"
+"eslint@npm:^10.11.0":
+  version: 10.11.0
+  resolution: "eslint@npm:10.11.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
@@ -4190,7 +4190,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/ba583145305f088585f91c5dab6825492ec657614558e4610cffc94174cf800f456e39ec3cafd3eed73e04bd9a05794067ae33b553f1323e3e7c1157242409d2
+  checksum: 10c0/c767f45f21d1921b41d70e30b1c8fa7ec4e65c0f43a8d80cc4990ca3d923127fa7b9b3416b8f5be6e877d9286f97d3c51a04ed341bc6aa73c0dba0f463e1f861
   languageName: node
   linkType: hard
 
@@ -4395,14 +4395,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"figlet@npm:^1.11.4":
-  version: 1.11.4
-  resolution: "figlet@npm:1.11.4"
+"figlet@npm:^1.12.0":
+  version: 1.12.0
+  resolution: "figlet@npm:1.12.0"
   dependencies:
     commander: "npm:^14.0.0"
   bin:
     figlet: bin/index.js
-  checksum: 10c0/2eed162bff098ab827ec4f1006f1362cc874a74293383b0fe7c44a029cc46c8dffbdc0cd3ecb6a20ecf5f4d85b585cd7faed2dc98dfad9aac432682b83b193f5
+  checksum: 10c0/8aa6c2eab183eaa24bafb4a5ccd17df4008db5af0ae7195f850e0ab108999f524f0c4d36f3e7fbdfd4d9e81eabb920dcaf968f0b919bb44955849b0bcb2bf64c
   languageName: node
   linkType: hard
 
@@ -4587,10 +4587,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:16.0.0":
-  version: 16.0.0
-  resolution: "globals@npm:16.0.0"
-  checksum: 10c0/8906d5f01838df64a81d6c2a7b7214312e2216cf65c5ed1546dc9a7d0febddf55ffa906cf04efd5b01eec2534d6f14859a89535d1a68241832810e41ef3fd5bb
+"globals@npm:^17.12.0":
+  version: 17.12.0
+  resolution: "globals@npm:17.12.0"
+  checksum: 10c0/8325cf8818c848871d17c32974c2c74e9c5f09c1b0e04421886f64f21e77c3e95f3ba25586743895a73acd860ada151132481d87d44a1f12993ae7758a694d03
   languageName: node
   linkType: hard
 
@@ -4821,7 +4821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inter-ui@npm:4.1.1":
+"inter-ui@npm:^4.1.1":
   version: 4.1.1
   resolution: "inter-ui@npm:4.1.1"
   checksum: 10c0/fb809bead520fefdef61abfca8ff7865b697e0738d2341afd4faf0539536d45638ee7812533afe413cabe765faf7a20e8e22a34c3df7693839a3acd2be44d1a7
@@ -7766,7 +7766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unocss@npm:66.10.5":
+"unocss@npm:^66.10.5":
   version: 66.10.5
   resolution: "unocss@npm:66.10.5"
   dependencies:
@@ -8255,7 +8255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-eslint-parser@npm:10.4.1":
+"vue-eslint-parser@npm:^10.4.1":
   version: 10.4.1
   resolution: "vue-eslint-parser@npm:10.4.1"
   dependencies:

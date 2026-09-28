@@ -39,7 +39,7 @@ export default defineConfig({
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
   ],
-  ignoreDeadLinks: true,
+  ignoreDeadLinks: false,
   lang: "en-US",
   lastUpdated: true,
   appearance: "dark",
