@@ -1,5 +1,4 @@
 ---
-order: 2
 title: Libby Userscript
 lastUpdated: true
 prev:
@@ -22,6 +21,7 @@ My main changes from upstream:
 * Added functionality on Amazon
 * Made result types more distinct with emojis 📚 🎧
 * Made results' libraries more distinct
+* 🆕 Uses popup settings interface instead of having to run the script on the Libby site!
 
 [^1]: I'm not sponsored by Adguard.
 [^2]: Your library list is not transmitted to anyone. Neither the userscript's stored data nor the requests to search Libby's database include card numbers or any information about past or current borrowed items. This is true for my fork and for the upstream userscript.
@@ -30,7 +30,7 @@ My main changes from upstream:
 ## Future goals
 
 * Support functionality on other bookseller sites (Kobo)
-* Add graphical settings UI that works via mobile Adguard
+* ~~Add graphical settings UI that works via mobile Adguard~~ ✔
 
 ## Prior Arts
 

@@ -1,5 +1,4 @@
 ---
-order: 1
 title: Yule Log
 lastUpdated: true
 prev:
@@ -14,10 +13,13 @@ import Log from "/src/yule_log.svg?skipsvgo"
 # {{ $frontmatter.title }}
 
 <div i-catppuccin-python aria-label="python" />
+<div i-catppuccin-docker aria-label="docker" />
 
 Repo: https://github.com/holyspiritomb/YuleLog
 
-The original project was made for python 3.5 in ~2016 and I wanted to bring it up to currently supported python versions and make the text customizable. An interesting thing I learned in the course of the project was that the fire's appearance changes based on whether the terminal is true color or not.
+I forked the original project, which was made for python 3.5. The last commits were in ~2016 and I wanted to bring it up to currently supported python versions and make the text customizable. An interesting thing I learned in the course of the project was that the fire's appearance changes based on whether the terminal is true color or not. Running it via the dockerfile has the program assume a non-truecolor terminal.
+
+Working on this got me excited about ASCII art and is directly responsible for me deciding to mess around with python and javascript figlet ports.
 
 <Log aria-label="YuleLog terminal output" />
 
