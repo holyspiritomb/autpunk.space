@@ -95,6 +95,9 @@
 </template>
 
 <style scoped>
+map area {
+  @apply crosshair;
+}
 div {
   @apply mx-auto my-[1em] text-center;
   img {

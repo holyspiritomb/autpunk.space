@@ -1,4 +1,5 @@
 ---
+title: Links
 order: 8
 outline: deep
 prev:
@@ -7,9 +8,10 @@ prev:
 next: false
 ---
 
-# Links
+# {{ $frontmatter.title }}
+
 ## Friends
-<!--@include: ./friends.md{9,}-->
+<!--@include: ./friends.md{10,}-->
 
 ## Music recommendations
 <!--@include: ./music.md{9,}-->
