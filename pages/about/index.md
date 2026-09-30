@@ -9,7 +9,7 @@ prev:
 next: false
 ---
 <script setup>
-import HumanCrafted from "/src/craftedbyhuman.svg?skipsvgo"
+import HumanCrafted from "../../src/craftedbyhuman.svg?skipsvgo"
 import MyWebrings from "../../.vitepress/theme/components/MyWebrings.vue";
 </script>
 

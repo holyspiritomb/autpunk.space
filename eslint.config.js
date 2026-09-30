@@ -9,6 +9,7 @@ import pluginVue from 'eslint-plugin-vue';
 import eslintPluginVueScopedCSS from 'eslint-plugin-vue-scoped-css';
 import vueParser from "vue-eslint-parser";
 import unocss from "@unocss/eslint-config/flat";
+import { globalIgnores } from "eslint/config";
 
 const tsParser = tseslint.parser;
 /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
@@ -19,32 +20,26 @@ export default [
     ...config,
     files: ["**/*.ts"],
   })),
-  ...pluginVue.configs['flat/recommended'].map(config => ({
-    ...config,
-    files: ["**/*.vue", ".vitepress/**/*.vue"],
-  })),
+  ...pluginVue.configs["flat/recommended"],
   ...eslintPluginVueScopedCSS.configs['recommended'],
-  // ...eslintPluginVueScopedCSS.configs['recommended'].map(config => ({
-  //   ...config,
-  //   files: ["**/*.vue", ".vitepress/**/*.vue"],
-  // })),
   unocss,
-  {
-    ignores: [
-      ".vitepress/cache/",
-      "LICENSE.md",
-      "dist/",
-      "public/",
-      "node_modules/",
-      "pages/vitepress-default/markdown-examples.md",
-    ],
-  },
+  globalIgnores([
+    ".vitepress/cache/",
+    "LICENSE.md",
+    "dist/",
+    "public/",
+    "node_modules/",
+    "pages/vitepress-default/markdown-examples.md",
+    ".yarn/",
+    ".vitepress/theme/components/inactive/",
+  ]),
   {
     languageOptions: {
       globals: globals.browser,
     },
   },
   {
+    name: "stylistic choices in js and ts",
     files: ["**/*.ts", "**/*.js", ".vitepress/theme/index.ts", ".vitepress/config.ts", ".vitepress/theme/**/*.ts"],
     plugins: {
       stylistic: StylisticPlugin,
@@ -67,7 +62,8 @@ export default [
     },
   },
   {
-    files: ["**/**.md", "about.md", "pages/**/**.md"],
+    name: "site pages markdown",
+    files: ["index.md", "pages/**/*.md"],
     plugins: {
       markdown,
     },
@@ -80,17 +76,26 @@ export default [
       "no-irregular-whitespace": 0,
       "markdown/require-alt-text": "error",
       "markdown/fenced-code-language": "warn",
+      "markdown/no-bare-urls": "warn",
+      "markdown/no-reversed-media-syntax": "error",
     },
   },
   {
+    name: "readme",
     files: ["README.md"],
     plugins: {
       markdown,
     },
     processor: "markdown/markdown",
     language: "markdown/gfm",
+    rules: {
+      "no-irregular-whitespace": 0,
+      "markdown/require-alt-text": "error",
+      "markdown/fenced-code-language": "warn",
+    },
   },
   {
+    name: "eslint & uno config stylistic",
     files: ["eslint.config.js", "uno.config.ts"],
     plugins: {
       stylistic: StylisticPlugin,
@@ -101,7 +106,9 @@ export default [
     },
   },
   {
+    name: "vue custom config",
     files: ["*.vue", "**/*.vue", ".vitepress/**/*.vue"],
+    ignores: [".vitepress/theme/components/inactive/"],
     languageOptions: {
       parser: vueParser,
       sourceType: "module",

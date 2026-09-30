@@ -26,7 +26,7 @@ features:
     icon:
         src: /sparkle.png
         alt: "sparkles emoji"
-    details: visual stimmimg with wordart!
+    details: do visual stimmimg with wordart!
     link: /pages/wordart
   - title: Projects
     details: a few things I've made

@@ -42,6 +42,7 @@
   "scripts": {
     "dev": "vitepress dev --host",
     "cache:rm": "rm -rf .vitepress/cache/*",
+    "cleanbuild": "rm -rf dist && vitepress build",
     "build": "vitepress build",
     "lint:style": "stylelint .vitepress/theme/*.scss",
     "lint:style:fix": "stylelint --fix .vitepress/theme/*.scss",

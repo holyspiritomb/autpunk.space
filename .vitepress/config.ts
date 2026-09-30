@@ -17,7 +17,6 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
 export default defineConfig({
   vite: {
     build: {
-      chunkSizeWarningLimit: 500, // INFO: default value
       reportCompressedSize: true,
       dynamicImportVarsOptions: {
         include: ["pages/wordart/*.md"],
@@ -115,8 +114,9 @@ export default defineConfig({
     sidebar: generateSidebar({ 
       capitalizeFirst: false, // {{{
       collapsed: true,
-      // debugPrint: true,
+      debugPrint: true,
       documentRootPath: "./",
+      scanStartPath: "/pages/",
       excludeFilesByFrontmatterFieldName: "exclude",
       excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
       includeEmptyFolder: false,
