@@ -26,7 +26,7 @@ features:
     icon:
         src: /sparkle.png
         alt: "sparkles emoji"
-    details: do some visual stimming!
+    details: visual stimmimg with wordart!
     link: /pages/wordart
   - title: Projects
     details: a few things I've made
@@ -34,7 +34,7 @@ features:
         src: /galaxylaptop.png
         alt: "galaxy laptop emoji"
     link: /pages/projects
-  - title: Thought Fossils
+  - title: Writing
     icon:
         src: /thought.png
         alt: "thought bubble emoji"

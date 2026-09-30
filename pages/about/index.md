@@ -9,7 +9,6 @@ prev:
 next: false
 ---
 <script setup>
-// @ts-check
 import HumanCrafted from "/src/craftedbyhuman.svg?skipsvgo"
 import MyWebrings from "../../.vitepress/theme/components/MyWebrings.vue";
 </script>
@@ -39,19 +38,21 @@ img[usemap] {
 [<HumanCrafted id="humancrafted" width="88px" height="31px" class="no-viewer inline h-[31px] w-[88px]" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com)
 ![cascading style sheets](/css3.gif){.no-viewer}
 ![warning: this page contains javascript](/js-warning.gif){.no-viewer}
-![Creative Commons Attribution-NonCommercial-ShareAlike](/cc-by-nc-sa.gif){.no-viewer}
+![Creative Commons Attribution-NonCommercial-ShareAlike license for the prose](/cc-by-nc-sa.gif){.no-viewer}
 ![powered by vitepress](/poweredbyvp.png){.no-viewer}
 
 You can link to me with this button (save it to your own server): ![autpunk dot space](/autpunk_space.gif){.no-viewer}
 
 ::: details Tech stack
-- <div i-catppuccin-yarn /> Yarn
-- <div i-devicon-vitejs /> Vite
-- <div i-devicon-vuejs /> Vue 3
-- <div i-catppuccin-markdown /> Markdown
-- <div i-catppuccin-typescript /> TypeScript
-- <div i-devicon-sass /> Sass
-- <div i-catppuccin-unocss /> Unocss
+- <div i-catppuccin-yarn /> Yarn for node package management
+- <div i-selfhst:vitepress /> Vitepress for static site generation
+- <div i-devicon-vitejs /> Vite for vitepress' backend
+- <div i-devicon-vuejs /> Vue 3 for reactivity, templating and components
+- <div i-catppuccin-markdown /> Markdown for prose
+- <div i-catppuccin-typescript /> TypeScript for clear types
+- <div i-logos:vueuse /> VueUse for more Vue functions
+- <div i-catppuccin-unocss /> Unocss for icons and easy CSS shortcutting
+- <div i-devicon-sass /> Sass because selectors like <code>&:hover</code> make me feel powerful
 
 :::
 
@@ -68,16 +69,22 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 ![I survived the 2018 tumblr apocalypse](/tumblr2018.gif){.no-viewer}
 ![I support right to repair](/right_to_repair_01.jpg){.no-viewer}
 
-!דאַלױ פּאָליצײ&lrm;{.yiddishSerif}
+<Yiddish title="daloy politsey">
+דאַלױ פּאָליצײ!&lrm;
+</Yiddish>
 
 
-I'm a fat disabled queer trans ace Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pokemon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather. My fursona is a crow.
+I'm Hezekiah (he/him), a fat disabled queer trans ace Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pok&eacute;mon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather. My fursona is a crow, and furries outnumber non-furries in my house.
 
 Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 
-.איך רעד א ביסל יידיש&lrm;{.yiddishSans}
+<Yiddish font="yiddishSans" title="ikh red a bisl yidish">
+איך רעד א ביסל יידיש.&lrm;
+</Yiddish>
 
-!פּאלעסטינע װעט זיך באַפרײַען&lrm;{.yiddishSerif}
+<Yiddish title="palestina vet zikh bafrayen">
+פּאלעסטינע װעט זיך באַפרײַען!&lrm;
+</Yiddish>
 
 <!-- <div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow /> -->
 <!-- <div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo /> -->
@@ -86,7 +93,7 @@ Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 - Raspberry Pi 3A+
 - Raspberry Pi 3B+
 - Kobo Clara Colour
-- Android phone via Termux
+- Android phone via [Termux](https://termux.dev)
 - Homebuilt desktop computer
 
 ## Webrings

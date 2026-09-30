@@ -1,5 +1,5 @@
 ---
-title: Thought Fossils
+title: Writing
 outline: deep
 order: 4
 lastUpdated: true
@@ -14,8 +14,8 @@ import ThoughtFossils from "../../.vitepress/theme/ThoughtFossils.vue";
 
 # {{ $frontmatter.title }}
 
-Words are thought fossils[^1]. Here are some I've written that I'm proud of.
+Words are thought fossils[^1]. Here are some things I've written that I'm proud of.
 
-[^1]: a phrase I learned from <a href="https://probsnotaliens.com">It's Probably Not Aliens</a>
+[^1]: a silly phrase I learned from [It's Probably Not Aliens](https://probsnotaliens.com)
 
 <ThoughtFossils />

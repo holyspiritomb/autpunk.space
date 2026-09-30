@@ -9,6 +9,7 @@ next: false
 # {{ $frontmatter.title }}
 
 <div i-catppuccin-javascript aria-label="javascript" />
+<div i-simple-icons-adguard aria-label="adguard" />
 
 
 * Repository: https://github.com/holyspiritomb/libby-userscript
@@ -35,3 +36,9 @@ My main changes from upstream:
 ## Prior Arts
 
 * Upstream repository: https://github.com/Dylancyclone/goodreads-libby-userscript
+
+<style module>
+[i-simple-icons-adguard] {
+    @apply bg-ctp-latte-green dark:bg-ctp-mocha-green;
+}
+</style>

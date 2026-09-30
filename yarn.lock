@@ -1295,6 +1295,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/logos@npm:^1.2.15":
+  version: 1.2.15
+  resolution: "@iconify-json/logos@npm:1.2.15"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/626843910217bd0a227b2c9b6d1d7ac31b5097c923f4ad3d339d4299f8fd248b8adbbb51b00a8751e8a234165b276823997ccd08b13b9d0335ba43abdde3c303
+  languageName: node
+  linkType: hard
+
 "@iconify-json/mdi@npm:^1.2.3":
   version: 1.2.3
   resolution: "@iconify-json/mdi@npm:1.2.3"
@@ -1304,12 +1313,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/selfhst@npm:^1.2.21":
+  version: 1.2.21
+  resolution: "@iconify-json/selfhst@npm:1.2.21"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/66f74b419cd3c43c49e06a5f3426879ef2703f177ffecdef379f0f40e2dd6f862d0b434e44fad12e9957fed35c7842121e473e7654e927c774b80018a4e83504
+  languageName: node
+  linkType: hard
+
 "@iconify-json/simple-icons@npm:^1.2.21":
   version: 1.2.95
   resolution: "@iconify-json/simple-icons@npm:1.2.95"
   dependencies:
     "@iconify/types": "npm:*"
   checksum: 10c0/bf37055752080633f03ac19b95f62fed11deacc08c48517648e2b2b895a843b3a6867dadb6d3f555cf8c06c9ba6157f8dd37ac0c322f2e04afc1b22ce0def716
+  languageName: node
+  linkType: hard
+
+"@iconify-json/simple-icons@npm:^1.2.98":
+  version: 1.2.98
+  resolution: "@iconify-json/simple-icons@npm:1.2.98"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/c12b165c23ec994edb7556b9b498663b4f26d2d1d8ac9a0b28ee877cff95e25c919745cb57f55668269393b0b97c17d4763aeab394b8cca62988e84debae3dfd
   languageName: node
   linkType: hard
 
@@ -3120,7 +3147,10 @@ __metadata:
     "@iconify-json/catppuccin": "npm:^1.2.17"
     "@iconify-json/devicon": "npm:^1.2.68"
     "@iconify-json/devicon-plain": "npm:^1.2.60"
+    "@iconify-json/logos": "npm:^1.2.15"
     "@iconify-json/mdi": "npm:^1.2.3"
+    "@iconify-json/selfhst": "npm:^1.2.21"
+    "@iconify-json/simple-icons": "npm:^1.2.98"
     "@stylistic/eslint-plugin": "npm:^5.10.0"
     "@stylistic/stylelint-config": "npm:^5.0.0"
     "@types/eslint": "npm:^9.6.1"

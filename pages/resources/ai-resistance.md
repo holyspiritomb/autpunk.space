@@ -12,11 +12,11 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 
 ## Why?
 
-- [These Are the Worst ChatGPT Flyers You've Sent Us](https://www.404media.co/these-are-the-worst-chatgpt-flyers-youve-sent-us/): AI generated flyers are obvious and just fucking suck.
-- [How AI Chatbots Are 'Deskilling' Human Empathy](https://www.404media.co/sherry-turkle-artificial-intimacy-podcast/): AI chatbots cause empathy skills to atrophy.
+- [These Are the Worst ChatGPT Flyers You've Sent Us](https://www.404media.co/these-are-the-worst-chatgpt-flyers-youve-sent-us/): AI generated flyers are obvious and make your business or event look like you put zero effort into it.
+- [How AI Chatbots Are 'Deskilling' Human Empathy](https://www.404media.co/sherry-turkle-artificial-intimacy-podcast/): AI chatbots can cause empathy skills to atrophy.
 - [‘Doom Loop’: OpenAI and Microsoft Admits LLMs Are Destroying the Web and Built on Theft](https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft/): AI model training is plagiarizing writers and artists, and churning out slop that makes the internet worse.
 - [Why AI Music on Spotify Matters](https://sloptracker.org/why): AI generated music is flooding Spotify and it's siphoning money and streams away from human artists.
-- [Massive disconnect of power roils largest US electric grid](https://www.reuters.com/business/energy/massive-disconnect-power-roiled-largest-us-electric-grid-2026-07-22/): Data centers are not worth the power consumption they require.
+- [Massive disconnect of power roils largest US electric grid](https://www.reuters.com/business/energy/massive-disconnect-power-roiled-largest-us-electric-grid-2026-07-22/): AI-training data centers are not worth the power consumption they require.
 - [AI Companion Mortality Database](https://aimortality.org): AI chatbots have a death toll.
 - [The AI Doomsday Future Is Not Inevitable](https://theintercept.com/2026/09/14/surveillance-tech-ai-military-flock/): AI is being used to surveil and kill.
 
@@ -37,6 +37,10 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 ## For search engine users
 
 [Anti-AI Google Search Tips](https://github.com/laylavish/TipsTricksGoogleSearch)
+
+## For people concerned about their own or a loved one's AI use
+
+[Slow LLM](https://slowllm.lav.io/): A browser extension that makes LLMs appear to run much more slowly.
 
 ## AI detection
 

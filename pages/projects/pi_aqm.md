@@ -8,10 +8,12 @@ next: false
 ---
 # {{ $frontmatter.title }}
 
-<div i-catppuccin-python aria-label="python" />
-<div i-catppuccin-docker aria-label="docker" />
-<div i-simple-icons-flask aria-label="flask" />
 <div i-devicon-plain-raspberrypi aria-label="raspberry pi" />
+<div i-catppuccin-docker aria-label="docker" />
+<div i-catppuccin-python aria-label="python" />
+<div i-catppuccin-jinja aria-label="jinja" />
+<div i-simple-icons-flask aria-label="flask" />
+<div i-catppuccin-html aria-label="html" />
 <div i-devicon-plain-bootstrap aria-label="bootstrap" />
 <div i-devicon-chartjs-wordmark aria-label="chart dot JS" />
 
@@ -26,3 +28,15 @@ I am allergic to all of the environmental allergens both indoors (cats, dogs, du
 
 - Original: https://github.com/rydercalmdown/pi_air_quality_monitor
 - This [sibling-fork by whirledsol](https://github.com/whirledsol/pi-air-quality-monitor) helped me understand how jinja templating works.
+
+<style module>
+[i-devicon-plain-bootstrap] {
+    @apply bg-ctp-latte-lavender/80 dark:bg-ctp-mocha-lavender;
+}
+[i-devicon-plain-raspberrypi] {
+    @apply bg-ctp-latte-red/70 dark:bg-ctp-mocha-red;
+}
+[i-simple-icons-flask] {
+    @apply bg-ctp-latte-text dark:bg-ctp-mocha-text;
+}
+</style>

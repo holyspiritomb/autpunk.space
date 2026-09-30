@@ -21,6 +21,7 @@ import { VPButton } from "vitepress/theme-without-fonts";
 import LayoutBottom from "./components/LayoutBottom.vue";
 // import CustomHeroImg from "./components/CustomHeroImg.vue";
 import TextInput from "./components/TextInput.vue";
+import YiddishText from "./components/YiddishText.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import MyBadge from "./components/MyBadge.vue";
 // import DarkBox from "./components/DarkBox.vue";
@@ -95,6 +96,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
+      component("Yiddish", YiddishText).
       component("MyBadge", MyBadge);
   },
   setup() {
