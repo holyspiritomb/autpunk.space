@@ -1,5 +1,5 @@
 html {
-  font-family: Inter, "Noto Color Emoji", system-ui;
+  font-family: Inter, system-ui;
   font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
 }
 
@@ -12,7 +12,7 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: InterVariable, "Noto Color Emoji", system-ui;
+    font-family: InterVariable, system-ui;
     font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
 
     .vp-doc,
@@ -21,7 +21,7 @@ html {
     footer,
     header,
     .home {
-      font-family: InterVariable, "Noto Color Emoji", system-ui;
+      font-family: InterVariable, system-ui;
       font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
     }
   }
@@ -31,10 +31,6 @@ html {
     --vp-font-family-base: "Inter Variable", InterVariable;
     /* stylelint-enable value-keyword-case */
   }
-}
-
-div.icon {
-  font-family: "Noto Color Emoji";
 }
 
 .VPHomeHero {
