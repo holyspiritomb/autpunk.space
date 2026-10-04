@@ -1,6 +1,34 @@
+@font-face {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "monogram";
+  src: url("/fonts/monogram-extended.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monogram";
+  /* stylelint-enable font-family-name-quotes */
+  src: url("/fonts/monogram-extended-italic.ttf") format("truetype");
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Plain Pixel";
+  src: url("/fonts/plainpixel-regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
 html {
   font-family: Inter, system-ui;
   font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
+
+  &.pixel {
+    font-family: monogram, monospace;
+    font-feature-settings: unset;
+  }
 }
 
 :root {
@@ -8,6 +36,10 @@ html {
   --vp-font-family-mono: "Victor Mono";
   --default-monoFont-family: "Victor Mono"; /* code font */
   --default-monoFont-featureSettings: "ss06" on, "ss01" off, "ss07" on;
+
+  &.pixel {
+    --vp-font-family-base: "monogram";/* normal text font */
+  }
 }
 
 @supports (font-variation-settings: normal) {
@@ -24,12 +56,30 @@ html {
       font-family: InterVariable, system-ui;
       font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
     }
+
+    &.pixel {
+      font-family: monogram, monospace;
+      font-feature-settings: unset;
+
+      .vp-doc,
+      .is-home,
+      nav,
+      footer,
+      header,
+      .home {
+        font-family: monogram, monospace;
+      }
+    }
   }
 
   :root {
     /* stylelint-disable value-keyword-case */
     --vp-font-family-base: "Inter Variable", InterVariable;
     /* stylelint-enable value-keyword-case */
+
+    &.pixel {
+      --vp-font-family-base: "monogram";
+    }
   }
 }
 
@@ -61,4 +111,85 @@ samp,
 pre,
 .vp-code {
   @apply victor victorFeatures;
+}
+
+html.pixel {
+  .VPHomeHero {
+    .tagline {
+      font-family: "Plain Pixel";
+      font-size: 15pt;
+    }
+
+    h1.heading {
+      font-family: monogram;
+      font-size: 64px;
+
+      .name,
+      span.text {
+        font-size: 64px;
+        font-family: monogram;
+        line-height: 52px;
+      }
+    }
+  }
+
+  .VPLink,
+  .text,
+  .footnotes,
+  .details,
+  .message,
+  .copyright,
+  .VPLastUpdated,
+  .menu,
+  .top-link,
+  .outline-link,
+  .VPLocalNavOutlineDropdown button {
+    font-size: 16px;
+  }
+
+  .vp-doc {
+    h1 {
+      font-size: 30pt;
+      font-family: "Plain Pixel";
+    }
+
+    h2 {
+      // font-size: 32px;
+      font-size: 25pt;
+      font-family: "Plain Pixel";
+    }
+
+    h3 {
+      font-size: 15pt;
+      font-family: "Plain Pixel";
+    }
+
+    h4 {
+      text-decoration: underline;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .VPButton {
+    font-size: 16px;
+    font-weight: normal;
+
+    &.brand,
+    &.medium {
+      font-size: 16px;
+    }
+  }
+
+  .custom-block strong {
+    text-decoration: underline;
+  }
+
+  .yiddishSerif,
+  .yiddishSans {
+    font-size: 15pt !important;
+    font-family: "Plain Pixel", monogram, monospace !important;
+  }
 }

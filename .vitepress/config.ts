@@ -37,6 +37,12 @@ export default defineConfig({
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
+    ["script", { id: "check-pixel-preference" }, `
+      const pixelPref = localStorage.getItem("pixelFonts");
+      if (pixelPref && pixelPref === "true" && !document.documentElement.classList.contains("pixel")) {
+        document.documentElement.classList.add("pixel");
+      };
+      `],
   ],
   ignoreDeadLinks: false,
   lang: "en-US",

@@ -21,10 +21,12 @@ I forked the original project, which was made for python 3.5. The last commits w
 
 Working on this got me excited about ASCII art and is directly responsible for me deciding to mess around with python and javascript figlet ports.
 
-<Log aria-label="YuleLog terminal output" />
+<Log aria-label="YuleLog terminal output" class="log" width="350px" height="auto"/>
 
 <style module>
-svg {
+svg.log {
     @apply mySvg;
+    height: auto;
+    width: 350px !important;
 }
 </style>

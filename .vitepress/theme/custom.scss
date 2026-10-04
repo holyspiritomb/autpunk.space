@@ -3,7 +3,7 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background:
     -webkit-linear-gradient(
-      120deg,
+      0deg,
       var(--ctp-latte-pink) 30%,
       var(--ctp-latte-sky)
     );
@@ -23,6 +23,12 @@
   /* TODO: figure out fallback for when blur() is not supported */
   --vp-header-anchor-symbol: "‼";
   --vp-code-block-bg: rgb(var(--ctp-mocha-pink-rgb) / 0.28);
+
+  &.pixel {
+    --rounded-sm: 0;
+    --rounded-md: 0;
+    --rounded-full: 0;
+  }
 }
 
 .dark {
@@ -35,12 +41,10 @@
 }
 
 a {
-  @apply crosshairLink;
+  @apply crosshair;
 }
 
 .footnotes {
-  @apply smaller;
-
   .footnotes-list {
     @apply list-decimal;
   }
@@ -56,21 +60,21 @@ a {
 
 .VPHomeFeatures {
   .VPFeature.VPLink {
-    @apply homefeaturelink;
+    @apply pinkBg dark:crustBg;
 
     .box > img.VPImage {
-      @apply homefeatureimg;
+      @apply pinkBg dark:crustBg p-[6px] border-rd-1;
     }
   }
 
   div.icon {
-    @apply homefeatureimg;
+    @apply pinkBg dark:crustBg p-[6px] border-rd-1;
   }
 }
 
 .vp-doc .custom-block {
   &.details {
-    @apply detailscustom;
+    @apply lavenderBg;
   }
 
   div[class*="language"] {
@@ -78,12 +82,38 @@ a {
   }
 }
 
-/* stylelint-disable selector-not-notation */
-*:not(.VPLocalNavOutlineDropdown):not(.VPNavBarExtra) > button:not([class^="VP"]):not([class^="vpi-"]):not([aria-controls^="VP"]):not(.DocSearch-Button):not(.copy):not(.figcopy) {
-  @apply btn;
-}
-/* stylelint-enable selector-not-notation */
-
 .viewer-backdrop {
-  @apply viewerjs;
+  @apply bg-ctp-mocha-base;
+}
+
+html.pixel {
+  .VPButton {
+    @apply r0;
+
+    &.brand,
+    &.medium {
+      @apply r0;
+    }
+  }
+
+  .VPFeature {
+    @apply r0;
+
+    &.VPLink .box > img.VPImage {
+      @apply r0;
+    }
+  }
+
+  input,
+  button,
+  .VPBadge,
+  .VPSwitch,
+  .VPSwitchAppearance,
+  .icon,
+  .check,
+  .VPNavScreenAppearance,
+  .DocSearch-Button,
+  .custom-block {
+    @apply r0;
+  }
 }

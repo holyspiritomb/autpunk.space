@@ -10,6 +10,7 @@ import {
 } from "unocss";
 import presetCatppuccin from "@catppuccin/unocss";
 import processorLightningCSS from '@unocss/processor-lightningcss';
+import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
 // import browserslist from 'browserslist';
 import { Features } from 'lightningcss';
 import { flavors } from "@catppuccin/palette";
@@ -17,9 +18,9 @@ import { flavors } from "@catppuccin/palette";
 // let targets = browserslistToTargets(browserslist('>= 0.25%'));
 const mocha = flavors.mocha.colors;
 const latte = flavors.latte.colors;
-const gradMocha = `linear-gradient(90deg, ${mocha.red.hex} 0%, ${mocha.peach.hex} 30%, ${mocha.yellow.hex} 40%, ${mocha.green.hex} 50%, ${mocha.teal.hex} 60%, ${mocha.sky.hex} 70%, ${mocha.sapphire.hex} 80%, ${mocha.blue.hex} 90% ${mocha.lavender.hex} 100%)`;
+const gradMocha = `linear-gradient(90deg, ${mocha.red.hex} 0%, ${mocha.peach.hex} 30%, ${mocha.yellow.hex} 40%, ${mocha.green.hex} 50%, ${mocha.teal.hex} 60%, ${mocha.sky.hex} 70%, ${mocha.sapphire.hex} 80%, ${mocha.blue.hex} 90% ${mocha.lavender.hex} 95%)`;
 
-const gradLatte = `linear-gradient(90deg, ${latte.red.hex} 0%, ${latte.peach.hex} 30%, ${latte.yellow.hex} 40%, ${latte.green.hex} 50%, ${latte.teal.hex} 60%, ${latte.sky.hex} 70%, ${latte.sapphire.hex} 80%, ${latte.blue.hex} 90% ${latte.lavender.hex} 100%)`;
+const gradLatte = `linear-gradient(90deg, ${latte.red.hex} 0%, ${latte.peach.hex} 30%, ${latte.yellow.hex} 40%, ${latte.green.hex} 50%, ${latte.teal.hex} 60%, ${latte.sky.hex} 70%, ${latte.sapphire.hex} 80%, ${latte.blue.hex} 90% ${latte.lavender.hex} 95%)`;
 
 export default defineConfig({
   content: {
@@ -51,6 +52,7 @@ export default defineConfig({
     }),
     presetTagify(),
     presetTypography(),
+    presetHeroPatterns(),
   ],
   rules: [
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
@@ -67,17 +69,19 @@ export default defineConfig({
     ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
     ["rtl", { "dir": "rtl" }],
     ["crosshair", { "cursor": "crosshair" }],
+    ["pixelFont", { "font-family": "monogram, monospace" }],
+    ["sansFont", { "font-family": "Inter !important" }],
+    ["r0", { "border-radius": 0 }],
   ],
   shortcuts: {
     "btn": "rounded-md shadow-md py-2 px-2 border-ctp-mocha-pink outline-ctp-latte-pink outline-1 shadow-ctp-mocha-pink m-[0.5rem] h-[3rem] active:shadow-lg border-1 text-black bg-ctp-mocha-pink",
     "input": "py-2 px-4 rounded-sm shadow-md focus:shadow-lg focus:shadow-ctp-frappe-sky shadow-ctp-mocha-sky py-2 px-4 border-1 border-pink-400 focus:border-pink-700 bg-pink-100 dark:bg-gray-700/50 dark:shadow-ctp-mocha-sky caret-pink dark:caret-ctp-mocha-sky m-[0.5rem] h-[3rem] focus:outline-1 focus:outline-blue-400",
     "label": "py-2 px-4",
-    "viewerjs": "bg-ctp-mocha-base",
-    "homefeaturelink": "bg-ctp-mocha-pink/50 border-ctp-mocha-pink/70 hover:border-ctp-mocha-pink/90 active:border-ctp-mocha-pink/100 active:bg-ctp-mocha-pink/60 dark:bg-ctp-mocha-crust/30 dark:border-ctp-mocha-crust/50 dark:hover:border-ctp-mocha-pink/70 dark:active:border-ctp-mocha-pink/100 dark:active:bg-ctp-mocha-crust/80",
-    "homefeatureimg": "bg-ctp-mocha-pink/50 dark:bg-ctp-mocha-crust/50 p-[6px] border-rd-1",
+    "pinkBg": "bg-ctp-mocha-pink/50 border-ctp-mocha-pink/70 hover:border-ctp-mocha-pink/90 active:border-ctp-mocha-pink/100 active:bg-ctp-mocha-pink/60",
+    "crustBg": "bg-ctp-mocha-crust/30 border-ctp-mocha-crust/50 hover:border-ctp-mocha-pink/70 active:border-ctp-mocha-pink/100 active:bg-ctp-mocha-crust/80",
     "codelangblock": "bg-white/90 border-1 border-ctp-mocha-sky/90 dark:(bg-ctp-mocha-base border-ctp-mocha-sky/50)",
     "sidebarLinks": "border-l-1 pl-[16px] border-rd-[2px] border-l-ctp-mocha-pink/50",
-    "detailscustom": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-lavender/10",
+    "lavenderBg": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-lavender/10",
     "customToggle": "bg-ctp-mocha-lavender/20 dark:bg-ctp-mocha-mantle border-rd-[5px] pr-[16px] mb-[1em] b-solid border-1 border-ctp-mocha-lavender/50 dark:border-ctp-mocha-surface1",
     "customSwitch": "border-1 b-solid border-ctp-mocha-lavender/50 active:border-ctp-mocha-lavender focus:border-ctp-mocha-lavender dark:border-ctp-mocha-surface1 border-rd-[11px]",
     "mySvg": "w-[350px] h-a",
@@ -88,7 +92,7 @@ export default defineConfig({
     "yiddishSerif": "ySerif rtl",
     "yiddishSans": "ySans rtl",
     "ctpGrad": "ctpGradLatte dark:ctpGradMocha",
-    "crosshairLink": "hover:crosshair",
+    "crosshair": "hover:crosshair",
   },
   transformers: [
     transformerDirectives(),

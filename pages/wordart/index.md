@@ -18,5 +18,3 @@ When I first used MS Office circa 1999, my favorite thing to do was make wordart
 [Look upon my works](/pages/wordart/wordarts1)
 
 [Make your own wordart](/pages/wordart/figlet)
-
-<MySwitchAppearance />

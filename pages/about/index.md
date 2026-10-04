@@ -53,6 +53,10 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 - <div i-logos:vueuse /> VueUse for more Vue functions
 - <div i-catppuccin-unocss /> Unocss for icons and easy CSS shortcutting
 - <div i-devicon-sass /> Sass because selectors like <code>&:hover</code> make me feel powerful
+- Main pixel font is [monogram](https://datagoblin.itch.io/monogram)
+- Pixel font used with Yiddish text and some headings is [Plain Pixel Font by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). I made no modifications.
+- Sans serif font is [Inter](https://rsms.me/inter)
+- Code font is [Victor Mono](https://rubjo.github.io/victor-mono/)
 
 :::
 
@@ -79,7 +83,7 @@ I'm Hezekiah (he/him), a fat disabled queer trans ace Jew-in-process. I'm autist
 Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 
 <Yiddish font="yiddishSans" title="ikh red a bisl yidish">
-איך רעד א ביסל יידיש.&lrm;
+איך רעד א ביסל ײדיש.&lrm;
 </Yiddish>
 
 <Yiddish title="palestina vet zikh bafrayen">

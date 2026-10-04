@@ -42,6 +42,6 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 
 [Slow LLM](https://slowllm.lav.io/): A browser extension that makes LLMs appear to run much more slowly.
 
-## AI detection
+## For AI detection in media
 
 [SlopTracker](https://sloptracker.org/): A tool to test Spotify tracks.

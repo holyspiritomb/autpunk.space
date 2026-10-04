@@ -18,12 +18,12 @@ import TheseColorsDontRun from "../../src/wordart/TheseColorsDontRun.svg?skipsvg
 
 <MySwitchAppearance />
 
-<AllCatsAreBeautiful aria-label="All cats are beautiful" />
+<AllCatsAreBeautiful aria-label="All cats are beautiful" class="wordart" width="350px" height="auto" />
 
-<TheseColorsDontRun aria-label="These colors don't run" />
+<TheseColorsDontRun aria-label="These colors don't run" class="wordart" width="350px" height="auto" />
 
 <style module>
-svg {
+svg.wordart {
     @apply mySvg;
     font-family: "Victor Mono" !important;
 }

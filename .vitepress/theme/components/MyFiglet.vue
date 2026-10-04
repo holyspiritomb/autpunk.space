@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import { useClipboard } from "@vueuse/core";
 import figlet from "figlet";
-import "@fontsource/jetbrains-mono/300.css";
 import { ref as deepRef, onMounted } from "vue";
 import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "../util/fontLoader";
-import { useClipboard } from "@vueuse/core";
 import "7.css/dist/7.scoped.css";
+import "@fontsource/jetbrains-mono/300.css";
 import MyFigletBoxMd from "./MyFigletBox.md";
 
 const chosenFont = deepRef("Calvin S");

@@ -19,13 +19,14 @@ import "./custom.scss";
 import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
 import LayoutBottom from "./components/LayoutBottom.vue";
-// import CustomHeroImg from "./components/CustomHeroImg.vue";
+import FontChanger from "./components/FontChanger.vue";
 import TextInput from "./components/TextInput.vue";
 import YiddishText from "./components/YiddishText.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import MyBadge from "./components/MyBadge.vue";
-// import DarkBox from "./components/DarkBox.vue";
 import useImageViewer from "vitepress-plugin-viewerjs";
+import BackToTopButton from "@miletorix/vitepress-back-to-top-button";
+import "@miletorix/vitepress-back-to-top-button/style.css"; 
 
 
 // devtools stuff {{{
@@ -89,13 +90,20 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       "layout-bottom": () => h(LayoutBottom),
-      // "home-hero-image": () => h(CustomHeroImg),
+      "home-hero-actions-after": () => h(FontChanger),
+      "nav-screen-content-before": () => h(FontChanger), 
     });
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enhanceApp({ app, router, siteData }) {
+    BackToTopButton(app, {
+      progressColor: "var(--ctp-mocha-green)", // default is #42b983
+      textColor: "var(--vp-badge-info-text)",
+      // arrowSvg: `string`
+    });
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
+      // component("FontChanger", FontChanger).
       component("Yiddish", YiddishText).
       component("MyBadge", MyBadge);
   },

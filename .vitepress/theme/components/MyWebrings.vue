@@ -124,10 +124,10 @@ div#catppuccinWebring {
       display: none !important;
     }
     &:first-of-type {
-      @apply text-ctp-mocha-pink;
+      @apply text-ctp-mocha-pink mx-2;
     }
     &:last-of-type {
-      @apply text-ctp-mocha-lavender;
+      @apply text-ctp-mocha-lavender mx-2;
     }
     &:nth-of-type(2) {
       color: transparent;

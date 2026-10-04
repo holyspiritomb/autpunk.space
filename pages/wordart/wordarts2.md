@@ -23,19 +23,19 @@ import WeWillOutliveThem from "../../src/wordart/WeWillOutliveThem.svg?skipsvgo"
 
 <MySwitchAppearance />
 
-<NziPunksFckOffRainbow aria-label="Nazi punks fuck off" />
+<NziPunksFckOffRainbow aria-label="Nazi punks fuck off" class="wordart" width="350px" height="auto"/>
 
-<RepentToWeatherLords aria-label="Repent to your weather lords" />[^1]
+<RepentToWeatherLords aria-label="Repent to your weather lords" class="wordart" width="350px" height="auto" />[^1]
 [^1]: https://weatherishappening.com (epilepsy warning)
 
-<Fiber aria-label="I desire the fibrous nutritive material" />
+<Fiber aria-label="I desire the fibrous nutritive material" class="wordart" width="350px" height="auto" />
 
-<StopBelievingChatbots aria-label="Stop believing chatbots" />
+<StopBelievingChatbots aria-label="Stop believing chatbots" class="wordart" width="350px" height="auto" />
 
-<WeWillOutliveThem aria-label="Trans flag colors text: We will outlive them" />
+<WeWillOutliveThem aria-label="Trans flag colors text: We will outlive them" class="wordart" width="350px" height="auto"/>
 
 <style module>
-svg {
+svg.wordart {
     @apply mySvg;
     font-family: "Victor Mono" !important;
 }

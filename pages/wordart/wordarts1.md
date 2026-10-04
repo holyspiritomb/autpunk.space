@@ -32,24 +32,26 @@ Here's a bunch of ascii wordart I've made with various[^1] command-line tools. M
 
 [^1]: [cfonts](https://github.com/dominikwilkowski/cfonts), [figlet](https://figlet.org), [pyfiglet](https://github.com/pwaller/pyfiglet), [blahaj](https://codeberg.org/GeopJr/BLAHAJ), [gay](https://github.com/ms-jpq/gay), [boxen](https://github.com/sindresorhus/boxen), [lolcrab](https://github.com/mazznoer/lolcrab), [terminal-svg](https://github.com/russmckendrick/terminal-svg), [ascii-banner](https://ascii-banner.com/), [neovim](https://neovim.io), and more!
 
-<LudditesWereRight aria-label="The Luddites were right" />
+<LudditesWereRight aria-label="The Luddites were right" class="wordart" width="350px" height="auto" />
 
-<TransPplHaveAlwaysExisted aria-label="Trans people have always existed" />
+<TransPplHaveAlwaysExisted aria-label="Trans people have always existed" class="wordart" width="350px" height="auto" />
 
-<MirVelnZeyIberlebn aria-label="Yiddish block letters: Mir veln zey iberleben" />[^2]
+<MirVelnZeyIberlebn aria-label="Yiddish block letters: Mir veln zey iberleben" class="wordart" width="350px" height="auto" />[^2]
 [^2]: Yiddish slogan that means "we will outlive them."
 
 
-<MeatCoding aria-label="Better living through meatcoding" />[^3]
+<MeatCoding aria-label="Better living through meatcoding" class="wordart" width="350px" height="auto" />[^3]
 [^3]: Meatcoding is the opposite of vibecoding. As in, using your brainmeats and not a chatbot to write the code.
 
 
-<HerNameIsLakeOntario aria-label="Her name is Lake Ontario" />[^4]
+<HerNameIsLakeOntario aria-label="Her name is Lake Ontario" class="wordart" width="350px" height="auto" />[^4]
 [^4]: Contrary to what a certain American president thinks, one does not simply unilaterally rename geographical features by executive order. And no one is required to obey such an order, not even Google Maps. See also: Denali and the Gulf of Mexico.
 
 <style module>
-svg {
+svg.wordart {
     @apply mySvg;
+    width: 350px !important;
+    height: auto;
     font-family: "Victor Mono" !important;
 }
 </style>
