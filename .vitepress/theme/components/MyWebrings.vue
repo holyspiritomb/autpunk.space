@@ -87,12 +87,12 @@
       alt="an 80s Macintosh System 1 style black-and-white dialog box titled 'The No AI Webring' with a little icon showing a dead computer. beside it are three clickable buttons, labeled Previous, Random and Next"
     />
   </div>
-  <h3>Prospective</h3>
   <div id="catppuccinWebring">
     <a href="https://ctp-webr.ing/autpunk/previous">&larr;</a>
     <a href="https://ctp-webr.ing/">Catppuccin webring</a>
     <a href="https://ctp-webr.ing/autpunk/next">&rarr;</a>
   </div>
+  <!-- <h3>Prospective</h3> -->
 </template>
 
 <style scoped>
@@ -124,10 +124,10 @@ div#catppuccinWebring {
       display: none !important;
     }
     &:first-of-type {
-      @apply text-ctp-mocha-pink mx-2;
+      @apply text-ctp-mocha-pink mx-3;
     }
     &:last-of-type {
-      @apply text-ctp-mocha-lavender mx-2;
+      @apply text-ctp-mocha-lavender mx-3;
     }
     &:nth-of-type(2) {
       color: transparent;
