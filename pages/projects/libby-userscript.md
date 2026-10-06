@@ -36,9 +36,3 @@ My main changes from upstream:
 ## Prior Arts
 
 * Upstream repository: https://github.com/Dylancyclone/goodreads-libby-userscript
-
-<style module>
-[i-simple-icons-adguard] {
-    @apply bg-ctp-latte-green dark:bg-ctp-mocha-green;
-}
-</style>

@@ -34,6 +34,11 @@ export default defineConfig({
   presets: [
     presetWind4(),
     presetCatppuccin(),
+    presetTagify({
+      extraProperties: matched => matched.startsWith('i-')
+        ? { display: 'inline-block' }
+        : { },
+    }),
     presetAttributify(),
     presetIcons({
       scale: 1.2,
@@ -50,27 +55,28 @@ export default defineConfig({
         },
       },
     }),
-    presetTagify(),
     presetTypography(),
     presetHeroPatterns(),
   ],
   rules: [
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
     ["victor", { "font-family": "'Victor Mono', monospace !important" }],
+    ["zilla", { "font-family": "Zilla Slab" }],
+    ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],
+    ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
+    ["pixelFont", { "font-family": "monogram, monospace" }],
+    ["sansFont", { "font-family": "Inter !important" }],
     ["victorFeatures", { "font-feature-settings": "'ss06' on, 'ss01' off, 'ss07' on" }],
+    ["interFeatures", { "font-feature-settings": "'cv01' on, 'cv02' on, 'cv03' on, 'cv04' on, 'cv05' on, 'cv07' on, 'cv08' on, 'cv09' on, 'cv10' on, 'ss03' on" }],
+    ["fontFeatUnset", { "font-feature-settings": "unset" }],
     [/^z-(\d+)$/, ([, d]) => ({ "z-index": `${d}` })],
     ["list-decimal", { "list-style-type": "decimal" }],
     ["smaller", { "font-size": "smaller" }],
     ["bg-gradient-pink-blue", { "background-image": "linear-gradient(-45deg, #ea76cb 50%, #04a5e5 50%)" }],
     ["ctpGradMocha", { "background-image": gradMocha }],
     ["ctpGradLatte", { "background-image": gradLatte }],
-    ["zilla", { "font-family": "Zilla Slab" }],
-    ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],
-    ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
     ["rtl", { "dir": "rtl" }],
     ["crosshair", { "cursor": "crosshair" }],
-    ["pixelFont", { "font-family": "monogram, monospace" }],
-    ["sansFont", { "font-family": "Inter !important" }],
     ["r0", { "border-radius": 0 }],
   ],
   shortcuts: {

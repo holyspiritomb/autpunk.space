@@ -3482,6 +3482,7 @@ __metadata:
     "@unocss/processor-lightningcss": "npm:^66.10.5"
     "@vue/tsconfig": "npm:^0.9.1"
     "@vueuse/core": "npm:14.4.0"
+    chalk: "npm:^6.0.1"
     easy-speech: "npm:^2.4.0"
     eslint: "npm:^10.11.0"
     eslint-plugin-vue: "npm:^10.11.1"
@@ -3675,6 +3676,13 @@ __metadata:
   version: 2.0.1
   resolution: "ccount@npm:2.0.1"
   checksum: 10c0/3939b1664390174484322bc3f45b798462e6c07ee6384cb3d645e0aa2f318502d174845198c1561930e1d431087f74cf1fe291ae9a4722821a9f4ba67e574350
+  languageName: node
+  linkType: hard
+
+"chalk@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "chalk@npm:6.0.1"
+  checksum: 10c0/4c58238fa874f531b5201bf99ebd374742be31f8e306c7783d930856aec305f2dea3e07531a8805b2a7ba92807296e39ced52e9f673703e0264d96e83998a429
   languageName: node
   linkType: hard
 

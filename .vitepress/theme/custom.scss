@@ -40,6 +40,12 @@
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
 }
 
+img[src*=".jpg"],
+img[src*=".png"],
+img[src*=".gif"] {
+  @apply inline;
+}
+
 a {
   @apply crosshair;
 }
@@ -48,6 +54,25 @@ a {
   .footnotes-list {
     @apply list-decimal;
   }
+}
+
+[i-devicon-plain-bootstrap],
+[i-simple-icons-vitepress] {
+  @apply bg-ctp-frappe-lavender dark:bg-ctp-mocha-lavender;
+}
+
+[i-simple-icons-adguard],
+[i-simple-icons-vueuse],
+[i-simple-icons-nvm] {
+  @apply bg-ctp-frappe-green dark:bg-ctp-mocha-green;
+}
+
+[i-devicon-plain-raspberrypi] {
+  @apply bg-ctp-latte-red/70 dark:bg-ctp-mocha-red;
+}
+
+[i-simple-icons-flask] {
+  @apply bg-ctp-latte-text dark:bg-ctp-mocha-text;
 }
 
 .group:has([role="button"]) .VPSidebarItem.level-0 .items {

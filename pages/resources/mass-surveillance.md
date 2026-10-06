@@ -1,5 +1,6 @@
 ---
 title: Mass Surveillance
+outline: deep
 lastUpdated: true
 prev:
     text: 'Resources'
@@ -7,6 +8,17 @@ prev:
 next: false
 ---
 # {{ $frontmatter.title }} <Badge>under construction</Badge>
+
+<!-- ## Digital surveillance -->
+<!---->
+<!-- ### Basics -->
+<!---->
+<!-- The Electronic Frontier Foundation maintains [a very good primer on digital security](https://ssd.eff.org/module-categories/basics). It teaches: -->
+<!---->
+<!-- - How to create good passwords (a good password is strong *and* memorable) -->
+<!-- - How full-disk encryption works on computers and phones -->
+<!-- - How end-to-end message encryption works and how to decide if a program offering it is secure -->
+<!-- - How to develop your personal threat model -->
 
 ## DeFlock
 
@@ -50,7 +62,7 @@ Virginia wants you to know you're being recorded! Because knowing a speed camera
 
 [^7]: The idea that antifa is an official organization with official leadership and governance is also ridiculous. Antifa isn't a corporation or a secret club or an HOA. It's an idea.
 
-Also fun facts: ALPRs might misidentify license plate characters regularly, so you could be arrested for your lawfully operated vehicle being misidentified as one involved in a crime[^8]. Cops have also used ALPRs for stalking[^9] and abortion surveillance[^10]. And the data we have on ALPRs doesn't show that they're actually helpful at solving crimes[^11].
+Also fun facts: ALPRs might misidentify license plate characters regularly, so you could be arrested for your lawfully operated vehicle being misidentified as one involved in a crime[^8]. Cops have also used ALPRs for stalking[^9] and abortion surveillance[^10]. And the data we have on ALPRs doesn't show that they're actually helpful at solving crimes[^11]. Speed-limit enforcement via less-creepy high-speed cameras that are made obvious to drivers, though? Those seem to be pretty good at making drivers slow down[^12], even if it's only to avoid getting a speeding ticket.
 
 [^8]: ["Flock misread license plates in 71% of the alerts it sent to police in one California town"](https://www.businessinsider.com/flock-camera-misread-license-plate-reader-california-roseville-police-2026-7). Business Insider. 2026-07-31, Accessed 3 October 2026.
 
@@ -59,6 +71,8 @@ Also fun facts: ALPRs might misidentify license plate characters regularly, so y
 [^10]: Maass, Dave; Alajaji, Rindala (October 7, 2025). ["Flock Safety and Texas Sheriff Claimed License Plate Search Was for a Missing Person. It Was an Abortion Investigation"](https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it). Electronic Frontier Foundation. Accessed 3 October 2026.
 
 [^11]: Reilly, Steve; Schecter, Anna (September 30, 2026). [Flock's CEO claims its tech "solved" 1 million crimes last year. The company's own methodology undercuts that claim](https://www.cbsnews.com/news/flocks-ceo-claims-its-tech-solved-1-million-crimes-data-shows-otherwise/). CBS News. Accessed 3 October 2026.
+
+[^12]: Eduardo Cesar Amancio, Tatiana Maria Cecy Gadda, Matheus David Inocente Domingos, Jorge Tiago Bastos, Gabriela da Costa Bonetti, Sara Maria Pinho Ferreira, Anelise Schmitz, Oscar Oviedo-Trespalacios. Effectiveness of speed cameras in reducing speed: a systematic review. Accident Analysis & Prevention, Volume 231, 2026, 108488. ISSN 0001-4575, [https://doi.org/10.1016/j.aap.2026.108488](https://www.sciencedirect.com/science/article/pii/S0001457526000977).
 
 ### What You Can Do
 

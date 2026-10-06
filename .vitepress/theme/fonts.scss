@@ -22,12 +22,14 @@
 }
 
 html {
+  @apply interFeatures;
+
   font-family: Inter, system-ui;
-  font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
 
   &.pixel {
+    @apply fontFeatUnset;
+
     font-family: monogram, monospace;
-    font-feature-settings: unset;
   }
 }
 
@@ -44,8 +46,9 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
+    @apply interFeatures;
+
     font-family: InterVariable, system-ui;
-    font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
 
     .vp-doc,
     .is-home,
@@ -53,11 +56,14 @@ html {
     footer,
     header,
     .home {
+      @apply interFeatures;
+
       font-family: InterVariable, system-ui;
-      font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv05" on, "cv07" on, "cv08" on, "cv09" on, "cv10" on, "ss03" on;
     }
 
     &.pixel {
+      @apply fontFeatUnset;
+
       font-family: monogram, monospace;
       font-feature-settings: unset;
 
@@ -123,6 +129,7 @@ html.pixel {
     h1.heading {
       font-family: monogram;
       font-size: 64px;
+      text-transform: uppercase;
 
       .name,
       span.text {
@@ -190,6 +197,6 @@ html.pixel {
   .yiddishSerif,
   .yiddishSans {
     font-size: 15pt !important;
-    font-family: "Plain Pixel", monogram, monospace !important;
+    font-family: "Plain Pixel", monospace !important;
   }
 }

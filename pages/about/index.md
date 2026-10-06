@@ -19,42 +19,34 @@ svg#humancrafted {
     width: 88px !important;
     height: 31px !important;
 }
-img[src*=".jpg"],
-img[src*=".png"],
-img[src*=".gif"]{
-    @apply inline;
-}
-img[usemap] {
-    @apply block my-1;
-}
 </style>
 
 # {{ $frontmatter.title }}
-
 
 ## About this site
 
 
 [<HumanCrafted id="humancrafted" width="88px" height="31px" class="no-viewer inline h-[31px] w-[88px]" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com)
-![cascading style sheets](/css3.gif){.no-viewer}
-![warning: this page contains javascript](/js-warning.gif){.no-viewer}
-![Creative Commons Attribution-NonCommercial-ShareAlike license for the prose](/cc-by-nc-sa.gif){.no-viewer}
-![powered by vitepress](/poweredbyvp.png){.no-viewer}
+![cascading style sheets](/buttons/css3.gif){.no-viewer}
+![warning: this page contains javascript](/buttons/js-warning.gif){.no-viewer}
+![Creative Commons Attribution-NonCommercial-ShareAlike license for the prose](/buttons/cc-by-nc-sa.gif){.no-viewer}
+![powered by vitepress](/buttons/poweredbyvp.png){.no-viewer}
 
-You can link to me with this button (save it to your own server): ![autpunk dot space](/autpunk_space.gif){.no-viewer}
+You can link to me with this button (save it to your own server): ![autpunk dot space](/buttons/autpunk_space_stripes.png){.no-viewer}
 
 ::: details Tech stack
-- <div i-catppuccin-yarn /> Yarn for node package management
-- <div i-selfhst:vitepress /> Vitepress for static site generation
-- <div i-devicon-vitejs /> Vite for vitepress' backend
-- <div i-devicon-vuejs /> Vue 3 for reactivity, templating and components
-- <div i-catppuccin-markdown /> Markdown for prose
-- <div i-catppuccin-typescript /> TypeScript for clear types
-- <div i-logos:vueuse /> VueUse for more Vue functions
-- <div i-catppuccin-unocss /> Unocss for icons and easy CSS shortcutting
-- <div i-devicon-sass /> Sass because selectors like <code>&:hover</code> make me feel powerful
+- <span i-simple-icons-nvm /> [nvm](https://www.nvmnode.com) for node version management
+- <span i-catppuccin-yarn /> [Yarn](https://yarnpkg.com) for node package management
+- <span i-simple-icons-vitepress /> [Vitepress v1](https://vuejs.github.io/vitepress/v1/) for static site generation
+- <span i-catppuccin-vite /> [Vite](https://v7.vite.dev) for vitepress' backend
+- <span i-catppuccin-vue /> [Vue 3](https://vuejs.org) for reactivity, templating and components
+- <span i-catppuccin-markdown /> [Markdown] for focusing on prose
+- <span i-catppuccin-typescript /> [TypeScript] for clear types
+- <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
+- <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting
+- <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful
 - Main pixel font is [monogram](https://datagoblin.itch.io/monogram)
-- Pixel font used with Yiddish text and some headings is [Plain Pixel Font by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). I made no modifications.
+- Pixel font used with Yiddish text and some headings is [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). I made no modifications.
 - Sans serif font is [Inter](https://rsms.me/inter)
 - Code font is [Victor Mono](https://rubjo.github.io/victor-mono/)
 
@@ -65,13 +57,13 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 
 ## About me
 
-![trans rights now](/transnow2.gif){.no-viewer}
-![asexuals now](/asexuals_now.gif){.no-viewer}
-![long live MSPaint](/mspaint.gif){.no-viewer}
-![arch linux](/archlinux.gif){.no-viewer}
-![powered by the void](/thevoid.gif){.no-viewer}
-![I survived the 2018 tumblr apocalypse](/tumblr2018.gif){.no-viewer}
-![I support right to repair](/right_to_repair_01.jpg){.no-viewer}
+![trans rights now](/buttons/transnow2.gif){.no-viewer}
+![asexuals now](/buttons/asexuals_now.gif){.no-viewer}
+![long live MSPaint](/buttons/mspaint.gif){.no-viewer}
+![arch linux](/buttons/archlinux.gif){.no-viewer}
+![powered by the void](/buttons/thevoid.gif){.no-viewer}
+![I survived the 2018 tumblr apocalypse](/buttons/tumblr2018.gif){.no-viewer}
+![I support right to repair](/buttons/right_to_repair_01.jpg){.no-viewer}
 
 <Yiddish title="daloy politsey">
 דאַלױ פּאָליצײ!&lrm;

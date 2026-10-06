@@ -28,15 +28,3 @@ I am allergic to all of the environmental allergens both indoors (cats, dogs, du
 
 - Original: https://github.com/rydercalmdown/pi_air_quality_monitor
 - This [sibling-fork by whirledsol](https://github.com/whirledsol/pi-air-quality-monitor) helped me understand how jinja templating works.
-
-<style module>
-[i-devicon-plain-bootstrap] {
-    @apply bg-ctp-latte-lavender/80 dark:bg-ctp-mocha-lavender;
-}
-[i-devicon-plain-raspberrypi] {
-    @apply bg-ctp-latte-red/70 dark:bg-ctp-mocha-red;
-}
-[i-simple-icons-flask] {
-    @apply bg-ctp-latte-text dark:bg-ctp-mocha-text;
-}
-</style>
