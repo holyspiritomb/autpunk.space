@@ -40,8 +40,8 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 - <span i-simple-icons-vitepress /> [Vitepress v1](https://vuejs.github.io/vitepress/v1/) for static site generation
 - <span i-catppuccin-vite /> [Vite](https://v7.vite.dev) for vitepress' backend
 - <span i-catppuccin-vue /> [Vue 3](https://vuejs.org) for reactivity, templating and components
-- <span i-catppuccin-markdown /> [Markdown] for focusing on prose
-- <span i-catppuccin-typescript /> [TypeScript] for clear types
+- <span i-catppuccin-markdown /> Markdown for focusing on prose
+- <span i-catppuccin-typescript /> TypeScript for clear types
 - <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
 - <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting
 - <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful
