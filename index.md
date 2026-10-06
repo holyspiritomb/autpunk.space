@@ -8,8 +8,8 @@ hero:
   text: space
   tagline: be the autpunk you wish to see in the world
   image:
-    src: /rainbow_galaxy_heart.png
-    alt: A Milky Way galaxy emoji with a rainbow filter over it, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
+    src: /galaxy_heart.png
+    alt: A Milky Way galaxy emoji, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
   actions:
     - theme: brand
       text: about

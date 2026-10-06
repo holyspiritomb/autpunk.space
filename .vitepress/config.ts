@@ -33,7 +33,7 @@ export default defineConfig({
   // titleTemplate: 'Autpunk Dot Space',
   description: "An autism with personhood rambles about things, stuff and the difference between them.",
   head: [
-    ["link", { rel: "icon", href: "/rainbow_galaxy_heart.png" }],
+    ["link", { rel: "icon", href: "/galaxy_heart.png" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
@@ -78,7 +78,7 @@ export default defineConfig({
     hostname: "https://autpunk.space",
   },
   themeConfig: { 
-    logo: "/rainbow_galaxy_heart.png", // TODO: add sizes
+    logo: "/galaxy_heart.png", // TODO: add sizes
     externalLinkIcon: true,
     editLink: {
       text: "Edit",
