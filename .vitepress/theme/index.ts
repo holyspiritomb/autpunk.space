@@ -97,7 +97,7 @@ export default {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enhanceApp({ app, router, siteData }) {
     BackToTopButton(app, {
-      progressColor: "var(--ctp-mocha-green)", // default is #42b983
+      progressColor: "var(--ctp-mocha-pink)", // default is #42b983
       textColor: "var(--vp-badge-info-text)",
       // arrowSvg: `string`
     });

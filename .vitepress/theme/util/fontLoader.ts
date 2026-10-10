@@ -5,13 +5,14 @@ import figlet from "figlet";
 
 
 // small selection of ones I like most
+// TODO: Refactor this to be more scripty, or even done with vue
 
 export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   // fonts i like {{{
   "Alligator": () => import("figlet/importable-fonts/Alligator.js"),
   "Alligator2": () => import("figlet/importable-fonts/Alligator2.js"),
-  "Alphabet": () => import("figlet/importable-fonts/Alphabet.js"),
   "Alpha": () => import("figlet/importable-fonts/Alpha.js"),
+  "Alphabet": () => import("figlet/importable-fonts/Alphabet.js"),
   "ANSI Compact": () => import("figlet/importable-fonts/ANSI Compact.js"),
   "ANSI Regular": () => import("figlet/importable-fonts/ANSI Regular.js"),
   "ANSI Shadow": () => import("figlet/importable-fonts/ANSI Shadow.js"),
@@ -22,15 +23,14 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "Big Money-sw": () => import("figlet/importable-fonts/Big Money-sw.js"),
   "Binary": () => import("figlet/importable-fonts/Binary.js"),
   "Block": () => import("figlet/importable-fonts/Block.js"),
-  "Blocks": () => import("figlet/importable-fonts/Blocks.js"),
   "Bloody": () => import("figlet/importable-fonts/Bloody.js"),
   "BlurVision ASCII": () => import("figlet/importable-fonts/BlurVision ASCII.js"),
   "Banner": () => import("figlet/importable-fonts/Banner.js"),
   "Banner3": () => import("figlet/importable-fonts/Banner3.js"),
   "Banner3-D": () => import("figlet/importable-fonts/Banner3-D.js"),
   "Banner4": () => import("figlet/importable-fonts/Banner4.js"),
-  "Caligraphy2": () => import("figlet/importable-fonts/Caligraphy2.js"),
   "Caligraphy": () => import("figlet/importable-fonts/Caligraphy.js"),
+  "Caligraphy2": () => import("figlet/importable-fonts/Caligraphy2.js"),
   "Calvin S": () => import("figlet/importable-fonts/Calvin S.js"),
   "Circle": () => import("figlet/importable-fonts/Circle.js"),
   "Computer": () => import("figlet/importable-fonts/Computer.js"),
@@ -57,9 +57,8 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "Isometric3": () => import("figlet/importable-fonts/Isometric3.js"),
   "Isometric4": () => import("figlet/importable-fonts/Isometric4.js"),
   "Ivrit": () => import("figlet/importable-fonts/Ivrit.js"),
-  "Jerusalem": () => import("figlet/importable-fonts/Jerusalem.js"),
-  "Morse2": () => import("figlet/importable-fonts/Morse2.js"),
   "Morse": () => import("figlet/importable-fonts/Morse.js"),
+  "Morse2": () => import("figlet/importable-fonts/Morse2.js"),
   "Octal": () => import("figlet/importable-fonts/Octal.js"),
   "Pagga": () => import("figlet/importable-fonts/Pagga.js"),
   "Rebel": () => import("figlet/importable-fonts/Rebel.js"),
@@ -78,7 +77,7 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   // }}}
 };
 
-
+// TODO: Refactor this bc it's not sustainable
 export const fontImportsFull: Record<string, () => Promise<{ default: string }>> = {
 // full font list {{{
   "1Row": () => import("figlet/importable-fonts/1Row.js"),
@@ -415,6 +414,7 @@ export const fontImportsFull: Record<string, () => Promise<{ default: string }>>
 };
 
 // Track loaded fonts
+// TODO: this could be tracked better with vue
 const loadedFonts = new Set<string>();
 
 // Function to load a font

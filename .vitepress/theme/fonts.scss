@@ -17,6 +17,47 @@
 @font-face {
   font-family: "Plain Pixel";
   src: url("/fonts/plainpixel-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  unicode-range: u+0000-05FF, u+FB44, u+FB2E-FB2F, u+FB1F;
+}
+
+@font-face {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "Cozette";
+  /* stylelint-enable font-family-name-quotes */
+  src:
+    url("/fonts/CozetteCrossedSevenVector.ttf") format("truetype"),
+    url("/fonts/CozetteCrossedSevenVector.woff") format("woff"),
+    url("/fonts/CozetteCrossedSevenVector.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "Cozette";
+  /* stylelint-enable font-family-name-quotes */
+  src:
+    url("/fonts/CozetteCrossedSevenVectorBold.ttf") format("truetype"),
+    url("/fonts/CozetteCrossedSevenVectorBold.woff") format("woff"),
+    url("/fonts/CozetteCrossedSevenVectorBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "UnifontEX";
+  /* stylelint-enable font-family-name-quotes */
+  src:
+    url("/fonts/UnifontExMono.ttf") format("truetype"),
+    url("/fonts/UnifontExMono.woff") format("woff"),
+    url("/fonts/UnifontExMono.woff2") format("woff2");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -41,6 +82,8 @@ html {
 
   &.pixel {
     --vp-font-family-base: "monogram";/* normal text font */
+    --default-monoFont-family: "Cozette"; /* code font */
+    --default-monoFont-featureSettings: "";
   }
 }
 
@@ -130,6 +173,7 @@ html.pixel {
       font-family: monogram;
       font-size: 64px;
       text-transform: uppercase;
+      text-shadow: none;
 
       .name,
       span.text {
@@ -156,23 +200,32 @@ html.pixel {
 
   .vp-doc {
     h1 {
-      font-size: 30pt;
+      font-size: 40pt;
       font-family: "Plain Pixel";
+      text-shadow: 1px 1px var(--ctp-latte-overlay0);
+
+      .VPBadge {
+        letter-spacing: 0.05px;
+        text-shadow: none;
+      }
     }
 
     h2 {
-      // font-size: 32px;
-      font-size: 25pt;
+      font-size: 30pt;
       font-family: "Plain Pixel";
+      text-shadow: 1px 1px var(--ctp-latte-overlay0);
     }
 
     h3 {
-      font-size: 15pt;
+      font-size: 25pt;
       font-family: "Plain Pixel";
+      text-shadow: 1px 1px var(--ctp-latte-overlay0);
     }
 
     h4 {
-      text-decoration: underline;
+      font-size: 15pt;
+      font-family: "Plain Pixel";
+      text-shadow: 1px 1px var(--ctp-latte-overlay0);
     }
   }
 
@@ -190,13 +243,30 @@ html.pixel {
     }
   }
 
-  .custom-block strong {
-    text-decoration: underline;
+  .custom-block {
+    p {
+      font-size: 16px;
+    }
+
+    strong {
+      text-shadow: 1px 1px var(--ctp-latte-overlay0);
+    }
   }
 
   .yiddishSerif,
   .yiddishSans {
     font-size: 15pt !important;
     font-family: "Plain Pixel", monospace !important;
+  }
+
+  code,
+  kbd,
+  samp,
+  pre,
+  textarea,
+  .vp-code {
+    font-family: Cozette, Courier, monospace;
+    font-size: 13px !important;
+    line-height: 12px !important;
   }
 }

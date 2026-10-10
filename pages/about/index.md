@@ -45,11 +45,14 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 - <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
 - <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting
 - <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful
+:::
+
+:::details Fonts
 - Main pixel font is [monogram](https://datagoblin.itch.io/monogram)
 - Pixel font used with Yiddish text and some headings is [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). I made no modifications.
+- Pixel font used with code is [Cozette](https://github.com/the-moonwitch/Cozette/releases) with crossed 7
 - Sans serif font is [Inter](https://rsms.me/inter)
 - Code font is [Victor Mono](https://rubjo.github.io/victor-mono/)
-
 :::
 
 
@@ -64,6 +67,7 @@ You can link to me with this button (save it to your own server): ![autpunk dot 
 ![powered by the void](/buttons/thevoid.gif){.no-viewer}
 ![I survived the 2018 tumblr apocalypse](/buttons/tumblr2018.gif){.no-viewer}
 ![I support right to repair](/buttons/right_to_repair_01.jpg){.no-viewer}
+[![Fight Fascism sticker by Angus Johnston](/buttons/fightfascism-trans-88x31-white.png){.no-viewer}](https://fightfascism.neocities.org/)
 
 <Yiddish title="daloy politsey">
 דאַלױ פּאָליצײ!&lrm;

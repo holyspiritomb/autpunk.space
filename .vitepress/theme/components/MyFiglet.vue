@@ -20,7 +20,7 @@ const figletText = deepRef("");
 
 const { copy, copied, isSupported } = useClipboard({
   legacy: true,
-  copiedDuring: 5000,
+  copiedDuring: 2000,
   read: false,
   source: figletText,
 });
@@ -55,6 +55,7 @@ const generateArt = async () => {
     return;
   }
 
+  // INFO: based on https://github.com/patorjk/figlet.js/blob/d29f4c185973b745100b7b23d6ba6e2cdf764fb2/examples/front-end/index.htm#L143
   try {
     figlet.text(
       textToFiglet.value,
@@ -82,8 +83,9 @@ const generateArt = async () => {
           return;
         }
         console.debug("Generated ASCII art:");
-        console.debug(data);
-        figletText.value = data || "";
+        console.debug(`\n${data}`);
+        const padded = `\n${data}`;
+        figletText.value = padded || "";
       },
     );
   } catch (error) {
@@ -125,7 +127,7 @@ onMounted(() => {
         </option>
       </select>
     </div>
-    <details>
+    <details class="nopixel">
       <summary>Advanced Options</summary>
       <div class="win7">
         <label for="hLayout">Horizontal Layout:</label>
@@ -215,7 +217,7 @@ onMounted(() => {
 
 <style scoped>
 div.myContainer {
-  @apply customContainer border-ctp-mocha-lavender my-[1em] rounded;
+  @apply customContainer border-ctp-mocha-lavender my-[1em];
   select {
     @apply w-[45%] inline;
   }
@@ -223,7 +225,7 @@ div.myContainer {
     @apply w-[45%] inline;
   }
   textarea {
-    @apply customSelect h-[100px] w-[200px] block my-0 lavenderShadows jetbrains;
+    @apply customSelect h-[100px] w-[200px] block my-0 lavenderShadows;
   }
   div:has(>button.figcopy) {
     @apply my-0 text-right z-2;
@@ -232,7 +234,7 @@ div.myContainer {
     right: 0.2em;
   }
   #outputFigDisplay {
-    @apply customSelect w-[100%] h-a p-3 overflow-y-auto overflow-x-scroll lavenderShadows;
+    @apply customSelect w-[100%] h-a p-4 overflow-y-auto overflow-x-scroll lavenderShadows textC;
     position: relative;
     bottom:0.5em;
   }

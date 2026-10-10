@@ -28,6 +28,8 @@
     --rounded-sm: 0;
     --rounded-md: 0;
     --rounded-full: 0;
+    --vp-header-anchor-symbol: "^";
+    --vp-code-font-size: 13px;
   }
 }
 
@@ -73,6 +75,14 @@ a {
 
 [i-simple-icons-flask] {
   @apply bg-ctp-latte-text dark:bg-ctp-mocha-text;
+}
+
+button.back-to-top-button[style][data-v-8153223c] {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.progress-bg[data-v-8153223c] {
+  stroke: var(--vp-c-bg) !important;
 }
 
 .group:has([role="button"]) .VPSidebarItem.level-0 .items {
@@ -129,8 +139,13 @@ html.pixel {
     }
   }
 
+  div,
+  div[class*="language"],
   input,
   button,
+  textarea,
+  .myContainer,
+  .search-bar,
   .VPBadge,
   .VPSwitch,
   .VPSwitchAppearance,
@@ -140,5 +155,43 @@ html.pixel {
   .DocSearch-Button,
   .custom-block {
     @apply r0;
+  }
+
+  .custom-block {
+    @apply border-dashed border-ctp-latte-text/50 dark:border-ctp-mocha-text/50;
+
+    // @apply border-dashed bg-hero-diagonal-lines-ctp-latte-surface0/10 dark:bg-opacity-10;
+
+    &.info {
+      border-color: var(--vp-badge-info-bg);
+    }
+
+    &.tip {
+      border-color: var(--vp-badge-tip-bg);
+    }
+
+    &.danger {
+      border-color: var(--vp-badge-danger-bg);
+    }
+
+    &.warning {
+      border-color: var(--vp-badge-warning-bg);
+    }
+
+    &.details {
+      @apply bg-ctp-mocha-lavender/10 dark:bg-ctp-mocha-base;
+    }
+
+    div[class*="language"] {
+      @apply r0;
+    }
+  }
+
+  .nopixel {
+    display: none;
+  }
+
+  .VPBadge {
+    text-shadow: none;
   }
 }

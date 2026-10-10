@@ -1,4 +1,1 @@
-<pre>
-
-<code class="victor"><slot /></code>
-</pre>
+<pre><code class="victor"><slot /></code></pre>

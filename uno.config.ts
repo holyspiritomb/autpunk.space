@@ -60,7 +60,7 @@ export default defineConfig({
   ],
   rules: [
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
-    ["victor", { "font-family": "'Victor Mono', monospace !important" }],
+    ["victor", { "font-family": "var(--default-monoFont-family) !important" }],
     ["zilla", { "font-family": "Zilla Slab" }],
     ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],
     ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
@@ -77,6 +77,7 @@ export default defineConfig({
     ["ctpGradLatte", { "background-image": gradLatte }],
     ["rtl", { "dir": "rtl" }],
     ["crosshair", { "cursor": "crosshair" }],
+    ["textCursor", { "cursor": "text" }],
     ["r0", { "border-radius": 0 }],
   ],
   shortcuts: {
@@ -99,6 +100,7 @@ export default defineConfig({
     "yiddishSans": "ySans rtl",
     "ctpGrad": "ctpGradLatte dark:ctpGradMocha",
     "crosshair": "hover:crosshair",
+    "textC": "hover:textCursor",
   },
   transformers: [
     transformerDirectives(),
