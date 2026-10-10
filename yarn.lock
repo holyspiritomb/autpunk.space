@@ -3492,6 +3492,7 @@ __metadata:
     inter-ui: "npm:^4.1.1"
     lightningcss: "npm:^1.33.0"
     markdown-it: "npm:^14.1.0"
+    markdown-it-abbr: "npm:^2.0.0"
     markdown-it-attrs: "npm:^4.3.1"
     markdown-it-footnote: "npm:^4.0.0"
     sass-embedded: "npm:1.86.0"
@@ -5718,6 +5719,13 @@ __metadata:
   version: 8.11.1
   resolution: "mark.js@npm:8.11.1"
   checksum: 10c0/5e69e776db61abdd857b5cbb7070c8a3b1b0e5c12bf077fcd5a8c6f17b1f85ed65275aba5662b57136d1b9f82b54bb34d4ef4220f7703c9a7ab806ae1e208cff
+  languageName: node
+  linkType: hard
+
+"markdown-it-abbr@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "markdown-it-abbr@npm:2.0.0"
+  checksum: 10c0/2fa0d7ef5dddb6cec2affbbf516bc34231c733fb78a5d7be9a6caf1d34383f03c2ac44bddb42620cc91afdbaea2e5c6752b9884a1483b11a1eb895f5157eab84
   languageName: node
   linkType: hard
 

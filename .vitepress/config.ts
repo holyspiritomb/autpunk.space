@@ -3,6 +3,7 @@ import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
+import markdownAbbr from "markdown-it-abbr";
 
 
 // if (process.env.NODE_ENV === "development") {
@@ -41,8 +42,8 @@ export default defineConfig({
       const pixelPref = localStorage.getItem("pixelFonts");
       if (pixelPref && pixelPref === "true" && !document.documentElement.classList.contains("pixel")) {
         document.documentElement.classList.add("pixel");
-      };
-      `],
+      };`,
+    ],
   ],
   ignoreDeadLinks: false,
   lang: "en-US",
@@ -64,6 +65,7 @@ export default defineConfig({
       md.use(markdownFootnote);
       md.use(markdownItAttrs);
       md.use(groupIconMdPlugin);
+      md.use(markdownAbbr);
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +
