@@ -138,6 +138,7 @@ div#catppuccinWebring {
     @apply py-1 my-0;
     a[href*="ctp-webr.ing"] {
       text-decoration: none;
+      text-shadow: none !important;
       &:hover {
         text-decoration-line: underline;
         text-decoration-skip-ink: all;
