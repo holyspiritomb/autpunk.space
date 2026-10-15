@@ -40,7 +40,7 @@
     <img
       usemap="#genlissawidget"
       class="no-viewer"
-      src="https://genlissa.baccyflap.com/widget.gif"
+      src="/buttons/webrings/genlissa_widget.gif"
       alt="a yellow rectangle with the words 'I'm generation Lissa' in pink and purple. to the left and right are double arrows in pink, and to the top right is a purple question mark"
     />
   </div>
@@ -83,7 +83,7 @@
     <img
       usemap="#noaisys1widget"
       class="no-viewer"
-      src="https://baccyflap.com/noai/sys1widget.gif"
+      src="/buttons/webrings/noai_sys1widget.gif"
       alt="an 80s Macintosh System 1 style black-and-white dialog box titled 'The No AI Webring' with a little icon showing a dead computer. beside it are three clickable buttons, labeled Previous, Random and Next"
     />
   </div>
