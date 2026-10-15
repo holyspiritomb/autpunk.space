@@ -19,6 +19,7 @@
   --vp-code-lang-color: var(--ctp-latte-pink);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-latte-pink) 50%, var(--ctp-latte-sky) 50%);
   --vp-home-hero-image-filter: blur(44px);
+  --vp-code-bg: rgb(var(--ctp-mocha-lavender-rgb) / 0.28);
 
   /* TODO: figure out fallback for when blur() is not supported */
   --vp-header-anchor-symbol: "‼";
@@ -121,7 +122,12 @@ button.back-to-top-button[style][data-v-8153223c] {
   @apply bg-ctp-mocha-base;
 }
 
+
 html.pixel {
+  ul {
+    list-style-type: square;
+  }
+
   .VPButton {
     @apply r0;
 
@@ -153,6 +159,7 @@ html.pixel {
   .check,
   .VPNavScreenAppearance,
   .DocSearch-Button,
+  .vp-doc :not(pre) > code,
   .custom-block {
     @apply r0;
   }

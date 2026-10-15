@@ -73,12 +73,4 @@ export default defineConfig({
     BUILD_DATE: JSON.stringify(new Date().toUTCString()),
   },
   plugins: vitePlugins,
-  resolve: {
-    alias: [
-      {
-        find: /^~([^/])/, 
-        replacement: "$1",
-      },
-    ],
-  },
 });

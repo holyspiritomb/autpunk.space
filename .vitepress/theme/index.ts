@@ -18,7 +18,7 @@ import "./fonts.scss";
 import "./custom.scss";
 import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
-import LayoutBottom from "./components/LayoutBottom.vue";
+// import LayoutBottom from "./components/LayoutBottom.vue";
 import FontChanger from "./components/FontChanger.vue";
 import TextInput from "./components/TextInput.vue";
 import YiddishText from "./components/YiddishText.vue";
@@ -88,10 +88,10 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      "layout-bottom": () => h(LayoutBottom),
+      // https://vuejs.github.io/vitepress/v1/guide/extending-default-theme#layout-slots
       "home-hero-actions-after": () => h(FontChanger),
-      "nav-screen-content-before": () => h(FontChanger), 
+      // "nav-screen-content-before": () => h(FontChanger), 
+      "sidebar-nav-after": () => h(FontChanger),
     });
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -103,7 +103,6 @@ export default {
     });
     app.component("VPButton", VPButton).
       component("TextInput", TextInput).
-      // component("FontChanger", FontChanger).
       component("Yiddish", YiddishText).
       component("MyBadge", MyBadge);
   },

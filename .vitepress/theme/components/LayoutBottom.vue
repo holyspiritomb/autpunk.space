@@ -8,7 +8,7 @@ const { Layout } = DefaultTheme // eslint-disable-line no-unused-vars
 
 <template>
   <footer
-    v-if="frontmatter.layout !== 'home' && frontmatter.footer !== false"
+    v-if="frontmatter.footer !== false"
     class="VPFooter"
   >
     <div class="container">

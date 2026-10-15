@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
+import { fileURLToPath, URL } from 'node:url';
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
 import markdownAbbr from "markdown-it-abbr";
@@ -17,6 +18,20 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^~([^/])/, 
+          replacement: "$1",
+        },
+        {
+          find: /^.*\/VPFooter\.vue$/,
+          replacement: fileURLToPath(
+            new URL("/.vitepress/theme/components/LayoutBottom.vue", import.meta.url),
+          ),
+        },
+      ],
+    },
     build: {
       reportCompressedSize: true,
       dynamicImportVarsOptions: {
