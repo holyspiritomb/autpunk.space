@@ -1,5 +1,5 @@
 ---
-title: Making Medical Stuff Hurt Less
+title: Medical Procedures, and Making Them Hurt Less
 outline: deep
 lastUpdated: true
 prev:
@@ -46,10 +46,10 @@ I have different advice based on the type of injection, because injecting into t
 
 Examples:
 - Vaccines administered into your shoulder
-- Depo-Provera
-- Testosterone cypionate
+- Depo-Provera injected into upper gluteal muscle
+- Testosterone cypionate injected into upper outer thigh
 
-Intramuscular injections are meant to dispense medication into muscle. They use the largest needles you'll encounter outside of specialist offices because they have to go so deep. Many vaccines are given intramuscularly, and it is common for testosterone self-injections to be intramuscular. I have particular experience with injecting testosterone into my own thigh, but my suggestions also apply to receiving an intramuscular injection performed by someone else.
+Intramuscular injections are meant to dispense medication into muscle. They use the largest needles you'll encounter outside of specialist offices because they have to go so deep. Many vaccines are given intramuscularly, and it is common for testosterone self-injection to be intramuscular. I have particular experience with injecting testosterone into my own thigh, but my suggestions also apply to receiving an intramuscular injection performed by someone else.
 
 An intramuscular injection's pain is inversely proportional to the speed of needle insertion. Faster insertion = less pain because a lot of the potential pain comes from the muscle spasming as the needle enters.
 
@@ -74,6 +74,7 @@ Subcutaneous injections are meant to diffuse into the layer of fat under the ski
 - Allow the alcohol on the skin to dry before the injection to prevent a burning sensation on insertion.
 - Tell the provider not to give a warning or countdown (and don't watch).
 :::
+
 
 ### Fingerpricks
 
@@ -131,19 +132,17 @@ Hydration is beneficial for the same reasons as in blood draws, if you know you'
 
 ## Dental and orthodontic procedures
 
-I got the bad teeth genes. The first time I had a tooth extracted, I was seven years old.
-
-### Palate expansion
+### Palate expansion and other orthodontic treatment
 
 :::details Content warning: I relate an experience of orthodontic malpractice
-I learned as an adult that the purpose of a palate expander was not in fact to break bone, and that it is deeply unethical to do palate expansion without any pain control on an adolescent whose hard palate bones have fused. Palate expansion is not a comfortable experience or kids, but it is meant to stretch cartilage between the two sides of the hard palate before it ossifies in adolescence. But the first time (and every other time) my palate expander's key was turned, there were audible cracks and it was excruciatingly painful. It was a degree of pain unmatched by any other experience of my life until I had mesenteric adenitis in my early 30s^[Mesenteric adenitis is a "benign" condition where the lymph nodes in your abdominal wall swell up and hurt sharply, and the pain is unaffected by OTC pain relief methods. My lymph nodes were freaking out because I was two months into recovering from major abdominal surgery (hysterectomy), and my body was still freaking out about having fewer organs. My misbehaving lymph nodes calmed down after a few more months 🙃.].
+I learned as an adult that the purpose of a palate expander was not in fact to break bone, and that it is deeply unethical to do palate expansion without any pain control on an adolescent whose hard palate bones have fused. Palate expansion is not a comfortable experience for kids, but it is meant to stretch the cartilage between the two sides of the hard palate before it ossifies in adolescence.
 
-In addition to this, my orthodontist acted like I was inconveniencing him whenever I made any indication of being in pain. I never had the impression that my comfort mattered to him.
+The first time (and every other time) my palate expander's key was turned, there were audible cracks and it was excruciatingly painful. It was a degree of pain unmatched by any other experience of my life until I had mesenteric adenitis in my early 30s^[Mesenteric adenitis is a "benign" condition where the lymph nodes in your abdominal wall swell up and hurt sharply, and the pain is unaffected by OTC pain relief methods. My lymph nodes were freaking out because I was two months into recovering from major abdominal surgery (hysterectomy), and my body was still freaking out about having fewer organs. My misbehaving lymph nodes calmed down after a few more months 🙃.]. I was 16 and my palate had ossified. My orthodontist was unresponsive to my reports of pain and never offered any pain control or pain relief advice. He described me as "dramatic" for how I reacted to repeatedly having a bone broken.
 :::
 
 Palate expansion is the orthodontic process by which the upper jaw is widened. It is used to treat dental crowding and sometimes to increase the airway, and there are many methods but all involve some amount of pain and soreness. When I learned in adulthood that what happened to me was at the very least deeply unethical (and at worst, torture), I wanted to prevent it from happening to any other people.
 
-If you are told your child would benefit from palate expansion, it is imperative that before installing any appliance, the orthodontist X-rays the child's mouth to determine whether the hard palate is fused, especially if your child has started puberty. The way all palate expanders work is stretching the cartilage that separates the sides of the hard palate. Puberty is when that cartilage starts turning into bone.
+If you are told your child would benefit from palate expansion, it is imperative that before installing any appliance, the orthodontist X-rays the child's mouth to determine whether the hard palate is fused, especially if your child has started puberty. The way all palate expanders work is stretching the cartilage that separates the sides of the hard palate. Puberty is when that cartilage starts turning into bone. If that cartilage has ossified, there is a surgical procedure for re-separating it prior to using palate expansion appliances.
 
 :::info Advocating for your kid re: orthodontic treatment
 - If palate expansion is recommended, ask for X-ray confirmation that the hard palate isn't fused.
