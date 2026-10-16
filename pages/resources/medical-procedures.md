@@ -1,5 +1,5 @@
 ---
-title: Medical Procedures, and Making Them Hurt Less
+title: Medical Procedures (Making Them Hurt Less)
 outline: deep
 lastUpdated: true
 prev:
