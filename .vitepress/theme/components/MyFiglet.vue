@@ -15,7 +15,7 @@ const widths: any[] = ["none", 40, 41, 42, 43, 44, 45, 80, 81, 100, 120];
 const hLayout = deepRef("default");
 const vLayout = deepRef("default");
 const width = deepRef("none");
-const textToFiglet = deepRef("be gay\ndo art\ncrime");
+const textToFiglet = deepRef("be gay\ndo art\ncrimes");
 const figletText = deepRef("");
 
 const { copy, copied, isSupported } = useClipboard({
