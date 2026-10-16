@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(.+\.)?autpunk\.space/ [NC]
+RewriteCond %{REQUEST_URI} !blocked\.gif$ [NC]
+RewriteRule .*\.(jpe?g|gif|png)$ https://autpunk.space/blocked.gif [L]
