@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: about
-      link: /pages/about
+      link: /pages/about/
     - theme: alt
       text: webrings
       link: /pages/about/#webrings
@@ -27,31 +27,31 @@ features:
         src: /sparkle.png
         alt: "sparkles emoji"
     details: do visual stimmimg with wordart!
-    link: /pages/wordart
+    link: /pages/wordart/
   - title: Projects
     details: a few things I've made
     icon:
         src: /galaxylaptop.png
         alt: "galaxy laptop emoji"
-    link: /pages/projects
+    link: /pages/projects/
   - title: Writing
     icon:
         src: /thought.png
         alt: "thought bubble emoji"
     details: words are thought fossils
-    link: /pages/thought-fossils
+    link: /pages/thought-fossils/
   - title: Unsorted Fragments
     icon:
         src: /rainbowtrash.png
         alt: "emoji of a garbage can at the end of a rainbow"
     details: dive into my brain dumpster
-    link: /pages/unsorted-fragments
+    link: /pages/unsorted-fragments/
   - title: Links to Other People
     icon:
         src: /potato.png
         alt: "potato emoji"
     details: I just think they're neat
-    link: /pages/other-people
+    link: /pages/other-people/
 
 lastUpdated: true
 ---
