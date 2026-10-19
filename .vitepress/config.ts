@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
-import { fileURLToPath, URL } from 'node:url';
+import { fileURLToPath, URL } from "node:url";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
 import markdownAbbr from "markdown-it-abbr";
@@ -104,12 +104,12 @@ export default defineConfig({
     nav: [
       // {{{
       { text: "Home", link: "/" },
-      { text: "About", link: "/pages/about" },
-      { text: "Wordart", link: "/pages/wordart" },
-      { text: "Projects", link: "/pages/projects" },
-      { text: "Writing", link: "/pages/thought-fossils" },
-      { text: "Resources", link: "/pages/resources" },
-      { text: "Links", link: "/pages/other-people" },
+      { text: "About", link: "/pages/about/" },
+      { text: "Wordart", link: "/pages/wordart/" },
+      { text: "Projects", link: "/pages/projects/" },
+      { text: "Writing", link: "/pages/thought-fossils/" },
+      { text: "Resources", link: "/pages/resources/" },
+      { text: "Links", link: "/pages/other-people/" },
       // }}}
     ],
     search: {
@@ -137,11 +137,11 @@ export default defineConfig({
     sidebar: generateSidebar({ 
       capitalizeFirst: false, // {{{
       collapsed: true,
-      debugPrint: true,
+      // debugPrint: true,
       documentRootPath: "./",
       scanStartPath: "/pages/",
       excludeFilesByFrontmatterFieldName: "exclude",
-      excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules"],
+      excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules", "AGENTS.md", "AAA-NO-SLOP.md"],
       includeEmptyFolder: false,
       includeRootIndexFile: true,
       sortMenusByFrontmatterOrder: true,
@@ -154,8 +154,8 @@ export default defineConfig({
     socialLinks: [
       { icon: "vitepress", ariaLabel: "source repository for this site", link: "https://github.com/holyspiritomb/autpunk.space" },
       { icon: "github", ariaLabel: "my github profile", link: "https://github.com/holyspiritomb" },
-      { icon: "gitlab", ariaLabel: "my gitlab profile", link: "https://gitlab.com/holyspiritomb" },
       { icon: "codeberg", ariaLabel: "my codeberg profile", link: "https://codeberg.org/holyspiritomb" },
+      { icon: "gitlab", ariaLabel: "my gitlab profile", link: "https://gitlab.com/holyspiritomb" },
       { icon: "archlinux", ariaLabel: "my arch user repository packages", link: "https://aur.archlinux.org/packages?SeB=m&K=spiritomb" },
       { icon: "bluesky", ariaLabel: "my bluesky", link: "https://bsky.app/profile/spiritomb.bsky.social" },
     ],
