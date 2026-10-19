@@ -1,5 +1,7 @@
 # Header set X-Content-Type-Options "nosniff"
-# Header set Referrer-Policy "strict-origin-when-cross-origin"
+<IfModule mod_headers.c>
+  Header always set Referrer-Policy "strict-origin-when-cross-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i"
+</IfModule>
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^https?://(.+\.)?autpunk\.space/ [NC]
