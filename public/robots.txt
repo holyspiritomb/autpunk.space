@@ -1,6 +1,8 @@
+Sitemap: https://autpunk.space/sitemap.xml
+
 User-agent: archive.org_bot
-Crawl-delay: 0
 Disallow:
+Crawl-delay: 5
 
 User-agent: *
 Crawl-delay: 10
