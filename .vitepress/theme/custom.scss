@@ -1,3 +1,6 @@
+@use "pkg:@catppuccin/palette/scss/mocha" as mocha;
+@debug mocha.$crust;
+
 :root {
   --vp-code-font-size: 0.72rem;
   --vp-home-hero-name-color: transparent;
@@ -16,6 +19,12 @@
   --vp-badge-warning-bg: var(--vp-custom-block-warning-bg);
   --vp-badge-warning-text: var(--vp-custom-block-warning-text);
   --vp-button-alt-bg: rgb(var(--ctp-mocha-pink-rgb) / 1);
+  --vp-button-brand-bg: var(--ctp-mocha-sky);
+  --vp-button-brand-active-bg: var(--ctp-mocha-sky);
+  --vp-button-brand-hover-bg: var(--ctp-mocha-sky);
+  --vp-button-brand-text: var(--ctp-latte-text) !important;
+  --vp-button-brand-hover-text: var(--ctp-latte-text) !important;
+  --vp-button-brand-active-text: var(--ctp-latte-text) !important;
   --vp-code-lang-color: var(--ctp-latte-pink);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-latte-pink) 50%, var(--ctp-latte-sky) 50%);
   --vp-home-hero-image-filter: blur(44px);
@@ -35,11 +44,24 @@
 }
 
 .dark {
-  --vp-button-alt-text: var(--ctp-mocha-base);
+  --vp-button-brand-bg: var(--ctp-mocha-surface0);
+  --vp-button-brand-active-bg: var(--ctp-mocha-surface0);
+  --vp-button-brand-hover-bg: var(--ctp-mocha-surface1);
+  --vp-button-brand-text: var(--ctp-mocha-sky) !important;
+  --vp-button-brand-hover-text: var(--ctp-mocha-sky) !important;
+  --vp-button-brand-active-text: var(--ctp-mocha-sky) !important;
+  --vp-button-alt-text: var(--ctp-mocha-pink);
+  --vp-button-alt-bg: var(--ctp-mocha-surface1);
   --vp-code-block-bg: rgb(var(--ctp-mocha-crust-rgb) / 0.8);
   --vp-code-lang-color: var(--ctp-macchiato-sky);
+  --vp-custom-block-danger-bg: var(--ctp-mocha-crust);
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
+  --vp-custom-block-details-text: var(--ctp-mocha-text);
+  --vp-custom-block-info-bg: var(--ctp-mocha-crust);
+  --vp-custom-block-info-text: var(--ctp-mocha-sky);
+  --vp-custom-block-tip-bg: var(--ctp-mocha-crust);
   --vp-custom-block-tip-text: var(--ctp-mocha-green);
+  --vp-custom-block-warning-bg: var(--ctp-mocha-crust);
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
 }
 
@@ -80,6 +102,7 @@ a {
 
 button.back-to-top-button[style][data-v-8153223c] {
   background-color: var(--vp-c-bg) !important;
+  border-radius: 50% !important;
 }
 
 .progress-bg[data-v-8153223c] {
@@ -99,18 +122,22 @@ button.back-to-top-button[style][data-v-8153223c] {
     @apply pinkBg dark:crustBg;
 
     .box > img.VPImage {
-      @apply pinkBg dark:crustBg p-[6px] border-rd-1;
+      @apply pinkBg dark:crustBg p-[6px];
     }
   }
 
   div.icon {
-    @apply pinkBg dark:crustBg p-[6px] border-rd-1;
+    @apply pinkBg dark:crustBg p-[6px];
   }
 }
 
 .vp-doc .custom-block {
   &.details {
     @apply lavenderBg;
+
+    blockquote {
+      border-color: var(--vp-button-brand-text);
+    }
   }
 
   div[class*="language"] {
@@ -122,14 +149,20 @@ button.back-to-top-button[style][data-v-8153223c] {
   @apply bg-ctp-mocha-base;
 }
 
-
-html.pixel {
+html {
   ul {
     list-style-type: square;
   }
 
+  .pager-link {
+    @apply boxPress;
+
+    color: var(--vp-button-brand-text) !important;
+    border-color: var(--vp-button-brand-text) !important;
+  }
+
   .VPButton {
-    @apply r0;
+    @apply boxPress;
 
     &.brand,
     &.medium {
@@ -138,7 +171,7 @@ html.pixel {
   }
 
   .VPFeature {
-    @apply r0;
+    @apply boxPress;
 
     &.VPLink .box > img.VPImage {
       @apply r0;
@@ -152,6 +185,7 @@ html.pixel {
   textarea,
   .myContainer,
   .search-bar,
+  .pager-link,
   .VPBadge,
   .VPSwitch,
   .VPSwitchAppearance,
@@ -165,28 +199,18 @@ html.pixel {
   }
 
   .custom-block {
-    @apply border-dashed border-ctp-latte-text/50 dark:border-ctp-mocha-text/50;
+    @apply border-solid-1 dark:border-ctp-mocha-text/50;
 
-    // @apply border-dashed bg-hero-diagonal-lines-ctp-latte-surface0/10 dark:bg-opacity-10;
-
-    &.info {
-      border-color: var(--vp-badge-info-bg);
-    }
-
-    &.tip {
-      border-color: var(--vp-badge-tip-bg);
-    }
-
-    &.danger {
-      border-color: var(--vp-badge-danger-bg);
-    }
-
-    &.warning {
-      border-color: var(--vp-badge-warning-bg);
+    &.tip,
+    &.info,
+    &.danger,
+    &.warning,
+    &.details {
+      border-color: currentcolor;
     }
 
     &.details {
-      @apply bg-ctp-mocha-lavender/10 dark:bg-ctp-mocha-base;
+      @apply bg-ctp-macchiato-lavender/10;
     }
 
     div[class*="language"] {
@@ -194,11 +218,13 @@ html.pixel {
     }
   }
 
-  .nopixel {
-    display: none;
-  }
-
   .VPBadge {
     text-shadow: none;
+  }
+
+  &.pixel {
+    .nopixel {
+      display: none;
+    }
   }
 }
