@@ -47,7 +47,7 @@ export default defineConfig({
   title: "Autpunk Space",
   base: "/",
   // titleTemplate: 'Autpunk Dot Space',
-  description: "An autism with personhood rambles about things, stuff and the difference between them.",
+  description: "An autism with personhood. Stuff, things, and the difference between them.",
   head: [
     ["link", { rel: "icon", href: "/galaxy_heart.png" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
