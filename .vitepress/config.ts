@@ -53,6 +53,8 @@ export default defineConfig({
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
+    ["meta", { name: "theme-color", content: "#b4befe" }],
+    ["meta", { property: "og:image", content: "https://autpunk.space/buttons/autpunk_space_checkers.png" }],
     ["script", { id: "check-pixel-preference", src: "/fonts/pixelPrefChecker.js", type: "text/javascript" }],
   ],
   ignoreDeadLinks: false,
