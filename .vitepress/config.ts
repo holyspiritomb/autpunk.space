@@ -49,18 +49,11 @@ export default defineConfig({
   // titleTemplate: 'Autpunk Dot Space',
   description: "An autism with personhood rambles about things, stuff and the difference between them.",
   head: [
-    ["meta", { "http-equiv": "Referrer-Policy", content: "strict-origin-when-cross-origin" }],
-    // ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src https:" }],
     ["link", { rel: "icon", href: "/galaxy_heart.png" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
-    ["script", { id: "check-pixel-preference" }, `
-      const pixelPref = localStorage.getItem("pixelFonts");
-      if (pixelPref && pixelPref === "true" && !document.documentElement.classList.contains("pixel")) {
-        document.documentElement.classList.add("pixel");
-      };`,
-    ],
+    ["script", { id: "check-pixel-preference", src: "/fonts/pixelPrefChecker.js", type: "text/javascript" }],
   ],
   ignoreDeadLinks: false,
   lang: "en-US",
