@@ -4,7 +4,7 @@ title: Wordart
 lastUpdated: true
 prev:
     text: 'Home'
-    link: '/index'
+    link: '/'
 next:
     text: 'Wordart Page 1'
     link: '/pages/wordart/wordarts1'

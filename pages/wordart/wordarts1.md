@@ -2,8 +2,8 @@
 title: Wordart Page 1
 lastUpdated: true
 prev:
-    text: 'Wordart Home'
-    link: '/pages/wordart'
+    text: 'Wordart Index'
+    link: '/pages/wordart/'
 next:
     text: 'Wordart Page 2'
     link: '/pages/wordart/wordarts2'
