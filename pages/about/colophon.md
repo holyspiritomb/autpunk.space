@@ -5,7 +5,7 @@ title: Colophon
 lastUpdated: true
 prev:
     text: 'About'
-    link: '/index'
+    link: '/pages/about/'
 next: false
 ---
 <script setup>
