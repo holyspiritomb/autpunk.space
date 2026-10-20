@@ -24,6 +24,10 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 
 [Bot-proofing your website](https://baccyflap.com/res/robots/) is a guide to preventing bots from using your website as training data, as much as is possible. All of the solutions that exist rely on bots being programmed to honestly identify themselves to hosts they crawl and honor robots.txt directives, which currently is true of the biggest AI bots.
 
+### For webmasters who are chaotic good
+
+[Nepenthes](https://zadzmo.org/code/nepenthes/) is a honeypot for AI scrapers that traps them endlessly in markov-chain-generated text that links back to itself.
+
 ## For users of adblockers
 
 [Stevo's AI Blocklist](https://github.com/Stevoisiak/Stevos-AI-Blocklist) is "a filter list that hides website features which use Generative AI & content labeled as AI Generated." Works with uBlock Origin and Adguard.
