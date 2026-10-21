@@ -60,6 +60,7 @@ export default defineConfig({
   ],
   rules: [
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
+    ["mspixel", { "font-family": " 'Ari-W9500', 'W95F', 'MS Sans Serif', Cozette !important" }],
     ["victor", { "font-family": "var(--default-monoFont-family) !important" }],
     ["zilla", { "font-family": "Zilla Slab" }],
     ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],

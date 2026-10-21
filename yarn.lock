@@ -5,13 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"7.css@npm:^0.21.1":
-  version: 0.21.1
-  resolution: "7.css@npm:0.21.1"
-  checksum: 10c0/68e9f2505b768836c6d58977abb6bdbe6e5cf5cf36cc346b6a761338afe9fd3e939fb1f166102074744e1b27aa313a3ea8ae46d6c829163a64635fb5fe542f32
-  languageName: node
-  linkType: hard
-
 "@algolia/abtesting@npm:1.23.0":
   version: 1.23.0
   resolution: "@algolia/abtesting@npm:1.23.0"
@@ -2974,6 +2967,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vstyler96/7.css@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@vstyler96/7.css@npm:2.0.0"
+  checksum: 10c0/5858c9493cfb654a5a92de932cd4a5a1e8a5b83ef8555410bbdc70b113b62e4797fe0c0562e5b6823497248cfba2017f95d588177bf99d379752f34252121524
+  languageName: node
+  linkType: hard
+
+"@vstyler96/98.css@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@vstyler96/98.css@npm:2.0.0"
+  checksum: 10c0/d2735eae6313a096f5cf4d55b9b36aa2b28bbe785b6eec54b5e1ca2fe7f2c74f44ffa3eb2c3dd5445980f983728a30d96d6eabf6fb5b570b2436eba5e03c9842
+  languageName: node
+  linkType: hard
+
 "@vue/babel-helper-vue-transform-on@npm:1.5.0":
   version: 1.5.0
   resolution: "@vue/babel-helper-vue-transform-on@npm:1.5.0"
@@ -3449,7 +3456,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "autpunk.space@workspace:."
   dependencies:
-    7.css: "npm:^0.21.1"
     "@catppuccin/palette": "npm:^1.8.0"
     "@catppuccin/unocss": "npm:^3.0.0"
     "@catppuccin/vitepress": "npm:^0.1.4"
@@ -3480,6 +3486,8 @@ __metadata:
     "@types/node": "npm:22.20.4"
     "@unocss/eslint-config": "npm:^66.10.5"
     "@unocss/processor-lightningcss": "npm:^66.10.5"
+    "@vstyler96/7.css": "npm:^2.0.0"
+    "@vstyler96/98.css": "npm:^2.0.0"
     "@vue/tsconfig": "npm:^0.9.1"
     "@vueuse/core": "npm:14.4.0"
     chalk: "npm:^6.0.1"

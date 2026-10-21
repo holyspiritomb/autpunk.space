@@ -7,6 +7,7 @@ import "@fontsource/noto-sans-hebrew/400.css"; // Specify weight
 import "@fontsource/noto-serif-hebrew/400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-600.css"; // Specify weight
+import "@fontsource/jetbrains-mono/300.css";
 import "inter-ui/inter-latin.css";
 import "inter-ui/inter-variable-latin.css";
 import "@catppuccin/palette/css/catppuccin.css";

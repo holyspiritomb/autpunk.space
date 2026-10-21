@@ -27,9 +27,9 @@
   font-family: "Cozette";
   /* stylelint-enable font-family-name-quotes */
   src:
-    url("/fonts/CozetteCrossedSevenVector.ttf") format("truetype"),
-    url("/fonts/CozetteCrossedSevenVector.woff") format("woff"),
-    url("/fonts/CozetteCrossedSevenVector.woff2") format("woff2");
+    url("/fonts/cozette/CozetteCrossedSevenVector.ttf") format("truetype"),
+    url("/fonts/cozette/CozetteCrossedSevenVector.woff") format("woff"),
+    url("/fonts/cozette/CozetteCrossedSevenVector.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -40,9 +40,9 @@
   font-family: "Cozette";
   /* stylelint-enable font-family-name-quotes */
   src:
-    url("/fonts/CozetteCrossedSevenVectorBold.ttf") format("truetype"),
-    url("/fonts/CozetteCrossedSevenVectorBold.woff") format("woff"),
-    url("/fonts/CozetteCrossedSevenVectorBold.woff2") format("woff2");
+    url("/fonts/cozette/CozetteCrossedSevenVectorBold.ttf") format("truetype"),
+    url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff") format("woff"),
+    url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -53,10 +53,36 @@
   font-family: "UnifontEX";
   /* stylelint-enable font-family-name-quotes */
   src:
-    url("/fonts/UnifontExMono.ttf") format("truetype"),
-    url("/fonts/UnifontExMono.woff") format("woff"),
-    url("/fonts/UnifontExMono.woff2") format("woff2");
+    url("/fonts/unifontex/UnifontExMono.ttf") format("truetype"),
+    url("/fonts/unifontex/UnifontExMono.woff") format("woff"),
+    url("/fonts/unifontex/UnifontExMono.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "Ari-W9500";
+  /* stylelint-enable font-family-name-quotes */
+  src:
+    url("/fonts/ari-w9500/ari-w9500.ttf") format("truetype"),
+    url("/fonts/ari-w9500/ari-w9500.otf") format("opentype"),
+    url("/fonts/ari-w9500/ari-w9500.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "Ari-W9500";
+  /* stylelint-enable font-family-name-quotes */
+  src:
+    url("/fonts/ari-w9500/ari-w9500-bold.ttf") format("truetype"),
+    url("/fonts/ari-w9500/ari-w9500-bold.otf") format("opentype"),
+    url("/fonts/ari-w9500/ari-w9500-bold.woff2") format("woff2");
+  font-weight: bold;
   font-display: swap;
   font-style: normal;
 }
@@ -199,7 +225,7 @@ html.pixel {
 
   .vp-doc {
     h1 {
-      font-size: 40pt;
+      font-size: 44px;
       font-family: "Plain Pixel";
       text-shadow: 1px 1px var(--ctp-latte-overlay0);
       line-height: 1.3em;
@@ -211,20 +237,20 @@ html.pixel {
     }
 
     h2 {
-      font-size: 30pt;
+      font-size: 40px;
       font-family: "Plain Pixel";
       text-shadow: 1px 1px var(--ctp-latte-overlay0);
       line-height: 1.3em;
     }
 
     h3 {
-      font-size: 25pt;
+      font-size: 32px;
       font-family: "Plain Pixel";
       text-shadow: 1px 1px var(--ctp-latte-overlay0);
     }
 
     h4 {
-      font-size: 15pt;
+      font-size: 20px;
       font-family: "Plain Pixel";
       text-shadow: 1px 1px var(--ctp-latte-overlay0);
     }
@@ -256,7 +282,7 @@ html.pixel {
 
   .yiddishSerif,
   .yiddishSans {
-    font-size: 15pt !important;
+    font-size: 20px !important;
     font-family: "Plain Pixel", monospace !important;
   }
 
