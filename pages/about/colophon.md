@@ -44,7 +44,7 @@ Here you will find details of this site's creation.
 ## Functional choices
 - <span i-catppuccin-typescript /> [TypeScript](https://www.typescriptlang.org/) for clear types
 - <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
-- <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting. I love using `@apply` in stylesheets.
+- <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting.
 - <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful, y'know?
 
 ## Plugins used
@@ -60,7 +60,8 @@ Here you will find details of this site's creation.
 ## Style choices
 - [Catppuccin Vitepress theme](https://www.npmjs.com/package/@catppuccin/vitepress): Catppuccin Mocha is one of my favorite color schemes.
 - [Catppuccin Unocss theme](https://www.npmjs.com/package/@catppuccin/unocss): for easier fiddling with theme colors.
-- [7.css](https://khang-nd.github.io/7.css/) for buttons on the Figlet page.
+- [@vstyler96/7.css](https://www.npmjs.com/package/@vstyler96/7.css) for the vector-font style of the Figlet page. A fork of the original [7.css](https://khang-nd.github.io/7.css/).
+- [@vstyler96/98.css](https://www.npmjs.com/package/@vstyler96/98.css) for the pixel-font style of the Figlet page. A fork of the original [98.css](https://jdan.github.io/98.css/) with scoped usage.
 
 
 ## Typefaces
@@ -70,7 +71,8 @@ I have a lot of opinions about typefaces and I enjoy fonts that come with option
 ### Pixel fonts
 - [monogram](https://datagoblin.itch.io/monogram) for body text and the home hero text.
 - [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) for Yiddish text and headings. Plain Pixel is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and I made no modifications.
-- [Cozette with crossed 7](https://github.com/the-moonwitch/Cozette/releases) is used in code blocks and the figlet generator output.
+- [Cozette with crossed 7](https://github.com/the-moonwitch/Cozette/releases) is used in code blocks and the figlet generator input and output.
+- [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) are used in the figlet generator's Windows 98 window styling.
 
 ### Vector fonts^[Technically all of the fonts used on this site are vector fonts because the pixel fonts have been vectorized for web use.]
 - [Inter](https://rsms.me/inter) for body text. I have enabled the options to have alternate numeral 1, open numeral 4, open numeral 6, open numeral 9, lowercase L with tail, alternate ß, uppercase I with serif, flat-top numeral 3, capital G with spur, and rounded quotation marks and commas.
