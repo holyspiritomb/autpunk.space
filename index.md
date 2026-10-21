@@ -17,17 +17,20 @@ hero:
     - theme: alt
       text: webrings
       link: /pages/about/#webrings
-    - theme: brand
-      text: resources
-      link: /pages/resources/
 
 features:
-  - title: Wordart
+  - title: Make Wordart
     icon:
-        src: /sparkle.png
-        alt: "sparkles emoji"
-    details: do visual stimmimg with wordart!
-    link: /pages/wordart/
+        src: /galaxy_floppy.png
+        alt: "galaxy-print floppy disk emoji"
+    details: make ASCII wordart like in the old times
+    link: /pages/wordart/figlet
+  - title: Resources
+    icon:
+        src: /galaxy_book.png
+        alt: "galaxy-print hardcover book"
+    details: guides to things
+    link: /pages/resources/
   - title: Projects
     details: a few things I've made
     icon:
@@ -36,14 +39,14 @@ features:
     link: /pages/projects/
   - title: Writing
     icon:
-        src: /thought.png
-        alt: "thought bubble emoji"
+        src: /galaxy_pencil.png
+        alt: "galaxy print pencil emoji"
     details: words are thought fossils
     link: /pages/thought-fossils/
   - title: Unsorted Fragments
     icon:
-        src: /rainbowtrash.png
-        alt: "emoji of a garbage can at the end of a rainbow"
+        src: /galaxy_trash.png
+        alt: "emoji of a garbage can with a spiral galaxy in it"
     details: dive into my brain dumpster
     link: /pages/unsorted-fragments/
   - title: Links to Other People
