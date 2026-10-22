@@ -8,8 +8,9 @@ import "@fontsource/noto-serif-hebrew/400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-600.css"; // Specify weight
 import "@fontsource/jetbrains-mono/300.css";
-import "inter-ui/inter-latin.css";
-import "inter-ui/inter-variable-latin.css";
+import "@fontsource/atkinson-hyperlegible-next/latin-400.css";
+import "@fontsource/atkinson-hyperlegible-next/latin-700.css";
+import "@fontsource-variable/atkinson-hyperlegible-next";
 import "@catppuccin/palette/css/catppuccin.css";
 import "@catppuccin/vitepress/theme/mocha/sky.css";
 import "viewerjs/dist/viewer.css";

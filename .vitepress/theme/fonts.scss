@@ -8,7 +8,6 @@
 
 @font-face {
   font-family: "monogram";
-  /* stylelint-enable font-family-name-quotes */
   src: url("/fonts/monogram-extended-italic.ttf") format("truetype");
   font-display: swap;
   font-style: italic;
@@ -23,9 +22,7 @@
 }
 
 @font-face {
-  /* stylelint-disable font-family-name-quotes */
   font-family: "Cozette";
-  /* stylelint-enable font-family-name-quotes */
   src:
     url("/fonts/cozette/CozetteCrossedSevenVector.ttf") format("truetype"),
     url("/fonts/cozette/CozetteCrossedSevenVector.woff") format("woff"),
@@ -36,9 +33,7 @@
 }
 
 @font-face {
-  /* stylelint-disable font-family-name-quotes */
   font-family: "Cozette";
-  /* stylelint-enable font-family-name-quotes */
   src:
     url("/fonts/cozette/CozetteCrossedSevenVectorBold.ttf") format("truetype"),
     url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff") format("woff"),
@@ -49,9 +44,7 @@
 }
 
 @font-face {
-  /* stylelint-disable font-family-name-quotes */
   font-family: "UnifontEX";
-  /* stylelint-enable font-family-name-quotes */
   src:
     url("/fonts/unifontex/UnifontExMono.ttf") format("truetype"),
     url("/fonts/unifontex/UnifontExMono.woff") format("woff"),
@@ -62,12 +55,10 @@
 }
 
 @font-face {
-  /* stylelint-disable font-family-name-quotes */
   font-family: "Ari-W9500";
-  /* stylelint-enable font-family-name-quotes */
   src:
-    url("/fonts/ari-w9500/ari-w9500.ttf") format("truetype"),
     url("/fonts/ari-w9500/ari-w9500.otf") format("opentype"),
+    url("/fonts/ari-w9500/ari-w9500.ttf") format("truetype"),
     url("/fonts/ari-w9500/ari-w9500.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
@@ -75,32 +66,28 @@
 }
 
 @font-face {
-  /* stylelint-disable font-family-name-quotes */
   font-family: "Ari-W9500";
-  /* stylelint-enable font-family-name-quotes */
   src:
-    url("/fonts/ari-w9500/ari-w9500-bold.ttf") format("truetype"),
     url("/fonts/ari-w9500/ari-w9500-bold.otf") format("opentype"),
+    url("/fonts/ari-w9500/ari-w9500-bold.ttf") format("truetype"),
     url("/fonts/ari-w9500/ari-w9500-bold.woff2") format("woff2");
   font-weight: bold;
   font-display: swap;
   font-style: normal;
 }
 
-html {
-  @apply interFeatures;
+/* stylelint-enable font-family-name-quotes */
 
-  font-family: Inter, system-ui;
+html {
+  font-family: "Atkinson Hyperlegible Next", system-ui;
 
   &.pixel {
-    @apply fontFeatUnset;
-
     font-family: monogram, monospace;
   }
 }
 
 :root {
-  --vp-font-family-base: "Inter";/* normal text font */
+  --vp-font-family-base: "Atkinson Hyperlegible Next";/* normal text font */
   --vp-font-family-mono: "Victor Mono";
   --default-monoFont-family: "Victor Mono"; /* code font */
   --default-monoFont-featureSettings: "ss06" on, "ss01" off, "ss07" on;
@@ -114,9 +101,7 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
-    @apply interFeatures;
-
-    font-family: InterVariable, system-ui;
+    font-family: "Atkinson Hyperlegible Next Variable", system-ui;
 
     .vp-doc,
     .is-home,
@@ -124,16 +109,11 @@ html {
     footer,
     header,
     .home {
-      @apply interFeatures;
-
-      font-family: InterVariable, system-ui;
+      font-family: "Atkinson Hyperlegible Next Variable", system-ui;
     }
 
     &.pixel {
-      @apply fontFeatUnset;
-
       font-family: monogram, monospace;
-      font-feature-settings: unset;
 
       .vp-doc,
       .is-home,
@@ -147,9 +127,7 @@ html {
   }
 
   :root {
-    /* stylelint-disable value-keyword-case */
-    --vp-font-family-base: "Inter Variable", InterVariable;
-    /* stylelint-enable value-keyword-case */
+    --vp-font-family-base: "Atkinson Hyperlegible Next Variable";
 
     &.pixel {
       --vp-font-family-base: "monogram";

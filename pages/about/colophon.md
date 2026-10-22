@@ -75,7 +75,7 @@ I have a lot of opinions about typefaces and I enjoy fonts that come with option
 - [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) are used in the figlet generator's Windows 98 window styling.
 
 ### Vector fonts^[Technically all of the fonts used on this site are vector fonts because the pixel fonts have been vectorized for web use.]
-- [Inter](https://rsms.me/inter) for body text. I have enabled the options to have alternate numeral 1, open numeral 4, open numeral 6, open numeral 9, lowercase L with tail, alternate ß, uppercase I with serif, flat-top numeral 3, capital G with spur, and rounded quotation marks and commas.
+- [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont/) for body text. It was specifically designed for low vision.
 - [Victor Mono](https://rubjo.github.io/victor-mono/) is the main code font. I have enabled the options for `slashed 7` and `straighter 6 and 9`. Victor Mono has *`cursive italics`*.
 - [Noto Serif Hebrew](https://fontsource.org/fonts/noto-serif-hebrew) and [Noto Sans Hebrew](https://fontsource.org/fonts/noto-sans-hebrew) are used for Yiddish text.
 - [JetBrains Mono](https://fontsource.org/fonts/jetbrains-mono) is the code font used for figlet generator input.
