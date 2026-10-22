@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: execute deployment on server
-      uses: appleboy/ssh-action@v1.2.0
+      uses: appleboy/ssh-action@v1
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
@@ -14,4 +14,6 @@ jobs:
         port: ${{ secrets.PORT }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && cd ~/git && git pull && yarn && GITHUBRUNNER="push" yarn run build
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh
+          cd ~/git && nvm use && git pull && yarn && GITHUBRUNNER="push" yarn run build
