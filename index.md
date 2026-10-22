@@ -28,7 +28,7 @@ features:
   - title: Resources
     icon:
         src: /galaxy_book.png
-        alt: "galaxy-print hardcover book"
+        alt: "galaxy-print hardcover book emoji"
     details: guides to things
     link: /pages/resources/
   - title: Projects
@@ -41,7 +41,7 @@ features:
     icon:
         src: /galaxy_pencil.png
         alt: "galaxy print pencil emoji"
-    details: words are thought fossils
+    details: sometimes I write essays
     link: /pages/thought-fossils/
   - title: Unsorted Fragments
     icon:
