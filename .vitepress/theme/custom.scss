@@ -167,9 +167,13 @@ html {
   .VPButton {
     @apply boxPress;
 
+    border: 1px solid currentcolor !important;
+
     &.brand,
     &.medium {
       @apply r0;
+
+      border: 1px solid currentcolor !important;
     }
   }
 

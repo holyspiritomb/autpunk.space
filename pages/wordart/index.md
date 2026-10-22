@@ -11,10 +11,9 @@ next:
 ---
 # {{ $frontmatter.title }}
 
-
 When I first used MS Office circa 1999, my favorite thing to do was make wordart. I rediscovered the joy of wordart on terminals as a means of visual stimming with Termux[^1] on my phone.
 [^1]: Android app for running a linux terminal emulator
 
-[Look upon my works](/pages/wordart/wordarts1)
+<NiceButton text="Wordart Gallery" href="/pages/wordart/wordarts1" class="block" />
 
-[Make your own wordart](/pages/wordart/figlet)
+<NiceButton text="Make Wordart" href="/pages/wordart/figlet" class="block" />

@@ -42,7 +42,8 @@ onMounted(() => {
 div {
   @apply my-2 mx-auto;
   button.fontSwitch {
-    @apply boxPress bg-ctp-mocha-text c-ctp-mocha-crust r0 px-[1em] dark:c-ctp-mocha-lavender dark:bg-ctp-latte-text;
+    @apply boxPress px-[1em] dark:crustBg;
+    border: 1px solid currentColor;
   }
 }
 </style>
