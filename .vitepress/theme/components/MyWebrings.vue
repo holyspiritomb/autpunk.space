@@ -92,21 +92,19 @@
       <a
         href="https://ctp-webr.ing/autpunk/previous"
         title="previous"
-      >
-        &laquo;
-      </a>
+      >&laquo;</a>
+      &nbsp;
       <a
         href="https://ctp-webr.ing/"
         title="Catppuccin webring"
       >
         Catppuccin webring
       </a>
+      &nbsp;
       <a
         href="https://ctp-webr.ing/autpunk/next"
         title="next"
-      >
-        &raquo;
-      </a>
+      >&raquo;</a>
     </h3>
   </div>
   <!-- <h3>Prospective</h3> -->
