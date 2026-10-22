@@ -32,6 +32,17 @@ export default defineConfig({
         },
       ],
     },
+    build: {
+      reportCompressedSize: true,
+      dynamicImportVarsOptions: {
+        include: ["pages/wordart/*.md"],
+      },
+      rollupOptions: {
+        output: {
+          minifyInternalExports: true,
+        },
+      },
+    },
   },
   title: "Autpunk Space",
   base: "/",
@@ -52,7 +63,8 @@ export default defineConfig({
   appearance: "dark",
   srcDir: "./",
   outDir: distDir,
-  srcExclude: ["**/README.md", "**/LICENSE.md", "AAA-NO-SLOP.md"],
+  metaChunk: true,
+  srcExclude: ["**/README.md", "**/LICENSE.md"],
   markdown: {
     // {{{
     theme: {
@@ -122,6 +134,7 @@ export default defineConfig({
     sidebar: generateSidebar({ 
       capitalizeFirst: false, // {{{
       collapsed: true,
+      // debugPrint: true,
       documentRootPath: "./",
       scanStartPath: "/pages/",
       excludeFilesByFrontmatterFieldName: "exclude",

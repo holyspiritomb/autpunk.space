@@ -67,6 +67,7 @@ export default defineConfig({
     lightningcss: {
       errorRecovery: true,
     },
+    devSourcemap: true,
   },
   define: {
     BUILD_DATE: JSON.stringify(new Date().toUTCString()),
