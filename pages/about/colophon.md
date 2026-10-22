@@ -33,7 +33,7 @@ Here you will find details of this site's creation.
 
 - <span i-simple-icons-nvm /> [nvm](https://www.nvmnode.com) for node version management
 - <span i-catppuccin-yarn /> [Yarn](https://yarnpkg.com) for node package management
-- <span i-simple-icons-vitepress /> [Vitepress v1](https://vuejs.github.io/vitepress/v1/) for static site generation
+- <span class="i-simple-icons:vitepress" /> [Vitepress v1](https://vuejs.github.io/vitepress/v1/) for static site generation
 
 :::details Vitepress' stack {open}
 - <span i-catppuccin-vite /> [Vite](https://v7.vite.dev) for backend

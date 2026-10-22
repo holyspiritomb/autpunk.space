@@ -85,7 +85,7 @@ a {
 }
 
 [i-devicon-plain-bootstrap],
-[i-simple-icons-vitepress] {
+.i-simple-icons\:vitepress {
   @apply bg-ctp-frappe-lavender dark:bg-ctp-mocha-lavender;
 }
 
@@ -168,12 +168,14 @@ html {
     @apply boxPress;
 
     border: 1px solid currentcolor !important;
+    font-weight: normal;
 
     &.brand,
     &.medium {
       @apply r0;
 
       border: 1px solid currentcolor !important;
+      font-weight: normal;
     }
   }
 

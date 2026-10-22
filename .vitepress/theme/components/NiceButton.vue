@@ -27,6 +27,7 @@ a {
   button {
     @apply boxPress px-[1em];
     border: 1px solid currentColor;
+    font-weight: 300;
   }
 }
 </style>

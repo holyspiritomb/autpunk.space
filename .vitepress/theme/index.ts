@@ -8,8 +8,11 @@ import "@fontsource/noto-serif-hebrew/400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-400.css"; // Specify weight
 import "@fontsource/zilla-slab/latin-600.css"; // Specify weight
 import "@fontsource/jetbrains-mono/300.css";
+import "@fontsource/atkinson-hyperlegible-next/latin-300.css";
 import "@fontsource/atkinson-hyperlegible-next/latin-400.css";
+import "@fontsource/atkinson-hyperlegible-next/latin-400-italic.css";
 import "@fontsource/atkinson-hyperlegible-next/latin-700.css";
+import "@fontsource/atkinson-hyperlegible-next/latin-700-italic.css";
 import "@fontsource-variable/atkinson-hyperlegible-next";
 import "@catppuccin/palette/css/catppuccin.css";
 import "@catppuccin/vitepress/theme/mocha/sky.css";
