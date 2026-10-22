@@ -45,7 +45,7 @@ Here you will find details of this site's creation.
 - <span i-catppuccin-typescript /> [TypeScript](https://www.typescriptlang.org/) for clear types
 - <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
 - <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting.
-- <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful, y'know?
+- <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful
 
 ## Plugins used
 - [markdown-it-abbr](https://www.npmjs.com/package/markdown-it-abbr) for abbreviation annotations like so: ACAB
