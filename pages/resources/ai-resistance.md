@@ -19,6 +19,7 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 - [Massive disconnect of power roils largest US electric grid](https://www.reuters.com/business/energy/massive-disconnect-power-roiled-largest-us-electric-grid-2026-07-22/): AI-training data centers are not worth the power consumption they require.
 - [AI Companion Mortality Database](https://aimortality.org): AI chatbots have a death toll.
 - [The AI Doomsday Future Is Not Inevitable](https://theintercept.com/2026/09/14/surveillance-tech-ai-military-flock/): AI is being used to surveil and kill.
+- If you like longreads, I recommend Ed Zitron's [AI Hater's Manifesto](https://www.wheresyoured.at/the-ai-haters-manifesto/).
 
 ## For webmasters
 
