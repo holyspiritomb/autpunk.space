@@ -25,9 +25,7 @@ a {
     color: inherit;
   }
   button {
-    @apply boxPress px-[1em];
-    border: 1px solid currentColor;
-    font-weight: 300;
+    @apply boxPressSubtle px-[1em];
   }
 }
 </style>

@@ -1,15 +1,9 @@
 ---
-order: 99
-title: Figlet
+title: Figlet Generator
 lastUpdated: false
 layout: page
-nav: false
 sidebar: false
 footer: false
-prev:
-    text: 'Wordart Index'
-    link: '/pages/wordart/'
-next: false
 ---
 <script setup>
 import MyFiglet from "../../.vitepress/theme/components/MyFiglet.vue";
@@ -21,5 +15,5 @@ import FontChanger from "../../.vitepress/theme/components/FontChanger.vue";
 <Center><FontChanger /></Center>
 
 <Center>
-    <NiceButton href="/pages/wordart/" text="Back to Wordart Index" />
+    <NiceButton href="/pages/funstuff/" text="Back to Fun Stuff Index" />
 </Center>

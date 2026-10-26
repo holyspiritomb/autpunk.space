@@ -1,4 +1,7 @@
+/* reference: https://github.com/vuejs/vitepress/blob/v1.6.4/src/client/theme-default/styles/vars.css */
 :root {
+  --vp-c-divider: rgb(var(--ctp-mocha-pink-rgb) / 1);
+  --vp-c-gutter: rgb(var(--ctp-mocha-pink-rgb) / 1);
   --vp-code-font-size: 0.72rem;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background:
@@ -7,6 +10,9 @@
       var(--ctp-latte-pink) 30%,
       var(--ctp-latte-sky)
     );
+  --vp-custom-block-warning-bg: var(--ctp-mocha-yellow);
+  --vp-custom-block-danger-bg: var(--ctp-mocha-red);
+  --vp-custom-block-info-bg: var(--ctp-mocha-sky);
   --vp-badge-danger-bg: var(--vp-custom-block-danger-bg);
   --vp-badge-danger-text: var(--vp-custom-block-danger-text);
   --vp-badge-info-bg: var(--vp-custom-block-info-bg);
@@ -22,14 +28,14 @@
   --vp-button-brand-text: var(--ctp-latte-text) !important;
   --vp-button-brand-hover-text: var(--ctp-latte-text) !important;
   --vp-button-brand-active-text: var(--ctp-latte-text) !important;
+  --vp-custom-block-details-bg: rgb(var(--ctp-mocha-lavender-rgb) / 0.5);
   --vp-code-lang-color: var(--ctp-latte-pink);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-latte-pink) 50%, var(--ctp-latte-sky) 50%);
   --vp-home-hero-image-filter: blur(44px);
-  --vp-code-bg: rgb(var(--ctp-mocha-lavender-rgb) / 0.28);
 
   /* TODO: figure out fallback for when blur() is not supported */
   --vp-header-anchor-symbol: "‼";
-  --vp-code-block-bg: rgb(var(--ctp-mocha-pink-rgb) / 0.28);
+  --vp-code-block-bg: var(--ctp-latte-base);
 
   &.pixel {
     --rounded-sm: 0;
@@ -55,11 +61,14 @@
   --vp-button-brand-active-text: var(--ctp-mocha-sky) !important;
   --vp-button-alt-text: var(--ctp-mocha-pink);
   --vp-button-alt-bg: var(--ctp-mocha-surface1);
-  --vp-code-block-bg: rgb(var(--ctp-mocha-crust-rgb) / 0.8);
+  --vp-button-alt-hover-bg: var(--ctp-mocha-surface1);
+  --vp-button-alt-active-bg: var(--ctp-mocha-surface1);
+  --vp-code-block-bg: var(--ctp-mocha-crust);
   --vp-code-lang-color: var(--ctp-macchiato-sky);
   --vp-custom-block-danger-bg: var(--ctp-mocha-crust);
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
   --vp-custom-block-details-text: var(--ctp-mocha-text);
+  --vp-custom-block-details-bg: var(--ctp-mocha-surface0);
   --vp-custom-block-info-bg: var(--ctp-mocha-crust);
   --vp-custom-block-info-text: var(--ctp-mocha-sky);
   --vp-custom-block-tip-bg: var(--ctp-mocha-crust);
@@ -113,7 +122,7 @@ button.back-to-top-button[style][data-v-8153223c] {
 }
 
 .group:has([role="button"]) .VPSidebarItem.level-0 .items {
-  @apply sidebarLinks;
+  @apply pinkLeftBorder;
 
   transition: background-color 0.25s;
 }
@@ -134,26 +143,12 @@ button.back-to-top-button[style][data-v-8153223c] {
   }
 }
 
-.vp-doc .custom-block {
-  &.details {
-    @apply lavenderBg;
-
-    blockquote {
-      border-color: var(--vp-button-brand-text);
-    }
-  }
-
-  div[class*="language"] {
-    @apply codelangblock;
-  }
-}
-
 .viewer-backdrop {
   @apply bg-ctp-mocha-base;
 }
 
 html {
-  ul {
+  ul:not(.VPDocOutlineItem) {
     list-style-type: square;
   }
 
@@ -188,7 +183,6 @@ html {
   }
 
   div,
-  div[class*="language"],
   input,
   button,
   textarea,
@@ -208,28 +202,56 @@ html {
   }
 
   .custom-block {
-    @apply border-solid-1 dark:border-ctp-mocha-text/50;
 
     &.tip,
     &.info,
     &.danger,
     &.warning,
     &.details {
-      border-color: currentcolor;
+      @apply ccborder;
     }
 
     &.details {
-      @apply bg-ctp-macchiato-lavender/10;
+      blockquote {
+        border-color: var(--vp-button-brand-text);
+      }
     }
 
     div[class*="language"] {
-      @apply r0;
+      @apply r0 ccborder;
     }
   }
 
   .VPBadge {
     text-shadow: none;
     border: 1px solid currentcolor !important;
+  }
+
+  .vp-doc {
+    div.tabs {
+      @apply ccborder;
+
+      border-bottom: 0 !important;
+    }
+
+    div[class*="language"] {
+      @apply r0 ccborder;
+
+      > button.copy.copied {
+        @apply r0;
+
+        &::before,
+        &:hover,
+        &:focus {
+          @apply r0;
+        }
+      }
+
+      > span.lang {
+        font-family: var(--default-monoFont-family);
+        font-size: var(--vp-code-font-size);
+      }
+    }
   }
 
   &.pixel {

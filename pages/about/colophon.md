@@ -54,6 +54,7 @@ Here you will find details of this site's creation.
 - [vitepress-back-to-top-button](https://www.npmjs.com/package/@miletorix/vitepress-back-to-top-button/v/1.0.3) for the floating button that shows scroll progress. Clicking it brings you to the top of the page.
 - [vitepress-plugin-viewerjs](https://www.npmjs.com/package/vitepress-plugin-viewerjs) for the image viewer on the Wordart pages.
 - [vitepress-sidebar](https://www.npmjs.com/package/vitepress-sidebar/v/1.39.0) to generate the sidebar links from the directory structure under `pages`.
+- [vitepress-plugin-group-icons](https://vp.yuy1n.io/) adds icons to the tabs of code group elements.
 
 *[ACAB]: all cats are beautiful
 
@@ -69,17 +70,14 @@ Here you will find details of this site's creation.
 I have a lot of opinions about typefaces and I enjoy fonts that come with options.
 
 ### Pixel fonts
-- [monogram](https://datagoblin.itch.io/monogram) for body text and the home hero text.
+- [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) for body text.
 - [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) for Yiddish text and headings. Plain Pixel is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and I made no modifications.
 - [Cozette with crossed 7](https://github.com/the-moonwitch/Cozette/releases) is used in code blocks and the figlet generator input and output.
-- [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) are used in the figlet generator's Windows 98 window styling.
 
 ### Vector fonts^[Technically all of the fonts used on this site are vector fonts because the pixel fonts have been vectorized for web use.]
 - [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont/) for body text. It was specifically designed for low vision.
 - [Victor Mono](https://rubjo.github.io/victor-mono/) is the main code font. I have enabled the options for `slashed 7` and `straighter 6 and 9`. Victor Mono has *`cursive italics`*.
 - [Noto Serif Hebrew](https://fontsource.org/fonts/noto-serif-hebrew) and [Noto Sans Hebrew](https://fontsource.org/fonts/noto-sans-hebrew) are used for Yiddish text.
-- [JetBrains Mono](https://fontsource.org/fonts/jetbrains-mono) is the code font used for figlet generator input.
-- [Zilla Slab](https://fontsource.org/fonts/zilla-slab) is used for the homepage hero text.
 
 ## Linking to me
 

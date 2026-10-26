@@ -1,7 +1,7 @@
 ---
 title: Writing
 outline: deep
-order: 4
+order: 6
 lastUpdated: true
 next: false
 prev:

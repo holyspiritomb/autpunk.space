@@ -22,7 +22,7 @@ In order to make ASCII art you will generally^[There are exceptions to this guid
 
 [pyfiglet](https://pypi.org/project/pyfiglet/) is a Python port of `figlet`, usable as both a library and CLI.
 
-[figlet.js](https://www.npmjs.com/package/figlet) is a Node/JS/TS port of `figlet` and it powers [the figlet generator](/pages/wordart/figlet) I host.
+[figlet.js](https://www.npmjs.com/package/figlet) is a Node/JS/TS port of `figlet` and it powers [the figlet generator](/pages/funstuff/figlet) I host.
 
 [figlet-cli](https://www.npmjs.com/package/figlet-cli) is a CLI of `figlet.js`.
 

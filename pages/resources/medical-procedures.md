@@ -49,7 +49,7 @@ Examples:
 - Depo-Provera injected into upper gluteal muscle
 - Testosterone cypionate injected into upper outer thigh
 
-Intramuscular injections are meant to dispense medication into muscle. They use the largest needles you'll encounter outside of specialist offices because they have to go so deep. Many vaccines are given intramuscularly, and it is common for testosterone self-injection to be intramuscular. I have particular experience with injecting testosterone into my own thigh, but my suggestions also apply to receiving an intramuscular injection performed by someone else.
+Intramuscular injections are meant to dispense medication into muscle. They use the largest needles you'll encounter outside of hospitals and specialist offices^[I have no advice for minimizing pain of spinal taps, bone marrow biopsies, epidural placement or anything else deeper than IM injections. If you do, let me know!] because they have to go so deep. Many vaccines are given intramuscularly, and it is common for testosterone self-injection to be intramuscular. I have particular experience with injecting testosterone into my own thigh, but my suggestions also apply to receiving an intramuscular injection performed by someone else.
 
 An intramuscular injection's pain is inversely proportional to the speed of needle insertion. Faster insertion = less pain because a lot of the potential pain comes from the muscle spasming as the needle enters.
 
@@ -132,12 +132,36 @@ Hydration is beneficial for the same reasons as in blood draws, if you know you'
 
 ## Dental and orthodontic procedures
 
-### Palate expansion and other orthodontic treatment
+It is a fact of my life that I got the bad teeth genes. My [redacted] and I joke that I got the bad teeth and the allergies while they got the perfect teeth and cancer. The first time I had a tooth extracted due to decay, I was 7 years old. So I have a lot of experience with getting fillings, extractions and root canal procedures.
+
+### Dental X-rays
+
+Dental X-rays in the form where you have to bite down on plastic bits (I am told these plastic bits are called bite wings) involve a lot of pain for me.
+
+:::info Things that can make dental x-rays suck less
+
+- Ask for a panoramic X-ray instead.
+- Ask for gauze or cotton to be used to cushion the areas of your mouth that the bite wings are poking.
+
+:::
+
+### Dental anaesthesia
+
+I frequently find that whatever a dentist considers a "standard" dose of local dental anaesthesia for me is insufficient. Even at peak numbness of that first injection, it's still not enough to fully block pain from drilling and cold water inside a cavity. This is apparently a Very Common Thing for people with hypermobile Ehlers-Danlos syndrome^[Schubart JR, Schaefer E, Janicki P, Adhikary SD, Schilling A, Hakim AJ, Bascom R, Francomano CA, Raj SR. Resistance to local anesthesia in people with the Ehlers-Danlos Syndromes presenting for dental surgery. J Dent Anesth Pain Med. 2019 Oct;19(5):261-270. doi: [10.17245/jdapm.2019.19.5.261](https://jdapm.org/DOIx.php?id=10.17245/jdapm.2019.19.5.261). Epub 2019 Oct 30. PMID: 31723666; PMCID: PMC6834718.].
+
+:::info Suggestions for dental anaesthesia
+
+- If you tend to need more dental anaesthesia to get the correct amount of numb, inform the dentist before anyone tells you to open your mouth.
+- If you have a diagnosis on record of Ehlers-Danlos syndrome or hypermobility, tell your dentist.
+- Ask for numbing gel to be swabbed around the injection site.
+:::
+
+### Palate expansion and other orthodontic work
 
 :::details Content warning: I relate an experience of orthodontic malpractice
 I learned as an adult that the purpose of a palate expander was not in fact to break bone, and that it is deeply unethical to do palate expansion without any pain control on an adolescent whose hard palate bones have fused. Palate expansion is not a comfortable experience for kids, but it is meant to stretch the cartilage between the two sides of the hard palate before it ossifies in adolescence.
 
-The first time (and every other time) my palate expander's key was turned, there were audible cracks and it was excruciatingly painful. It was a degree of pain unmatched by any other experience of my life until I had mesenteric adenitis in my early 30s^[Mesenteric adenitis is a "benign" condition where the lymph nodes in your abdominal wall swell up and hurt sharply, and the pain is unaffected by OTC pain relief methods. My lymph nodes were freaking out because I was two months into recovering from major abdominal surgery (hysterectomy), and my body was still freaking out about having fewer organs. My misbehaving lymph nodes calmed down after a few more months 🙃.]. I was 16 and my palate had ossified. My orthodontist was unresponsive to my reports of pain and never offered any pain control or pain relief advice. He described me as "dramatic" for how I reacted to repeatedly having a bone broken.
+The first time (and every other time) my palate expander's key was turned, there were audible cracks and it was excruciatingly painful. It was a degree of pain unmatched by any other experience of my life until I had mesenteric adenitis in my early 30s^[Mesenteric adenitis is a "benign" condition where the lymph nodes in your abdominal wall swell up and hurt sharply, and in my case the pain was completely unaffected by OTC pain relief methods. My lymph nodes were freaking out because I was two months into recovering from major abdominal surgery (hysterectomy), and my body was still freaking out about having fewer organs. My misbehaving lymph nodes calmed down after a few more months 🙃.]. I was 16 and my palate had ossified. My orthodontist was unresponsive to my reports of pain and never offered any pain control or pain relief advice. He described me as "dramatic" for how I reacted to repeatedly having a bone broken.
 :::
 
 Palate expansion is the orthodontic process by which the upper jaw is widened. It is used to treat dental crowding and sometimes to increase the airway, and there are many methods but all involve some amount of pain and soreness. When I learned in adulthood that what happened to me was at the very least deeply unethical (and at worst, torture), I wanted to prevent it from happening to any other people.

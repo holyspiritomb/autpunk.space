@@ -5,8 +5,6 @@ import "virtual:group-icons.css";
 import "victormono";
 import "@fontsource/noto-sans-hebrew/400.css"; // Specify weight
 import "@fontsource/noto-serif-hebrew/400.css"; // Specify weight
-import "@fontsource/zilla-slab/latin-400.css"; // Specify weight
-import "@fontsource/zilla-slab/latin-600.css"; // Specify weight
 import "@fontsource/jetbrains-mono/300.css";
 import "@fontsource/atkinson-hyperlegible-next/latin-300.css";
 import "@fontsource/atkinson-hyperlegible-next/latin-400.css";
@@ -24,13 +22,15 @@ import "./custom.scss";
 import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
 // import LayoutBottom from "./components/LayoutBottom.vue";
-import FontChanger from "./components/FontChanger.vue";
 import TextInput from "./components/TextInput.vue";
 import YiddishText from "./components/YiddishText.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import MyBadge from "./components/MyBadge.vue";
+import AfterActions from "./components/AfterActions.vue";
 import NiceButton from "./components/NiceButton.vue";
 import CenterDiv from "./components/CenterDiv.vue";
+import HomeHeroBefore from "./components/HomeHeroBefore.vue";
+import SidebarNavAfter from "./components/SidebarNavAfter.vue";
 import useImageViewer from "vitepress-plugin-viewerjs";
 import BackToTopButton from "@miletorix/vitepress-back-to-top-button";
 import "@miletorix/vitepress-back-to-top-button/style.css"; 
@@ -96,9 +96,10 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       // https://vuejs.github.io/vitepress/v1/guide/extending-default-theme#layout-slots
-      "home-hero-actions-after": () => h(FontChanger),
+      "home-hero-actions-after": () => h(AfterActions),
+      "home-hero-before": () => h(HomeHeroBefore),
       // "nav-screen-content-before": () => h(FontChanger), 
-      "sidebar-nav-after": () => h(FontChanger),
+      "sidebar-nav-after": () => h(SidebarNavAfter),
     });
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

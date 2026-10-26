@@ -56,6 +56,7 @@ export default defineConfig({
     ["meta", { name: "theme-color", content: "#b4befe" }],
     ["meta", { property: "og:image", content: "https://autpunk.space/buttons/autpunk_space_checkers.png" }],
     ["script", { id: "check-pixel-preference", src: "/fonts/pixelPrefChecker.js", type: "text/javascript" }],
+    ["script", { src: "https://keepandroidopen.org/banner.js?size=minimal&animation=off&id=androidLockdown" }],
   ],
   ignoreDeadLinks: false,
   lang: "en-US",
@@ -102,8 +103,9 @@ export default defineConfig({
       // {{{
       { text: "Home", link: "/" },
       { text: "About", link: "/pages/about/" },
-      { text: "Wordart", link: "/pages/wordart/" },
       { text: "Projects", link: "/pages/projects/" },
+      { text: "Wordart", link: "/pages/wordart/" },
+      { text: "Fun Stuff", link: "/pages/funstuff/" },
       { text: "Writing", link: "/pages/thought-fossils/" },
       { text: "Resources", link: "/pages/resources/" },
       { text: "Links", link: "/pages/other-people/" },

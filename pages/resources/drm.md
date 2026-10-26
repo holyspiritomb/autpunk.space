@@ -25,11 +25,15 @@ Before Amazon stopped letting users download files from its website for offline 
 
 [^1]: [libmobi is on github](https://github.com/bfabiszewski/libmobi) and in several Linux repositories
 
-```bash
+::: code-group
+```bash [azw3 file]
 mobidrm -d -s $KINDLE_SERIAL_NUMBER book.azw3
-# or
+```
+
+```bash [azw file]
 mobidrm -d -s $KINDLE_SERIAL_NUMBER book.azw
 ```
+:::
 
 But then Amazon announced they would stop letting users download DRM'ed ebook files via the website for adding to Kindles offline.
 
@@ -59,18 +63,17 @@ Tools one would use:
 
 ::::details How to install Calibre
 
-On Linux, this can be accomplished with this command:
-
-```bash
+::: code-group
+```bash [linux ~devicon:linux~]
+# installs to default location
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 ```
 
-I prefer installing to the /opt prefix:
-
-```bash
+```bash [linux /opt ~devicon:linux~]
+# installs to /opt
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin install_dir=/opt
 ```
-
+:::
 
 :::warning
 
@@ -78,7 +81,7 @@ Feel free to examine the shell script file before executing it with sudo. As a m
 
 :::
 
-On Windows and macOS, downloadable installers and binaries are provided: https://calibre-ebook.com/download
+On Windows and macOS, [installers and binaries are provided on Calibre's website](https://calibre-ebook.com/download). If you're using BSD or some esoteric kernel I haven't mentioned, you probably know what you need to do to install a piece of open-source software from examining that page.
 
 ::::
 
@@ -111,14 +114,16 @@ Restarting Calibre will be necessary to complete the install.
 ::::details How one would hypothetically use this tool
 
 :::danger
-This is the part where I remind you that stripping DRM from ebooks you purchased violates the terms of service of their licenses.
+This is the part where I remind you that stripping DRM from ebooks you purchased generally violates the terms of service of their licenses.
+
+DRM is implemented specifically to make accessing your ebook harder, because it makes the money sad if readers aren't locked into the vendor's software and devices.
 :::
 
 :::details I promise I'm only reading this for Educational Purposes
 
 1. Open Calibre on your computer.
 2. Using a USB cable, connect your Kobo device to your computer running Calibre.
-3. When your Kobo asks if you'd like to connect it to a computer, select yes.
+3. When your Kobo asks if you'd like to connect it to a computer, select "Connect."
 4. Wait for Calibre to detect your Kobo.
 5. Once yoir Kobo has loaded in Calibre, click the "Obok DeDRM" button where you added it to the toolbar.
 6. A list of books on the device will pop up. Highlight the books you hypothetically want to decrypt.

@@ -1,11 +1,11 @@
 ---
-order: 5
+order: 6.1
 title: Unsorted Fragments
 lastUpdated: true
 layout: doc
 prev:
     link: '/pages/thought-fossils/index.md'
-    text: 'Thought Fossil Index'
+    text: 'Writing Index'
 next: false
 ---
 # Unsorted Fragments

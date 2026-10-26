@@ -35,7 +35,6 @@ const { copy, copied, isSupported } = useClipboard({
 // Wrapper function for font loading
 const loadFont = async (fontName: string): Promise<boolean> => {
   const result = await loadFontUtil(fontName);
-  // Trigger reactivity update
   loadedFonts.value = getLoadedFonts();
   return result;
 }
@@ -94,7 +93,6 @@ const generateArt = async () => {
     figletText.value = `Error: ${error instanceof Error ? error.message : "Unknown error"}`;
   }
 }
-// Initialize default fonts
 const initializeDefaultFonts = async () => {
   console.debug("Loading initial fonts...");
   await loadFont("Future Smooth");
@@ -281,7 +279,17 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@media screen and (width >= 960px) {
+  div.myContainer {
+    @apply mx-a;
+    max-width: 500px;
+  }
+}
 div.myContainer {
+  @apply mx-a;
+  background: transparent;
+  max-width: 450px;
+  border: 0 !important;
   color: var(--ctp-latte-text) !important;
   p {
     line-height: 1.5em;
@@ -355,13 +363,16 @@ div.myContainer {
     padding-inline: calc(var(--spacing) * 4);
     padding-block: calc(var(--spacing) * 2);
   }
+  .window {
+    border-radius: 6px !important;
+  }
 }
 .win98 {
   label {
     padding-inline: unset;
   }
-  label, p, .status-bar-field, .title-bar,select,option {
-    font-size: 13px !important;
+  label, p, .status-bar-field, .title-bar, select,option {
+    font-size: 11px !important;
   }
 }
 </style>

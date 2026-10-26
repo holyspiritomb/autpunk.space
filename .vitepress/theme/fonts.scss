@@ -1,19 +1,5 @@
 @font-face {
   /* stylelint-disable font-family-name-quotes */
-  font-family: "monogram";
-  src: url("/fonts/monogram-extended.ttf") format("truetype");
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "monogram";
-  src: url("/fonts/monogram-extended-italic.ttf") format("truetype");
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
   font-family: "Plain Pixel";
   src: url("/fonts/plainpixel-regular.ttf") format("truetype");
   font-weight: 400;
@@ -76,13 +62,14 @@
   font-style: normal;
 }
 
+
 /* stylelint-enable font-family-name-quotes */
 
 html {
   font-family: "Atkinson Hyperlegible Next", system-ui;
 
   &.pixel {
-    font-family: monogram, monospace;
+    font-family: "Ari-w9500", monospace;
   }
 }
 
@@ -91,11 +78,14 @@ html {
   --vp-font-family-mono: "Victor Mono";
   --default-monoFont-family: "Victor Mono"; /* code font */
   --default-monoFont-featureSettings: "ss06" on, "ss01" off, "ss07" on;
+  --vp-code-font-size: 16px;
 
   &.pixel {
-    --vp-font-family-base: "monogram";/* normal text font */
+    --vp-font-family-base: "Ari-W9500";
+    --vp-font-family-mono: "Cozette";
     --default-monoFont-family: "Cozette"; /* code font */
     --default-monoFont-featureSettings: "";
+    --vp-code-font-size: 13px;
   }
 }
 
@@ -113,7 +103,7 @@ html {
     }
 
     &.pixel {
-      font-family: monogram, monospace;
+      font-family: "Ari-W9500", monospace;
 
       .vp-doc,
       .is-home,
@@ -121,7 +111,7 @@ html {
       footer,
       header,
       .home {
-        font-family: monogram, monospace;
+        font-family: "Ari-W9500", monospace;
       }
     }
   }
@@ -130,22 +120,22 @@ html {
     --vp-font-family-base: "Atkinson Hyperlegible Next Variable";
 
     &.pixel {
-      --vp-font-family-base: "monogram";
+      --vp-font-family-base: "Ari-W9500";
     }
   }
 }
 
 .VPHomeHero {
   h1.heading {
-    @apply zilla;
+    @apply mspixel;
 
     span.text {
-      @apply zilla fw-400;
+      @apply fw-400;
     }
   }
 
   p.tagline {
-    @apply zilla fw-400;
+    @apply fw-400;
 
     &::before {
       content: "~ ";
@@ -173,16 +163,13 @@ html.pixel {
     }
 
     h1.heading {
-      font-family: monogram;
-      font-size: 64px;
-      text-transform: uppercase;
+      font-family: "Plain Pixel";
+      font-size: 45pt;
       text-shadow: none;
 
       .name,
       span.text {
-        font-size: 64px;
-        font-family: monogram;
-        line-height: 52px;
+        font-family: "Ari-W9500";
       }
     }
   }
@@ -198,10 +185,12 @@ html.pixel {
   .top-link,
   .outline-link,
   .VPLocalNavOutlineDropdown button {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .vp-doc {
+    font-size: 13px;
+
     h1 {
       font-size: 44px;
       font-family: "Plain Pixel";
@@ -235,26 +224,22 @@ html.pixel {
   }
 
   .title {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .VPButton {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
 
     &.brand,
     &.medium {
-      font-size: 16px;
+      font-size: 13px;
     }
   }
 
   .custom-block {
     p {
-      font-size: 16px;
-    }
-
-    strong {
-      text-shadow: 1px 1px var(--ctp-latte-overlay0);
+      font-size: 13px;
     }
   }
 

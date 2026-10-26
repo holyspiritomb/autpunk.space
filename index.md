@@ -4,9 +4,8 @@ title: Home
 layout: home
 
 hero:
-  name: "autpunk"
-  text: space
-  tagline: be the autpunk you wish to see in the world
+  name: "autpunk space"
+  tagline: the horrors persist but so do we
   image:
     src: /galaxy_heart.png
     alt: A Milky Way galaxy emoji, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
@@ -24,7 +23,7 @@ features:
         src: /galaxy_floppy.png
         alt: "galaxy-print floppy disk emoji"
     details: make ASCII wordart like in the old times
-    link: /pages/wordart/figlet
+    link: /pages/funstuff/figlet
   - title: Resources
     icon:
         src: /galaxy_book.png

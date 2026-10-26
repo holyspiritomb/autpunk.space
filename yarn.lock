@@ -1227,13 +1227,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/zilla-slab@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "@fontsource/zilla-slab@npm:5.3.0"
-  checksum: 10c0/de9e11d85036ad87445cb1c777334c49b94bbde47239563e6a49e4324f03a47b8ad13c5754287e727ab27a7fdfabceaa79288438ea3fbf724deff601c1d9c5d0
-  languageName: node
-  linkType: hard
-
 "@humanfs/core@npm:^0.19.2":
   version: 0.19.2
   resolution: "@humanfs/core@npm:0.19.2"
@@ -3480,7 +3473,6 @@ __metadata:
     "@fontsource/jetbrains-mono": "npm:^5.3.0"
     "@fontsource/noto-sans-hebrew": "npm:^5.3.0"
     "@fontsource/noto-serif-hebrew": "npm:^5.3.0"
-    "@fontsource/zilla-slab": "npm:^5.3.0"
     "@iconify-json/arcticons": "npm:^1.2.58"
     "@iconify-json/carbon": "npm:^1.2.28"
     "@iconify-json/catppuccin": "npm:^1.2.17"
@@ -3506,7 +3498,6 @@ __metadata:
     "@vstyler96/98.css": "npm:^2.0.0"
     "@vue/tsconfig": "npm:^0.9.1"
     "@vueuse/core": "npm:14.4.0"
-    chalk: "npm:^6.0.1"
     easy-speech: "npm:^2.4.0"
     eslint: "npm:^10.11.0"
     eslint-plugin-vue: "npm:^10.11.1"
@@ -3700,13 +3691,6 @@ __metadata:
   version: 2.0.1
   resolution: "ccount@npm:2.0.1"
   checksum: 10c0/3939b1664390174484322bc3f45b798462e6c07ee6384cb3d645e0aa2f318502d174845198c1561930e1d431087f74cf1fe291ae9a4722821a9f4ba67e574350
-  languageName: node
-  linkType: hard
-
-"chalk@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "chalk@npm:6.0.1"
-  checksum: 10c0/4c58238fa874f531b5201bf99ebd374742be31f8e306c7783d930856aec305f2dea3e07531a8805b2a7ba92807296e39ced52e9f673703e0264d96e83998a429
   languageName: node
   linkType: hard
 
