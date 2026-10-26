@@ -286,7 +286,7 @@ onMounted(() => {
   }
 }
 div.myContainer {
-  @apply mx-a;
+  @apply mx-a my-[2em];
   background: transparent;
   max-width: 450px;
   border: 0 !important;
