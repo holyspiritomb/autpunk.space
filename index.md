@@ -2,6 +2,9 @@
 # https://vuejs.github.io/vitepress/v1/reference/default-theme-home-page
 title: Home
 layout: home
+head:
+  - - script
+    - src: https://keepandroidopen.org/banner.js?size=minimal&animation=off&id=androidLockdown
 
 hero:
   name: "autpunk space"
