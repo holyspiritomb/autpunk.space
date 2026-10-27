@@ -365,6 +365,10 @@ div.myContainer {
   }
   .window {
     border-radius: 6px !important;
+    .title-bar-controls {
+      border-bottom-right-radius: 6px !important;
+      border-bottom-left-radius: 6px !important;
+    }
   }
 }
 .win98 {
