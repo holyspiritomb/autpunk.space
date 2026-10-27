@@ -23,14 +23,14 @@ onMounted(() => {
   <div>
     <button
       v-if="!isPixel"
-      class="fontSwitch text-[12px] pixelFont"
+      class="fontSwitch text-[13px] pixelFont"
       @click="pixelToggle"
     >
       use pixel fonts
     </button>
     <button
       v-else
-      class="fontSwitch text-[12px] sansFont"
+      class="fontSwitch text-[13px] sansFont"
       @click="pixelToggle"
     >
       use vector fonts

@@ -64,7 +64,7 @@ export default defineConfig({
     ["victor", { "font-family": "var(--default-monoFont-family) !important" }],
     ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],
     ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
-    ["pixelFont", { "font-family": "'Ari-W9500', monospace" }],
+    ["pixelFont", { "font-family": "Dylex, monospace" }],
     ["sansFont", { "font-family": "'Atkinson Hyperlegible Next', system-ui !important" }],
     ["victorFeatures", { "font-feature-settings": "'ss06' on, 'ss01' off, 'ss07' on" }],
     ["fontFeatUnset", { "font-feature-settings": "unset" }],
