@@ -1,7 +1,9 @@
 @font-face {
   /* stylelint-disable font-family-name-quotes */
   font-family: "Plain Pixel";
-  src: url("/fonts/plainpixel-regular.ttf") format("truetype");
+  src:
+    url("/fonts/plainpixel-regular.woff2") format("woff2"),
+    url("/fonts/plainpixel-regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -10,9 +12,9 @@
 @font-face {
   font-family: "Cozette";
   src:
-    url("/fonts/cozette/CozetteCrossedSevenVector.ttf") format("truetype"),
+    url("/fonts/cozette/CozetteCrossedSevenVector.woff2") format("woff2"),
     url("/fonts/cozette/CozetteCrossedSevenVector.woff") format("woff"),
-    url("/fonts/cozette/CozetteCrossedSevenVector.woff2") format("woff2");
+    url("/fonts/cozette/CozetteCrossedSevenVector.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -21,9 +23,9 @@
 @font-face {
   font-family: "Cozette";
   src:
-    url("/fonts/cozette/CozetteCrossedSevenVectorBold.ttf") format("truetype"),
+    url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff2") format("woff2"),
     url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff") format("woff"),
-    url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff2") format("woff2");
+    url("/fonts/cozette/CozetteCrossedSevenVectorBold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -32,9 +34,9 @@
 @font-face {
   font-family: "UnifontEX";
   src:
-    url("/fonts/unifontex/UnifontExMono.ttf") format("truetype"),
+    url("/fonts/unifontex/UnifontExMono.woff2") format("woff2"),
     url("/fonts/unifontex/UnifontExMono.woff") format("woff"),
-    url("/fonts/unifontex/UnifontExMono.woff2") format("woff2");
+    url("/fonts/unifontex/UnifontExMono.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -43,9 +45,9 @@
 @font-face {
   font-family: "Ari-W9500";
   src:
+    url("/fonts/ari-w9500/ari-w9500.woff2") format("woff2"),
     url("/fonts/ari-w9500/ari-w9500.otf") format("opentype"),
-    url("/fonts/ari-w9500/ari-w9500.ttf") format("truetype"),
-    url("/fonts/ari-w9500/ari-w9500.woff2") format("woff2");
+    url("/fonts/ari-w9500/ari-w9500.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -54,14 +56,13 @@
 @font-face {
   font-family: "Ari-W9500";
   src:
+    url("/fonts/ari-w9500/ari-w9500-bold.woff2") format("woff2"),
     url("/fonts/ari-w9500/ari-w9500-bold.otf") format("opentype"),
-    url("/fonts/ari-w9500/ari-w9500-bold.ttf") format("truetype"),
-    url("/fonts/ari-w9500/ari-w9500-bold.woff2") format("woff2");
+    url("/fonts/ari-w9500/ari-w9500-bold.ttf") format("truetype");
   font-weight: bold;
   font-display: swap;
   font-style: normal;
 }
-
 
 /* stylelint-enable font-family-name-quotes */
 
@@ -224,7 +225,7 @@ html.pixel {
   }
 
   .title {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .VPButton {
@@ -250,7 +251,7 @@ html.pixel {
   }
 
   code,
-  kbd,
+  kbd:not(.DocSearch-Button-Key),
   samp,
   pre,
   textarea,
@@ -259,4 +260,5 @@ html.pixel {
     font-size: 13px !important;
     line-height: 12px !important;
   }
+  
 }
