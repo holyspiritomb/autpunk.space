@@ -1,7 +1,7 @@
 /* reference: https://github.com/vuejs/vitepress/blob/v1.6.4/src/client/theme-default/styles/vars.css */
 :root {
-  --vp-c-divider: rgb(var(--ctp-mocha-pink-rgb) / 1);
-  --vp-c-gutter: rgb(var(--ctp-mocha-pink-rgb) / 1);
+  --vp-c-divider: rgb(var(--ctp-mocha-sky-rgb) / 0.5);
+  --vp-c-gutter: rgb(var(--ctp-mocha-sky-rgb) / 0.5);
   --vp-code-font-size: 0.72rem;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background:
@@ -36,6 +36,7 @@
   /* TODO: figure out fallback for when blur() is not supported */
   --vp-header-anchor-symbol: "‼";
   --vp-code-block-bg: var(--ctp-latte-base);
+  --vp-code-bg: var(--ctp-latte-crust);
 
   &.pixel {
     --rounded-sm: 0;
@@ -64,6 +65,7 @@
   --vp-button-alt-hover-bg: var(--ctp-mocha-surface1);
   --vp-button-alt-active-bg: var(--ctp-mocha-surface1);
   --vp-code-block-bg: var(--ctp-mocha-crust);
+  --vp-code-bg: var(--ctp-mocha-crust);
   --vp-code-lang-color: var(--ctp-macchiato-sky);
   --vp-custom-block-danger-bg: var(--ctp-mocha-crust);
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
@@ -75,6 +77,8 @@
   --vp-custom-block-tip-text: var(--ctp-mocha-green);
   --vp-custom-block-warning-bg: var(--ctp-mocha-crust);
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
+  --vp-c-divider: rgb(var(--ctp-mocha-surface1-rgb) / 0.5);
+  --vp-c-gutter: rgb(var(--ctp-mocha-surface1-rgb) / 0.5);
 }
 
 img[src*=".jpg"],
@@ -181,7 +185,7 @@ html {
       @apply r0;
     }
   }
-
+  .DocSearch-Button .DocSearch-Button-Key,
   div,
   input,
   button,

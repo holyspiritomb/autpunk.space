@@ -106,8 +106,8 @@ export default defineConfig({
         { text: "Colophon", link: "/pages/about/colophon" },
         { text: "Webrings", link: "/pages/about/#webrings" },
       ]},
-      { text: "Stuff I've Made", items: [
-        { text: "Projects", link: "/pages/projects/" },
+      { text: "Creative work", items: [
+        { text: "Software projects", link: "/pages/projects/" },
         { text: "Wordart", link: "/pages/wordart/" },
         { text: "Writing", link: "/pages/writing/" },
       ]},
@@ -138,7 +138,6 @@ export default defineConfig({
       }, // }}}
     },
     sidebar: [
-      { text: "Home", link: "/" },
       ...generateSidebar({ 
         capitalizeFirst: false, // {{{
         collapsed: true,

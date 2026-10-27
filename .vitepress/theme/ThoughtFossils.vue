@@ -23,10 +23,10 @@ li {
   }
 }
 /* HACK: omit the index page from list */
-li:has(>a[href$="thought-fossils.html"]),
+li:has(>a[href$="writing.html"]),
 li:has(>a[href$="index.html"]),
 li:has(>a[href$="index"]),
-li:has(>a[href$="thought-fossils/"]) {
+li:has(>a[href$="writing/"]) {
   display: none;
 }
 </style>

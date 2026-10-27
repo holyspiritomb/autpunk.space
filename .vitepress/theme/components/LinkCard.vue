@@ -16,8 +16,23 @@ defineProps<{
       class="link-card-inner"
     >
       <img
+        v-if="image.endsWith('png')"
         :src="image"
       />
+      <img
+        v-else-if="image.endsWith('jpg')"
+        :src="image"
+      />
+      <img
+        v-else-if="image.endsWith('gif')"
+        :src="image"
+      />
+      <object
+        v-else-if="image.endsWith('svg')"
+        :data="image"
+        type="image/svg+xml"
+      >
+      </object>
     </div>
     <div>
       <h2 class="title">{{ title }}</h2>
@@ -35,7 +50,7 @@ defineProps<{
 }
 .link-card-inner {
   > img {
-    @apply w-[100%];
+    @apply w-[100%] h-a p-0 m-0;
   }
 }
 </style>
