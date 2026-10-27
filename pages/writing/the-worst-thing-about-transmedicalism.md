@@ -4,7 +4,7 @@ date: 2022-08-11 21:42:00
 lastUpdated: true
 prev:
     link: './index'
-    text: 'Thought Fossil Index'
+    text: 'Writing Index'
 next: false
 ---
 # {{ $frontmatter.title }}

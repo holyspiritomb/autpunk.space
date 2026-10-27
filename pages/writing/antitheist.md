@@ -3,7 +3,7 @@ title: Antitheism and religious trauma
 lastUpdated: true
 prev:
     link: './index'
-    text: 'Thought Fossil Index'
+    text: 'Writing Index'
 next: false
 date: 2024-12-04 18:55:00
 ---

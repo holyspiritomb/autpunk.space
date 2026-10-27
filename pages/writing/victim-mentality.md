@@ -2,7 +2,7 @@
 title: On "Victim Mentality"
 prev:
     link: './index'
-    text: 'Thought Fossil Index'
+    text: 'Writing Index'
 next: false
 ---
 # {{ $frontmatter.title }}

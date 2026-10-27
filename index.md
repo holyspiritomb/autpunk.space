@@ -41,7 +41,7 @@ features:
         src: /images/galaxy_pencil.png
         alt: "galaxy print pencil emoji"
     details: sometimes I write essays
-    link: /pages/thought-fossils/
+    link: /pages/writing/
   - title: Unsorted Fragments
     icon:
         src: /images/galaxy_trash.png

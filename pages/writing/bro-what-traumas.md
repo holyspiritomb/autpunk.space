@@ -3,7 +3,7 @@ title: Extreme workaholic mindsets
 lastUpdated: true
 prev:
     link: './index'
-    text: 'Thought Fossil Index'
+    text: 'Writing Index'
 next: false
 ---
 # {{ $frontmatter.title }}

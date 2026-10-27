@@ -15,7 +15,7 @@ const distDir: string = process.env.GITHUBRUNNER === "push" ? "../web/autpunk.sp
   : process.env.ZSH === "/usr/share/oh-my-zsh" ? "./dist"
     : "../web/autpunk.space/public_html";
 
-// https://vitepress.dev/reference/site-config
+// https://vuejs.github.io/vitepress/v1/reference/site-config
 export default defineConfig({
   vite: {
     resolve: {
@@ -49,7 +49,7 @@ export default defineConfig({
   // titleTemplate: 'Autpunk Dot Space',
   description: "An autism with personhood. Stuff, things, and the difference between them.",
   head: [
-    ["link", { rel: "icon", href: "/galaxy_heart.png" }],
+    ["link", { rel: "icon", href: "/images/galaxy_heart.png" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
@@ -101,14 +101,18 @@ export default defineConfig({
     },
     nav: [
       // {{{
-      { text: "Home", link: "/" },
-      { text: "About", link: "/pages/about/" },
-      { text: "Projects", link: "/pages/projects/" },
-      { text: "Wordart", link: "/pages/wordart/" },
+      { text: "About", items: [
+        { text: "Me", link: "/pages/about/" },
+        { text: "Colophon", link: "/pages/about/colophon" },
+        { text: "Webrings", link: "/pages/about/#webrings" },
+      ]},
+      { text: "Stuff I've Made", items: [
+        { text: "Projects", link: "/pages/projects/" },
+        { text: "Wordart", link: "/pages/wordart/" },
+        { text: "Writing", link: "/pages/writing/" },
+      ]},
       { text: "Fun Stuff", link: "/pages/funstuff/" },
-      { text: "Writing", link: "/pages/thought-fossils/" },
       { text: "Resources", link: "/pages/resources/" },
-      { text: "Links", link: "/pages/other-people/" },
       // }}}
     ],
     search: {
@@ -133,23 +137,26 @@ export default defineConfig({
         },
       }, // }}}
     },
-    sidebar: generateSidebar({ 
-      capitalizeFirst: false, // {{{
-      collapsed: true,
-      // debugPrint: true,
-      documentRootPath: "./",
-      scanStartPath: "/pages/",
-      excludeFilesByFrontmatterFieldName: "exclude",
-      excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules", "AGENTS.md", "AAA-NO-SLOP.md"],
-      includeEmptyFolder: false,
-      includeRootIndexFile: true,
-      sortMenusByFrontmatterOrder: true,
-      useFolderLinkFromIndexFile: true,
-      useFolderTitleFromIndexFile: true,
-      useTitleFromFileHeading: true,
-      useTitleFromFrontmatter: true,
-      manualSortFileNameByPriority: ["fragments.md"], // }}}
-    }),
+    sidebar: [
+      { text: "Home", link: "/" },
+      ...generateSidebar({ 
+        capitalizeFirst: false, // {{{
+        collapsed: true,
+        debugPrint: true,
+        documentRootPath: "./",
+        scanStartPath: "/pages/",
+        excludeFilesByFrontmatterFieldName: "exclude",
+        excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules", "AGENTS.md", "AAA-NO-SLOP.md", "unsorted-fragments"],
+        includeEmptyFolder: false,
+        includeRootIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
+        useFolderLinkFromIndexFile: true,
+        useFolderTitleFromIndexFile: true,
+        useTitleFromFileHeading: true,
+        useTitleFromFrontmatter: true,
+        manualSortFileNameByPriority: ["fragments.md"], // }}}
+      }),
+    ],
     socialLinks: [
       { icon: "vitepress", ariaLabel: "source repository for this site", link: "https://github.com/holyspiritomb/autpunk.space" },
       { icon: "github", ariaLabel: "my github profile", link: "https://github.com/holyspiritomb" },
