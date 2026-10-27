@@ -4,7 +4,7 @@ title: Home
 layout: home
 head:
   - - script
-    - src: https://keepandroidopen.org/banner.js?size=minimal&animation=off&id=androidLockdown
+    - src: https://keepandroidopen.org/banner.js?size=minimal&hidebutton=off&animation=off&id=androidLockdown
 
 hero:
   name: "autpunk space"
