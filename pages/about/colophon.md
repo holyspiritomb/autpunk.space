@@ -44,7 +44,7 @@ Here you will find details of this site's creation.
 ## Functional choices
 - <span i-catppuccin-typescript /> [TypeScript](https://www.typescriptlang.org/) for clear types
 - <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
-- <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting.
+- <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting
 - <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful
 
 ## Plugins used
@@ -70,15 +70,18 @@ Here you will find details of this site's creation.
 I have a lot of opinions about typefaces and I enjoy fonts that come with options.
 
 ### Pixel fonts
-- [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) for body text.
-- [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) for Yiddish text and headings. Plain Pixel is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and I made no modifications.
+- [Dylex Terminal 7x13](https://fontpixel.com/en/fonts/dylex-terminal/) for body text, converted to `TTF` with [Bits'N'Picas](https://github.com/kreativekorp/bitsnpicas/) and compressed into `WOFF2` with [`fonttools`](https://pypi.org/project/fonttools/).
+- [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) for Yiddish text and headings. Plain Pixel is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and I made no modifications other than compressing the truetype into `WOFF2` with `fonttools`.
 - [Cozette with crossed 7](https://github.com/the-moonwitch/Cozette/releases) is used in code blocks and the figlet generator input and output.
+- [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) for figlet generator body text.
 
 ### Vector fonts^[Technically all of the fonts used on this site are vector fonts because the pixel fonts have been vectorized for web use.]
 - [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont/) for body text. It was specifically designed for low vision.
-- [Victor Mono](https://rubjo.github.io/victor-mono/) is the main code font. I have enabled the options for `slashed 7` and `straighter 6 and 9`. Victor Mono has *`cursive italics`*.
+- [Victor Mono](https://rubjo.github.io/victor-mono/) is the main code font. I have enabled the options for slashed 7 and straighter 6 and 9. Victor Mono has *`cursive italics`*.
 - [Noto Serif Hebrew](https://fontsource.org/fonts/noto-serif-hebrew) and [Noto Sans Hebrew](https://fontsource.org/fonts/noto-sans-hebrew) are used for Yiddish text.
 
 ## Linking to me
 
 You can link to me with this button (save it to your own server): ![autpunk dot space](/buttons/autpunk_space_stripes.png){.no-viewer}
+
+

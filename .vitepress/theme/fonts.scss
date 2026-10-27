@@ -10,6 +10,46 @@
 }
 
 @font-face {
+  font-family: "Dylex";
+  src:
+    url("/fonts/dylex/7x13.woff2") format("woff2"),
+    url("/fonts/dylex/7x13.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dylex";
+  src:
+    url("/fonts/dylex/7x13O.woff2") format("woff2"),
+    url("/fonts/dylex/7x13O.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Dylex";
+  src:
+    url("/fonts/dylex/7x13B.woff2") format("woff2"),
+    url("/fonts/dylex/7x13B.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dylex";
+  src:
+    url("/fonts/dylex/7x13BO.woff2") format("woff2"),
+    url("/fonts/dylex/7x13BO.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Cozette";
   src:
     url("/fonts/cozette/CozetteCrossedSevenVector.woff2") format("woff2"),
@@ -82,7 +122,7 @@ html {
   --vp-code-font-size: 16px;
 
   &.pixel {
-    --vp-font-family-base: "Ari-W9500";
+    --vp-font-family-base: "Dylex";
     --vp-font-family-mono: "Cozette";
     --default-monoFont-family: "Cozette"; /* code font */
     --default-monoFont-featureSettings: "";
@@ -104,7 +144,7 @@ html {
     }
 
     &.pixel {
-      font-family: "Ari-W9500", monospace;
+      font-family: Dylex, monospace;
 
       .vp-doc,
       .is-home,
@@ -112,7 +152,7 @@ html {
       footer,
       header,
       .home {
-        font-family: "Ari-W9500", monospace;
+        font-family: Dylex, monospace;
       }
     }
   }
@@ -121,7 +161,7 @@ html {
     --vp-font-family-base: "Atkinson Hyperlegible Next Variable";
 
     &.pixel {
-      --vp-font-family-base: "Ari-W9500";
+      --vp-font-family-base: Dylex;
     }
   }
 }
@@ -260,5 +300,4 @@ html.pixel {
     font-size: 13px !important;
     line-height: 12px !important;
   }
-  
 }
