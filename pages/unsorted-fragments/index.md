@@ -4,7 +4,7 @@ title: Unsorted Fragments
 lastUpdated: true
 layout: doc
 prev:
-    link: '/pages/thought-fossils/index.md'
+    link: '/pages/writing/index.md'
     text: 'Writing Index'
 next: false
 ---
