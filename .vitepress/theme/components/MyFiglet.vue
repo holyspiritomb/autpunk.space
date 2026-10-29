@@ -97,7 +97,7 @@ const initializeDefaultFonts = async () => {
   await generateArt()
 }
 
-const win7help = () => {
+const winhelp = () => {
   alert("Type in the input textbox to make text art.")
 }
 
@@ -138,7 +138,7 @@ onMounted(() => {
           <div class="title-bar-controls">
             <button
               aria-label="Help"
-              @click="win7help"
+              @click="winhelp"
             ></button>
           </div>
         </div>
