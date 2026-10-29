@@ -29,10 +29,8 @@ const { copy, copied, isSupported } = useClipboard({
 // significantly adapted from studying
 // https://github.com/zzgosh/ASCII-ART_SVG/blob/d000ca76afdad788cf0debed249cad1d4c3618f7/src/components/AsciiArtGenerator.vue
 
-// Get available fonts from utility
 // const availableFonts = deepRef(getAvailableFonts())
 
-// Wrapper function for font loading
 const loadFont = async (fontName: string): Promise<boolean> => {
   const result = await loadFontUtil(fontName);
   loadedFonts.value = getLoadedFonts();
@@ -48,7 +46,6 @@ const generateArt = async () => {
 
   console.debug("Generating", textToFiglet.value, "with font:", chosenFont.value);
 
-  // Load font if not already loaded
   const fontLoaded = await loadFont(chosenFont.value);
   if (!fontLoaded) {
     figletText.value = `Error: Failed to load font "${chosenFont.value}"`;
@@ -121,19 +118,10 @@ const windowsVersion = () => {
     return "win7"
   }
 }
-const windowsVersionNum = () => {
-  if (isPixel.value === true) {
-    return "98"
-  }
-  else {
-    return "7"
-  }
-}
 
 onMounted(() => {
   listOfFonts.value = getAvailableFonts();
   initializeDefaultFonts();
-  // chosenFont.value = "Calvin S";
 })
 </script>
 
