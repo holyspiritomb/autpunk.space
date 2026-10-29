@@ -46,6 +46,7 @@ Here you will find details of this site's creation.
 - <span i-simple-icons-vueuse /> [VueUse](https://vueuse.org) for more Vue functions
 - <span i-catppuccin-unocss /> [UnoCSS](https://unocss.dev) for icons and easy CSS shortcutting
 - <span i-catppuccin-sass /> [Sass](https://sass-lang.org) because selectors like <code>&:hover</code> make me feel powerful
+- <span i-simple-icons-vueuse /> [@vueuse/sound](https://sound.vueuse.org/) for alphabet soundboard audio functionality
 
 ## Plugins used
 - [markdown-it-abbr](https://www.npmjs.com/package/markdown-it-abbr) for abbreviation annotations like so: ACAB
@@ -80,8 +81,9 @@ I have a lot of opinions about typefaces and I enjoy fonts that come with option
 - [Victor Mono](https://rubjo.github.io/victor-mono/) is the main code font. I have enabled the options for slashed 7 and straighter 6 and 9. Victor Mono has *`cursive italics`*.
 - [Noto Serif Hebrew](https://fontsource.org/fonts/noto-serif-hebrew) and [Noto Sans Hebrew](https://fontsource.org/fonts/noto-sans-hebrew) are used for Yiddish text.
 
+## Misc
+- [audiosprite](https://github.com/tonistiigi/audiosprite) as a CLI for making audio sprites
+
 ## Linking to me
 
 You can link to me with this button (save it to your own server): ![autpunk dot space](/buttons/autpunk_space_stripes.png){.no-viewer}
-
-
