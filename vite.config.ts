@@ -50,6 +50,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: [
       "vitepress",
+      "vue-demi",
     ],
   },
   server: {
