@@ -2,8 +2,6 @@
 
 interface Props {
   buttonText?: string,
-  audioId: string,
-  audioFile: string,
   bgColor?: string,
   txtColor?: string,
   txtSize?: string,
@@ -18,13 +16,6 @@ withDefaults(defineProps<Props>(), {
   borderColor: "rebeccapurple"
 })
 
-function play(selector: string) {
-  const audio = document.getElementById(selector) as HTMLAudioElement;
-  if (audio) {
-    audio.play();
-  }
-}
-
 const styleString = (txt: string, bg: string, size: string, bordercolor: string) => {
   return `color: ${txt}; background-color: ${bg}; font-size: ${size}; border-color: ${bordercolor};`
 }
@@ -34,14 +25,9 @@ const styleString = (txt: string, bg: string, size: string, bordercolor: string)
   <button
     :value="buttonText"
     :style="styleString(txtColor, bgColor, txtSize, borderColor)"
-    @click="play(audioId)"
   >
     {{ buttonText }}
   </button>
-  <audio
-    :id="audioId"
-    :src="audioFile"
-  ></audio>
 </template>
 
 <style lang="scss" scoped>
