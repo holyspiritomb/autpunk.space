@@ -12,7 +12,7 @@
         <div>*nixRing<br />
           <img
             style="height: 25px;"
-            src="https://softmachine.dev/webring/linuxring/icon/arch.png"
+            src="/images/arch.png"
             alt="Arch Linux logo"
           />
         </div>
