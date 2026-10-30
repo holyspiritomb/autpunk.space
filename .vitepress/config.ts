@@ -64,7 +64,7 @@ export default defineConfig({
   srcDir: "./",
   outDir: distDir,
   metaChunk: true,
-  srcExclude: ["**/README.md", "**/LICENSE.md", "**/AAA-NO-SLOP.md"],
+  srcExclude: ["**/README.md", "**/LICENSE.md", "**/AAA-NO-SLOP.md", "**/.git"],
   markdown: {
     // {{{
     theme: {
@@ -144,7 +144,7 @@ export default defineConfig({
         documentRootPath: "./",
         scanStartPath: "/pages/",
         excludeFilesByFrontmatterFieldName: "exclude",
-        excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules", "AGENTS.md", "AAA-NO-SLOP.md", "unsorted-fragments"],
+        excludePattern: ["README", "LICENSE", "LICENSE.md", "README.md", "vitepress-default", "fragments.md", "dist", "public", "node_modules", "AGENTS.md", "AAA-NO-SLOP.md", "unsorted-fragments", "**/.git"],
         includeEmptyFolder: false,
         includeRootIndexFile: true,
         sortMenusByFrontmatterOrder: true,

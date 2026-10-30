@@ -16,11 +16,6 @@ import { Features } from 'lightningcss';
 import { flavors } from "@catppuccin/palette";
 
 // let targets = browserslistToTargets(browserslist('>= 0.25%'));
-const mocha = flavors.mocha.colors;
-const latte = flavors.latte.colors;
-const gradMocha = `linear-gradient(90deg, ${mocha.red.hex} 0%, ${mocha.peach.hex} 30%, ${mocha.yellow.hex} 40%, ${mocha.green.hex} 50%, ${mocha.teal.hex} 60%, ${mocha.sky.hex} 70%, ${mocha.sapphire.hex} 80%, ${mocha.blue.hex} 90% ${mocha.lavender.hex} 95%)`;
-
-const gradLatte = `linear-gradient(90deg, ${latte.red.hex} 0%, ${latte.peach.hex} 30%, ${latte.yellow.hex} 40%, ${latte.green.hex} 50%, ${latte.teal.hex} 60%, ${latte.sky.hex} 70%, ${latte.sapphire.hex} 80%, ${latte.blue.hex} 90% ${latte.lavender.hex} 95%)`;
 
 export default defineConfig({
   content: {
