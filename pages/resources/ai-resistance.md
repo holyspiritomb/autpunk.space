@@ -8,10 +8,12 @@ next: false
 ---
 # {{ $frontmatter.title }} <Badge>under construction</Badge>
 
+This is in the form of a linkspam until I have enough brainpower to write something more polished, like the [mass surveillance](./mass-surveillance) and [medical procedures](./medical-procedures) pages.
+
 For the purposes of these resources, "AI" refers specifically to LLMs, LLM-powered chatbots and generative AI that outputs images, text or code. I am aware that this is not the whole of AI. The fact remains that "AI" in popular usage refers to these specific uses, and it is the fault of genAI advocates (*not* neoluddites) that "AI" is now synonymous with "plagiarism machine." Legitimate forms of artificial intelligence technology (e.g. machine learning, neural network development, markov chaining) have suffered reputation damage as a result of genAI advocates' propaganda.
 
 ## Why?
-
+:::details Why I am against AI
 - [These Are the Worst ChatGPT Flyers You've Sent Us](https://www.404media.co/these-are-the-worst-chatgpt-flyers-youve-sent-us/): AI generated flyers are obvious and make your business or event look like you put zero effort into it.
 - [How AI Chatbots Are 'Deskilling' Human Empathy](https://www.404media.co/sherry-turkle-artificial-intimacy-podcast/): AI chatbots can cause empathy skills to atrophy.
 - [‘Doom Loop’: OpenAI and Microsoft Admits LLMs Are Destroying the Web and Built on Theft](https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft/): AI model training is plagiarizing writers and artists, and churning out slop that makes the internet worse.
@@ -20,6 +22,7 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 - [AI Companion Mortality Database](https://aimortality.org): AI chatbots have a death toll.
 - [The AI Doomsday Future Is Not Inevitable](https://theintercept.com/2026/09/14/surveillance-tech-ai-military-flock/): AI is being used to surveil and kill.
 - If you like longreads, I recommend Ed Zitron's [AI Hater's Manifesto](https://www.wheresyoured.at/the-ai-haters-manifesto/).
+:::
 
 ## For webmasters
 
