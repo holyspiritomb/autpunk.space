@@ -18,10 +18,6 @@ import MyWebrings from "../../.vitepress/theme/components/MyWebrings.vue";
 
 # {{ $frontmatter.title }}
 
-Hello!
-
-[Colophon is now on a separate page.](./colophon)
-
 ## About me
 
 ![trans rights now](/buttons/transnow2.gif){.no-viewer}
@@ -38,7 +34,7 @@ Hello!
 </Yiddish>
 
 
-I'm Hezekiah (he/him), a fat disabled queer trans ace Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pok&eacute;mon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather. My fursona is a crow, and furries outnumber non-furries in my house.
+I'm Hezekiah (he/him), a fat disabled queer trans ace Jew-in-process. I'm autistic and have ADHD. I have chronic pain due to both hypermobility and a leg length difference. My cane's name is Raphael. My special interests include linguistics, Pok&eacute;mon, Charlie Chaplin films, Star Trek, death positivity, fiber crafts and weather. My fursona is a crow, and furries outnumber non-furries in my house. I learned web design on Geocities and Neopets in the early aughts.
 
 Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 
