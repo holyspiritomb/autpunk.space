@@ -1313,6 +1313,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/dinkie-icons@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@iconify-json/dinkie-icons@npm:1.2.0"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/69d032818f2e47a7e341a01a62ae3c23eae4613ad62fcc1ec9ae9fabad75ea1af7b96834978521440051a8c54f72739bc6874152b75eae851f27c3f74026fa37
+  languageName: node
+  linkType: hard
+
 "@iconify-json/logos@npm:^1.2.11":
   version: 1.2.14
   resolution: "@iconify-json/logos@npm:1.2.14"
@@ -3494,6 +3503,7 @@ __metadata:
     "@iconify-json/catppuccin": "npm:^1.2.17"
     "@iconify-json/devicon": "npm:^1.2.71"
     "@iconify-json/devicon-plain": "npm:^1.2.62"
+    "@iconify-json/dinkie-icons": "npm:^1.2.0"
     "@iconify-json/logos": "npm:^1.2.17"
     "@iconify-json/mdi": "npm:^1.2.3"
     "@iconify-json/selfhst": "npm:^1.2.25"
