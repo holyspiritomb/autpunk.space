@@ -52,6 +52,8 @@ Here you will find details of this site's creation.
 - [markdown-it-abbr](https://www.npmjs.com/package/markdown-it-abbr) for abbreviation annotations like so: ACAB
 - [markdown-it-attr](https://www.npmjs.com/package/markdown-it-attrs) for easily adding HTML attributes to markdown elements, for when markdown by itself is insufficient but I don't want to do full HTML
 - [markdown-it-footnote](https://www.npmjs.com/package/markdown-it-footnote) for footnotes^[This is a footnote!]
+- [UnoCSS Preset: Advance Gradients](https://unocss-preset-advance-gradients.itsmnthn.dev/): for more easily implementing gradient text and borders.
+- [UnoCSS Preset: Hero Patterns](https://www.npmjs.com/package/@julr/unocss-preset-heropatterns) for pure CSS patterns.
 - [vitepress-back-to-top-button](https://www.npmjs.com/package/@miletorix/vitepress-back-to-top-button/v/1.0.3) for the floating button that shows scroll progress. Clicking it brings you to the top of the page.
 - [vitepress-plugin-viewerjs](https://www.npmjs.com/package/vitepress-plugin-viewerjs) for the image viewer on the Wordart pages.
 - [vitepress-sidebar](https://www.npmjs.com/package/vitepress-sidebar/v/1.39.0) to generate the sidebar links from the directory structure under `pages`.

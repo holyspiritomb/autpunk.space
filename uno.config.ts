@@ -11,11 +11,8 @@ import {
 import presetCatppuccin from "@catppuccin/unocss";
 import processorLightningCSS from '@unocss/processor-lightningcss';
 import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
-// import browserslist from 'browserslist';
+import { presetAdvanceGradients } from 'unocss-preset-advance-gradients';
 import { Features } from 'lightningcss';
-import { flavors } from "@catppuccin/palette";
-
-// let targets = browserslistToTargets(browserslist('>= 0.25%'));
 
 export default defineConfig({
   content: {
@@ -35,6 +32,7 @@ export default defineConfig({
         : { },
     }),
     presetAttributify(),
+    presetAdvanceGradients(),
     presetIcons({
       scale: 1.2,
       cdn: "https://esm.sh/",
@@ -54,9 +52,12 @@ export default defineConfig({
     presetHeroPatterns(),
   ],
   rules: [
+    ["italic", { "font-style": "italic" }],
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
     ["mspixel", { "font-family": " 'Ari-W9500', 'W95F', 'MS Sans Serif', Cozette !important" }],
     ["victor", { "font-family": "var(--default-monoFont-family) !important" }],
+    ["victorFont", { "font-family": "'Victor Mono', monospace !important" }],
+    ["mono", { "font-family": "var(--vp-font-family-mono) !important" }],
     ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],
     ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
     ["pixelFont", { "font-family": "Dylex, monospace" }],

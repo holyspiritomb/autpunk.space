@@ -66,7 +66,7 @@
     url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff2") format("woff2"),
     url("/fonts/cozette/CozetteCrossedSevenVectorBold.woff") format("woff"),
     url("/fonts/cozette/CozetteCrossedSevenVectorBold.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: bold;
   font-display: swap;
   font-style: normal;
 }
@@ -88,7 +88,7 @@
     url("/fonts/ari-w9500/ari-w9500.woff2") format("woff2"),
     url("/fonts/ari-w9500/ari-w9500.otf") format("opentype"),
     url("/fonts/ari-w9500/ari-w9500.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
   font-style: normal;
 }
@@ -104,15 +104,14 @@
   font-style: normal;
 }
 
-/* stylelint-enable font-family-name-quotes */
-
 html {
   font-family: "Atkinson Hyperlegible Next", system-ui;
 
   &.pixel {
-    font-family: "Ari-w9500", monospace;
+    font-family: "Dylex", monospace;
   }
 }
+/* stylelint-enable font-family-name-quotes */
 
 :root {
   --vp-font-family-base: "Atkinson Hyperlegible Next";/* normal text font */

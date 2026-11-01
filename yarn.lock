@@ -3544,6 +3544,7 @@ __metadata:
     typescript: "npm:6.0.3"
     typescript-eslint: "npm:8.68.0"
     unocss: "npm:^66.10.5"
+    unocss-preset-advance-gradients: "npm:^0.0.2"
     unplugin-vue-components: "npm:28.4.1"
     victormono: "npm:^1.5.6"
     viewerjs: "npm:^1.13.0"
@@ -8203,6 +8204,13 @@ __metadata:
   version: 2.0.1
   resolution: "universalify@npm:2.0.1"
   checksum: 10c0/73e8ee3809041ca8b818efb141801a1004e3fc0002727f1531f4de613ea281b494a40909596dae4a042a4fb6cd385af5d4db2e137b1362e0e91384b828effd3a
+  languageName: node
+  linkType: hard
+
+"unocss-preset-advance-gradients@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "unocss-preset-advance-gradients@npm:0.0.2"
+  checksum: 10c0/6b8a8f462d8fac2ceb5e001d2664d864ef7ecba759ac63a1c474c78ef16545d772580cb7a39eb06d4d2d1c73c79ca3233b0112a3b4fe4c74e699921ebddc6d26
   languageName: node
   linkType: hard
 
