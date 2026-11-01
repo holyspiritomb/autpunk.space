@@ -4,7 +4,7 @@ import CatppuccinRing from './CatppuccinRing.vue';
 import WebringWidget from './WebringWidget.vue';
 
 onMounted( () => {
-  // const inWebringsDiv = document.getElementById("inWebrings");
+  const inWebringsDiv = document.getElementById("inWebrings");
   const prospectiveRings = document.getElementById("prospectiveRings");
 
   function addWebringScript(name, scriptSrc, where) {
@@ -14,7 +14,7 @@ onMounted( () => {
     where?.appendChild(scriptEl);
   }
 
-  addWebringScript("ssgring", "https://jbc.lol/webrings/ssgring/pmoring.js", prospectiveRings);
+  // addWebringScript("ssgring", "https://jbc.lol/webrings/ssgring/pmoring.js", prospectiveRings);
 })
 
 </script>
@@ -124,6 +124,15 @@ onMounted( () => {
       />
     </WebringWidget>
     <WebringWidget
+      ring-name="SSGRing"
+      ring-home-link="https://jbc.lol/webrings/ssgring/"
+      prev-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=prev"
+      next-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=next"
+      random-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=rand"
+      classes="bg-hero-topography-ctp-mocha-green/30 text-ctp-mocha-green bg-ctp-mocha-crust"
+      border="border-2 border-outset border-ctp-mocha-green"
+    ></WebringWidget>
+    <WebringWidget
       ring-name="CSS Joy"
       ring-home-link="https://cs.sjoy.lol/"
       prev-link="https://webri.ng/webring/cssjoy/previous?via=https://autpunk.space"
@@ -133,15 +142,6 @@ onMounted( () => {
       text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink"
       border="border-1 border-groove border-ctp-latte-pink"
     ></WebringWidget>
-    <!-- <WebringWidget -->
-    <!--   ring-name="SSGRing" -->
-    <!--   ring-home-link="https://jbc.lol/webrings/ssgring/" -->
-    <!--   prev-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=prev" -->
-    <!--   next-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=next" -->
-    <!--   random-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=rand" -->
-    <!--   classes="bg-hero-topography-ctp-mocha-green/30 text-ctp-mocha-green bg-ctp-mocha-crust" -->
-    <!--   border="border-2 border-outset border-ctp-mocha-green" -->
-    <!-- ></WebringWidget> -->
   </div>
 </template>
 
