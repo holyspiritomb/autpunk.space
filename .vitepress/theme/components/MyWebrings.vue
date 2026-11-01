@@ -107,8 +107,8 @@ onMounted( () => {
     </div>
     <CatppuccinRing />
   </div>
+  <h3>Prospective</h3>
   <div id="prospectiveRings">
-    <h3>Prospective</h3>
     <WebringWidget
       ring-name="*nixRing"
       ring-home-link="https://softmachine.dev/webring/linuxring/"
