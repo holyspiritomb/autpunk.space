@@ -9,14 +9,9 @@ next: false
 ---
 # {{ $frontmatter.title }}
 
-I am no stranger to medical procedures. I didn't have adequate access to medical care as a child, so I wasn't diagnosed with any of my disabilities until I was in my 20s. I had to learn how to advocate for myself at the doctor's office as an adult. The basic tenets of medical self advocacy are
+Many medical procedures hurt, and I made this page because I've learned tips and tricks for reducing or eliminating pain in many of them. This isn't about meditation or breathing exercises or any other One Weird Trick. This is about advocating for yourself and/or your children at doctors' offices, because you deserve to have medical professionals put effort into maximizing your and your kids' comfort.
 
-- My doctors work for me, not the other way around.
-- I have the right to refuse any part of a medical examination, including being weighed.
-- I have the right to disagree with a doctor's advice if it won't work for me.
-- I deserve to have a doctor who doesn't become offended when I say a piece of advice won't work for me.
-
-This is especially important to me is because I live with children who have had various medical procedures before one year old.
+The reason that this is especially important to me is that I live with children who have had various medical procedures before one year old.
 
 :::details Content warning: I describe a child's medical trauma of attempted IV placement
 
