@@ -91,9 +91,56 @@ import CatppuccinRing from './CatppuccinRing.vue';
   <CatppuccinRing />
   <h3>Prospective</h3>
   <NixRing />
+  <div
+    id="ssgring"
+    class="text-center"
+  >
+    <span
+      class="block"
+    >
+      <a
+        href="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=prev"
+        title="previous"
+        class="px-[15px] prose-2xl"
+      >&laquo;</a>
+      <a
+        href="https://jbc.lol/webrings/ssgring/"
+        title="SSG Ring"
+        class="px-[15px] prose-2xl"
+      >SSGRing</a>
+      <a
+        href="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=next"
+        title="next"
+        class="px-[15px] prose-2xl"
+      >&raquo;</a>
+    </span>
+    <span
+      class="block"
+    >
+      <a
+        href="https://jbc.lol/webrings/ssgring/redirect?way=rand"
+        class="prose-sm"
+      >Random</a>
+    </span>
+  </div>
 </template>
 
 <style scoped>
+#ssgring{
+  @apply ccborder py-[10px] mx-auto w-[342px] bg-hero-graph-paper-ctp-mocha-text/50;
+}
+a {
+  text-decoration: none !important;
+  color: var(--vp-c-text1) !important;
+  text-shadow: 1px 1px var(--vp-c-bg);
+  &::after{
+    display: none !important;
+  }
+  &:hover {
+    cursor: crosshair;
+    text-decoration: underline !important;
+  }
+}
 map area {
   @apply crosshair;
 }
