@@ -127,7 +127,9 @@ import CatppuccinRing from './CatppuccinRing.vue';
 
 <style scoped>
 #ssgring{
-  @apply ccborder py-[10px] mx-auto w-[342px] bg-hero-graph-paper-ctp-mocha-text/50;
+  @apply py-[10px] border-[2px] mx-auto w-[342px] bg-hero-graph-paper-ctp-mocha-text/50;
+  border-style: dashed;
+  border-color: var(--vp-c-text1);
 }
 a {
   text-decoration: none !important;
