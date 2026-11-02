@@ -15,7 +15,7 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 ## Why?
 :::details Why I am against AI
 - [These Are the Worst ChatGPT Flyers You've Sent Us](https://www.404media.co/these-are-the-worst-chatgpt-flyers-youve-sent-us/): AI generated flyers are obvious and make your business or event look like you put zero effort into it.
-- [How AI Chatbots Are 'Deskilling' Human Empathy](https://www.404media.co/sherry-turkle-artificial-intimacy-podcast/): AI chatbots can cause empathy skills to atrophy.
+- [How AI Chatbots Are 'Deskilling' Human Empathy](https://www.404media.co/sherry-turkle-artificial-intimacy-podcast/): AI chatbot use can cause your empathy skills^[Empathy is a learned and learnable skill, contrary to what neurotypical autism researchers might tell you.] to atrophy.
 - [‘Doom Loop’: OpenAI and Microsoft Admits LLMs Are Destroying the Web and Built on Theft](https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft/): AI model training is plagiarizing writers and artists, and churning out slop that makes the internet worse.
 - [Why AI Music on Spotify Matters](https://sloptracker.org/why): AI generated music is flooding Spotify and it's siphoning money and streams away from human artists.
 - [Massive disconnect of power roils largest US electric grid](https://www.reuters.com/business/energy/massive-disconnect-power-roiled-largest-us-electric-grid-2026-07-22/): AI-training data centers are not worth the power consumption they require.
@@ -26,13 +26,17 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 
 ## For webmasters
 
-[Bot-proofing your website](https://baccyflap.com/res/robots/) is a guide to preventing bots from using your website as training data, as much as is possible. All of the solutions that exist rely on bots being programmed to honestly identify themselves to hosts they crawl and honor robots.txt directives, which currently is true of the biggest AI bots.
+[Bot-proofing your website](https://baccyflap.com/res/robots/) is a guide to preventing bots from using your website as training data, as much as is possible. Relies on bots being programmed to honestly identify themselves to hosts they crawl and honor robots.txt directives, which currently is true of the biggest AI bots.
 
-### For webmasters who are chaotic good
+### For webmasters who are chaotic: honeypots and tarpits
 
-[Nepenthes](https://zadzmo.org/code/nepenthes/) is a honeypot for AI scrapers that traps them endlessly in markov-chain-generated text that links back to itself.
+[Iocaine](https://iocaine.madhouse-project.org/) poisons crawlers by serving them garbage, preventing scraping of your actual content. Intended to be light on a server's CPU. Written in Rust, can be scripted in Lua, Fennel and Roto.
 
-## For users of adblockers
+[Miasma](https://austin-weeks.github.io/miasma/) poisons AI scrapers' training data by trapping AI crawlers in a slop loop. Written in Rust, Docker image available.
+
+[Nepenthes](https://zadzmo.org/code/nepenthes/) is a honeypot for AI scrapers that traps them endlessly in markov-chain-generated text that links back to itself. Developer warns of significant CPU load with use, and that any site it's deployed on is likely to disappear from search indices^[Which may be desirable, if you don't want search engines to find your content.]. Written in Lua. Docker image available.
+
+## Blocklists for adblockers
 
 [Stevo's AI Blocklist](https://github.com/Stevoisiak/Stevos-AI-Blocklist) is "a filter list that hides website features which use Generative AI & content labeled as AI Generated." Works with uBlock Origin and Adguard.
 
@@ -42,14 +46,17 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 
 [Remove Windows 11 AI](https://github.com/zoicware/RemoveWindowsAI) forces removal of Copilot, Recall and other AI features Microsoft forced you to install on Windows 11 via updates.
 
-## For search engine users
+## Tips and Tricks
 
 [Anti-AI Google Search Tips](https://github.com/laylavish/TipsTricksGoogleSearch)
 
-## For people concerned about their own or a loved one's AI use
+## Browser extensions
 
-[Slow LLM](https://slowllm.lav.io/): A browser extension that makes LLMs appear to run much more slowly.
 
-## For AI detection in media
+[Slop Evader](https://tegabrain.com/Slop-Evader): Browser extension for date-restricting search results on Google, Reddit, etc to before the release of ChatGPT (November 30, 2022).
+
+[Slow LLM](https://slowllm.lav.io/): A browser extension that makes LLMs appear to run much more slowly. Useful to install if you want to break your own or a loved one's reliance on AI.
+
+## Detecting AI use
 
 [SlopTracker](https://sloptracker.org/): A tool to test Spotify tracks.

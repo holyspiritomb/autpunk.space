@@ -83,4 +83,4 @@ Also fun facts: ALPRs might misidentify license plate characters regularly, so y
 
 2. Talk to friends and neighbors about why ALPRs are bad <Badge>difficulty: medium</Badge>
 
-3. Attend local town council and board of education meetings <Badge>difficulty: medium to hard</Badge>
+3. Attend local town council and board of education meetings. [DeFlock has a guide with example speeches and email messages, and also a list of victories.](https://deflock.org/council) <Badge>difficulty: medium to hard</Badge>
