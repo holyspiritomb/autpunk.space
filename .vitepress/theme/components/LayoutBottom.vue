@@ -1,8 +1,10 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme-without-fonts';
 import { useData } from 'vitepress';
+import WrittenByHuman from '../../../src/Written-By-a-Human-Not-By-AI-Badge-white.svg?skipsvgo';
+import WrittenByHumanB from '../../../src/Written-By-a-Human-Not-By-AI-Badge-black.svg?skipsvgo';
 
-const { theme, frontmatter } = useData()
+const { theme, frontmatter, isDark } = useData()
 const { Layout } = DefaultTheme // eslint-disable-line no-unused-vars
 </script>
 
@@ -12,6 +14,20 @@ const { Layout } = DefaultTheme // eslint-disable-line no-unused-vars
     class="VPFooter"
   >
     <div class="container">
+      <a
+        href="https://notbyai.fyi"
+      >
+        <WrittenByHuman
+          v-if="!isDark"
+          class="h-[42px] block mx-a mb-2"
+          alt="Written by human, not by AI"
+        />
+        <WrittenByHumanB
+          v-if="isDark"
+          class="h-[42px] block mx-a mb-2"
+          alt="Written by human, not by AI"
+        />
+      </a>
       <p
         v-if="theme.footer.message"
         class="message"

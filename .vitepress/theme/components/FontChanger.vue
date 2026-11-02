@@ -42,8 +42,7 @@ onMounted(() => {
 div {
   @apply my-2 mx-auto;
   button.fontSwitch {
-    @apply boxPress px-[1em] dark:crustBg;
-    border: 1px solid currentColor;
+    @apply boxPressSubtle px-[1em];
   }
 }
 </style>

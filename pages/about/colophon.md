@@ -10,6 +10,7 @@ next: false
 ---
 <script setup>
 import HumanCrafted from "../../src/craftedbyhuman.svg?skipsvgo"
+import WrittenByHuman from '../../src/Written-By-a-Human-Not-By-AI-Badge-white.svg?skipsvgo';
 </script>
 
 <style module>
@@ -23,7 +24,12 @@ svg#humancrafted {
 # {{ $frontmatter.title }}
 Here you will find details of this site's creation.
 
-[<HumanCrafted id="humancrafted" width="88px" height="31px" class="no-viewer inline h-[31px] w-[88px]" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com)
+[<WrittenByHuman
+  class="h-[42px] block mb-2 no-viewer"
+  alt="Written by human, not by AI"
+/>](https://notbyai.fyi)
+
+<!-- [<HumanCrafted id="humancrafted" width="88px" height="31px" class="no-viewer inline h-[31px] w-[88px]" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com) -->
 ![cascading style sheets](/buttons/css3.gif){.no-viewer}
 ![warning: this page contains javascript](/buttons/js-warning.gif){.no-viewer}
 ![Creative Commons Attribution-NonCommercial-ShareAlike license for the prose](/buttons/cc-by-nc-sa.gif){.no-viewer}
@@ -86,6 +92,3 @@ I have a lot of opinions about typefaces and I enjoy fonts that come with option
 ## Misc
 - [audiosprite](https://github.com/tonistiigi/audiosprite) as a CLI for making audio sprites
 
-## Linking to me
-
-You can link to me with this button (save it to your own server): ![autpunk dot space](/buttons/autpunk_space_stripes.png){.no-viewer}
