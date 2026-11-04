@@ -19,8 +19,6 @@ withDefaults(defineProps<Props>(), {
 <style lang="scss" scoped>
 a {
   @apply my-3;
-  color: var(--vp-c-text1);
-  background-color: var(--vp-c-bg);
   text-decoration: none;
   &:active, &:hover, &:focus {
     color: inherit;
