@@ -10,8 +10,8 @@ hero:
   name: "autpunk space"
   tagline: the horrors persist but so do we
   image:
-    src: /images/galaxy_heart.png
-    alt: A Milky Way galaxy emoji, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
+    src: /images/galaxy_heart_pixel.png
+    alt: A pixelated Milky Way galaxy emoji, clipped into a heart shape. It has a glowy pink and blue blurred shadow behind it.
   actions:
     - theme: brand
       text: about
