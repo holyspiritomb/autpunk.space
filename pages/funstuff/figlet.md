@@ -1,7 +1,7 @@
 ---
 title: Figlet Generator
 lastUpdated: false
-layout: page
+layout: false
 sidebar: false
 footer: false
 ---
@@ -9,11 +9,7 @@ footer: false
 import MyFiglet from "../../.vitepress/theme/components/MyFiglet.vue";
 import FontChanger from "../../.vitepress/theme/components/FontChanger.vue";
 </script>
-
-<MyFiglet />
-
-<Center><FontChanger /></Center>
-
-<Center>
-    <NiceButton href="/pages/funstuff/" text="Back to Fun Stuff Index" />
-</Center>
+<MyFiglet>
+    <FontChanger />
+    <NiceButton href="/pages/funstuff/" text="Fun Stuff Index" />
+</MyFiglet>

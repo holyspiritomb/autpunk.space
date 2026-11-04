@@ -21,7 +21,7 @@ const isPixel = useStorage("pixelFonts", true, localStorage, {mergeDefaults: tru
 
 const { copy, copied, isSupported } = useClipboard({
   legacy: true,
-  copiedDuring: 2000,
+  copiedDuring: 3000,
   read: false,
   source: figletText,
 });
@@ -97,8 +97,13 @@ const initializeDefaultFonts = async () => {
   await generateArt()
 }
 
-const winhelp = () => {
-  alert("Type in the input textbox to make text art.")
+function unhide() {
+  document.querySelector("#alert")?.show();
+  document.querySelector("#alert")?.toggleAttribute("hidden");
+}
+
+function hideHelp() {
+  document.querySelector("#alert")?.toggleAttribute("hidden");
 }
 
 const processClass = (s?) => {
@@ -126,9 +131,36 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="myContainer">
+  <div id="myContainer">
     <div :class="windowsVersion()">
-      <div class="window">
+      <dialog
+        id="alert"
+        class="z-999"
+      >
+        <div class="window active">
+          <div class="title-bar">
+            <div
+              :class="processClass('title-bar-text')"
+            >
+              Help
+            </div>
+            <div class="title-bar-controls">
+              <button
+                aria-label="Close"
+                @click="hideHelp"
+              ></button>
+            </div>
+          </div>
+          <div class="window-body has-space">
+            <p>Type in the input textarea, and ASCII text art will appear in the large output box.</p>
+
+            <p style="text-align: right; margin-top: 25px;">
+              <button @click="hideHelp">OK</button>
+            </p>
+          </div>
+        </div>
+      </dialog>
+      <div class="window active">
         <div class="title-bar">
           <div
             :class="processClass('title-bar-text')"
@@ -138,7 +170,14 @@ onMounted(() => {
           <div class="title-bar-controls">
             <button
               aria-label="Help"
-              @click="winhelp"
+              @click="unhide"
+            ></button>
+            <button
+              aria-label="Maximize"
+              disabled
+            ></button>
+            <button
+              aria-label="Close"
             ></button>
           </div>
         </div>
@@ -261,6 +300,9 @@ onMounted(() => {
           <p :class="processClass('status-bar-field')">Powered by <a href="https://www.npmjs.com/package/figlet">figlet.js</a></p>
         </div>
       </div>
+      <CenterDiv>
+        <slot />
+      </CenterDiv>
     </div>
     <!-- eslint-enable vue/no-template-shadow -->
   </div>
@@ -268,15 +310,26 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 @media screen and (width >= 960px) {
-  div.myContainer {
-    @apply mx-a;
-    max-width: 500px;
+  div#myContainer > div {
+    max-width: 700px;
+    min-height: max-content;
   }
 }
-div.myContainer {
-  @apply mx-a my-[2em];
-  background: transparent;
-  max-width: 450px;
+@media screen and (width < 960px) {
+  div#myContainer > div {
+    max-width: 450px;
+    min-height: fit-content;
+  }
+}
+dialog#alert {
+  width: 250px;
+  height: 120px;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 125px);
+}
+div#myContainer > div {
+  @apply mx-a;
   border: 0 !important;
   color: var(--ctp-latte-text) !important;
   p {
@@ -344,7 +397,7 @@ div.myContainer {
       max-height: 95% !important;
     }
   }
-  .figcopy {
+  .figcopy, .window-body button {
     border-radius: 3px !important;
   }
   details {
@@ -354,8 +407,14 @@ div.myContainer {
   .window {
     border-radius: 6px !important;
     .title-bar-controls {
-      border-bottom-right-radius: 6px !important;
       border-bottom-left-radius: 6px !important;
+      border-bottom-right-radius: 6px !important;
+      button:first-child {
+        border-bottom-left-radius: 6px !important;
+      }
+      button:last-child {
+        border-bottom-right-radius: 6px !important;
+      }
     }
   }
 }
@@ -365,6 +424,17 @@ div.myContainer {
   }
   label, p, .status-bar-field, .title-bar, select,option {
     font-size: 11px !important;
+  }
+}
+div#myContainer {
+  @apply w-[100%] h-[100vh] m-0 py-[10px];
+  overflow-y: scroll;
+
+  &:has(>.win98) {
+    @apply bg-[#008080] bg-hero-texture-black/50;
+  }
+  &:has(>.win7) {
+    @apply bg-[#4580c4];
   }
 }
 </style>
