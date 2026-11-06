@@ -144,6 +144,7 @@ div.splash {
   box-shadow: 3px 3px #000000;
   p {
     @apply font-size-[18px] line-height-normal;
+    text-shadow: none;
   }
   h1 {
     @apply font-bold font-size-[26px];

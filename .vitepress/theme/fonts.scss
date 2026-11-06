@@ -209,11 +209,12 @@ html.pixel {
 
       .name,
       span.text {
-        font-family: "Ari-W9500";
+        font-family: "Ari-W9500", Arial, Helvetica, sans-serif;
       }
     }
   }
 
+  .VPBadge,
   .VPLink,
   .text,
   .footnotes,
@@ -226,6 +227,10 @@ html.pixel {
   .outline-link,
   .VPLocalNavOutlineDropdown button {
     font-size: 13px;
+  }
+
+  .VPBadge {
+    font-family: var(--vp-font-family-mono);
   }
 
   .vp-doc {

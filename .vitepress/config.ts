@@ -106,10 +106,13 @@ export default defineConfig({
       ]},
       { text: "Creative work", items: [
         { text: "Software projects", link: "/pages/projects/" },
-        { text: "Wordart", link: "/pages/wordart/" },
+        { text: "ASCII Wordart", link: "/pages/wordart/" },
         { text: "Writing", link: "/pages/writing/" },
       ]},
-      { text: "Fun Stuff", link: "/pages/funstuff/" },
+      { text: "Fun Stuff", items: [
+        { text: "Figlet Generator", link: "/pages/funstuff/figlet" },
+        { text: "Alphabet Soundboard", link: "/pages/funstuff/alphabet-soundboard" },
+      ]},
       { text: "Resources", link: "/pages/resources/" },
       // }}}
     ],

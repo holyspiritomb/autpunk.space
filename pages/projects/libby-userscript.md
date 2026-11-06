@@ -3,7 +3,7 @@ title: Libby Userscript
 lastUpdated: true
 prev:
     text: 'Projects'
-    link: '/pages/projects'
+    link: '/pages/projects/'
 next: false
 ---
 # {{ $frontmatter.title }}
@@ -13,13 +13,14 @@ next: false
 
 
 * Repository: https://github.com/holyspiritomb/libby-userscript
+* [Direct install link for userscript managers](https://raw.githubusercontent.com/holyspiritomb/libby-userscript/main/libby-availability.user.js)
 
 Do you like knowing when a book on Goodreads or Amazon is available as an ebook or audiobook from your library? Do you use [Libby](https://libbyapp.com) to borrow ebooks and/or audiobooks from your local library? Do you use [Violentmonkey](https://violentmonkey.github.io) or Adguard[^1] to run userscripts on your computer or mobile device? Look no further!
 
 This userscript stores a list of your Libby libraries locally[^2] in order to search for books on Libby whenever you're viewing a book page on Goodreads or Amazon. The advantage of this userscript over a browser addon is that this works on mobile browsers via Adguard's userscript functionality. This userscript is tailored around my own use, which means it's primarily geared toward people with cards at multiple Libby libraries using Vivaldi[^3] and Adguard on an Android device.
 
 My main changes from upstream:
-* Added functionality on Amazon
+* Added functionality on more websites!
 * Made result types more distinct with emojis 📚 🎧
 * Made results' libraries more distinct
 * 🆕 Uses popup settings interface instead of having to run the script on the Libby site!
@@ -30,7 +31,7 @@ My main changes from upstream:
 
 ## Future goals
 
-* Support functionality on other bookseller sites (Kobo)
+* Support functionality on additional bookseller sites (Kobo)
 * ~~Add graphical settings UI that works via mobile Adguard~~ ✔
 
 ## Prior Arts

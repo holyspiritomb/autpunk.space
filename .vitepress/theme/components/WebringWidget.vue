@@ -16,8 +16,8 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   randomLink: null,
   textClasses: null,
-  prevLinkText: "«",
-  nextLinkText: "»",
+  prevLinkText: "« prev",
+  nextLinkText: "next »",
   randomLinkText: "(random)",
   border: "0"
 })
@@ -32,6 +32,7 @@ withDefaults(defineProps<Props>(), {
       :title="`previous link in ${ringName}`"
       class="prevnext"
       role="link"
+      target="_top"
     >{{ prevLinkText }}</a>
     <div>
       <a
@@ -49,6 +50,7 @@ withDefaults(defineProps<Props>(), {
         v-if="randomLink"
         :href="randomLink"
         class="rand"
+        target="_top"
         :title="`random link in ${ringName}`"
         :aria-label="`random link in ${ringName}`"
       >{{ randomLinkText }}</a>
@@ -57,6 +59,7 @@ withDefaults(defineProps<Props>(), {
       :href="nextLink"
       class="prevnext"
       role="link"
+      target="_top"
       :aria-label="`next link in ${ringName}`"
       :title="`next link in ${ringName}`"
     >{{ nextLinkText }}</a>
@@ -73,12 +76,12 @@ div.widget {
   }
 
   a {
-    @apply prose-lg;
+    @apply prose-2xl;
     text-decoration: none !important;
     color: var(--vp-c-text1) !important;
 
     &.prevnext {
-      @apply prose-md;
+      @apply prose-sm;
     }
 
     &.rand {

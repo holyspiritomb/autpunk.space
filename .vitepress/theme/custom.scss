@@ -110,6 +110,8 @@
   body,
   .VPNavScreen {
     background-image: url("/images/space16.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 
   .pager .VPLink,
@@ -121,6 +123,10 @@
     @apply hover:bg-ctp-mocha-crust;
 
     transition: 0.25s;
+  }
+
+  p {
+    text-shadow: 0 0 3px var(--ctp-mocha-crust);
   }
 }
 
@@ -135,6 +141,7 @@
 .kao-banner {
   background: linear-gradient(180deg, var(--ctp-latte-maroon) 0%, var(--ctp-latte-red) 100%) !important;
   color: var(--ctp-latte-base) !important;
+  font-family: "Atkinson Hyperlegible Next", Arial, Helvetica, sans-serif !important;
 }
 
 img[src*=".jpg"],
@@ -290,6 +297,7 @@ html {
   }
 
   .VPBadge {
+    vertical-align: middle !important;
     text-shadow: none;
     border: 1px solid currentcolor !important;
   }

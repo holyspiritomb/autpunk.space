@@ -321,6 +321,9 @@ onMounted(() => {
     min-height: fit-content;
   }
 }
+p {
+  text-shadow: none;
+}
 dialog#alert {
   width: 250px;
   height: 120px;

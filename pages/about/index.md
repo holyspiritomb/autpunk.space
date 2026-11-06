@@ -17,8 +17,6 @@ import HumanCrafted from "../../src/craftedbyhuman.svg?skipsvgo"
 
 # {{ $frontmatter.title }}
 
-## About me
-
 ![trans rights now](/buttons/transnow2.gif){.no-viewer}
 ![asexuals now](/buttons/asexuals_now.gif){.no-viewer}
 ![long live MSPaint](/buttons/mspaint.gif){.no-viewer}
@@ -27,6 +25,8 @@ import HumanCrafted from "../../src/craftedbyhuman.svg?skipsvgo"
 ![I survived the 2018 tumblr apocalypse](/buttons/tumblr2018.gif){.no-viewer}
 ![I support right to repair](/buttons/right_to_repair_01.jpg){.no-viewer}
 [![Fight Fascism sticker by Angus Johnston](/buttons/fightfascism-trans-88x31-white.png){.no-viewer}](https://fightfascism.neocities.org/)
+
+## About me
 
 <Yiddish title="daloy politsey">
 דאַלױ פּאָליצײ!&lrm;
@@ -48,13 +48,14 @@ Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 <!-- <div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow /> -->
 <!-- <div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo /> -->
 
-### Devices I heck around on
+### My devices I heck around on
 
 - Raspberry Pi 3A+
 - Raspberry Pi 3B+
 - Kobo Clara Colour
 - Android phone via [Termux](https://termux.dev)
-- Homebuilt desktop computer
+- Homebuilt desktop computer (Arch Linux)
+- Laptop (Windows 11^[The hecking around on Windows happens by SSHing and VNCing into the other devices.])
 
 ## Linking to me
 
