@@ -39,11 +39,9 @@
   --vp-header-anchor-symbol: "‼";
   --vp-code-block-bg: var(--ctp-latte-base);
   --vp-code-bg: var(--ctp-latte-crust);
-  --vp-c-brand-soft: hsla(197, 96%, 46%, 0.14);
+  --vp-c-brand-soft: rgb(var(--ctp-latte-sky) / 0.14);
 
   &.pixel {
-    --vp-home-hero-image-background-image: "";
-    --vp-home-hero-image-filter: none;
     --rounded-sm: 0;
     --rounded-md: 0;
     --rounded-full: 0;
@@ -53,38 +51,72 @@
 }
 
 .dark {
+  --vp-custom-block-bg: rgb(var(--ctp-mocha-crust-rgb) / 0.85);
   --vp-home-hero-name-background:
     -webkit-linear-gradient(
       0deg,
       var(--ctp-mocha-pink) 30%,
       var(--ctp-mocha-sky)
     );
-  --vp-button-brand-bg: var(--ctp-mocha-surface0);
-  --vp-button-brand-active-bg: var(--ctp-mocha-surface0);
-  --vp-button-brand-hover-bg: var(--ctp-mocha-surface1);
+  --vp-button-brand-bg: var(--ctp-mocha-crust);
+  --vp-button-brand-active-bg: var(--ctp-mocha-base);
+  --vp-button-brand-hover-bg: var(--ctp-mocha-base);
   --vp-button-brand-text: var(--ctp-mocha-sky) !important;
   --vp-button-brand-hover-text: var(--ctp-mocha-sky) !important;
   --vp-button-brand-active-text: var(--ctp-mocha-sky) !important;
   --vp-button-alt-text: var(--ctp-mocha-pink);
-  --vp-button-alt-bg: var(--ctp-mocha-surface1);
-  --vp-button-alt-hover-bg: var(--ctp-mocha-surface1);
-  --vp-button-alt-active-bg: var(--ctp-mocha-surface1);
+  --vp-button-alt-hover-text: var(--ctp-mocha-pink);
+  --vp-button-alt-bg: var(--ctp-mocha-mantle);
+  --vp-button-alt-hover-bg: var(--ctp-mocha-base);
+  --vp-button-alt-active-bg: var(--ctp-mocha-base);
   --vp-code-block-bg: var(--ctp-mocha-crust);
   --vp-code-bg: var(--ctp-mocha-crust);
   --vp-code-lang-color: var(--ctp-macchiato-sky);
   --vp-custom-block-danger-bg: var(--ctp-mocha-crust);
   --vp-custom-block-danger-text: var(--ctp-mocha-red);
-  --vp-custom-block-details-text: var(--ctp-mocha-text);
-  --vp-custom-block-details-bg: var(--ctp-mocha-surface0);
-  --vp-custom-block-info-bg: var(--ctp-mocha-crust);
+  --vp-custom-block-details-text: var(--ctp-mocha-lavender);
+  --vp-custom-block-details-bg: var(--vp-custom-block-bg);
+  --vp-custom-block-info-bg: var(--vp-custom-block-bg);
   --vp-custom-block-info-text: var(--ctp-mocha-sky);
-  --vp-custom-block-tip-bg: var(--ctp-mocha-crust);
+  --vp-custom-block-tip-bg: var(--vp-custom-block-bg);
   --vp-custom-block-tip-text: var(--ctp-mocha-green);
-  --vp-custom-block-warning-bg: var(--ctp-mocha-crust);
+  --vp-custom-block-warning-bg: var(--vp-custom-block-bg);
   --vp-custom-block-warning-text: var(--ctp-mocha-yellow);
-  --vp-c-divider: rgb(var(--ctp-mocha-surface1-rgb) / 0.5);
-  --vp-c-gutter: rgb(var(--ctp-mocha-surface1-rgb) / 0.5);
-  --vp-c-brand-soft: hsla(189, 71%, 73%, 0.16);
+  --vp-c-brand-soft: rgb(var(--ctp-mocha-sky-rgb) / 0.16);
+  --vp-nav-screen-bg-color: rgb(var(--ctp-mocha-base-rgb) / 0.95);
+  --vp-sidebar-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
+  --vp-nav-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
+  --vp-local-nav-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-latte-base) 50%, var(--ctp-latte-crust) 50%);
+
+  body,
+  .VPNavScreen {
+    background-image: url("/images/space16.png");
+  }
+
+  .pager .VPLink,
+  .VPNavScreenAppearance {
+    background-color: rgb(var(--ctp-mocha-base-rgb) / 0.85);
+  }
+
+  .pager .VPLink {
+    @apply hover:bg-ctp-mocha-crust;
+
+    transition: 0.25s;
+  }
+
+  .VPFooter {
+    background-color: transparent;
+  }
+
+  .aside-curtain {
+    background: transparent;
+  }
+}
+
+.kao-banner {
+  background: linear-gradient(180deg, var(--ctp-latte-maroon) 0%, var(--ctp-latte-red) 100%) !important;
+  color: var(--ctp-latte-base) !important;
 }
 
 img[src*=".jpg"],
@@ -93,6 +125,10 @@ img[src*=".gif"] {
   @apply inline;
 }
 
+button:not(.figcopy,[style]),
+button.fontSwitch,
+button.VPSwitch,
+button.DocSearch,
 a {
   @apply crosshair;
 }
@@ -191,6 +227,7 @@ html {
       @apply r0;
     }
   }
+
   .DocSearch-Button .DocSearch-Button-Key,
   div,
   input,
@@ -201,6 +238,9 @@ html {
   .pager-link,
   .VPBadge,
   .VPSwitch,
+  .VPLink,
+  .link,
+  .search-keyboard-shortcuts kbd,
   .VPSwitchAppearance,
   .icon,
   .check,
@@ -212,7 +252,6 @@ html {
   }
 
   .custom-block {
-
     &.tip,
     &.info,
     &.danger,

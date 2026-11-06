@@ -327,6 +327,10 @@ dialog#alert {
   position: absolute;
   top: calc(50% - 60px);
   left: calc(50% - 125px);
+  color: unset;
+  button {
+    cursor: default;
+  }
 }
 div#myContainer > div {
   @apply mx-a;
@@ -350,8 +354,12 @@ div#myContainer > div {
     right: 0.2em;
     user-select: none;
   }
-  .title-bar-controls > button {
+  .title-bar-controls > button[aria-label="Help"] {
     cursor: help;
+  }
+  .title-bar-controls > button[aria-label="Maximize"],
+  .title-bar-controls > button[aria-label="Close"] {
+    cursor: default;
   }
   .title-bar,
   .status-bar-field {
@@ -370,6 +378,7 @@ div#myContainer > div {
   .figcopy {
     position: relative;
     top: 7px;
+    cursor: default;
   }
   .status-bar-field a:after {
     display: none;

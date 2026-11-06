@@ -89,6 +89,8 @@ I have a lot of opinions about typefaces and I enjoy fonts that come with option
 - [Victor Mono](https://rubjo.github.io/victor-mono/) is the main code font. I have enabled the options for slashed 7 and straighter 6 and 9. Victor Mono has *`cursive italics`*.
 - [Noto Serif Hebrew](https://fontsource.org/fonts/noto-serif-hebrew) and [Noto Sans Hebrew](https://fontsource.org/fonts/noto-sans-hebrew) are used for Yiddish text.
 
-## Misc
+## Misc tools used
 - [audiosprite](https://github.com/tonistiigi/audiosprite) as a CLI for making audio sprites
+- [Pixel Space Background Generator](https://deep-fold.itch.io/space-background-generator): used to make the background of dark mode
+- [Paint.NET](https://paint.net/): for image editing
 
