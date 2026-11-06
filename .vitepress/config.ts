@@ -103,7 +103,6 @@ export default defineConfig({
       { text: "About", items: [
         { text: "Me", link: "/pages/about/" },
         { text: "Colophon", link: "/pages/about/colophon" },
-        { text: "Webrings", link: "/pages/about/#webrings" },
       ]},
       { text: "Creative work", items: [
         { text: "Software projects", link: "/pages/projects/" },
