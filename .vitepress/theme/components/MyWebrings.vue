@@ -122,6 +122,7 @@ onMounted( () => {
   </div>
 
   <div id="prospectiveRings">
+    Pending
     <WebringWidget
       ring-name="CSS Joy"
       ring-home-link="https://cs.sjoy.lol/"
