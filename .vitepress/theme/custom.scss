@@ -40,6 +40,9 @@
   --vp-code-block-bg: var(--ctp-latte-base);
   --vp-code-bg: var(--ctp-latte-crust);
   --vp-c-brand-soft: rgb(var(--ctp-latte-sky) / 0.14);
+  --vp-sidebar-bg-color: var(--ctp-latte-base);
+  --vp-nav-bg-color: rgb(var(--ctp-latte-base-rgb) / 0.75);
+  --vp-local-nav-bg-color: rgb(var(--ctp-latte-base-rgb) / 0.75);
 
   &.pixel {
     --rounded-sm: 0;
@@ -47,6 +50,21 @@
     --rounded-full: 0;
     --vp-header-anchor-symbol: "^";
     --vp-code-font-size: 13px;
+  }
+
+  body,
+  .VPNavScreen {
+    @apply bg-hero-slanted-stars-ctp-frappe-sky/20;
+  }
+
+  .VPNavScreenAppearance {
+    background-color: rgb(var(--ctp-latte-base-rgb) / 0.55);
+  }
+
+  .pager .VPLink {
+    @apply bg-white/50 hover:bg-white active:bg-white;
+
+    transition: 0.25s;
   }
 }
 
@@ -104,14 +122,14 @@
 
     transition: 0.25s;
   }
+}
 
-  .VPFooter {
-    background-color: transparent;
-  }
+.VPFooter {
+  background-color: transparent !important;
+}
 
-  .aside-curtain {
-    background: transparent;
-  }
+.aside-curtain {
+  background: transparent !important;
 }
 
 .kao-banner {

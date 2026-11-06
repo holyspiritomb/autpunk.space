@@ -84,7 +84,7 @@ export default defineConfig({
     "btn": "py-2 px-2 border-ctp-mocha-pink outline-ctp-latte-pink outline-1 m-[0.5rem] h-[3rem] border-1 text-black bg-ctp-mocha-pink",
     "label": "py-2 px-4",
     "pinkBg": "bg-ctp-mocha-pink/50 border-ctp-mocha-pink/70 hover:border-ctp-mocha-pink/90 active:border-ctp-mocha-pink/100 active:bg-ctp-mocha-pink/60",
-    "crustBg": "bg-ctp-mocha-crust/30 border-ctp-mocha-pink/50 hover:border-ctp-mocha-pink/70 active:border-ctp-mocha-pink/100 active:bg-ctp-mocha-crust/80 text-ctp-mocha-pink",
+    "crustBg": "bg-ctp-mocha-crust/70 border-ctp-mocha-pink/50 hover:border-ctp-mocha-pink/70 active:border-ctp-mocha-pink/100 hover:bg-ctp-mocha-crust/100 active:bg-ctp-mocha-crust/100 text-ctp-mocha-pink",
     "crustBg2": "bg-ctp-mocha-surface0/30 border-ctp-mocha-sky/60 hover:border-ctp-mocha-sky/70 active:border-ctp-mocha-sky/100 active:bg-ctp-mocha-surface1/80 text-ctp-mocha-sky",
     "codelangblock": "bg-white/90 border-1 border-ctp-mocha-sky/90 dark:(bg-ctp-mocha-base border-ctp-mocha-sky/50)",
     "pinkLeftBorder": "border-l-1 pl-[16px] border-l-ctp-mocha-pink/50",
