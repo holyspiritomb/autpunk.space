@@ -17,8 +17,8 @@ hero:
       text: about
       link: /pages/about/
     - theme: alt
-      text: webrings
-      link: /pages/about/#webrings
+      text: colophon
+      link: /pages/about/colophon
 
 features:
   - title: Make Wordart
@@ -60,3 +60,8 @@ features:
 
 lastUpdated: true
 ---
+<script setup>
+import MyWebrings from ".vitepress/theme/components/MyWebrings.vue";
+</script>
+
+<MyWebrings />

@@ -18,8 +18,8 @@ withDefaults(defineProps<Props>(), {
   textClasses: null,
   prevLinkText: "«",
   nextLinkText: "»",
-  randomLinkText: "(?)",
-  border: "ccborder"
+  randomLinkText: "(random)",
+  border: "0"
 })
 </script>
 <template>
@@ -64,21 +64,21 @@ withDefaults(defineProps<Props>(), {
 </template>
 <style lang="scss" scoped>
 div.widget {
-  @apply w-[342px] mx-a py-[5px] text-center;
+  @apply w-[342px] mx-a text-center;
 
   > a,
   > div {
-    @apply inline-block px-[25px];
+    @apply inline-block px-[10px];
     vertical-align: middle;
   }
 
   a {
-    @apply prose-2xl;
+    @apply prose-lg;
     text-decoration: none !important;
     color: var(--vp-c-text1) !important;
 
     &.prevnext {
-      @apply prose-2xl;
+      @apply prose-md;
     }
 
     &.rand {

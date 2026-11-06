@@ -7,18 +7,31 @@ onMounted( () => {
   const inWebringsDiv = document.getElementById("inWebrings");
   const prospectiveRings = document.getElementById("prospectiveRings");
 
-  function addWebringScript(name, scriptSrc, where) {
+  function addWebringScript(name, scriptSrc, where, defer, dataIcon) {
     const scriptEl = document.createElement("script");
     scriptEl.id = name;
     scriptEl.src = scriptSrc;
+    if (defer === true) {
+      scriptEl.defer = true
+    }
+    if (dataIcon) {
+      scriptEl.setAttribute("data-icon", dataIcon);
+    }
+    console.log(scriptEl);
+
     where?.appendChild(scriptEl);
   }
 
-  // addWebringScript("ssgring", "https://jbc.lol/webrings/ssgring/pmoring.js", prospectiveRings);
+// <script defer src="https://softmachine.dev/webring/linuxring/ring.js" data-icon="tux"
+
+  addWebringScript("*nixRing", "https://softmachine.dev/webring/linuxring/ring.js", prospectiveRings, true, "arch");
+
+  addWebringScript("ssgring", "https://jbc.lol/webrings/ssgring/pmoring.js", prospectiveRings);
 })
 
 </script>
 <template>
+  <CenterDiv><h2>Webrings</h2></CenterDiv>
   <div id="inWebrings">
     <div id="genlissaWebring">
       <map name="genlissawidget">
@@ -107,39 +120,16 @@ onMounted( () => {
     </div>
     <CatppuccinRing />
   </div>
-  <h3>Prospective</h3>
+
   <div id="prospectiveRings">
-    <WebringWidget
-      ring-name="*nixRing"
-      ring-home-link="https://softmachine.dev/webring/linuxring/"
-      prev-link="https://softmachine.dev/webring/linuxring/redirect?url=https%3A%2F%2Fautpunk.space%2F&go=prev"
-      next-link="https://softmachine.dev/webring/linuxring/redirect?url=https%3A%2F%2Fautpunk.space%2F&go=next"
-      classes="bg-hero-bathroom-floor-ctp-latte-sky/20 text-black bg-white mono bold"
-      border="border-[3px] border-double border-black"
-    >
-      <img
-        style="height: 25px;"
-        src="/images/arch.png"
-        alt="Arch Linux logo"
-      />
-    </WebringWidget>
-    <WebringWidget
-      ring-name="SSGRing"
-      ring-home-link="https://jbc.lol/webrings/ssgring/"
-      prev-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=prev"
-      next-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=next"
-      random-link="https://jbc.lol/webrings/ssgring/redirect?slug=autpunk-space&way=rand"
-      classes="bg-hero-topography-ctp-mocha-green/30 text-ctp-mocha-green bg-ctp-mocha-crust"
-      border="border-2 border-outset border-ctp-mocha-green"
-    ></WebringWidget>
     <WebringWidget
       ring-name="CSS Joy"
       ring-home-link="https://cs.sjoy.lol/"
       prev-link="https://webri.ng/webring/cssjoy/previous?via=https://autpunk.space"
       next-link="https://webri.ng/webring/cssjoy/next?via=https://autpunk.space"
       random-link="https://webri.ng/webring/cssjoy/random?via=https://autpunk.space"
-      classes="bg-hero-graph-paper-ctp-latte-pink/30 text-ctp-latte-pink bg-ctp-mocha-crust"
-      text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink"
+      classes="text-ctp-latte-pink bg-ctp-mocha-base"
+      text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink bold"
       border="border-1 border-groove border-ctp-latte-pink"
     ></WebringWidget>
   </div>
@@ -157,5 +147,11 @@ div {
 }
 img[usemap] {
   @apply block my-1;
+}
+
+#inWebrings,
+#prospectiveRings {
+  text-align: center;
+  width: 342px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="catppuccinWebring">
-    <h3>
+    <span>
       <a
         href="https://ctp-webr.ing/autpunk/previous"
         title="previous"
@@ -13,7 +13,7 @@
         href="https://ctp-webr.ing/autpunk/next"
         title="next"
       >&raquo;</a>
-    </h3>
+    </span>
   </div>
 </template>
 <style scoped>
@@ -26,8 +26,8 @@ div#catppuccinWebring {
       var(--ctp-mocha-crust) 25%,
       var(--ctp-mocha-base)
   );
-  h3 {
-    @apply py-1 my-0;
+  span {
+    @apply py-1 my-0 prose-md;
     a[href*="ctp-webr.ing"] {
       text-decoration: none;
       text-shadow: none !important;

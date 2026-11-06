@@ -12,7 +12,6 @@ next:
 ---
 <script setup>
 import HumanCrafted from "../../src/craftedbyhuman.svg?skipsvgo"
-import MyWebrings from "../../.vitepress/theme/components/MyWebrings.vue";
 </script>
 
 
@@ -60,7 +59,3 @@ Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 ## Linking to me
 
 You can link to me with this button (save it to your own server): ![autpunk dot space](/buttons/autpunk_space_stripes.png){.no-viewer}
-
-## Webrings
-
-<MyWebrings />
