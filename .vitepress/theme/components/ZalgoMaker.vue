@@ -25,7 +25,7 @@ const corruptionLevel = ref("")
 
 const processText = () => {
   if (!plainTxt.value.trim()) {
-    console.log("nothing to zalgo");
+    console.log("nothing to corrupt or banish");
     return;
   }
   let zText;
@@ -33,6 +33,7 @@ const processText = () => {
   if (corruptionLevel.value == "") {
     zText = zalgo(plainTxt.value);
   } else if (corruptionLevel.value == "banish") {
+    console.log("Purifying text...")
     zText = banish(plainTxt.value)
   } else {
     zText = zalgo(plainTxt.value, {size: corruptionLevel.value});
@@ -52,8 +53,7 @@ const resetStuff = () => {
 }
 
 onMounted( () => {
-  console.log("zalgo chars available:");
-  console.log(chars);
+  console.log("Zalgo generator is ready to summon and banish demons.");
 })
 </script>
 <template>
@@ -151,7 +151,6 @@ div {
     height: 180px;
     width: 350px;
     line-height: unset !important;
-    font-size: 16px !important;
     color: var(--vp-c-text1);
     background-color: var(--vp-c-bg);
   }
@@ -164,6 +163,7 @@ div.flex {
 html.pixel {
   textarea {
     font-family: UnifontEX, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px !important;
   }
   select, option, button, label {
     font-family: var(--vp-font-family-mono);
