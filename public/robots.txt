@@ -7,7 +7,6 @@ Allow: /
 Allow: *
 
 User-agent: .ai
-User-agent: .ai 
 User-agent: 2^32$
 User-agent: AI Article Writer
 User-agent: AI Content Detector
