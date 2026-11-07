@@ -436,3 +436,19 @@ User-agent: xBot
 User-agent: yacybot
 Disallow: /
 Disallow: *
+
+User-agent: *
+Disallow: /*.ttf$
+Disallow: /*.woff$
+Disallow: /*.woff2$
+Disallow: /*.svg$
+Disallow: /*.otf$
+Disallow: /audio/
+Disallow: /pages/writing/
+Disallow: /pages/unsorted-fragments/
+Disallow: /pages/wordart/
+Disallow: /pages/funstuff/
+Disallow: /fonts/
+Disallow: /buttons/
+Disallow: /images/
+Crawl-delay: 20
