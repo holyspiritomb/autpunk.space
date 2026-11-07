@@ -229,6 +229,7 @@ User-agent: LanternBot
 User-agent: LinerBot
 User-agent: LinkedInBot
 User-agent: LinkupBot
+User-agent: LivelapBot
 User-agent: LLaMA
 User-agent: LLMs
 User-agent: LohiSoftBot
