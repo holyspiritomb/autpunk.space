@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import zalgo, { banish, chars } from '@favware/zalgo';
+import { useClipboard } from "@vueuse/core";
 import { ref, onMounted } from 'vue';
+
+const { copy, copied, isSupported } = useClipboard({
+  legacy: true,
+  copiedDuring: 3000,
+  read: false,
+});
 
 // Zalgo usage
 // zalgo('some text');
@@ -23,6 +30,11 @@ const processText = () => {
   zalgoTxt.value = zText;
 }
 
+const clearInput = () => {
+  plainTxt.value = ""
+  zalgoTxt.value = ""
+}
+
 onMounted( () => {
   console.log("zalgo chars available:");
   console.log(chars);
@@ -34,25 +46,45 @@ onMounted( () => {
       v-model="plainTxt"
       placeholder="Input something"
     ></textarea>
-    <br />
-    <button
-      @click="processText"
-    >
-      Corrupt
-    </button>
+    <div>
+      <button
+        @click="processText"
+      >
+        Corrupt
+      </button>
+      <button
+        @click="clearInput"
+      >
+        Clear
+      </button>
+    </div>
   </div>
   <div>
     <textarea
       class="pt-[30px]"
       v-text="zalgoTxt"
     ></textarea>
+    <div
+      v-if="isSupported"
+    >
+      <button
+        v-if="zalgoTxt"
+        @click="copy(zalgoTxt)"
+      >
+        <span v-if="!copied">Copy</span>
+        <span v-else>Cͭ̿̏͏̶̲͈̹̝͖̱ͅơ̘̠͖͉̦̔̈́͆̀̾͋p̛̳̟̼̜̘̳ͩ̄ͬ̽ͣ̾̏͢ĭ̜͓̗ͧ̈́ͩe̬͚̰̺͇͍̝̎͊̆̀͑̓̔d̷̹̜͈͑̑̓͌̄!</span>
+      </button>
+    </div>
+    <p v-if="!isSupported">
+      Sorry, Your browser does not support Clipboard API.
+    </p>
   </div>
 </template>
 <style lang="scss" scoped>
 div {
   @apply my-[1em] text-center;
   button {
-    @apply boxPress px-[1em];
+    @apply boxPress px-[1em] mx-[0.5em];
     color: var(--vp-c-text1);
     background-color: var(--vp-c-bg);
   }
