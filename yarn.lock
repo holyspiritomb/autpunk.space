@@ -1192,6 +1192,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@favware/zalgo@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "@favware/zalgo@npm:3.1.3"
+  checksum: 10c0/e2cecaaade1c898154442bd7e5bc5feb5721dee2c28ae97e4c910e5a28ae1d6b22f8ce8fb14e959d2ab8d5ebc06e625cea55fc85f8d0abf6bf4a83f63aaedd0d
+  languageName: node
+  linkType: hard
+
 "@fontsource-variable/atkinson-hyperlegible-next@npm:^5.3.0":
   version: 5.3.0
   resolution: "@fontsource-variable/atkinson-hyperlegible-next@npm:5.3.0"
@@ -3493,6 +3500,7 @@ __metadata:
     "@catppuccin/vitepress": "npm:^0.1.4"
     "@eslint/js": "npm:^10.0.1"
     "@eslint/markdown": "npm:^8.0.3"
+    "@favware/zalgo": "npm:^3.1.3"
     "@fontsource-variable/atkinson-hyperlegible-next": "npm:^5.3.0"
     "@fontsource/atkinson-hyperlegible-next": "npm:^5.3.0"
     "@fontsource/jetbrains-mono": "npm:^5.3.0"

@@ -111,7 +111,7 @@ export default defineConfig({
       ]},
       { text: "Fun Stuff", items: [
         { text: "Figlet Generator", link: "/pages/funstuff/figlet" },
-        { text: "Alphabet Soundboard", link: "/pages/funstuff/alphabet-soundboard" },
+        { text: "Zalgo Generator", link: "/pages/funstuff/zalgo" },
       ]},
       { text: "Resources", link: "/pages/resources/" },
       // }}}
