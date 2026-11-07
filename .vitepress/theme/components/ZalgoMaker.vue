@@ -9,6 +9,8 @@ const { copy, copied, isSupported } = useClipboard({
   read: false,
 });
 
+const zLevels = ["mini", "maxi"]
+
 // Zalgo usage
 // zalgo('some text');
 
@@ -19,20 +21,34 @@ const { copy, copied, isSupported } = useClipboard({
 
 const plainTxt = ref("Be gay do word crimes")
 const zalgoTxt = ref("")
+const corruptionLevel = ref("")
 
 const processText = () => {
   if (!plainTxt.value.trim()) {
     console.log("nothing to zalgo");
     return;
   }
-  const zText = zalgo(plainTxt.value);
-  console.log(zText);
+  let zText;
+  // TODO: make this conditional chain prettier, like a nice trinary
+  if (corruptionLevel.value == "") {
+    zText = zalgo(plainTxt.value);
+  } else if (corruptionLevel.value == "banish") {
+    zText = banish(plainTxt.value)
+  } else {
+    zText = zalgo(plainTxt.value, {size: corruptionLevel.value});
+  }
   zalgoTxt.value = zText;
 }
 
-const clearInput = () => {
-  plainTxt.value = ""
-  zalgoTxt.value = ""
+const resetStuff = () => {
+  const confirmation = confirm("Reset?");
+  if (!confirmation) {
+    return
+  } else {
+    corruptionLevel.value = "";
+    plainTxt.value = "Be gay do word crimes";
+    zalgoTxt.value = "";
+  }
 }
 
 onMounted( () => {
@@ -44,59 +60,114 @@ onMounted( () => {
   <div>
     <textarea
       v-model="plainTxt"
-      placeholder="Input something"
+      placeholder="input something"
+      maxlength="10000"
     ></textarea>
     <div>
+      <label
+        for="corruption"
+      >
+        level
+      </label>
+      <select
+        id="corruption"
+        v-model="corruptionLevel"
+      >
+        <optgroup label="corruption level">
+          <option value="">random</option>
+          <option
+            v-for="level in zLevels"
+            :key="level"
+            :value="level"
+          >
+            {{ level }}
+          </option>
+          <option value="banish">banish</option>
+        </optgroup>
+      </select>
       <button
+        v-if="corruptionLevel == 'banish'"
         @click="processText"
       >
-        Corrupt
+        purify
       </button>
       <button
-        @click="clearInput"
+        v-else
+        @click="processText"
       >
-        Clear
+        corrupt
       </button>
     </div>
   </div>
   <div>
     <textarea
+      v-if="corruptionLevel == 'banish'"
       class="pt-[30px]"
+      placeholder="click the &quot;purify&quot; button"
       v-text="zalgoTxt"
     ></textarea>
-    <div
-      v-if="isSupported"
-    >
-      <button
-        v-if="zalgoTxt"
-        @click="copy(zalgoTxt)"
+    <textarea
+      v-else
+      class="pt-[30px]"
+      placeholder="click the &quot;corrupt&quot; button"
+      v-text="zalgoTxt"
+    ></textarea>
+    <div class="flex">
+      <div>
+        <button
+          @click="resetStuff"
+        >
+          reset
+        </button>
+      </div>
+      <div
+        v-if="isSupported"
       >
-        <span v-if="!copied">Copy</span>
-        <span v-else>Cͭ̿̏͏̶̲͈̹̝͖̱ͅơ̘̠͖͉̦̔̈́͆̀̾͋p̛̳̟̼̜̘̳ͩ̄ͬ̽ͣ̾̏͢ĭ̜͓̗ͧ̈́ͩe̬͚̰̺͇͍̝̎͊̆̀͑̓̔d̷̹̜͈͑̑̓͌̄!</span>
-      </button>
+        <button
+          @click="copy(zalgoTxt)"
+        >
+          <span v-if="!copied">copy</span>
+          <span v-else>c̨ͩ̃ͪ̋̑̃̄o̤͈ͨ̈́͜ͅp̪͎̊̏̃i̶̞̮̠̦̗̝̽e̻͡d̯͇̘͔̗̎͋ͫ͌̑̾ͅ!</span>
+        </button>
+      </div>
+      <!-- <p v-if="!isSupported"> -->
+      <!--   Sorry, Your browser does not support Clipboard API. -->
+      <!-- </p> -->
     </div>
-    <p v-if="!isSupported">
-      Sorry, Your browser does not support Clipboard API.
-    </p>
   </div>
 </template>
 <style lang="scss" scoped>
 div {
   @apply my-[1em] text-center;
-  button {
+  button, select {
     @apply boxPress px-[1em] mx-[0.5em];
+  }
+  select, option, button {
     color: var(--vp-c-text1);
     background-color: var(--vp-c-bg);
   }
   textarea {
     @apply mx-auto p-[15px] ccborder;
-    height: 200px;
+    height: 180px;
     width: 350px;
-    font-size: 16px !important;
     line-height: unset !important;
-    font-family: UnifontEX, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px !important;
     color: var(--vp-c-text1);
     background-color: var(--vp-c-bg);
+  }
+}
+div.flex {
+  @apply my-0 mx-auto;
+  width: 350px;
+  justify-content: space-between;
+}
+html.pixel {
+  textarea {
+    font-family: UnifontEX, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  select, option, button, label {
+    font-family: var(--vp-font-family-mono);
+    font-size: var(--vp-code-font-size);
   }
 }
 </style>

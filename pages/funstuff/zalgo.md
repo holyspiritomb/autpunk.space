@@ -11,7 +11,6 @@ next: false
 import ZalgoMaker from "../../.vitepress/theme/components/ZalgoMaker.vue";
 import FontChanger from "../../.vitepress/theme/components/FontChanger.vue";
 </script>
-
-# {{ $frontmatter.title }}
+# {{ $frontmatter.title }} and Purifier
 
 <ZalgoMaker />
