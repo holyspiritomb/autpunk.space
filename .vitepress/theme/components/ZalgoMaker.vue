@@ -74,7 +74,7 @@ onMounted( () => {
         v-model="corruptionLevel"
       >
         <optgroup label="corruption level">
-          <option value="">random</option>
+          <option value="">default</option>
           <option
             v-for="level in zLevels"
             :key="level"
@@ -145,6 +145,8 @@ div {
   select, option, button {
     color: var(--vp-c-text1);
     background-color: var(--vp-c-bg);
+    font-family: var(--vp-font-family-mono);
+    font-size: var(--vp-code-font-size);
   }
   textarea {
     @apply mx-auto p-[15px] ccborder;
