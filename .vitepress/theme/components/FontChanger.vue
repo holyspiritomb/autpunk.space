@@ -64,22 +64,22 @@ div {
   @apply my-2 mx-auto;
 
   select {
-    @apply px-[0.5em] mx-[0.5em];
+    @apply px-[0.5em] mx-[0.5em] ccborder;
+    color: inherit;
     background-color: var(--vp-c-bg);
-  
+    min-width: 75px;
+
     option {
       color: inherit;
       background-color: inherit;
     }
   }
-  select {
-    @apply ccborder;
-    color: inherit;
-    min-width: 75px;
-  }
   button {
     @apply boxPressSubtle px-[0.5em] mx-[0.5em];
     background-color: var(--vp-c-bg);
+    &.mspixel {
+      background-color: var(--w98-el-bg) !important;
+    }
   }
 }
 </style>
