@@ -3,5 +3,10 @@ import FontChanger from "./FontChanger.vue";
 </script>
 
 <template>
-  <FontChanger />
+  <div class="mt-[10px]">
+    <details>
+      <summary>accessibility options</summary>
+      <FontChanger />
+    </details>
+  </div>
 </template>

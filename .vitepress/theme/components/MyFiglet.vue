@@ -17,7 +17,7 @@ const width = deepRef("none");
 const textToFiglet = deepRef("be gay\ndo art\ncrimes");
 const figletText = deepRef("");
 
-const isPixel = useStorage("pixelFonts", true, localStorage, {mergeDefaults: true});
+const preferredFont = useStorage("preferredFont", "vector", localStorage, {mergeDefaults: true});
 
 const { copy, copied, isSupported } = useClipboard({
   legacy: true,
@@ -107,7 +107,7 @@ function hideHelp() {
 }
 
 const processClass = (s?) => {
-  if (isPixel.value === true) {
+  if (preferredFont.value == "pixel") {
     return `mspixel ${s}`
   }
   else {
@@ -116,7 +116,7 @@ const processClass = (s?) => {
 }
 
 const windowsVersion = () => {
-  if (isPixel.value === true) {
+  if (preferredFont.value == "pixel") {
     return "win98"
   }
   else {
@@ -204,7 +204,7 @@ onMounted(() => {
               {{ font }} {{ loadedFonts.has(font) ? "✓" : "" }}
             </option>
           </select>
-          <details v-if="!isPixel">
+          <details v-if="(preferredFont == 'vector')">
             <summary>Advanced Options</summary>
             <div>
               <label for="hLayout">Horizontal Layout:</label>
@@ -300,7 +300,7 @@ onMounted(() => {
           <p :class="processClass('status-bar-field')">Powered by <a href="https://www.npmjs.com/package/figlet">figlet.js</a></p>
         </div>
       </div>
-      <CenterDiv>
+      <CenterDiv :class="processClass('')">
         <slot />
       </CenterDiv>
     </div>

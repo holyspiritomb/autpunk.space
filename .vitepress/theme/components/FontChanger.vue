@@ -1,39 +1,60 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import { useStorage } from "@vueuse/core";
+import { useData } from "vitepress";
 
-const isPixel = useStorage("pixelFonts", true, localStorage, {mergeDefaults: true});
+// const isPixel = useStorage("pixelFonts", true, localStorage, {mergeDefaults: true});
+const preferredFont = useStorage("preferredFont", "vector", localStorage, {mergeDefaults: true});
 
-function pixelToggle() {
-  document.documentElement.classList.toggle("pixel");
-  isPixel.value = !isPixel.value;
-  console.log("set pixel font preference to:", isPixel.value);
+const fontValues = ["vector", "pixel"];
+const selectedFont = ref(preferredFont.value);
+
+const { title } = useData()
+
+function setFont() {
+  console.log("setting font preference to", selectedFont.value);
+  preferredFont.value = selectedFont.value;
+  console.log("font preference has been set to", preferredFont.value);
+  if (preferredFont.value == "pixel") {
+    document.documentElement.classList.add("pixel");
+  } else {
+    document.documentElement.classList.remove("pixel");
+  }
 }
 
 onMounted(() => {
-  console.log("pixel font preference is:", isPixel.value);
-  if (isPixel.value && !document.documentElement.classList.contains("pixel")) {
+  console.log("font changer is mounted");
+  console.log("font preference is:", preferredFont.value);
+  selectedFont.value = preferredFont.value;
+  if (preferredFont.value == "pixel") {
     document.documentElement.classList.add("pixel");
+  } else {
+    document.documentElement.classList.remove("pixel");
   }
 })
-
 </script>
 
 <template>
   <div>
-    <button
-      v-if="!isPixel"
-      class="fontSwitch text-[13px] pixelFont"
-      @click="pixelToggle"
+    <select
+      v-model="selectedFont"
+      :class="(preferredFont == 'vector') ? 'font-size-[13px]' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont font-size-[13px]'"
     >
-      use pixel fonts
-    </button>
+      <option
+        v-for="font in fontValues"
+        :key="font"
+        :value="font"
+        :class="(preferredFont == 'vector') ? 'font-size-[13px]' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont font-size-[13px]'"
+        :selected="(font == preferredFont)"
+      >
+        {{ font }} {{ (preferredFont == font) ? "✓" : "" }}
+      </option>
+    </select>
     <button
-      v-else
-      class="fontSwitch text-[13px] sansFont"
-      @click="pixelToggle"
+      :class="(preferredFont == 'vector') ? 'font-size-[13px]' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont font-size-[13px]'"
+      @click="setFont()"
     >
-      use vector fonts
+      set fonts
     </button>
   </div>
 </template>
@@ -41,8 +62,24 @@ onMounted(() => {
 <style scoped>
 div {
   @apply my-2 mx-auto;
-  button.fontSwitch {
-    @apply boxPressSubtle px-[1em];
+
+  select {
+    @apply px-[0.5em] mx-[0.5em];
+    background-color: var(--vp-c-bg);
+  
+    option {
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+  select {
+    @apply ccborder;
+    color: inherit;
+    min-width: 75px;
+  }
+  button {
+    @apply boxPressSubtle px-[0.5em] mx-[0.5em];
+    background-color: var(--vp-c-bg);
   }
 }
 </style>

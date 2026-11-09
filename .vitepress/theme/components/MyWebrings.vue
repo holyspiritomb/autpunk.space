@@ -3,6 +3,7 @@ import { onMounted } from 'vue';
 import CatppuccinRing from './CatppuccinRing.vue';
 import WebringWidget from './WebringWidget.vue';
 import OneLineWebringWidget from './OneLineWebringWidget.vue';
+import { useScriptTag } from '@vueuse/core';
 
 onMounted( () => {
   // const joinedRings = document.getElementById("inWebrings");
@@ -54,8 +55,9 @@ onMounted( () => {
       random-link="https://baccyflap.com/noai/?rnd"
       style="color: var(--ctp-latte-text); background-color: var(--ctp-latte-base); font-family: var(--default-monoFont-family);"
     ></OneLineWebringWidget>
-    <CatppuccinRing />
   </div>
+
+  <CatppuccinRing />
 
   <div id="prospectiveRings">
     <h3 text-center>Pending</h3>

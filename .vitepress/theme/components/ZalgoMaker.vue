@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import zalgo, { banish, chars } from '@favware/zalgo';
+import zalgo, { banish } from '@favware/zalgo';
 import { useClipboard } from "@vueuse/core";
 import { ref, onMounted } from 'vue';
 
@@ -29,13 +29,15 @@ const processText = () => {
     return;
   }
   let zText;
-  // TODO: make this conditional chain prettier, like a nice trinary
+  // TODO: make this conditional chain prettier, like a nice trinary chain
   if (corruptionLevel.value == "") {
+    console.log("C̭̜͓̲͕̝͐͆ō͕̹̉̒͒̀͊͛r̺̘̲̱͇̀r͈̱̺͉̰͈̫̃ͩͨu̢͕̭͚̤̓ͩͅp̨̺͓̘̮t̮̙̦́ͭ̋̉̍͒̒i̛̹͐̊ͧ̈́̽̑̏ñ͈̱͚̟͉͕͉͐̇ͤģ̱̭͓͛ͦ...");
     zText = zalgo(plainTxt.value);
   } else if (corruptionLevel.value == "banish") {
     console.log("Purifying text...")
     zText = banish(plainTxt.value)
   } else {
+    console.log("C̭̜͓̲͕̝͐͆ō͕̹̉̒͒̀͊͛r̺̘̲̱͇̀r͈̱̺͉̰͈̫̃ͩͨu̢͕̭͚̤̓ͩͅp̨̺͓̘̮t̮̙̦́ͭ̋̉̍͒̒i̛̹͐̊ͧ̈́̽̑̏ñ͈̱͚̟͉͕͉͐̇ͤģ̱̭͓͛ͦ at level:", corruptionLevel.value);
     zText = zalgo(plainTxt.value, {size: corruptionLevel.value});
   }
   zalgoTxt.value = zText;
@@ -149,12 +151,10 @@ div {
     font-size: var(--vp-code-font-size);
   }
   textarea {
-    @apply mx-auto p-[15px] ccborder;
-    height: 180px;
-    width: 350px;
+    @apply "mx-auto p-[15px] ccborder h-[180px] w-[350px]";
+    background: var(--vp-c-bg);
     line-height: unset !important;
     color: var(--vp-c-text1);
-    background-color: var(--vp-c-bg);
   }
 }
 div.flex {
