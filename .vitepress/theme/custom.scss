@@ -38,23 +38,48 @@
   /* TODO: figure out fallback for when blur() is not supported */
   --vp-header-anchor-symbol: "‼";
   --vp-code-block-bg: var(--ctp-latte-base);
-  --vp-code-bg: var(--ctp-latte-crust);
+  --vp-code-bg: var(--ctp-latte-base);
   --vp-c-brand-soft: rgb(var(--ctp-latte-sky) / 0.14);
   --vp-sidebar-bg-color: var(--ctp-latte-base);
-  --vp-nav-bg-color: rgb(var(--ctp-latte-base-rgb) / 0.75);
-  --vp-local-nav-bg-color: rgb(var(--ctp-latte-base-rgb) / 0.75);
+  --vp-nav-bg-color: rgb(var(--ctp-latte-base-rgb) / 1);
+  --vp-local-nav-bg-color: rgb(var(--ctp-latte-base-rgb) / 1);
+  --rainbow-gradient:
+    -webkit-linear-gradient(
+      90deg,
+      rgb(var(--ctp-mocha-pink-rgb) / 0.5) 1%,
+      rgb(var(--ctp-mocha-peach-rgb) / 0.5) 10%,
+      rgb(var(--ctp-mocha-yellow-rgb) / 0.5) 30%,
+      rgb(var(--ctp-mocha-green-rgb) / 0.5) 50%,
+      rgb(var(--ctp-mocha-sky-rgb) / 0.5) 70%,
+      rgb(var(--ctp-mocha-lavender-rgb) / 0.5) 90%,
+      rgb(var(--ctp-mocha-pink-rgb) / 0.5)
+    );
+  --trans-flag:
+    linear-gradient(
+      180deg,
+      rgb(var(--ctp-mocha-sky-rgb) / 1) 20%,
+      rgb(var(--ctp-mocha-pink-rgb) / 0.5) 20%,
+      rgb(var(--ctp-mocha-pink-rgb) / 0.5) 40%,
+      rgb(var(--ctp-latte-base-rgb) / 0.5) 40%,
+      rgb(var(--ctp-latte-base-rgb) / 0.5) 60%,
+      rgb(var(--ctp-mocha-pink-rgb) / 0.5) 60%,
+      rgb(var(--ctp-mocha-pink-rgb) / 0.5) 80%,
+      rgb(var(--ctp-mocha-sky-rgb) / 1) 80%
+    );
 
-  &.pixel {
-    --rounded-sm: 0;
-    --rounded-md: 0;
-    --rounded-full: 0;
-    --vp-header-anchor-symbol: "^";
-    --vp-code-font-size: 13px;
+  @media (width >= 960px) {
+    --vp-sidebar-bg-color: transparent;
+
+    .VPNavBar.has-sidebar .title {
+      background-color: var(--vp-nav-bg-color);
+    }
   }
 
   body,
   .VPNavScreen {
-    @apply bg-hero-slanted-stars-ctp-frappe-sky/20;
+    background-image: url("/images/space16_light.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 
   .VPNavScreenAppearance {
@@ -62,10 +87,19 @@
   }
 
   .pager .VPLink {
-    @apply bg-white/50 hover:bg-white active:bg-white;
+    @apply whiteBg;
 
     transition: 0.25s;
   }
+
+  &.pixel {
+    --rounded-sm: 0;
+    --rounded-md: 0;
+    --rounded-full: 0;
+    --vp-header-anchor-symbol: "!";
+    --vp-code-font-size: 13px;
+  }
+
 }
 
 .dark {
@@ -105,7 +139,7 @@
   --vp-sidebar-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
   --vp-nav-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
   --vp-local-nav-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-latte-base) 50%, var(--ctp-latte-crust) 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-mocha-sky) 50%, var(--ctp-mocha-pink) 50%);
 
   body,
   .VPNavScreen {
@@ -120,7 +154,7 @@
   }
 
   .pager .VPLink {
-    @apply hover:bg-ctp-mocha-crust;
+    @apply bg-ctp-mocha-base/90 hover:bg-ctp-mocha-crust;
 
     transition: 0.25s;
   }
@@ -141,7 +175,6 @@
 .kao-banner {
   background: linear-gradient(180deg, var(--ctp-latte-maroon) 0%, var(--ctp-latte-red) 100%) !important;
   color: var(--ctp-latte-base) !important;
-  font-family: "Atkinson Hyperlegible Next", Arial, Helvetica, sans-serif !important;
 }
 
 img[src*=".jpg"],

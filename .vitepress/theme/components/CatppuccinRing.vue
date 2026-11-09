@@ -18,7 +18,7 @@
 </template>
 <style scoped>
 div#catppuccinWebring {
-  @apply text-center w-[342px] border-[2px] border-ctp-mocha-crust border-outset hover:border-inset shadow-sm shadow-ctp-mocha-lavender/50 hover:shadow-ctp-mocha-lavender/80 py-1;
+  @apply text-center w-[342px] border-[2px] border-ctp-mocha-crust border-outset hover:border-inset shadow-sm shadow-ctp-mocha-lavender/50 hover:shadow-ctp-mocha-lavender/80 py-1 sansFont;
   background-color: var(--ctp-mocha-crust);
   background-image: 
     -webkit-linear-gradient(

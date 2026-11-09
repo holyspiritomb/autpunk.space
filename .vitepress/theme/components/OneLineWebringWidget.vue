@@ -60,8 +60,9 @@ withDefaults(defineProps<Props>(), {
 <style lang="scss" scoped>
 @media screen and (width >= 960) {
   div.onelinewidget {
-    @apply w-[342px] mx-[5px] my-[5px];
+    @apply w-[342px];
     font-size: 20px;
+    height: 28px;
   }
 }
 @media screen and (width < 960) {
@@ -76,6 +77,7 @@ div.onelinewidget {
   a {
     text-decoration: none !important;
     color: inherit !important;
+    vertical-align: middle;
 
     &.rand {
       font-size: 60%;

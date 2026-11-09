@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useData } from "vitepress";
 
 interface Props {
   title: string
@@ -13,6 +14,8 @@ withDefaults(defineProps<Props>(), {
   altText: "",
   extraImgClasses: "",
 })
+
+const { isDark } = useData()
 
 const imgClasses = (s) => {
   return `no-viewer ${s}`.trim()
@@ -39,7 +42,7 @@ const imgClasses = (s) => {
 
 <style lang="scss" scoped>
 a {
-  @apply my-3 block dark:crustBg w-[300px];
+  @apply my-3 block whiteBg dark:crustBg w-[300px];
 
   color: var(--vp-c-text1);
   text-decoration: none;
@@ -49,7 +52,7 @@ a {
   }
 
   > div {
-    @apply boxPress;
+    @apply boxPress dark:crustBg;
 
     > div {
       @apply px-[0] w-[100%];
