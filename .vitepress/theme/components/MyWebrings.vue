@@ -4,58 +4,52 @@ import CatppuccinRing from './CatppuccinRing.vue';
 import WebringWidget from './WebringWidget.vue';
 import OneLineWebringWidget from './OneLineWebringWidget.vue';
 
+
 onMounted( () => {
-  // const joinedRings = document.getElementById("inWebrings");
+  const joinedRings = document.getElementById("inWebrings");
   const prospectiveRings = document.getElementById("prospectiveRings");
 
-  function addWebringScript(name, scriptSrc, where, defer, dataIcon, dataRing, dataId) {
-    const scriptEl = document.createElement("script");
-    scriptEl.id = name;
-    scriptEl.src = scriptSrc;
-    if (defer === true) {
-      scriptEl.defer = true
-    }
-    if (dataIcon) {
-      scriptEl.setAttribute("data-icon", dataIcon);
-    }
-    if (dataRing) {
-      scriptEl.setAttribute("data-ring", dataRing);
-    }
-    if (dataId) {
-      scriptEl.setAttribute("data-id", dataId);
-    }
-    console.log(scriptEl);
+  const ssgRing = document.createElement("script");
+  ssgRing.src = "https://jbc.lol/webrings/ssgring/pmoring.js";
+  prospectiveRings?.appendChild(ssgRing);
 
-    where?.appendChild(scriptEl);
-  }
+  const nixRing = document.createElement("script");
+  nixRing.src = "https://softmachine.dev/webring/linuxring/ring.js";
+  nixRing.defer = true;
+  nixRing.setAttribute("data-icon", "arch");
+  prospectiveRings?.appendChild(nixRing);
 
-  addWebringScript("nixRing", "https://softmachine.dev/webring/linuxring/ring.js", prospectiveRings, true, "arch");
-  addWebringScript("ssgring", "https://jbc.lol/webrings/ssgring/pmoring.js", prospectiveRings);
-  addWebringScript("TismWebring", "https://minxie.likesyou.org/js/ring-widget.js", prospectiveRings, true, "", "webring", "autpunk-space");
+  const tismRing = document.createElement("script");
+  tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
+  tismRing.defer = true;
+  tismRing.setAttribute("data-ring", "webring");
+  tismRing.setAttribute("data-id", "autpunk-space");
+  joinedRings?.appendChild(tismRing);
 })
-
 </script>
 <template>
   <div id="inWebrings">
-    <OneLineWebringWidget
-      ring-name="I'm Gen Lissa"
-      ring-home-link="https://genlissa.baccyflap.com"
-      prev-link="https://genlissa.baccyflap.com/?prv&s=hez"
-      next-link="https://genlissa.baccyflap.com/?nxt&s=hez"
-      random-link="https://genlissa.baccyflap.com/?rnd"
-      style="color: rgb(255, 0, 255); background-color: rgb(255, 190, 0);"
-    ></OneLineWebringWidget>
-    <OneLineWebringWidget
-      ring-name="no AI webring"
-      ring-home-link="https://baccyflap.com/noai"
-      prev-link="https://baccyflap.com/noai/?prv&s=hez"
-      next-link="https://baccyflap.com/noai/?nxt&s=hez"
-      random-link="https://baccyflap.com/noai/?rnd"
-      style="color: var(--ctp-latte-text); background-color: var(--ctp-latte-base); font-family: var(--default-monoFont-family);"
-    ></OneLineWebringWidget>
+    <div id="flexRings">
+      <OneLineWebringWidget
+        ring-name="I'm Gen Lissa"
+        ring-home-link="https://genlissa.baccyflap.com"
+        prev-link="https://genlissa.baccyflap.com/?prv&s=hez"
+        next-link="https://genlissa.baccyflap.com/?nxt&s=hez"
+        random-link="https://genlissa.baccyflap.com/?rnd"
+        style="color: rgb(255, 0, 255); background-color: rgb(255, 190, 0);"
+      ></OneLineWebringWidget>
+      <OneLineWebringWidget
+        ring-name="no AI webring"
+        ring-home-link="https://baccyflap.com/noai"
+        prev-link="https://baccyflap.com/noai/?prv&s=hez"
+        next-link="https://baccyflap.com/noai/?nxt&s=hez"
+        random-link="https://baccyflap.com/noai/?rnd"
+        style="color: var(--ctp-latte-text); background-color: var(--ctp-latte-base); font-family: var(--default-monoFont-family);"
+      ></OneLineWebringWidget>
+    </div>
+    <CatppuccinRing />
   </div>
 
-  <CatppuccinRing />
 
   <div id="prospectiveRings">
     <h3 text-center>Pending</h3>
@@ -104,11 +98,14 @@ img[usemap] {
 }
 @media screen and (width >= 960) {
   #inWebrings {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
     width: 100%;
+
+    #flexRings {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
 #inWebrings,
