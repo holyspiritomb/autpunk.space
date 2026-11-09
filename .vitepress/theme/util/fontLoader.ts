@@ -21,7 +21,6 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "Big Money-nw": () => import("figlet/importable-fonts/Big Money-nw.js"),
   "Big Money-se": () => import("figlet/importable-fonts/Big Money-se.js"),
   "Big Money-sw": () => import("figlet/importable-fonts/Big Money-sw.js"),
-  "Binary": () => import("figlet/importable-fonts/Binary.js"),
   "Block": () => import("figlet/importable-fonts/Block.js"),
   "Bloody": () => import("figlet/importable-fonts/Bloody.js"),
   "BlurVision ASCII": () => import("figlet/importable-fonts/BlurVision ASCII.js"),
@@ -32,13 +31,11 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "Caligraphy": () => import("figlet/importable-fonts/Caligraphy.js"),
   "Caligraphy2": () => import("figlet/importable-fonts/Caligraphy2.js"),
   "Calvin S": () => import("figlet/importable-fonts/Calvin S.js"),
-  "Circle": () => import("figlet/importable-fonts/Circle.js"),
   "Computer": () => import("figlet/importable-fonts/Computer.js"),
   "Cursive": () => import("figlet/importable-fonts/Cursive.js"),
   "Cyberlarge": () => import("figlet/importable-fonts/Cyberlarge.js"),
   "Cybermedium": () => import("figlet/importable-fonts/Cybermedium.js"),
   "Cybersmall": () => import("figlet/importable-fonts/Cybersmall.js"),
-  "Decimal": () => import("figlet/importable-fonts/Decimal.js"),
   "Doom": () => import("figlet/importable-fonts/Doom.js"),
   "DOS Rebel": () => import("figlet/importable-fonts/DOS Rebel.js"),
   "Electronic": () => import("figlet/importable-fonts/Electronic.js"),
@@ -51,32 +48,37 @@ export const fontImports: Record<string, () => Promise<{ default: string }>> = {
   "Future Thin": () => import("figlet/importable-fonts/Future Thin.js"),
   "Georgi16": () => import("figlet/importable-fonts/Georgi16.js"),
   "Georgia11": () => import("figlet/importable-fonts/Georgia11.js"),
-  "Hex": () => import("figlet/importable-fonts/Hex.js"),
   "Isometric1": () => import("figlet/importable-fonts/Isometric1.js"),
   "Isometric2": () => import("figlet/importable-fonts/Isometric2.js"),
   "Isometric3": () => import("figlet/importable-fonts/Isometric3.js"),
   "Isometric4": () => import("figlet/importable-fonts/Isometric4.js"),
   "Ivrit": () => import("figlet/importable-fonts/Ivrit.js"),
   "Jazmine": () => import("figlet/importable-fonts/Jazmine.js"),
-  "Morse": () => import("figlet/importable-fonts/Morse.js"),
-  "Morse2": () => import("figlet/importable-fonts/Morse2.js"),
-  "Octal": () => import("figlet/importable-fonts/Octal.js"),
   "Pagga": () => import("figlet/importable-fonts/Pagga.js"),
   "Rebel": () => import("figlet/importable-fonts/Rebel.js"),
-  "Rot13": () => import("figlet/importable-fonts/Rot13.js"),
   "Slant": () => import("figlet/importable-fonts/Slant.js"),
   "Slant Relief": () => import("figlet/importable-fonts/Slant Relief.js"),
   "Small": () => import("figlet/importable-fonts/Small.js"),
   "Small Braille": () => import("figlet/importable-fonts/Small Braille.js"),
   "Small Isometric1": () => import("figlet/importable-fonts/Small Isometric1.js"),
-  "Term": () => import("figlet/importable-fonts/Term.js"),
   "Trek": () => import("figlet/importable-fonts/Trek.js"),
   "Univers": () => import("figlet/importable-fonts/Univers.js"),
-  "Upside Down Text": () => import("figlet/importable-fonts/Upside Down Text.js"),
   "USA Flag": () => import("figlet/importable-fonts/USA Flag.js"),
+  "Binary": () => import("figlet/importable-fonts/Binary.js"),
+  "Decimal": () => import("figlet/importable-fonts/Decimal.js"),
+  "Circle": () => import("figlet/importable-fonts/Circle.js"),
+  "Hex": () => import("figlet/importable-fonts/Hex.js"),
+  "Morse": () => import("figlet/importable-fonts/Morse.js"),
+  "Morse2": () => import("figlet/importable-fonts/Morse2.js"),
+  "Octal": () => import("figlet/importable-fonts/Octal.js"),
+  "Rot13": () => import("figlet/importable-fonts/Rot13.js"),
+  "Term": () => import("figlet/importable-fonts/Term.js"),
+  "Upside Down Text": () => import("figlet/importable-fonts/Upside Down Text.js"),
   "WideTerm": () => import("figlet/importable-fonts/WideTerm.js"),
   // }}}
 };
+
+const allFigletFonts = figlet.fontsSync();
 
 // TODO: Refactor this bc it's not sustainable
 export const fontImportsFull: Record<string, () => Promise<{ default: string }>> = {
@@ -414,11 +416,9 @@ export const fontImportsFull: Record<string, () => Promise<{ default: string }>>
   // }}}
 };
 
-// Track loaded fonts
 // TODO: this could be tracked better with vue
 const loadedFonts = new Set<string>();
 
-// Function to load a font
 export const loadFont = async (fontName: string): Promise<boolean> => {
   if (loadedFonts.has(fontName)) {
     return true;
@@ -444,21 +444,19 @@ export const loadFont = async (fontName: string): Promise<boolean> => {
   }
 };
 
-// Get list of available fonts
 export const getAvailableFonts = (): string[] => {
-  return Object.keys(fontImports).sort();
+  // return Object.keys(fontImports).sort();
+  return Object.keys(fontImports);
 };
 
 export const getAllAvailableFonts = (): string[] => {
   return Object.keys(fontImportsFull).sort();
 };
 
-// Check if font is loaded
 export const isFontLoaded = (fontName: string): boolean => {
   return loadedFonts.has(fontName);
 };
 
-// Get loaded fonts set (for reactive UI)
 export const getLoadedFonts = (): Set<string> => {
   return loadedFonts;
 };

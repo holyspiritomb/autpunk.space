@@ -55,7 +55,6 @@ export default defineConfig({
     ["meta", { name: "robots", content: "noai, noimageai" }],
     ["meta", { name: "theme-color", content: "#b4befe" }],
     ["meta", { property: "og:image", content: "https://autpunk.space/buttons/autpunk_space_checkers.png" }],
-    ["script", { id: "check-pixel-preference", src: "/fonts/pixelPrefChecker.js", type: "text/javascript" }],
   ],
   ignoreDeadLinks: false,
   lang: "en-US",

@@ -1,31 +1,44 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import { useScriptTag } from '@vueuse/core';
 import CatppuccinRing from './CatppuccinRing.vue';
 import WebringWidget from './WebringWidget.vue';
+import WebringAtism from './WebringAtism.vue';
 import OneLineWebringWidget from './OneLineWebringWidget.vue';
 
+useScriptTag(
+  "https://jbc.lol/webrings/ssgring/pmoring.js",
+  (el) => {
+    document.getElementById("prospectiveRings")?.appendChild(el);
+  },
+);
+
+// const nixRingScript = useScriptTag(
+//   "https://softmachine.dev/webring/linuxring/ring.js",
+//   (el) => {
+//     console.log(el);
+//     document.getElementById("nixRingDiv")?.appendChild(el);
+//   },
+//   {
+//     defer: true, 
+//     async: false,
+//     manual: true,
+//     attrs: {
+//       "data-icon": "arch",
+//     },
+//   },
+// );
+//
+// nixRingScript.load();
 
 onMounted( () => {
-  const joinedRings = document.getElementById("inWebrings");
-  const prospectiveRings = document.getElementById("prospectiveRings");
-
-  const ssgRing = document.createElement("script");
-  ssgRing.src = "https://jbc.lol/webrings/ssgring/pmoring.js";
-  prospectiveRings?.appendChild(ssgRing);
-
+  // nixRingScript.unload();
   const nixRing = document.createElement("script");
   nixRing.src = "https://softmachine.dev/webring/linuxring/ring.js";
   nixRing.defer = true;
   nixRing.setAttribute("data-icon", "arch");
-  prospectiveRings?.appendChild(nixRing);
-
-  const tismRing = document.createElement("script");
-  tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
-  tismRing.defer = true;
-  tismRing.setAttribute("data-ring", "webring");
-  tismRing.setAttribute("data-id", "autpunk-space");
-  joinedRings?.appendChild(tismRing);
-})
+  document.getElementById("nixRingDiv")?.appendChild(nixRing);
+});
 </script>
 <template>
   <div id="inWebrings">
@@ -59,9 +72,8 @@ onMounted( () => {
       prev-link="https://webri.ng/webring/cssjoy/previous?via=https://autpunk.space"
       next-link="https://webri.ng/webring/cssjoy/next?via=https://autpunk.space"
       random-link="https://webri.ng/webring/cssjoy/random?via=https://autpunk.space"
-      classes="text-ctp-latte-pink bg-ctp-mocha-crust shadow-md shadow-ctp-latte-pink bg-hero-four-point-stars-ctp-latte-pink/20"
+      classes="text-ctp-latte-pink bg-ctp-mocha-crust shadow-md shadow-ctp-latte-pink bg-hero-four-point-stars-ctp-latte-pink/20 border-[2px] border-groove border-ctp-latte-pink"
       text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink bold"
-      border="border-1 border-groove border-ctp-latte-pink"
     ></WebringWidget>
     <a href="https://minxie.likesyou.org/webring/">
       <img
@@ -73,6 +85,8 @@ onMounted( () => {
         alt="A Tism-Webring"
       />
     </a>
+    <WebringAtism />
+    <div id="nixRingDiv"></div>
   </div>
 </template>
 

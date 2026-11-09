@@ -8,6 +8,7 @@ interface Props {
   prevLinkText?: string,
   nextLinkText?: string,
   randomLinkText?: string,
+  textClasses?: string | null,
 }
 
 withDefaults(defineProps<Props>(), {

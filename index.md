@@ -64,5 +64,9 @@ lastUpdated: true
 import MyWebrings from ".vitepress/theme/components/MyWebrings.vue";
 </script>
 
-<CenterDiv><h2>Webrings</h2></CenterDiv>
+<CenterDiv>
+
+## Webrings
+
+</CenterDiv>
 <MyWebrings />
