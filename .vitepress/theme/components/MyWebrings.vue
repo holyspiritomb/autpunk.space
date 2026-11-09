@@ -3,7 +3,6 @@ import { onMounted } from 'vue';
 import CatppuccinRing from './CatppuccinRing.vue';
 import WebringWidget from './WebringWidget.vue';
 import OneLineWebringWidget from './OneLineWebringWidget.vue';
-import { useScriptTag } from '@vueuse/core';
 
 onMounted( () => {
   // const joinedRings = document.getElementById("inWebrings");
@@ -30,8 +29,7 @@ onMounted( () => {
     where?.appendChild(scriptEl);
   }
 
-  addWebringScript("*nixRing", "https://softmachine.dev/webring/linuxring/ring.js", prospectiveRings, true, "arch");
-
+  addWebringScript("nixRing", "https://softmachine.dev/webring/linuxring/ring.js", prospectiveRings, true, "arch");
   addWebringScript("ssgring", "https://jbc.lol/webrings/ssgring/pmoring.js", prospectiveRings);
   addWebringScript("TismWebring", "https://minxie.likesyou.org/js/ring-widget.js", prospectiveRings, true, "", "webring", "autpunk-space");
 })
