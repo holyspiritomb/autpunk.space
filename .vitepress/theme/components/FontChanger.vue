@@ -3,7 +3,6 @@ import { onMounted, ref } from "vue";
 import { useStorage } from "@vueuse/core";
 import { useData } from "vitepress";
 
-// const isPixel = useStorage("pixelFonts", true, localStorage, {mergeDefaults: true});
 const preferredFont = useStorage("preferredFont", "vector", localStorage, {mergeDefaults: true});
 
 const fontValues = ["vector", "pixel"];
@@ -23,7 +22,6 @@ function setFont() {
 }
 
 onMounted(() => {
-  console.log("font changer is mounted");
   console.log("font preference is:", preferredFont.value);
   selectedFont.value = preferredFont.value;
   if (preferredFont.value == "pixel") {
@@ -36,26 +34,29 @@ onMounted(() => {
 
 <template>
   <div>
+    <label
+      v-if="(!title.startsWith('Figlet'))"
+      for="fontSelectEl"
+      :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
+    >
+      fonts
+    </label>
     <select
+      id="fontSelectEl"
       v-model="selectedFont"
-      :class="(preferredFont == 'vector') ? 'font-size-[13px]' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont font-size-[13px]'"
+      :class="(preferredFont == 'vector') ? '' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont'"
+      @change="setFont()"
     >
       <option
         v-for="font in fontValues"
         :key="font"
         :value="font"
-        :class="(preferredFont == 'vector') ? 'font-size-[13px]' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont font-size-[13px]'"
+        :class="(preferredFont == 'vector') ? '' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont'"
         :selected="(font == preferredFont)"
       >
-        {{ font }} {{ (preferredFont == font) ? "✓" : "" }}
+        {{ font }} {{ (title.startsWith('Figlet')) ? 'fonts' : '' }} {{ (preferredFont == font) ? "✓" : "" }}
       </option>
     </select>
-    <button
-      :class="(preferredFont == 'vector') ? 'font-size-[13px]' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont font-size-[13px]'"
-      @click="setFont()"
-    >
-      set fonts
-    </button>
   </div>
 </template>
 
@@ -63,22 +64,19 @@ onMounted(() => {
 div {
   @apply my-2 mx-auto;
 
+  label, select, option {
+    @apply font-size-[13px];
+    color: inherit;
+  }
+
   select {
     @apply px-[0.5em] mx-[0.5em] ccborder;
-    color: inherit;
     background-color: var(--vp-c-bg);
     min-width: 75px;
 
     option {
       color: inherit;
       background-color: inherit;
-    }
-  }
-  button {
-    @apply boxPressSubtle px-[0.5em] mx-[0.5em];
-    background-color: var(--vp-c-bg);
-    &.mspixel {
-      background-color: var(--w98-el-bg) !important;
     }
   }
 }

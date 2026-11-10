@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { useScriptTag } from '@vueuse/core';
+import { useStorage } from "@vueuse/core";
 import CatppuccinRing from './CatppuccinRing.vue';
 import WebringWidget from './WebringWidget.vue';
 import WebringAtism from './WebringAtism.vue';
 import OneLineWebringWidget from './OneLineWebringWidget.vue';
+
+const pauseGifs = useStorage("pauseGifs", false, localStorage);
 
 useScriptTag(
   "https://jbc.lol/webrings/ssgring/pmoring.js",
@@ -77,7 +80,19 @@ onMounted( () => {
     ></WebringWidget>
     <a href="https://minxie.likesyou.org/webring/">
       <img
+        v-if="!pauseGifs"
+        id="tism_gif"
         src="https://minxie.likesyou.org/webring/tism-ring.gif"
+        class="no-viewer"
+        width="88"
+        height="31"
+        border="0"
+        alt="A Tism-Webring"
+      />
+      <img
+        v-else
+        id="tism_still"
+        src="/buttons/tism-ring-still.gif"
         class="no-viewer"
         width="88"
         height="31"

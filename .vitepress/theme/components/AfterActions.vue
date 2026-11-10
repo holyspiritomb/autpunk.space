@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import FontChanger from "./FontChanger.vue";
+import PauseGifs from "./PauseGifs.vue";
 </script>
 
 <template>
@@ -7,6 +8,7 @@ import FontChanger from "./FontChanger.vue";
     <details>
       <summary>accessibility options</summary>
       <FontChanger />
+      <PauseGifs />
     </details>
   </div>
 </template>
