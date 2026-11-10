@@ -15,14 +15,15 @@ function setOption() {
   <div>
     <label
       for="gifOptionSelect"
+      :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
     >
       gifs
     </label>
     <select
       id="gifOptionSelect"
       v-model="selectedOption"
-      @change="setOption()"
       :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
+      @change="setOption()"
     >
       <option
         v-for="option in allowedOptions"
