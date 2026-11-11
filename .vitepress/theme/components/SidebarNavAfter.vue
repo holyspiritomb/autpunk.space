@@ -3,7 +3,9 @@ import FontChanger from './FontChanger.vue';
 import PauseGifs from './PauseGifs.vue';
 </script>
 <template>
-  <p>Accessibility Options</p>
-  <FontChanger />
-  <PauseGifs />
+  <div class="my-[1em]">
+    <p class="font-size-[16px] sansFont">Accessibility Options</p>
+    <FontChanger />
+    <PauseGifs />
+  </div>
 </template>

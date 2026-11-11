@@ -37,21 +37,20 @@ onMounted(() => {
     <label
       v-if="(!title.startsWith('Figlet'))"
       for="fontSelectEl"
-      :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
     >
       fonts
     </label>
     <select
       id="fontSelectEl"
       v-model="selectedFont"
-      :class="(preferredFont == 'vector') ? '' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont'"
+      :class="(preferredFont == 'vector') ? '' : (title.startsWith('Figlet')) ? 'mspixel' : ''"
       @change="setFont()"
     >
       <option
         v-for="font in fontValues"
         :key="font"
         :value="font"
-        :class="(preferredFont == 'vector') ? '' : (title.startsWith('Figlet')) ? 'mspixel' : 'pixelMonoFont'"
+        :class="(preferredFont == 'vector') ? '' : (title.startsWith('Figlet')) ? 'mspixel' : ''"
         :selected="(font == preferredFont)"
       >
         {{ font }} {{ (title.startsWith('Figlet')) ? 'fonts' : '' }} {{ (preferredFont == font) ? "✓" : "" }}
@@ -65,7 +64,7 @@ div {
   @apply my-2 mx-auto;
 
   label, select, option {
-    @apply font-size-[13px];
+    @apply font-size-[16px] sansFont;
     color: inherit;
   }
 

@@ -41,7 +41,7 @@ div {
   @apply my-2 mx-auto;
 
   label, select, option, button{
-    @apply font-size-[13px];
+    @apply font-size-[16px] sansFont;
   }
 
   select {
