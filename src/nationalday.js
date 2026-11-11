@@ -7,7 +7,7 @@ Linking back to me is appreciated but not necessary. Keep this message intact, o
 (() => {
   const container = document.createElement("div");
   container.id = "natday";
-  document.currentScript.parentNode.insertBefore(container, document.currentScript);
+  // document.currentScript.parentNode.insertBefore(container, document.currentScript);
   const days = {
     "01-01": "it's New Year's Day! Here's to another lousy millennium...",
     "01-02": "it's Ancestry Day in Haiti!",
@@ -380,4 +380,5 @@ Linking back to me is appreciated but not necessary. Keep this message intact, o
   const key = String(today.getMonth() + 1).padStart(2, "0") + "-" + String(today.getDate()).padStart(2, "0");
   const msg = `Today is ${today.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })}, and ${days[key] || " nothing special is happening today, apparently."}`;
   container.textContent = msg;
+  document.getElementById("funDateWidget").appendChild(container);
 })();
