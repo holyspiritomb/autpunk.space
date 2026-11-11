@@ -3,7 +3,7 @@ import {onMounted} from 'vue';
 
 onMounted( () => {
   const scriptTag = document.createElement("script");
-  scriptTag.src = "/src/nationalday.js";
+  scriptTag.src = "/nationalday.js";
   document.getElementById("dateWidget")?.appendChild(scriptTag);
 
 });
