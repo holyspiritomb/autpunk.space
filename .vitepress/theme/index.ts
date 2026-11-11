@@ -29,6 +29,7 @@ import NiceButton from "./components/NiceButton.vue";
 import CenterDiv from "./components/CenterDiv.vue";
 import HomeHeroBefore from "./components/HomeHeroBefore.vue";
 import SidebarNavAfter from "./components/SidebarNavAfter.vue";
+import NavScreenAfter from "./components/NavScreenAfter.vue";
 import useImageViewer from "vitepress-plugin-viewerjs";
 import BackToTopButton from "@miletorix/vitepress-back-to-top-button";
 import "@miletorix/vitepress-back-to-top-button/style.css"; 
@@ -96,7 +97,7 @@ export default {
       // https://vuejs.github.io/vitepress/v1/guide/extending-default-theme#layout-slots
       "home-hero-actions-after": () => h(AfterActions),
       "home-hero-before": () => h(HomeHeroBefore),
-      // "nav-screen-content-before": () => h(FontChanger), 
+      "nav-screen-content-after": () => h(NavScreenAfter), 
       "sidebar-nav-after": () => h(SidebarNavAfter),
     });
   },
