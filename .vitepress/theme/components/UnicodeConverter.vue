@@ -172,6 +172,7 @@ select, button, option {
 }
 textarea {
   @apply "block w-[380px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]";
+  font-family: "Atkinson Hyperlegible Next", 'Verdana', "Tahoma", 'Arial Unicode', 'Lucida Sans Unicode', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif, UnifontEX;
   font-size: 16px !important;
   line-height: unset !important;
 }
@@ -183,7 +184,7 @@ select, textarea {
 }
 html.pixel {
   textarea {
-    font-family: UnifontEX, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: UnifontEX, 'Noto Sans', 'Arial Unicode', 'Lucida Sans Unicode', 'Open Sans', 'Helvetica Neue', monospace;
     font-size: 16px !important;
     line-height: unset !important;
   }
