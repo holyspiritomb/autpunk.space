@@ -78,8 +78,11 @@ export default defineConfig({
     ["translate2px2px", { "translate": "2px 2px" }],
     ["ccborder", { "border": "1px solid currentColor" }],
     ["squareBoxShadowSubtle", { "box-shadow": "2px 2px rgb(from currentColor r g b / 0.8)" }],
+    ["defaultBgColor", { "background-color": "var(--vp-c-bg)" }],
+    ["defaultTextColor", { "color": "var(--vp-c-text1)" }],
   ],
   shortcuts: {
+    "defaultColors": "defaultBgColor defaultTextColor",
     "boxPress": "r0 squareBoxShadow ccborder active:noBoxShadow active:translate2px2px",
     "boxPressSubtle": "r0 squareBoxShadowSubtle ccborder active:noBoxShadow active:translate2px2px",
     "btn": "py-2 px-2 border-ctp-mocha-pink outline-ctp-latte-pink outline-1 m-[0.5rem] h-[3rem] border-1 text-black bg-ctp-mocha-pink",

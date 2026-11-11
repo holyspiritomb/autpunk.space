@@ -31,13 +31,13 @@ const processText = () => {
   let zText;
   // TODO: make this conditional chain prettier, like a nice trinary chain
   if (corruptionLevel.value == "") {
-    console.log("C̭̜͓̲͕̝͐͆ō͕̹̉̒͒̀͊͛r̺̘̲̱͇̀r͈̱̺͉̰͈̫̃ͩͨu̢͕̭͚̤̓ͩͅp̨̺͓̘̮t̮̙̦́ͭ̋̉̍͒̒i̛̹͐̊ͧ̈́̽̑̏ñ͈̱͚̟͉͕͉͐̇ͤģ̱̭͓͛ͦ...");
+    console.log(zalgo("Corrupting..."));
     zText = zalgo(plainTxt.value);
   } else if (corruptionLevel.value == "banish") {
     console.log("Purifying text...")
     zText = banish(plainTxt.value)
   } else {
-    console.log("C̭̜͓̲͕̝͐͆ō͕̹̉̒͒̀͊͛r̺̘̲̱͇̀r͈̱̺͉̰͈̫̃ͩͨu̢͕̭͚̤̓ͩͅp̨̺͓̘̮t̮̙̦́ͭ̋̉̍͒̒i̛̹͐̊ͧ̈́̽̑̏ñ͈̱͚̟͉͕͉͐̇ͤģ̱̭͓͛ͦ at level:", corruptionLevel.value);
+    console.log(zalgo("Corrupting..."), "at level:", corruptionLevel.value);
     zText = zalgo(plainTxt.value, {size: corruptionLevel.value});
   }
   zalgoTxt.value = zText;
@@ -103,15 +103,9 @@ onMounted( () => {
   </div>
   <div>
     <textarea
-      v-if="corruptionLevel == 'banish'"
       class="pt-[30px]"
-      placeholder="click the &quot;purify&quot; button"
-      v-text="zalgoTxt"
-    ></textarea>
-    <textarea
-      v-else
-      class="pt-[30px]"
-      placeholder="click the &quot;corrupt&quot; button"
+      :placeholder="(!plainTxt.trim()) ? 'put text in the other box' : (corruptionLevel == 'banish') ? 'click the &quot;purify&quot; button' : 'click the &quot;corrupt&quot; button'"
+      readonly
       v-text="zalgoTxt"
     ></textarea>
     <div class="flex">
@@ -129,7 +123,7 @@ onMounted( () => {
           @click="copy(zalgoTxt)"
         >
           <span v-if="!copied">copy</span>
-          <span v-else>c̨ͩ̃ͪ̋̑̃̄o̤͈ͨ̈́͜ͅp̪͎̊̏̃i̶̞̮̠̦̗̝̽e̻͡d̯͇̘͔̗̎͋ͫ͌̑̾ͅ!</span>
+          <span v-else>{{ zalgo("copied!") }}</span>
         </button>
       </div>
       <!-- <p v-if="!isSupported"> -->

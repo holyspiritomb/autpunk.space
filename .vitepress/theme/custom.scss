@@ -99,7 +99,6 @@
     --vp-header-anchor-symbol: "!";
     --vp-code-font-size: 13px;
   }
-
 }
 
 .dark {
@@ -162,6 +161,11 @@
   p {
     text-shadow: 0 0 3px var(--ctp-mocha-crust);
   }
+}
+
+.defaultColors {
+  color: var(--vp-c-text1);
+  background-color: var(--vp-c-bg);
 }
 
 .VPFooter {
@@ -365,6 +369,20 @@ html {
   &.pixel {
     .nopixel {
       display: none;
+    }
+
+    button,
+    select,
+    option {
+      @apply mono;
+    }
+
+    .win98 {
+      button,
+      select,
+      option {
+        @apply mspixel;
+      }
     }
   }
 }

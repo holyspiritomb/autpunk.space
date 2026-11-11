@@ -105,7 +105,7 @@
 }
 
 html {
-  font-family: "Atkinson Hyperlegible Next", system-ui;
+  font-family: "Atkinson Hyperlegible Next", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
   &.pixel {
     font-family: "Dylex", monospace;
@@ -114,15 +114,15 @@ html {
 /* stylelint-enable font-family-name-quotes */
 
 :root {
-  --vp-font-family-base: "Atkinson Hyperlegible Next";/* normal text font */
-  --vp-font-family-mono: "Victor Mono";
-  --default-monoFont-family: "Victor Mono"; /* code font */
+  --vp-font-family-base: "Atkinson Hyperlegible Next", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --vp-font-family-mono: "Victor Mono", "Courier New", Courier, monospace;
+  --default-monoFont-family: "Victor Mono", Menlo, "Courier New", Courier, monospace; /* code font */
   --default-monoFont-featureSettings: "ss06" on, "ss01" off, "ss07" on;
   --vp-code-font-size: 16px;
 
   &.pixel {
-    --vp-font-family-base: "Dylex";
-    --vp-font-family-mono: "Cozette";
+    --vp-font-family-base: "Dylex", "Microsoft Sans Serif", monospace;
+    --vp-font-family-mono: "Cozette", Fixedsys, monospace;
     --default-monoFont-family: "Cozette"; /* code font */
     --default-monoFont-featureSettings: "";
     --vp-code-font-size: 13px;
@@ -131,7 +131,7 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "Atkinson Hyperlegible Next Variable", system-ui;
+    font-family: "Atkinson Hyperlegible Next", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
     .vp-doc,
     .is-home,
@@ -139,7 +139,7 @@ html {
     footer,
     header,
     .home {
-      font-family: "Atkinson Hyperlegible Next Variable", system-ui;
+      font-family: "Atkinson Hyperlegible Next", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     }
 
     &.pixel {
