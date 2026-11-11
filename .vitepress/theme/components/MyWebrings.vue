@@ -7,7 +7,7 @@ import WebringWidget from './WebringWidget.vue';
 import WebringAtism from './WebringAtism.vue';
 import OneLineWebringWidget from './OneLineWebringWidget.vue';
 
-const pauseGifs = useStorage("pauseGifs", false, localStorage, {mergeDefaults: true});
+const pauseGifs = useStorage("pauseGifs", false, localStorage);
 
 
 // const nixRingScript = useScriptTag(

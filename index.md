@@ -6,7 +6,7 @@ head:
   - - script
     - src: https://keepandroidopen.org/banner.js?size=minimal&hidebutton=off&animation=off&id=androidLockdown
   - - script
-    - src: "./src/nationalday.js"
+    - src: ./src/nationalday.js
     - defer: true
 
 hero:
