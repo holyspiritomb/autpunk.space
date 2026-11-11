@@ -15,6 +15,10 @@ onMounted( () => {
 #dateWidget {
   @apply "my-[1em] p-[0.5em] w-[350px]";
   color: var(--vp-c-brand);
+  text-shadow: 1px 1px 0 var(--vp-c-bg),
+   -1px -1px 0px var(--vp-c-bg),
+    1px -1px 0px var(--vp-c-bg),
+    -1px 1px 0px var(--vp-c-bg);
 }
 @media screen and (width < 960px) {
   #dateWidget {

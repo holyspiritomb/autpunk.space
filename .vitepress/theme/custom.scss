@@ -46,13 +46,24 @@
   --rainbow-gradient:
     -webkit-linear-gradient(
       90deg,
-      rgb(var(--ctp-mocha-pink-rgb) / 0.5) 1%,
-      rgb(var(--ctp-mocha-peach-rgb) / 0.5) 10%,
-      rgb(var(--ctp-mocha-yellow-rgb) / 0.5) 30%,
-      rgb(var(--ctp-mocha-green-rgb) / 0.5) 50%,
-      rgb(var(--ctp-mocha-sky-rgb) / 0.5) 70%,
-      rgb(var(--ctp-mocha-lavender-rgb) / 0.5) 90%,
-      rgb(var(--ctp-mocha-pink-rgb) / 0.5)
+      rgb(var(--ctp-mocha-pink-rgb) / 1) 1%,
+      rgb(var(--ctp-mocha-peach-rgb) / 1) 10%,
+      rgb(var(--ctp-mocha-yellow-rgb) / 1) 30%,
+      rgb(var(--ctp-mocha-green-rgb) / 1) 50%,
+      rgb(var(--ctp-mocha-sky-rgb) / 1) 70%,
+      rgb(var(--ctp-mocha-lavender-rgb) / 1) 90%,
+      rgb(var(--ctp-mocha-pink-rgb) / 1)
+    );
+  --rainbow-gradient-latte:
+    -webkit-linear-gradient(
+      90deg,
+      rgb(var(--ctp-latte-pink-rgb) / 1) 1%,
+      rgb(var(--ctp-latte-peach-rgb) / 1) 10%,
+      rgb(var(--ctp-latte-yellow-rgb) / 1) 30%,
+      rgb(var(--ctp-latte-green-rgb) / 1) 50%,
+      rgb(var(--ctp-latte-sky-rgb) / 1) 70%,
+      rgb(var(--ctp-latte-lavender-rgb) / 1) 90%,
+      rgb(var(--ctp-latte-pink-rgb) / 1)
     );
   --trans-flag:
     linear-gradient(
@@ -117,6 +128,7 @@
   --vp-button-brand-active-text: var(--ctp-mocha-sky) !important;
   --vp-button-alt-text: var(--ctp-mocha-pink);
   --vp-button-alt-hover-text: var(--ctp-mocha-pink);
+  --vp-button-alt-active-text: var(--ctp-mocha-pink);
   --vp-button-alt-bg: var(--ctp-mocha-mantle);
   --vp-button-alt-hover-bg: var(--ctp-mocha-base);
   --vp-button-alt-active-bg: var(--ctp-mocha-base);
