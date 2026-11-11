@@ -5,9 +5,6 @@ layout: home
 head:
   - - script
     - src: https://keepandroidopen.org/banner.js?size=minimal&hidebutton=off&animation=off&id=androidLockdown
-  - - script
-    - src: https://autpunk.space/src/nationalday.js
-    - defer: true
 
 hero:
   name: "autpunk space"
