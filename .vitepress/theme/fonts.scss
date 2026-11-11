@@ -126,6 +126,12 @@ html {
     --default-monoFont-family: "Cozette"; /* code font */
     --default-monoFont-featureSettings: "";
     --vp-code-font-size: 13px;
+
+    body {
+      font-size: 13px;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: none;
+    }
   }
 }
 
@@ -143,15 +149,18 @@ html {
     }
 
     &.pixel {
-      font-family: Dylex, monospace;
+      font-family: Dylex, Cozette, monospace;
+
+      nav,
+      footer,
+      header {
+        font-family: Cozette, "Courier New", Courier, monospace;
+      }
 
       .vp-doc,
       .is-home,
-      nav,
-      footer,
-      header,
       .home {
-        font-family: Dylex, monospace;
+        font-family: Dylex, Cozette, monospace;
       }
     }
   }
@@ -160,7 +169,7 @@ html {
     --vp-font-family-base: "Atkinson Hyperlegible Next Variable";
 
     &.pixel {
-      --vp-font-family-base: Dylex;
+      --vp-font-family-base: Dylex, Cozette, monospace;
     }
   }
 }
@@ -270,11 +279,13 @@ html.pixel {
 
   .title {
     font-size: 13px;
+    font-family: var(--vp-font-family-mono);
   }
 
   .VPButton {
     font-size: 13px;
     font-weight: normal;
+    font-family: var(--vp-font-family-mono);
 
     &.brand,
     &.medium {
@@ -300,7 +311,7 @@ html.pixel {
   pre,
   textarea,
   .vp-code {
-    font-family: Cozette, Courier, monospace;
+    font-family: var(--vp-font-family-mono);
     font-size: 13px !important;
     line-height: 12px !important;
   }
