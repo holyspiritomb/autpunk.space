@@ -11,11 +11,6 @@ const { copy, copied, isSupported } = useClipboard({
 
 const zLevels = ["mini", "maxi"]
 
-// Zalgo usage
-// zalgo('some text');
-
-// banish('ŝ̜̩͇̼̥̼́̏͢o͎͊͜ḿ̛̩̳̖͕̞̩̭ͪe͖̺̣̹̺̋̀͛̽͝ ̖͍̭͓̯̠͑͑͢t̼̪̋͌͢eͯ̋͏͖͎͍̩̭̮x̢͚̄̾̀̈ͧ̓ͩ̚t̪ͫ͝');
-
 // To log all the supported chars use:
 // console.log(chars);
 
@@ -139,16 +134,13 @@ div {
     @apply boxPress px-[1em] mx-[0.5em];
   }
   select, option, button {
-    color: var(--vp-c-text1);
-    background-color: var(--vp-c-bg);
+    @apply defaultColors;
     font-family: var(--vp-font-family-mono);
     font-size: var(--vp-code-font-size);
   }
   textarea {
-    @apply "mx-auto p-[15px] ccborder h-[180px] w-[350px]";
-    background: var(--vp-c-bg);
+    @apply "mx-auto p-[15px] ccborder h-[180px] w-[350px] defaultColors";
     line-height: unset !important;
-    color: var(--vp-c-text1);
   }
 }
 div.flex {
@@ -160,6 +152,7 @@ html.pixel {
   textarea {
     font-family: UnifontEX, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px !important;
+    line-height: unset !important;
   }
   select, option, button, label {
     font-family: var(--vp-font-family-mono);

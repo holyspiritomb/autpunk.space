@@ -78,7 +78,7 @@ div.widget {
   a {
     @apply prose-2xl;
     text-decoration: none !important;
-    color: var(--vp-c-text1) !important;
+    color: var(--vp-c-text-1) !important;
 
     &.prevnext {
       @apply prose-sm;

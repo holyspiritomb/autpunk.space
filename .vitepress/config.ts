@@ -49,7 +49,9 @@ export default defineConfig({
   // titleTemplate: 'Autpunk Dot Space',
   description: "An autism with personhood. Stuff, things, and the difference between them.",
   head: [
-    ["link", { rel: "icon", href: "/images/galaxy_heart.png" }],
+    ["link", { rel: "icon", href: "/images/galaxy_heart_pixel.png" }],
+    ["link", { rel: "preload", href: "/images/space16.png", as: "image" }],
+    ["link", { rel: "preload", href: "/images/space16_light.png", as: "image" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],

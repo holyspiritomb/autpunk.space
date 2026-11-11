@@ -19,13 +19,11 @@ import "viewerjs/dist/viewer.css";
 import "virtual:uno.css";
 import "./fonts.scss";
 import "./custom.scss";
-import { VPButton } from "vitepress/theme-without-fonts";
+// import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
 // import LayoutBottom from "./components/LayoutBottom.vue";
-import TextInput from "./components/TextInput.vue";
 import YiddishText from "./components/YiddishText.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
-import MyBadge from "./components/MyBadge.vue";
 import AfterActions from "./components/AfterActions.vue";
 import NiceButton from "./components/NiceButton.vue";
 import CenterDiv from "./components/CenterDiv.vue";
@@ -109,12 +107,10 @@ export default {
       textColor: "var(--vp-badge-info-text)",
       // arrowSvg: `string`
     });
-    app.component("VPButton", VPButton).
-      component("TextInput", TextInput).
-      component("Center", CenterDiv).
+    // app.component("VPButton", VPButton).
+    app.component("CenterDiv", CenterDiv).
       component("NiceButton", NiceButton).
-      component("Yiddish", YiddishText).
-      component("MyBadge", MyBadge);
+      component("Yiddish", YiddishText);
   },
   setup() {
     useImageViewer({

@@ -9,6 +9,8 @@ next: false
 <script setup>
 import UseSpeech from "../../.vitepress/theme/components/UseSpeech.vue";
 import SpeechEasy from "../../.vitepress/theme/components/SpeechEasy.vue";
+import TextInput from "../../.vitepress/theme/components/TextInput.vue";
+import { VPButton } from "vitepress/theme-without-fonts";
 </script>
 # Components and elements <Badge>demo</Badge>
 

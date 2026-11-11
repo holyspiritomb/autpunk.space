@@ -44,7 +44,7 @@ const imgClasses = (s) => {
 a {
   @apply my-3 block whiteBg dark:crustBg w-[300px];
 
-  color: var(--vp-c-text1);
+  color: var(--vp-c-text-1);
   text-decoration: none;
 
   &:active, &:hover, &:focus {
