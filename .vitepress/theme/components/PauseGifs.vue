@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { useStorage } from "@vueuse/core";
 
-const preferredFont = useStorage("preferredFont", "vector", localStorage);
+const preferredFont = useStorage("preferredFont", "vector", localStorage, {mergeDefaults: true});
 const pauseGifs = useStorage("pauseGifs", false, localStorage, {mergeDefaults: true});
 const allowedOptions = [true, false];
 const selectedOption = ref(pauseGifs.value);
