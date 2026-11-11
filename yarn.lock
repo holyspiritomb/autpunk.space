@@ -3551,6 +3551,7 @@ __metadata:
     stylelint-use-nesting: "npm:^6.0.2"
     typescript: "npm:6.0.3"
     typescript-eslint: "npm:8.68.0"
+    unicode-font-styles: "npm:^1.0.0"
     unocss: "npm:^66.10.5"
     unocss-preset-advance-gradients: "npm:^0.0.2"
     unplugin-vue-components: "npm:28.4.1"
@@ -8133,6 +8134,13 @@ __metadata:
   version: 8.10.2
   resolution: "undici@npm:8.10.2"
   checksum: 10c0/66d7fc69149207cab570d6abbc9e965b6afe1ae889a7d46945b431165c973d6a56f3dd8b70a856e7ae1e550b6366a1cde6f06e68640587f0dadca38de72995ee
+  languageName: node
+  linkType: hard
+
+"unicode-font-styles@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "unicode-font-styles@npm:1.0.0"
+  checksum: 10c0/665a69b6f163792d2f9034834faed351106a7645f9a767ab676c967b7188842a09d287bc4f77d0a9a620416814c02aec1aaccd7004174912e5a0cfb7af0c0b75
   languageName: node
   linkType: hard
 

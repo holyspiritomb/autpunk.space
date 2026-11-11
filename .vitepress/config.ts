@@ -112,6 +112,7 @@ export default defineConfig({
       ]},
       { text: "Fun Stuff", items: [
         { text: "Figlet Generator", link: "/pages/funstuff/figlet" },
+        { text: "Unicode Text Styler", link: "/pages/funstuff/unicode" },
         { text: "Zalgo Generator", link: "/pages/funstuff/zalgo" },
       ]},
       { text: "Resources", link: "/pages/resources/" },
