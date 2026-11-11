@@ -1,5 +1,5 @@
 ---
-title: Unicode Text Styles
+title: Unicode Text Styler
 layout: doc
 lastUpdated: false
 next: false
@@ -15,4 +15,4 @@ With this toy, you can convert plain text into fancier glyphs from different Uni
 
 <UnicodeConverter />
 
-Note: some styles and decorations may be incompatible with each other, depending on your fallback fonts.
+Note: some styles and decorations may be incompatible with each other, depending on ~~your~~ my configuration of fallback fonts.
