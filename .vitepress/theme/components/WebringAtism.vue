@@ -2,6 +2,8 @@
 import { onMounted } from 'vue';
 import { useScriptTag } from '@vueuse/core';
 
+// TODO: Figure out useScriptTag with A-Tism widget
+
 // useScriptTag(
 //   "https://minxie.likesyou.org/js/ring-widget.js",
 //   (el) => {
@@ -24,8 +26,11 @@ onMounted( () => {
   tismRing.defer = true;
   tismRing.setAttribute("data-ring", "webring");
   tismRing.setAttribute("data-id", "autpunk-space");
-  console.log(tismRing);
-  document.getElementById("tismRingWidget")?.appendChild(tismRing);
+  if (window.location.href.startsWith("https://")) {
+    document.getElementById("tismRingWidget")?.appendChild(tismRing);
+  } else {
+    console.log("Not adding a-tism js widget without SSL.");
+  }
 });
 </script>
 

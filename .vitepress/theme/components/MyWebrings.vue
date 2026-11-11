@@ -9,17 +9,10 @@ import OneLineWebringWidget from './OneLineWebringWidget.vue';
 
 const pauseGifs = useStorage("pauseGifs", false, localStorage);
 
-useScriptTag(
-  "https://jbc.lol/webrings/ssgring/pmoring.js",
-  (el) => {
-    document.getElementById("prospectiveRings")?.appendChild(el);
-  },
-);
 
 // const nixRingScript = useScriptTag(
 //   "https://softmachine.dev/webring/linuxring/ring.js",
 //   (el) => {
-//     console.log(el);
 //     document.getElementById("nixRingDiv")?.appendChild(el);
 //   },
 //   {
@@ -40,7 +33,21 @@ onMounted( () => {
   nixRing.src = "https://softmachine.dev/webring/linuxring/ring.js";
   nixRing.defer = true;
   nixRing.setAttribute("data-icon", "arch");
-  document.getElementById("nixRingDiv")?.appendChild(nixRing);
+
+  if (window.location.href.startsWith("https://")) {
+    document.getElementById("nixRingDiv")?.appendChild(nixRing);
+
+    useScriptTag(
+      "https://jbc.lol/webrings/ssgring/pmoring.js",
+      (el) => {
+        document.getElementById("ssgRing")?.appendChild(el);
+      }
+    );
+
+  } else {
+    console.log("Not adding js widgets to webring component without SSL.");
+  }
+
 });
 </script>
 <template>
@@ -80,19 +87,8 @@ onMounted( () => {
     ></WebringWidget>
     <a href="https://minxie.likesyou.org/webring/">
       <img
-        v-if="!pauseGifs"
         id="tism_gif"
-        src="https://minxie.likesyou.org/webring/tism-ring.gif"
-        class="no-viewer"
-        width="88"
-        height="31"
-        border="0"
-        alt="A Tism-Webring"
-      />
-      <img
-        v-else
-        id="tism_still"
-        src="/buttons/tism-ring-still.gif"
+        :src="(!pauseGifs) ? 'https://minxie.likesyou.org/webring/tism-ring.gif' : '/buttons/tism-ring-still.gif'"
         class="no-viewer"
         width="88"
         height="31"
@@ -102,6 +98,7 @@ onMounted( () => {
     </a>
     <WebringAtism />
     <div id="nixRingDiv"></div>
+    <div id="ssgRing"></div>
   </div>
 </template>
 
