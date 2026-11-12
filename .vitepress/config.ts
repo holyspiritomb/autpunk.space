@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from "node:url";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownFootnote from "markdown-it-footnote";
 import markdownAbbr from "markdown-it-abbr";
+import markdownItContainer from "markdown-it-container";
 
 
 // if (process.env.NODE_ENV === "development") {
@@ -54,6 +55,7 @@ export default defineConfig({
     ["link", { rel: "preload", href: "/images/space16_light.png", as: "image" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
+    ["link", { rel: "preconnect", href: "https://minxie.likesyou.org" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
     ["meta", { name: "theme-color", content: "#b4befe" }],
     ["meta", { property: "og:image", content: "https://autpunk.space/buttons/autpunk_space_checkers.png" }],
@@ -79,6 +81,27 @@ export default defineConfig({
       md.use(markdownItAttrs);
       md.use(groupIconMdPlugin);
       md.use(markdownAbbr);
+      md.use(markdownItContainer, "embed", {
+        // https://vanquishedwombat.ghost.io/embedding-editable-code-into-vite-press-and-custom-containers/
+        /* eslint-disable @typescript-eslint/no-explicit-any */
+        render (tokens: any, idx: number) {
+        /* eslint-enable @typescript-eslint/no-explicit-any */
+          if (tokens[idx].type === "container_embed_open") {
+            // split by comma or space
+            /* eslint-disable stylistic/quotes */
+            const params = tokens[idx].info.split(/[ ,]+/).filter(function(v){return v!==''});
+            // first param is the ref, second is height
+            const ref = params[1];
+            const height = params[2] ? params[2] : "300";
+            // write into the vitepress page output. This sets up the info that the inline codebox code will use later.
+            return `<iframe width="100%" height="${height}" src="/frames/${ref}" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true">`;
+          } else if (tokens[idx].type === "container_embed_close") {
+            // we need to put something out here.
+            return '</iframe>';
+            /* eslint-enable stylistic/quotes */
+          }
+        },
+      });
       md.renderer.rules.footnote_block_open = () => (
         /* eslint-disable stylistic/quotes */
         '<hr>\n' +
