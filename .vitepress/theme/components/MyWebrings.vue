@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import { useScriptTag } from '@vueuse/core';
 import { useStorage } from "@vueuse/core";
 import CatppuccinRing from './CatppuccinRing.vue';
@@ -15,18 +16,27 @@ useScriptTag(
   }
 );
 
-useScriptTag(
-  "https://softmachine.dev/webring/linuxring/ring.js",
-  (el) => {
-    document.getElementById("nixRingDiv")?.appendChild(el);
-  },
-  {
-    defer: true,
-    attrs: {
-      "data-icon": "arch",
-    },
-  },
-);
+// const nixRing = useScriptTag(
+//   "https://softmachine.dev/webring/linuxring/ring.js",
+//   (el) => {
+//     document.getElementById("nixRingDiv")?.appendChild(el);
+//   },
+//   {
+//     defer: true,
+//     attrs: {
+//       "data-icon": "arch",
+//     },
+//   },
+// );
+// console.log(nixRing.scriptTag.value);
+
+onMounted( () => {
+  const nixRingScript = document.createElement("script");
+  nixRingScript.defer = true;
+  nixRingScript.src = "https://softmachine.dev/webring/linuxring/ring.js";
+  nixRingScript["data-icon"] = "arch";
+  document.getElementById("nixRingDiv")?.appendChild(nixRingScript);
+});
 </script>
 <template>
   <div id="inWebrings">
