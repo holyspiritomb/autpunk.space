@@ -3,7 +3,7 @@ import {useScriptTag} from '@vueuse/core';
 // import { onMounted } from 'vue';
 
 useScriptTag(
-  "//minxie.likesyou.org/js/ring-widget.js",
+  "https://minxie.likesyou.org/js/ring-widget.js",
   (el) => {
     document.getElementById("tismRingWidget")?.appendChild(el);
     const ring = document.querySelector("div.ringw.minxie-webring");
