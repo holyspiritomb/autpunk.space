@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
 import { useScriptTag } from '@vueuse/core';
 import { useStorage } from "@vueuse/core";
 import CatppuccinRing from './CatppuccinRing.vue';
@@ -9,46 +8,25 @@ import OneLineWebringWidget from './OneLineWebringWidget.vue';
 
 const pauseGifs = useStorage("pauseGifs", false, localStorage);
 
-
-// const nixRingScript = useScriptTag(
-//   "https://softmachine.dev/webring/linuxring/ring.js",
-//   (el) => {
-//     document.getElementById("nixRingDiv")?.appendChild(el);
-//   },
-//   {
-//     defer: true, 
-//     async: false,
-//     manual: true,
-//     attrs: {
-//       "data-icon": "arch",
-//     },
-//   },
-// );
-//
-// nixRingScript.load();
-
-onMounted( () => {
-  // nixRingScript.unload();
-  const nixRing = document.createElement("script");
-  nixRing.src = "https://softmachine.dev/webring/linuxring/ring.js";
-  nixRing.defer = true;
-  nixRing.setAttribute("data-icon", "arch");
-
-  if (window.location.href.startsWith("https://")) {
-    document.getElementById("nixRingDiv")?.appendChild(nixRing);
-
-    useScriptTag(
-      "https://jbc.lol/webrings/ssgring/pmoring.js",
-      (el) => {
-        document.getElementById("ssgRing")?.appendChild(el);
-      }
-    );
-
-  } else {
-    console.log("Not adding js widgets to webring component without SSL.");
+useScriptTag(
+  "https://jbc.lol/webrings/ssgring/pmoring.js",
+  (el) => {
+    document.getElementById("ssgRing")?.appendChild(el);
   }
+);
 
-});
+useScriptTag(
+  "https://softmachine.dev/webring/linuxring/ring.js",
+  (el) => {
+    document.getElementById("nixRingDiv")?.appendChild(el);
+  },
+  {
+    defer: true,
+    attrs: {
+      "data-icon": "arch",
+    },
+  },
+);
 </script>
 <template>
   <div id="inWebrings">
