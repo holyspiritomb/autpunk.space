@@ -10,7 +10,7 @@ useScriptTag(
     document.getElementById("tismRingWidget")?.appendChild(ring);
   },
   {
-    // async: true,
+    async: false,
     defer: true,
     attrs: {
       "data-ring": "webring",
