@@ -1,15 +1,32 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import {useScriptTag} from '@vueuse/core';
+// import { onMounted } from 'vue';
 
-onMounted( () => {
-  const tismRing = document.createElement("script");
-  tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
-  tismRing.defer = true;
-  tismRing.async = false;
-  tismRing.setAttribute("data-ring", "webring");
-  tismRing.setAttribute("data-id", "autpunk-space");
-  document.getElementById("tismRingWidget")?.appendChild(tismRing);
-});
+useScriptTag(
+  "//minxie.likesyou.org/js/ring-widget.js",
+  (el) => {
+    document.getElementById("tismRingWidget")?.appendChild(el);
+    const ring = document.querySelector("div.ringw.minxie-webring");
+    document.getElementById("tismRingWidget")?.appendChild(ring);
+  },
+  {
+    async: true,
+    defer: true,
+    attrs: {
+      "data-ring": "webring",
+      "data-id": "autpunk-space",
+    }
+  }
+);
+
+// onMounted( () => {
+//   const tismRing = document.createElement("script");
+//   tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
+//   tismRing.setAttribute("data-ring", "webring");
+//   tismRing.setAttribute("data-id", "autpunk-space");
+//   tismRing.setAttribute("defer", true);
+//   document.getElementById("tismRingWidget")?.appendChild(tismRing);
+// });
 
 // TODO: figure out fallback widget display
 </script>
