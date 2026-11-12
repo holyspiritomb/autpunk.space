@@ -5,6 +5,7 @@ onMounted( () => {
   const tismRing = document.createElement("script");
   tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
   tismRing.defer = true;
+  tismRing.async = false;
   tismRing.setAttribute("data-ring", "webring");
   tismRing.setAttribute("data-id", "autpunk-space");
   document.getElementById("tismRingWidget")?.appendChild(tismRing);
