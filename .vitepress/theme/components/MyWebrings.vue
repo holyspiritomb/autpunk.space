@@ -70,8 +70,10 @@ onMounted( () => {
       prev-link="https://webri.ng/webring/cssjoy/previous?via=https://autpunk.space"
       next-link="https://webri.ng/webring/cssjoy/next?via=https://autpunk.space"
       random-link="https://webri.ng/webring/cssjoy/random?via=https://autpunk.space"
-      classes="text-ctp-latte-pink bg-ctp-mocha-crust shadow-md shadow-ctp-latte-pink bg-hero-four-point-stars-ctp-latte-pink/20 border-[2px] border-groove border-ctp-latte-pink"
+      classes="bg-ctp-mocha-crust shadow-md shadow-ctp-latte-pink bg-hero-four-point-stars-ctp-latte-pink/20 border-groove border-ctp-latte-pink"
       text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink bold"
+      link-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink"
+      border="border-[2px]"
     ></WebringWidget>
     <a href="https://minxie.likesyou.org/webring/">
       <img

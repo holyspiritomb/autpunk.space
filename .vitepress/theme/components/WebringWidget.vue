@@ -7,6 +7,7 @@ interface Props {
   randomLink?: string | null,
   classes: string | null,
   textClasses?: string | null,
+  linkClasses?: string | null,
   prevLinkText?: string,
   nextLinkText?: string,
   randomLinkText?: string,
@@ -19,7 +20,7 @@ withDefaults(defineProps<Props>(), {
   prevLinkText: "« prev",
   nextLinkText: "next »",
   randomLinkText: "(random)",
-  border: "0"
+  border: "border-0"
 })
 </script>
 <template>
@@ -30,7 +31,7 @@ withDefaults(defineProps<Props>(), {
       :href="prevLink"
       :aria-label="`previous link in ${ringName}`"
       :title="`previous link in ${ringName}`"
-      class="prevnext"
+      :class="`prevnext ${linkClasses}`"
       role="link"
       target="_top"
     >{{ prevLinkText }}</a>
@@ -49,7 +50,7 @@ withDefaults(defineProps<Props>(), {
       <a
         v-if="randomLink"
         :href="randomLink"
-        class="rand"
+        :class="`rand ${linkClasses}`"
         target="_top"
         :title="`random link in ${ringName}`"
         :aria-label="`random link in ${ringName}`"
@@ -57,7 +58,7 @@ withDefaults(defineProps<Props>(), {
     </div>
     <a
       :href="nextLink"
-      class="prevnext"
+      :class="`prevnext ${linkClasses}`"
       role="link"
       target="_top"
       :aria-label="`next link in ${ringName}`"
@@ -78,7 +79,6 @@ div.widget {
   a {
     @apply prose-2xl;
     text-decoration: none !important;
-    color: var(--vp-c-text-1) !important;
 
     &.prevnext {
       @apply prose-sm;

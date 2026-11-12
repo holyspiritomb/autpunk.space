@@ -133,6 +133,7 @@ export default [
       "vue/no-v-html": 0,
       "vue/no-spaces-around-equal-signs-in-attribute": ["error"],
       "vue/no-unused-vars": ["warn", { "ignorePattern": "^_" }],
+      "vue-scoped-css/no-unused-selector": 0,
       "vue/object-curly-spacing": [1, "always", { "arraysInObjects": false, "objectsInObjects": false }],
       "vue/script-indent": [1, 2],
       "vue/singleline-html-element-content-newline": 0,
