@@ -21,6 +21,12 @@ hero:
       link: /pages/about/colophon
 
 features:
+  - title: Zalgo Generator
+    details: corrupt text by stacking a ton of diacritics
+    link: /pages/funstuff/zalgo
+    icon:
+        src: /images/yikes.png
+        alt: "yikes"
   - title: Make Wordart
     icon:
         src: /images/galaxy_floppy.png
@@ -31,7 +37,7 @@ features:
     icon:
         src: /images/galaxy_book.png
         alt: "galaxy-print hardcover book emoji"
-    details: guides to things
+    details: helpful guides to things
     link: /pages/resources/
   - title: Projects
     details: a few things I've made
