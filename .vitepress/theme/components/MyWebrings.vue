@@ -16,12 +16,13 @@ useScriptTag(
 );
 
 useScriptTag(
-  "https://softmachine.dev/webring/linuxring/ring.js",
+  "//softmachine.dev/webring/linuxring/ring.js",
   (el) => {
     document.getElementById("nixRingDiv")?.appendChild(el);
   },
   {
     defer: true,
+    immediate: true,
     attrs: {
       "data-icon": "arch",
     },
