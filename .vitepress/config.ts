@@ -55,7 +55,6 @@ export default defineConfig({
     ["link", { rel: "preload", href: "/images/space16_light.png", as: "image" }],
     ["link", { rel: "me atproto", href: "https://spiritomb.bsky.social" }],
     ["link", { rel: "me", href: "https://github.com/holyspiritomb" }],
-    ["link", { rel: "preconnect", href: "https://minxie.likesyou.org" }],
     ["meta", { name: "robots", content: "noai, noimageai" }],
     ["meta", { name: "theme-color", content: "#b4befe" }],
     ["meta", { property: "og:image", content: "https://autpunk.space/buttons/autpunk_space_checkers.png" }],
