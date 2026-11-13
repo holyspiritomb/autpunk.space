@@ -1,44 +1,26 @@
 <script setup lang="ts">
-import {useScriptTag} from '@vueuse/core';
-import { onMounted, ref } from 'vue';
+// import {useScriptTag} from '@vueuse/core';
+import { ref } from 'vue';
 
-useScriptTag(
-  "//minxie.likesyou.org/js/ring-widget.js",
-  (el) => {
-    document.getElementById("tismRingWidget")?.appendChild(el);
-  },
-  {
-    type: "application/javascript",
-    async: false,
-    defer: true,
-    attrs: {
-      "data-ring": "webring",
-      "data-id": "autpunk-space",
-      "id": "tism-script"
-    }
-  }
-);
+// useScriptTag(
+//   "//minxie.likesyou.org/js/ring-widget.js",
+//   (el) => {
+//     document.getElementById("tismRingWidget")?.appendChild(el);
+//   },
+//   {
+//     type: "application/javascript",
+//     async: false,
+//     defer: true,
+//     attrs: {
+//       "data-ring": "webring",
+//       "data-id": "autpunk-space",
+//       "id": "tism-script"
+//     }
+//   }
+// );
 
 const fallbackDivStyle = ref("display: block");
 const realDivStyle = ref("display: none");
-
-onMounted( () => {
-  const ring = document.querySelector("html div.ringw.minxie-webring:not(.fallback)");
-  if (ring) {
-    const par = ring.parentNode?.nodeName;
-    if (par == "HEAD") {
-      document.getElementById("tismRingWidget")?.appendChild(ring);
-      realDivStyle.value = "display: block";
-      fallbackDivStyle.value = "display: none"
-    }
-  }
-//   const tismRing = document.createElement("script");
-//   tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
-//   tismRing.setAttribute("data-ring", "webring");
-//   tismRing.setAttribute("data-id", "autpunk-space");
-//   tismRing.setAttribute("defer", true);
-//   document.getElementById("tismRingWidget")?.appendChild(tismRing);
-});
 
 </script>
 
