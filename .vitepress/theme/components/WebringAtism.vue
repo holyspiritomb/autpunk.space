@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import {useScriptTag} from '@vueuse/core';
-import { ref } from 'vue';
+// import { ref } from 'vue';
 
 // useScriptTag(
 //   "//minxie.likesyou.org/js/ring-widget.js",
@@ -19,20 +19,16 @@ import { ref } from 'vue';
 //   }
 // );
 
-const fallbackDivStyle = ref("display: block");
-const realDivStyle = ref("display: none");
-
+console.log("using fallback a-tism webring widget");
 </script>
 
 <template>
-  <div
-    id="tismRingWidget"
-    :style="realDivStyle"
-  >
-  </div>
+  <!-- <div -->
+  <!--   id="tismRingWidget" -->
+  <!-- > -->
+  <!-- </div> -->
   <div
     id="tismFallback"
-    :style="fallbackDivStyle"
   >
     <div
       class="ringw minxie-webring fallback"
