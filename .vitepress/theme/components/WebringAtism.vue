@@ -5,7 +5,6 @@ import { onMounted, ref } from 'vue';
 useScriptTag(
   "//minxie.likesyou.org/js/ring-widget.js",
   (el) => {
-    // console.log(el);
     document.getElementById("tismRingWidget")?.appendChild(el);
   },
   {
@@ -20,25 +19,20 @@ useScriptTag(
   }
 );
 
-const fallbackDivStyle = ref("display: none");
+const fallbackDivStyle = ref("display: block");
 const realDivStyle = ref("display: block");
 
 onMounted( () => {
   const ring = document.querySelector("html div.ringw.minxie-webring:not(.fallback)");
   if (ring) {
-    // console.log(ring);
+    fallbackDivStyle.value = "display: none";
     const par = ring.parentNode?.nodeName;
-    // console.log(par);
     if (par == "HEAD") {
-      // console.log(par);
       document.getElementById("tismRingWidget")?.appendChild(ring);
     }
   } else {
-    console.log("showing fallback a-tism widget");
-    fallbackDivStyle.value = "display: block";
     realDivStyle.value = "display: none";
   }
-  // document.getElementById("tismFallback")?.style = "display: block"
 //   const tismRing = document.createElement("script");
 //   tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
 //   tismRing.setAttribute("data-ring", "webring");
@@ -47,7 +41,6 @@ onMounted( () => {
 //   document.getElementById("tismRingWidget")?.appendChild(tismRing);
 });
 
-// TODO: figure out fallback widget display
 </script>
 
 <template>
