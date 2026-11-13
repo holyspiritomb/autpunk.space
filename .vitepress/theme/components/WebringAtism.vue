@@ -20,18 +20,17 @@ useScriptTag(
 );
 
 const fallbackDivStyle = ref("display: block");
-const realDivStyle = ref("display: block");
+const realDivStyle = ref("display: none");
 
 onMounted( () => {
   const ring = document.querySelector("html div.ringw.minxie-webring:not(.fallback)");
   if (ring) {
-    fallbackDivStyle.value = "display: none";
     const par = ring.parentNode?.nodeName;
     if (par == "HEAD") {
       document.getElementById("tismRingWidget")?.appendChild(ring);
+      realDivStyle.value = "display: block";
+      fallbackDivStyle.value = "display: none"
     }
-  } else {
-    realDivStyle.value = "display: none";
   }
 //   const tismRing = document.createElement("script");
 //   tismRing.src = "https://minxie.likesyou.org/js/ring-widget.js";
