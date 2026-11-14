@@ -78,7 +78,7 @@ Here you will find details of this site's creation.
 I have a lot of opinions about typefaces and I enjoy fonts that come with options.
 
 ### Pixel fonts
-- [Dylex Terminal 7x13](https://fontpixel.com/en/fonts/dylex-terminal/) for body text.  and compressed into `WOFF2` with .
+- [Dylex Terminal 7x13](https://fontpixel.com/en/fonts/dylex-terminal/) for body text.
 - [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) for Yiddish text and headings. Plain Pixel is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and I made no modifications other than compressing the truetype into `WOFF2` with `fonttools`.
 - [Cozette with crossed 7](https://github.com/the-moonwitch/Cozette/releases) is used in code blocks and the figlet generator input and output.
 - [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) for figlet generator body text.
