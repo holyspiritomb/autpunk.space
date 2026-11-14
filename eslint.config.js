@@ -122,6 +122,7 @@ export default [
     },
     rules: {
       "stylistic/indent": 0,
+      "unocss/order": 0,
       "vue/array-bracket-spacing": [1, "never", { "arraysInArrays": false }],
       "vue/comma-dangle": [1, "always-multiline"],
       "vue/comma-spacing": [1, { "before": false, "after": true }],

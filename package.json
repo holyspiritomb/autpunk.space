@@ -51,6 +51,7 @@
     "cache:rm": "rm -rf .vitepress/cache/*",
     "cleanbuild": "rm -rf dist && vitepress build",
     "build": "vitepress build",
+    "debugbuild": "DEBUG=true vitepress build && vitepress preview",
     "lint:style": "stylelint .vitepress/theme/*.scss",
     "lint:style:fix": "stylelint --fix .vitepress/theme/*.scss",
     "lint:config": "eslint --no-warn-ignored .vitepress/config.ts .vitepress/**/*.{ts,js,vue}",
