@@ -11,21 +11,24 @@ function setOption() {
 }
 </script>
 <template>
-  <div>
+  <div class="my-2 mx-auto">
     <label
       for="gifOptionSelect"
+      class="font-size-[16px]"
     >
       gifs
     </label>
     <select
       id="gifOptionSelect"
       v-model="selectedOption"
+      class="font-size-[16px] px-[0.5em] mx-[0.5em] ccborder defaultColors min-w-[75px]"
       @change="setOption()"
     >
       <option
         v-for="option in allowedOptions"
         :key="option"
         :value="option"
+        class="font-size-[16px] text-inherit bg-inherit"
       >
         {{ (option) ? "pause" : "animate" }} {{ (pauseGifs == option) ? "✓" : "" }}
       </option>
@@ -34,22 +37,8 @@ function setOption() {
 </template>
 <style scoped>
 div {
-  @apply my-2 mx-auto;
-
   label, select, option {
-    @apply font-size-[16px] sansFont;
-  }
-
-  select {
-    @apply px-[0.5em] mx-[0.5em] ccborder;
-    color: inherit;
-    background-color: var(--vp-c-bg);
-    min-width: 75px;
-
-    option {
-      color: inherit;
-      background-color: inherit;
-    }
+    @apply sansFont;
   }
 }
 </style>

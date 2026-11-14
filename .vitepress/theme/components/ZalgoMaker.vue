@@ -9,14 +9,14 @@ const { copy, copied, isSupported } = useClipboard({
   read: false,
 });
 
-const zLevels = ["mini", "maxi"]
+const zLevels = ["default", "mini", "maxi", "banish"]
 
 // To log all the supported chars use:
 // console.log(chars);
 
 const plainTxt = ref("Be gay do word crimes")
 const zalgoTxt = ref("")
-const corruptionLevel = ref("")
+const corruptionLevel = ref("default")
 
 const processText = () => {
   if (!plainTxt.value.trim()) {
@@ -25,7 +25,7 @@ const processText = () => {
   }
   let zText;
   // TODO: make this conditional chain prettier, like a nice trinary chain
-  if (corruptionLevel.value == "") {
+  if (corruptionLevel.value == "default") {
     console.log(zalgo("Corrupting..."));
     zText = zalgo(plainTxt.value);
   } else if (corruptionLevel.value == "banish") {
@@ -54,13 +54,15 @@ onMounted( () => {
 })
 </script>
 <template>
-  <div>
+  <div class="my-[1em] text-center">
     <textarea
       v-model="plainTxt"
+      class="mx-auto p-[15px] ccborder h-[180px] w-[350px] defaultColors"
       placeholder="input something"
       maxlength="10000"
+      style="line-height: unset !important;"
     ></textarea>
-    <div>
+    <div class="my-[0.25em] text-center">
       <label
         for="corruption"
       >
@@ -69,43 +71,39 @@ onMounted( () => {
       <select
         id="corruption"
         v-model="corruptionLevel"
+        class="ccborder defaultColors px-[1em] mx-[0.5em]"
       >
         <optgroup label="corruption level">
-          <option value="">default</option>
           <option
             v-for="level in zLevels"
             :key="level"
             :value="level"
+            class="defaultColors"
           >
             {{ level }}
           </option>
-          <option value="banish">banish</option>
         </optgroup>
       </select>
       <button
-        v-if="corruptionLevel == 'banish'"
+        class="boxPress defaultColors px-[1em] mx-[0.5em]"
         @click="processText"
       >
-        purify
-      </button>
-      <button
-        v-else
-        @click="processText"
-      >
-        corrupt
+        {{ (corruptionLevel == "banish") ? "purify" : "corrupt" }}
       </button>
     </div>
   </div>
-  <div>
+  <div class="my-[1em] text-center">
     <textarea
-      class="pt-[30px]"
+      class="pt-[30px] mx-auto px-[15px] pb-[15px] ccborder h-[180px] w-[350px] defaultColors"
       :placeholder="(!plainTxt.trim()) ? 'put text in the other box' : (corruptionLevel == 'banish') ? 'click the &quot;purify&quot; button' : 'click the &quot;corrupt&quot; button'"
       readonly
+      style="line-height: unset !important;"
       v-text="zalgoTxt"
     ></textarea>
-    <div class="flex">
+    <div class="options flex my-0 mx-auto justify-between w-[350px]">
       <div>
         <button
+          class="boxPress defaultColors px-[1em] mx-[0.5em]"
           @click="resetStuff"
         >
           reset
@@ -115,6 +113,7 @@ onMounted( () => {
         v-if="isSupported"
       >
         <button
+          class="boxPress defaultColors px-[1em] mx-[0.5em]"
           @click="copy(zalgoTxt)"
         >
           <span v-if="!copied">copy</span>
@@ -124,36 +123,3 @@ onMounted( () => {
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-div {
-  @apply my-[1em] text-center;
-  button, select {
-    @apply boxPress px-[1em] mx-[0.5em];
-  }
-  select, option, button {
-    @apply defaultColors;
-    font-family: var(--vp-font-family-mono);
-    font-size: var(--vp-code-font-size);
-  }
-  textarea {
-    @apply "mx-auto p-[15px] ccborder h-[180px] w-[350px] defaultColors";
-    line-height: unset !important;
-  }
-}
-div.flex {
-  @apply my-0 mx-auto;
-  width: 350px;
-  justify-content: space-between;
-}
-html.pixel {
-  textarea {
-    font-family: UnifontEX, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px !important;
-    line-height: unset !important;
-  }
-  select, option, button, label {
-    font-family: var(--vp-font-family-mono);
-    font-size: var(--vp-code-font-size);
-  }
-}
-</style>

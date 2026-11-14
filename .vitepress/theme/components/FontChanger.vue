@@ -33,10 +33,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="my-2 mx-auto">
     <label
       v-if="(!title.startsWith('Figlet'))"
       for="fontSelectEl"
+      class="text-inherit font-size-[16px] sansFont"
     >
       fonts
     </label>
@@ -61,9 +62,7 @@ onMounted(() => {
 
 <style scoped>
 div {
-  @apply my-2 mx-auto;
-
-  label, select, option {
+  select, option {
     @apply font-size-[16px] sansFont;
     color: inherit;
   }

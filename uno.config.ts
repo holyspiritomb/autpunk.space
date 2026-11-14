@@ -60,7 +60,7 @@ export default defineConfig({
     ["victorFont", { "font-family": "'Victor Mono', monospace !important" }],
     ["mono", { "font-family": "var(--vp-font-family-mono) !important" }],
     ["ySerif", { "font-family": "'Noto Serif Hebrew', serif" }],
-    ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
+    ["ySans", { "font-family": "'Noto Sans Hebrew', sans-serif" }],
     ["pixelFont", { "font-family": "Dylex, monospace" }],
     ["pixelMonoFont", { "font-family": "Cozette, monospace" }],
     ["sansFont", { "font-family": "'Atkinson Hyperlegible Next', Arial, sans-serif !important" }],

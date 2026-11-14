@@ -106,6 +106,11 @@
 
 html {
   font-family: "Atkinson Hyperlegible Next", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+
+  body {
+    font-size: 16px;
+  }
 
   &.pixel {
     font-family: "Dylex", monospace;
@@ -121,11 +126,13 @@ html {
   --vp-code-font-size: 16px;
 
   &.pixel {
-    --vp-font-family-base: "Dylex", "Microsoft Sans Serif", monospace;
+    --vp-font-family-base: "Dylex", "Ari-W9500", "Microsoft Sans Serif", monospace;
     --vp-font-family-mono: "Cozette", Fixedsys, monospace;
-    --default-monoFont-family: "Cozette"; /* code font */
+    --default-monoFont-family: "Cozette", Fixedsys, monospace; /* code font */
     --default-monoFont-featureSettings: "";
     --vp-code-font-size: 13px;
+
+    font-size: 13px;
 
     body {
       font-size: 13px;
