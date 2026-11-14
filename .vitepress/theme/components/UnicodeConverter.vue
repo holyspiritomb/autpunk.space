@@ -85,15 +85,16 @@ onMounted( () => {
     v-model="inputText"
     placeholder="put something cool here"
     maxlength="10000"
+    class="ccborder unicodeStyler block w-[380px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]"
   ></textarea>
-  <div
-    class="options"
-  >
+  <div class="flex justify-between w-[380px] mx-a my-[1em]">
     <select
       v-model="conversion"
+      class="ccborder px-[0.25em] defaultColors"
     >
       <option
         value="none"
+        class="defaultColors px-[0.25em]"
       >
         pick a style
       </option>
@@ -101,20 +102,24 @@ onMounted( () => {
         v-for="set of myConversions"
         :key="set.id"
         :value="set.id"
+        class="defaultColors px-[0.25em]"
       >
         {{ set.label }}
       </option>
       <option
         value="upsideDown"
+        class="defaultColors px-[0.25em]"
       >
         Upside-Down
       </option>
     </select>
     <select
       v-model="effectRef"
+      class="ccborder px-[0.25em] defaultColors"
     >
       <option
         value="none"
+        class="defaultColors px-[0.25em]"
       >
         pick an effect
       </option>
@@ -122,16 +127,19 @@ onMounted( () => {
         v-for="e of effects"
         :key="e"
         :value="e"
+        class="defaultColors px-[0.25em]"
       >
         {{ api.EFFECTS[e].label }}
       </option>
     </select>
     <button
+      class="defaultColors boxPress px-[0.4em]"
       @click="unstyleInput"
     >
       unstyle
     </button>
     <button
+      class="defaultColors boxPress px-[0.4em]"
       @click="processText"
     >
       convert
@@ -139,10 +147,13 @@ onMounted( () => {
   </div>
   <textarea
     readonly
+    class="unicodeStyler ccborder block w-[380px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]"
+    style="line-height: unset !important;"
     v-text="outputText"
   ></textarea>
-  <div class="options">
+  <div class="flex justify-between w-[380px] mx-a my-[1em]">
     <button
+      class="defaultColors boxPress px-[0.4em]"
       @click="resetConverter"
     >
       reset
@@ -151,7 +162,7 @@ onMounted( () => {
       v-if="isSupported"
     >
       <button
-        class="defaultColors"
+        class="defaultColors boxPress px-[0.4em]"
         @click="copy(outputText)"
       >
         <span v-if="!copied">copy</span>
@@ -160,33 +171,3 @@ onMounted( () => {
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-div.options {
-  @apply "w-[380px] mx-a my-[1em]";
-  display: flex;
-  justify-content: space-between;
-  row-gap: 0.5em;
-}
-select, button, option {
-  @apply "px-[0.4em] defaultColors font-size-[13px]";
-}
-textarea {
-  @apply "block w-[380px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]";
-  font-family: "Atkinson Hyperlegible Next", 'Verdana', "Tahoma", 'Arial Unicode', 'Lucida Sans Unicode', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif, UnifontEX;
-  font-size: 16px !important;
-  line-height: unset !important;
-}
-button {
-  @apply boxPress;
-}
-select, textarea {
-  @apply ccborder;
-}
-html.pixel {
-  textarea {
-    font-family: UnifontEX, 'Noto Sans', 'Arial Unicode', 'Lucida Sans Unicode', 'Open Sans', 'Helvetica Neue', monospace;
-    font-size: 16px !important;
-    line-height: unset !important;
-  }
-}
-</style>
