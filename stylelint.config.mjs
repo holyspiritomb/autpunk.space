@@ -15,6 +15,7 @@ export default {
     "csstools/use-nesting": ["always", {"syntax": "scss"}],
     "custom-property-pattern": null,
     "value-keyword-case": null,
+    "selector-id-pattern": null,
     "font-family-no-missing-generic-family-keyword": null,
     "selector-class-pattern": null,
     "value-no-vendor-prefix": null,

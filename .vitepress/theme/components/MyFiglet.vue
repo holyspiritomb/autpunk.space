@@ -115,12 +115,12 @@ const processClass = (s?) => {
   }
 }
 
-const windowsVersion = () => {
+const windowsVersion = (st?) => {
   if (preferredFont.value == "pixel") {
-    return "win98"
+    return `win98 ${st}`
   }
   else {
-    return "win7"
+    return `win7 ${st}`
   }
 }
 
@@ -131,11 +131,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="myContainer">
-    <div :class="windowsVersion()">
+  <div id="myContainer" class="w-[100%] h-[100vh] m-0 py-[10px]">
+    <div :class="windowsVersion('mx-a border-0')">
       <dialog
         id="alert"
-        class="z-999"
+        class="z-999 w-[250px] h-[120px]"
       >
         <div class="window active">
           <div class="title-bar">
@@ -184,7 +184,7 @@ onMounted(() => {
         <div class="window-body has-space">
           <label
             for="font"
-            :class="processClass()"
+            :class="processClass('mr-1 inline my-1')"
           >
             Font:
           </label>
@@ -192,7 +192,7 @@ onMounted(() => {
           <select
             id="font"
             v-model="chosenFont"
-            :class="processClass()"
+            :class="processClass('w-[45%] inline my-1')"
             @change="generateArt"
           >
             <option
@@ -211,6 +211,7 @@ onMounted(() => {
               <select
                 id="hLayout"
                 v-model="hLayout"
+                class="w-[45%] inline my-1"
                 @change="generateArt"
               >
                 <option
@@ -227,6 +228,7 @@ onMounted(() => {
               <select 
                 id="vLayout"
                 v-model="vLayout"
+                class="w-[45%] inline my-1"
                 @change="generateArt"
               >
                 <option
@@ -243,6 +245,7 @@ onMounted(() => {
               <select
                 id="width"
                 v-model="width"
+                class="w-[45%] inline my-1"
                 @change="generateArt"
               >
                 <option
@@ -264,6 +267,7 @@ onMounted(() => {
             </label>
             <textarea
               id="inputText"
+              class="h-[100px] w-[200px] block"
               v-model="textToFiglet"
               @input="generateArt"
             ></textarea>
@@ -287,6 +291,7 @@ onMounted(() => {
             </p>
             <div
               id="outputFigDisplay"
+              class="h-a w-[100%] textC"
               @click="copy()"
             >
               <pre><code>{{ figletText }}</code></pre>
@@ -325,8 +330,6 @@ p {
   text-shadow: none;
 }
 dialog#alert {
-  width: 250px;
-  height: 120px;
   position: absolute;
   top: calc(50% - 60px);
   left: calc(50% - 125px);
@@ -336,7 +339,6 @@ dialog#alert {
   }
 }
 div#myContainer > div {
-  @apply mx-a;
   border: 0 !important;
   color: var(--ctp-latte-text) !important;
   p {
@@ -344,11 +346,7 @@ div#myContainer > div {
   }
   select,
   label {
-    @apply w-[45%] inline my-1;
     user-select: none;
-  }
-  textarea {
-    @apply h-[100px] w-[200px] block;
   }
   div:has(>button.figcopy) {
     @apply my-0 text-right z-2;
@@ -369,7 +367,6 @@ div#myContainer > div {
     user-select: none;
   }
   #outputFigDisplay {
-    @apply w-[100%] h-a textC;
     scrollbar-width: none;
     pre {
       overflow-y: scroll;
@@ -439,7 +436,6 @@ div#myContainer > div {
   }
 }
 div#myContainer {
-  @apply w-[100%] h-[100vh] m-0 py-[10px];
   overflow-y: scroll;
 
   &:has(>.win98) {

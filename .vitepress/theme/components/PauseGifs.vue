@@ -2,7 +2,6 @@
 import { ref } from "vue";
 import { useStorage } from "@vueuse/core";
 
-const preferredFont = useStorage("preferredFont", "vector", localStorage);
 const pauseGifs = useStorage("pauseGifs", false, localStorage, {mergeDefaults: true});
 const allowedOptions = [true, false];
 const selectedOption = ref(pauseGifs.value);
@@ -15,21 +14,18 @@ function setOption() {
   <div>
     <label
       for="gifOptionSelect"
-      :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
     >
       gifs
     </label>
     <select
       id="gifOptionSelect"
       v-model="selectedOption"
-      :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
       @change="setOption()"
     >
       <option
         v-for="option in allowedOptions"
         :key="option"
         :value="option"
-        :class="(preferredFont == 'vector') ? '' : 'pixelMonoFont'"
       >
         {{ (option) ? "pause" : "animate" }} {{ (pauseGifs == option) ? "✓" : "" }}
       </option>
@@ -40,7 +36,7 @@ function setOption() {
 div {
   @apply my-2 mx-auto;
 
-  label, select, option, button{
+  label, select, option {
     @apply font-size-[16px] sansFont;
   }
 
@@ -54,11 +50,6 @@ div {
       color: inherit;
       background-color: inherit;
     }
-  }
-
-  button {
-    @apply boxPressSubtle px-[0.5em] mx-[0.5em];
-    background-color: var(--vp-c-bg);
   }
 }
 </style>

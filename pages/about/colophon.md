@@ -29,7 +29,6 @@ Here you will find details of this site's creation.
   alt="Written by human, not by AI"
 />](https://notbyai.fyi)
 
-<!-- [<HumanCrafted id="humancrafted" width="88px" height="31px" class="no-viewer inline h-[31px] w-[88px]" aria-label="Crafted by Human" />](https://madebyhuman.iamjarl.com) -->
 ![cascading style sheets](/buttons/css3.gif){.no-viewer}
 ![warning: this page contains javascript](/buttons/js-warning.gif){.no-viewer}
 ![Creative Commons Attribution-NonCommercial-ShareAlike license for the prose](/buttons/cc-by-nc-sa.gif){.no-viewer}

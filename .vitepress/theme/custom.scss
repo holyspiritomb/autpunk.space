@@ -394,20 +394,56 @@ html {
   }
 }
 
-.minxie-webring {
-  &.ringw {
-    @apply sansFont;
+@media screen and (width < 960) {
+  #inWebrings,
+  #prospectiveRings {
+    width: 342px;
+  }
+}
 
-    border-radius: 10px !important;
+@media screen and (width >= 960) {
+  #inWebrings {
+    width: 100%;
 
-    .ring-title {
-      @apply font-size-[16px];
+    #flexRings {
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: center;
+    }
+  }
+}
+
+#inWebrings,
+#prospectiveRings {
+  text-align: center;
+
+  div {
+    @apply mx-auto my-[1em] text-center;
+  }
+
+  map area {
+    @apply crosshair;
+  }
+
+  img {
+    @apply mx-auto;
+
+    &[usemap] {
+      @apply block my-1;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:focus-visible,
+    &:hover {
+      text-decoration-line: underline;
+      text-decoration-skip-ink: all;
     }
 
-    .ring-links {
-      a[href*="minxie"]::after {
-        display: none;
-      }
+    &::after {
+      display: none !important;
     }
   }
 }

@@ -121,9 +121,6 @@ onMounted( () => {
           <span v-else>{{ zalgo("copied!") }}</span>
         </button>
       </div>
-      <!-- <p v-if="!isSupported"> -->
-      <!--   Sorry, Your browser does not support Clipboard API. -->
-      <!-- </p> -->
     </div>
   </div>
 </template>

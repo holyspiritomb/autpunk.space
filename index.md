@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: colophon
       link: /pages/about/colophon
+    - theme: brand
+      text: webrings
+      link: /pages/about/webrings
 
 features:
   - title: Zalgo Generator
@@ -66,13 +69,3 @@ features:
 
 lastUpdated: true
 ---
-<script setup>
-import MyWebrings from ".vitepress/theme/components/MyWebrings.vue";
-</script>
-
-<CenterDiv>
-
-## Webrings
-
-</CenterDiv>
-<MyWebrings />

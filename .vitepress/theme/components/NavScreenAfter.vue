@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import FontChanger from './FontChanger.vue';
-import PauseGifs from './PauseGifs.vue';
+import AccessibilityOptions from "./AccessibilityOptions.vue";
+import { useData } from 'vitepress';
+
+const { title } = useData()
 </script>
 <template>
-  <div class="VPNavScreenAppearance my-[1em] py-[1em] text-center">
-    <p class="font-size-[16px] sansFont">Accessibility Options</p>
-    <FontChanger />
-    <PauseGifs />
+  <div
+    v-if="(!title.includes('Home'))"
+  >
+    <AccessibilityOptions />
   </div>
 </template>

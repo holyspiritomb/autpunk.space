@@ -45,9 +45,6 @@ Sie d&uuml;rfen mit mir auch auf Deutsch sprechen.
 פּאלעסטינע װעט זיך באַפרײַען!&lrm;
 </Yiddish>
 
-<!-- <div i-devicon-plain-zsh text-ctp-latte-yellow dark:text-ctp-mocha-yellow /> -->
-<!-- <div i-devicon-plain-ohmyzsh text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo /> -->
-
 ### My devices I heck around on
 
 - Raspberry Pi 3A+

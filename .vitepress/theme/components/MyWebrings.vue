@@ -15,20 +15,6 @@ useScriptTag(
   }
 );
 
-// const nixRing = useScriptTag(
-//   "https://softmachine.dev/webring/linuxring/ring.js",
-//   (el) => {
-//     document.getElementById("nixRingDiv")?.appendChild(el);
-//   },
-//   {
-//     defer: true,
-//     attrs: {
-//       "data-icon": "arch",
-//     },
-//   },
-// );
-// console.log(nixRing.scriptTag.value);
-
 onMounted( () => {
   const nixRingScript = document.createElement("script");
   nixRingScript.defer = true;
@@ -46,6 +32,7 @@ onMounted( () => {
         prev-link="https://genlissa.baccyflap.com/?prv&s=hez"
         next-link="https://genlissa.baccyflap.com/?nxt&s=hez"
         random-link="https://genlissa.baccyflap.com/?rnd"
+        class="sansFont"
         style="color: rgb(255, 0, 255); background-color: rgb(255, 190, 0);"
       ></OneLineWebringWidget>
       <OneLineWebringWidget
@@ -69,9 +56,9 @@ onMounted( () => {
       prev-link="https://webri.ng/webring/cssjoy/previous?via=https://autpunk.space"
       next-link="https://webri.ng/webring/cssjoy/next?via=https://autpunk.space"
       random-link="https://webri.ng/webring/cssjoy/random?via=https://autpunk.space"
-      classes="bg-ctp-mocha-crust shadow-md shadow-ctp-latte-pink bg-hero-four-point-stars-ctp-latte-pink/20 border-groove border-ctp-latte-pink"
-      text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink bold"
-      link-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink"
+      classes="bg-ctp-mocha-crust shadow-md shadow-ctp-latte-pink bg-hero-four-point-stars-ctp-latte-pink/20 border-groove border-ctp-latte-pink py-0"
+      text-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink sansFont"
+      link-classes="gradient-text bg-gradient-to-r from-ctp-latte-pink via-ctp-macchiato-pink to-ctp-latte-pink sansFont"
       border="border-[2px]"
     ></WebringWidget>
     <a href="https://minxie.likesyou.org/webring/">
@@ -85,20 +72,45 @@ onMounted( () => {
         alt="A Tism-Webring"
       />
     </a>
-    
     <div
-      id="tismFallback"
+      id="tismFallback block my-1 mx-auto"
     >
       <div
-        class="ringw minxie-webring"
+        class="ringw minxie-webring bg-[#282a36] text-[#f8f8f2] border-[#bd93f9] border-[2px] border-solid py-[10px] px-[14px] mx-auto my-[14px] block text-center box-border max-w-[100%] w-fit"
         data-ring="webring"
-        style="--rw-bg: #282a36; --rw-fg: #f8f8f2; --rw-edge: #bd93f9; --rw-title: #ff79c6; --rw-link: #8be9fd;"
+        style="--rw-bg: #282a36; --rw-fg: #f8f8f2; --rw-edge: #bd93f9; --rw-title: #ff79c6; --rw-link: #8be9fd; border-radius: 10px !important;"
       >
-        <div class="ring-title">A Tism-Webring</div>
-        <div class="ring-links">
-          <a href="https://minxie.likesyou.org/webring/go.php?id=autpunk-space&amp;action=prev">« Back</a>
-          <a href="https://minxie.likesyou.org/webring/index.php">Info</a>
-          <a href="https://minxie.likesyou.org/webring/go.php?id=autpunk-space&amp;action=next">Next »</a>
+        <div
+          class="ring-title text-[#ff79c6] mb-[8px] uppercase font-size-[16px] box-border sansFont"
+          style="letter-spacing:.06em; margin-top: 0;"
+        >
+          <b>A Tism-Webring</b>
+        </div>
+        <div
+          class="ring-links mt-[8px]"
+          style="margin-bottom: 0;"
+        >
+          <a
+            class="text-[#8be9fd] font-size-[16px] my-0 mx-[6px] sansFont"
+            href="https://minxie.likesyou.org/webring/go.php?id=autpunk-space&amp;action=prev"
+            style="color: #8be9fd"
+          >
+            <b>« Back</b>
+          </a>
+          <a
+            class="text-[#8be9fd] font-size-[16px] my-0 mx-[6px] sansFont"
+            href="https://minxie.likesyou.org/webring/index.php"
+            style="color: #8be9fd"
+          >
+            <b>Info</b>
+          </a>
+          <a
+            class="text-[#8be9fd] font-size-[16px] my-0 mx-[6px] sansFont"
+            href="https://minxie.likesyou.org/webring/go.php?id=autpunk-space&amp;action=next"
+            style="color: #8be9fd"
+          >
+            <b>Next »</b>
+          </a>
         </div>
       </div>
     </div>
@@ -106,109 +118,3 @@ onMounted( () => {
     <div id="ssgRing"></div>
   </div>
 </template>
-
-<style scoped>
-map area {
-  @apply crosshair;
-}
-div {
-  @apply mx-auto my-[1em] text-center;
-  img {
-    @apply mx-auto;
-  }
-}
-img[usemap] {
-  @apply block my-1;
-}
-
-@media screen and (width < 960) {
-  #inWebrings,
-  #prospectiveRings {
-    width: 342px;
-  }
-}
-@media screen and (width >= 960) {
-  #inWebrings {
-    width: 100%;
-
-    #flexRings {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-    }
-  }
-}
-#inWebrings,
-#prospectiveRings {
-  text-align: center;
-}
-.ringw {
-  --rw-bg:#282a36;
-  --rw-fg:#f8f8f2;
-  --rw-edge:#bd93f9;
-  --rw-title:#ff79c6;
-  --rw-link:#8be9fd;
-  display:block;
-  box-sizing:border-box;
-  background:var(--rw-bg);
-  color:var(--rw-fg);
-  border:2px solid var(--rw-edge);
-  border-radius:10px;
-  padding:10px 14px;
-  width:fit-content;
-  max-width:100%;
-  margin:14px auto;
-  text-align:center;
-  font-family:sans-serif
-}
-.ringw *,
-.ringw *:before,
-.ringw *:after{
-  box-sizing:border-box
-}
-.ringw .ring-title{
-  font-weight:bold;
-  font-size:.9em;
-  color:var(--rw-title);
-  text-transform:uppercase;
-  letter-spacing:.06em;
-  margin-bottom:8px
-}
-.ringw .ring-links a{
-  color:var(--rw-link);
-  text-decoration:none;
-  margin:0 6px;
-  font-size:.9em;
-  font-weight:bold
-}
-.ringw .ring-links a:hover,
-.ringw .ring-links a:focus-visible{
-  text-decoration:underline
-}
-.ringw--shadow{
-  box-shadow:var(--rw-shadow,none)
-}
-.ringw--ears{
-  position:relative;padding-top:16px
-}
-.ringw--ears:before,.ringw--ears:after{
-  content:"";
-  position:absolute;
-  top:-11px;
-  width:0;
-  height:0;
-  border-left:11px solid transparent;
-  border-right:11px solid transparent;
-  border-bottom:11px solid var(--rw-edge)
-}
-.ringw--ears:before{
-  left:16px
-}
-.ringw--ears:after{
-  right:16px
-}
-@media (prefers-reduced-motion:reduce) {
-  .ringw *{transition:none!important}
-}
-</style>

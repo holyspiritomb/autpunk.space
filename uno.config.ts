@@ -13,6 +13,7 @@ import processorLightningCSS from '@unocss/processor-lightningcss';
 import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
 import { presetAdvanceGradients } from 'unocss-preset-advance-gradients';
 import { Features } from 'lightningcss';
+import { flavorEntries } from '@catppuccin/palette';
 
 export default defineConfig({
   content: {
@@ -62,7 +63,7 @@ export default defineConfig({
     ["ySans", { "font-family": "'Noto Sans Hebrew', sans" }],
     ["pixelFont", { "font-family": "Dylex, monospace" }],
     ["pixelMonoFont", { "font-family": "Cozette, monospace" }],
-    ["sansFont", { "font-family": "'Atkinson Hyperlegible Next', system-ui !important" }],
+    ["sansFont", { "font-family": "'Atkinson Hyperlegible Next', Arial, sans-serif !important" }],
     ["victorFeatures", { "font-feature-settings": "'ss06' on, 'ss01' off, 'ss07' on" }],
     ["fontFeatUnset", { "font-feature-settings": "unset" }],
     [/^z-(\d+)$/, ([, d]) => ({ "z-index": `${d}` })],
@@ -129,4 +130,11 @@ export default defineConfig({
     //     // ...extractors
     // ],
   },
+  safelist: [...generateSafelist()],
 });
+
+function generateSafelist() {
+  return flavorEntries
+    .flatMap(([, { colorEntries }]) => colorEntries)
+    .map(([colourName]) => `bg-[--ctp-${colourName}]`);
+}

@@ -19,9 +19,7 @@ import "viewerjs/dist/viewer.css";
 import "virtual:uno.css";
 import "./fonts.scss";
 import "./custom.scss";
-// import { VPButton } from "vitepress/theme-without-fonts";
 // @ts-expect-error You always complain about my custom components, but they still work
-// import LayoutBottom from "./components/LayoutBottom.vue";
 import YiddishText from "./components/YiddishText.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import AfterActions from "./components/AfterActions.vue";
@@ -29,7 +27,7 @@ import NiceButton from "./components/NiceButton.vue";
 import CenterDiv from "./components/CenterDiv.vue";
 import HomeHeroBefore from "./components/HomeHeroBefore.vue";
 import SidebarNavAfter from "./components/SidebarNavAfter.vue";
-import NavScreenAfter from "./components/NavScreenAfter.vue";
+// import NavScreenAfter from "./components/NavScreenAfter.vue";
 import useImageViewer from "vitepress-plugin-viewerjs";
 import BackToTopButton from "@miletorix/vitepress-back-to-top-button";
 import "@miletorix/vitepress-back-to-top-button/style.css"; 
@@ -97,7 +95,7 @@ export default {
       // https://vuejs.github.io/vitepress/v1/guide/extending-default-theme#layout-slots
       "home-hero-actions-after": () => h(AfterActions),
       "home-hero-before": () => h(HomeHeroBefore),
-      "nav-screen-content-after": () => h(NavScreenAfter), 
+      // "nav-screen-content-after": () => h(NavScreenAfter), 
       "sidebar-nav-after": () => h(SidebarNavAfter),
     });
   },

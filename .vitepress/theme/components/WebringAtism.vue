@@ -23,10 +23,6 @@ console.log("using fallback a-tism webring widget");
 </script>
 
 <template>
-  <!-- <div -->
-  <!--   id="tismRingWidget" -->
-  <!-- > -->
-  <!-- </div> -->
   <div
     id="tismFallback"
   >
