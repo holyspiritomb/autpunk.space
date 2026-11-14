@@ -2,6 +2,7 @@
 import { useSound } from "@vueuse/sound";
 import SoundboardButton from './AlphabetSoundboardButton.vue';
 import alphabetSounds from "/audio/alphabet/alphabet.ogg";
+import "./soundboard.scss";
 
 const { play } = useSound(alphabetSounds, {
   "sprite": {
@@ -46,14 +47,14 @@ const alphabet: string[] = [
 ];
 
 function unhide() {
-  document.querySelector("#body").hidden = false;
-  document.querySelector(".splash").hidden = true;
+  document.querySelector("#alphabetBody").hidden = false;
+  document.querySelector(".alphabetSplash").hidden = true;
 }
 
 </script>
 
 <template>
-  <div class="splash">
+  <div class="alphabetSplash">
     <h1>About</h1>
     <p>This is a recreation of an old soundboard I made in 2019 in HTML with inline Javascript for a child who was 3 at the time. It has been remade with Vue, and now uses ogg-vorbis audio instead of mp3. (If you're using Internet Explorer, sorry!)</p>
     <p>Fonts have been chosen to match or approximate the original. Colors have been modified from the original as little as possible. The only intentional visual design difference from the original other than with typography is that the buttons now behave as if the user is actually depressing a button when clicked or touched, and the "back to main page" link has been made into a button with the same effect.</p>
@@ -72,13 +73,13 @@ function unhide() {
     </p>
   </div>
   <div
-    id="body"
+    id="alphabetBody"
     hidden
   >
     <header>
-      <div id="head">Alphabet</div>
+      <div id="alphabetHead">Alphabet</div>
     </header>
-    <div class="main">
+    <div class="alphabetMain">
       <h1>Click on any letter to hear its name.</h1>
       <SoundboardButton
         v-for="letter in alphabet"
@@ -87,7 +88,7 @@ function unhide() {
         @click="play({ id: letter })"
       ></SoundboardButton>
     </div>
-    <div class="footer">
+    <div class="alphabetFooter">
       <p>dedicated to the best kid in the world</p>
       <NiceButton
         text="back to main page"
@@ -96,73 +97,3 @@ function unhide() {
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-@font-face {
-  font-family: "Fantasque Sans Mono";
-  src:
-    url("/fonts/fantasque/FantasqueSansMono-Regular.woff2") format("woff2"),
-    url("/fonts/fantasque/FantasqueSansMono-Regular.otf") format("opentype"),
-    url("/fonts/fantasque/FantasqueSansMono-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fantasque Sans Mono";
-  src:
-    url("/fonts/fantasque/FantasqueSansMono-Bold.woff2") format("woff2"),
-    url("/fonts/fantasque/FantasqueSansMono-Bold.otf") format("opentype"),
-    url("/fonts/fantasque/FantasqueSansMono-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-div#body {
-  @apply w-[100%] pt-[10px] pb-[15px] prose-[#000000] h-[100vh];
-  overflow-y: scroll;
-  background: pink url("/images/alphabet_bg.jpg") fixed;
-}
-div#head {
-  @apply w-[80%] mx-a mt-[10px] text-center c-[#ffffff] font-bold font-size-[55px] line-height-normal vertical-baseline;
-  border-radius: 20px !important;
-  box-shadow: 5px 5px #000;
-  line-height: normal !important;
-  font-family: "Fantasque Sans Mono", "Victor Mono", monospace;
-  text-shadow: 2px 2px #000000;
-  background: linear-gradient(red, orange, yellow, #00ff00, #00ffff, #0000ff, #ff00ff);
-}
-
-div.main,
-div.footer,
-div.splash {
-  @apply my-[20px] mx-a p-[15px] w-[70%] b-1 b-dashed b-[#000000] bg-[#ffffff]/50 c-black;
-  font-family: "Atkinson Hyperlegible Next", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border-radius: 5px !important;
-  box-shadow: 3px 3px #000000;
-  p {
-    @apply font-size-[18px] line-height-normal;
-    text-shadow: none;
-  }
-  h1 {
-    @apply font-bold font-size-[26px];
-  }
-  h1, p {
-    @apply mb-[0.75em] c-black;
-  }
-}
-div.splash {
-  background: unset;
-  color: initial;
-  border-color: currentColor;
-  box-shadow: 3px 3px currentColor;
-  h1, p {
-    color: initial;
-  }
-  button {
-    @apply boxPress px-2;
-  }
-}
-</style>

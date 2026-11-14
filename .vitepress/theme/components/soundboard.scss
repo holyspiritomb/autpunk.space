@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src:
+    url("/fonts/fantasque/FantasqueSansMono-Regular.woff2") format("woff2"),
+    url("/fonts/fantasque/FantasqueSansMono-Regular.otf") format("opentype"),
+    url("/fonts/fantasque/FantasqueSansMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src:
+    url("/fonts/fantasque/FantasqueSansMono-Bold.woff2") format("woff2"),
+    url("/fonts/fantasque/FantasqueSansMono-Bold.otf") format("opentype"),
+    url("/fonts/fantasque/FantasqueSansMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root,
+html {
+  --alphabetSplashBg: rgb(var(--ctp-latte-base-rgb) / 0.5);
+
+  &.dark {
+    --alphabetSplashBg: rgb(var(--ctp-mocha-crust-rgb) / 0.5);
+  }
+}
+
+html.pixel button.alphabetButton,
+button.alphabetButton {
+  @apply "boxPress text-center px-[6px] py-[20px] m-[10px] font-normal cursor-default v-baseline text-black";
+
+  font-family: "Fantasque Sans Mono", "Victor Mono", monospace !important;
+  box-shadow: 2px 2px 3px currentColor;
+  border-width: 2px;
+  border-color: rebeccapurple;
+  background-color: mediumpurple;
+  font-size: 60px;
+}
+
+div#alphabetBody {
+  @apply "w-[100%] pt-[10px] pb-[15px] prose-[#000000] h-[100vh]";
+
+  overflow-y: scroll;
+  background: pink url("/images/alphabet_bg.jpg") fixed;
+}
+
+div#alphabetHead {
+  @apply "w-[80%] mx-a mt-[10px] text-center c-[#ffffff] font-bold font-size-[55px] line-height-normal vertical-baseline";
+
+  border-radius: 20px !important;
+  box-shadow: 5px 5px #000;
+  line-height: normal !important;
+  font-family: "Fantasque Sans Mono", "Victor Mono", monospace !important;
+  text-shadow: 2px 2px #000;
+  background: linear-gradient(red, orange, yellow, #0f0, #0ff, #00f, #f0f);
+}
+
+div.alphabetMain,
+div.alphabetFooter,
+div.alphabetSplash {
+  @apply "my-[20px] mx-a p-[15px] w-[70%] b-1 b-dashed";
+
+  font-family: "Atkinson Hyperlegible Next", "Trebuchet MS", sans-serif !important;
+  border-radius: 5px !important;
+
+  button:not(.alphabetButton) {
+    font-family: "Atkinson Hyperlegible Next", "Trebuchet MS", sans-serif !important;
+    font-size: inherit;
+  }
+
+  p {
+    @apply font-size-[18px] line-height-normal;
+
+    text-shadow: none;
+  }
+
+  h1 {
+    @apply font-bold font-size-[26px];
+  }
+
+  h1,
+  p {
+    @apply mb-[0.75em];
+  }
+}
+
+html,
+html.dark {
+  div.alphabetMain,
+  div.alphabetFooter {
+    @apply "b-[#000000] bg-[#fff]/50 c-black";
+
+    box-shadow: 3px 3px #000;
+
+    h1,
+    p {
+      @apply c-black;
+    }
+  }
+
+  div.alphabetSplash {
+    @apply defaultTextColor;
+
+    background-color: var(--alphabetSplashBg);
+    border-color: currentColor;
+    box-shadow: 3px 3px currentColor;
+
+    button {
+      @apply "boxPress px-2 defaultColors";
+    }
+  }
+}
