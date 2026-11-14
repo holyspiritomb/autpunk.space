@@ -461,3 +461,13 @@ div.accessibility {
     @apply noBoxShadow;
   }
 }
+
+li.writing {
+  list-style-type: none;
+
+  &::before {
+    content: "☭";
+    position: relative;
+    right: 0.5em;
+  }
+}
