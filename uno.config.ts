@@ -80,7 +80,10 @@ export default defineConfig({
     ["ccborder", { "border": "1px solid currentColor" }],
     ["squareBoxShadowSubtle", { "box-shadow": "2px 2px rgb(from currentColor r g b / 0.8)" }],
     ["defaultBgColor", { "background-color": "var(--vp-c-bg)" }],
-    ["defaultTextColor", { "color": "var(--vp-c-text-1)" }],
+    ["defaultTextColor", { "color": "var(--vp-c-text-1) !important" }],
+    ["nounderline", { "text-decoration": "none !important" }],
+    ["no-text-shadow", { "text-shadow": "none !important" }],
+
   ],
   shortcuts: {
     "defaultColors": "defaultBgColor defaultTextColor",

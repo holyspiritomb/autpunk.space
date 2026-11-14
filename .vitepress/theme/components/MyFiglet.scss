@@ -1,0 +1,180 @@
+@media screen and (width >= 960px) {
+  div#myContainer > div {
+    max-width: 700px;
+    min-height: max-content;
+  }
+}
+
+@media screen and (width < 960px) {
+  div#myContainer > div {
+    max-width: 450px;
+    min-height: fit-content;
+  }
+}
+
+html {
+  div#myContainer {
+    overflow-y: scroll;
+
+    &:has(>.win98) {
+      @apply bg-[#008080] bg-hero-texture-black/50;
+
+      label {
+        padding-inline: unset;
+      }
+
+      label,
+      p,
+      .status-bar-field,
+      .title-bar,
+      select,
+      option {
+        font-size: 11px !important;
+      }
+    }
+
+    &:has(>.win7) {
+      @apply bg-[#4580c4];
+
+      #outputFigDisplay {
+        background-color: #fff;
+        box-sizing: border-box;
+        transition: border-color 0.5s;
+        border: 1px solid;
+        border-color: #abadb3 #dbdfe6 #e3e9ef #e2e3ea;
+        font-family: var(--default-monoFont-family);
+
+        &:hover {
+          border-color: #5794bf #b7d5ea #c7e2f1 #c5daed;
+          transition: border-color 0.3s;
+        }
+
+        > pre {
+          padding-left: 10px;
+          width: 100%;
+          margin: unset;
+          max-height: 95% !important;
+        }
+      }
+
+      textarea {
+        margin-left: calc(var(--spacing) * 3);
+      }
+
+      .figcopy,
+      .window-body button {
+        border-radius: 3px !important;
+      }
+
+      details {
+        padding-inline: calc(var(--spacing) * 4);
+        padding-block: calc(var(--spacing) * 2);
+      }
+
+      .window {
+        border-radius: 6px !important;
+
+        .title-bar-controls {
+          border-bottom-left-radius: 6px !important;
+          border-bottom-right-radius: 6px !important;
+
+          button:first-child {
+            border-bottom-left-radius: 6px !important;
+          }
+
+          button:last-child {
+            border-bottom-right-radius: 6px !important;
+          }
+        }
+      }
+    }
+
+    dialog#alert {
+      position: absolute;
+      top: calc(50% - 60px);
+      left: calc(50% - 125px);
+      color: unset;
+
+      button {
+        cursor: default;
+      }
+    }
+
+    p {
+      text-shadow: none;
+    }
+
+    > div {
+      border: 0 !important;
+      color: var(--ctp-latte-text) !important;
+
+      p {
+        line-height: 1.5em;
+      }
+
+      select,
+      label {
+        user-select: none;
+      }
+
+      div:has(>button.figcopy) {
+        @apply my-0 text-right z-2;
+
+        position: relative;
+        top: 1.6em;
+        right: 0.2em;
+        user-select: none;
+      }
+
+      .title-bar-controls > button[aria-label="Help"] {
+        cursor: help;
+      }
+
+      .title-bar-controls > button[aria-label="Maximize"],
+      .title-bar-controls > button[aria-label="Close"] {
+        cursor: default;
+      }
+
+      .title-bar,
+      .status-bar-field {
+        user-select: none;
+      }
+
+      #outputFigDisplay {
+        scrollbar-width: none;
+
+        pre {
+          overflow-y: scroll;
+          overflow-x: scroll !important;
+          scrollbar-width: none;
+          max-height: 75vh !important;
+        }
+      }
+
+      .figcopy {
+        position: relative;
+        top: 7px;
+        cursor: default;
+      }
+
+      .status-bar-field a::after {
+        display: none;
+      }
+    }
+  }
+
+  &.pixel {
+    #myContainer {
+      div#startMenu,
+      select,
+      label,
+      option,
+      button.figcopy,
+      .title-bar-text,
+      .status-bar-field,
+      .slotted {
+        @apply mspixel;
+      }
+    }
+  }
+}

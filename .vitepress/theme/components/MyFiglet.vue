@@ -5,6 +5,7 @@ import { ref as deepRef, onMounted } from "vue";
 import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "../util/fontLoader";
 import "@vstyler96/7.css/dist/7.scoped.css";
 import "@vstyler96/98.css/dist/98.scoped.css";
+import "./MyFiglet.scss";
 
 const chosenFont = deepRef("Future Smooth");
 const listOfFonts = deepRef(getAvailableFonts());
@@ -106,15 +107,6 @@ function hideHelp() {
   document.querySelector("#alert")?.toggleAttribute("hidden");
 }
 
-const processClass = (s?) => {
-  if (preferredFont.value == "pixel") {
-    return `mspixel ${s}`
-  }
-  else {
-    return s
-  }
-}
-
 const windowsVersion = (st?) => {
   if (preferredFont.value == "pixel") {
     return `win98 ${st}`
@@ -131,7 +123,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="myContainer" class="w-[100%] h-[100vh] m-0 py-[10px]">
+  <div
+    id="myContainer"
+    class="w-[100%] h-[100vh] m-0 py-[10px]"
+  >
     <div :class="windowsVersion('mx-a border-0')">
       <dialog
         id="alert"
@@ -140,7 +135,7 @@ onMounted(() => {
         <div class="window active">
           <div class="title-bar">
             <div
-              :class="processClass('title-bar-text')"
+              class="title-bar-text"
             >
               Help
             </div>
@@ -163,7 +158,7 @@ onMounted(() => {
       <div class="window active">
         <div class="title-bar">
           <div
-            :class="processClass('title-bar-text')"
+            class="title-bar-text"
           >
             Figlet Generator
           </div>
@@ -184,7 +179,7 @@ onMounted(() => {
         <div class="window-body has-space">
           <label
             for="font"
-            :class="processClass('mr-1 inline my-1')"
+            class="mr-1 inline my-1"
           >
             Font:
           </label>
@@ -192,13 +187,12 @@ onMounted(() => {
           <select
             id="font"
             v-model="chosenFont"
-            :class="processClass('w-[45%] inline my-1')"
+            class="w-[45%] inline my-1"
             @change="generateArt"
           >
             <option
               v-for="font in listOfFonts"
               :key="font"
-              :class="processClass()"
               :value="font"
             >
               {{ font }} {{ loadedFonts.has(font) ? "✓" : "" }}
@@ -261,7 +255,6 @@ onMounted(() => {
           <div>
             <label
               for="inputText"
-              :class="processClass()"
             >
               Input text:
             </label>
@@ -279,7 +272,7 @@ onMounted(() => {
               v-if="isSupported"
             >
               <button
-                :class="processClass('figcopy')"
+                class="figcopy"
                 @click="copy()"
               >
                 <span v-if="!copied">Copy</span>
@@ -299,150 +292,17 @@ onMounted(() => {
           </div>
         </div>
         <div class="status-bar">
-          <p :class="processClass('status-bar-field')">Font: {{ chosenFont }}</p>
-          <p :class="processClass('status-bar-field')">Figlet fonts loaded: {{ loadedFonts.size }}</p>
-          <p :class="processClass('status-bar-field')">Figlet fonts available: {{ getAvailableFonts().length }}</p>
-          <p :class="processClass('status-bar-field')">Powered by <a href="https://www.npmjs.com/package/figlet">figlet.js</a></p>
+          <p class="status-bar-field">Font: {{ chosenFont }}</p>
+          <p class="status-bar-field">Figlet fonts loaded: {{ loadedFonts.size }}</p>
+          <p class="status-bar-field">Figlet fonts available: {{ getAvailableFonts().length }}</p>
+          <p class="status-bar-field">Powered by <a href="https://www.npmjs.com/package/figlet">figlet.js</a></p>
         </div>
       </div>
-      <CenterDiv :class="processClass('')">
+      <CenterDiv class="slotted">
         <slot />
       </CenterDiv>
+      <div id="startMenu"></div>
     </div>
     <!-- eslint-enable vue/no-template-shadow -->
   </div>
 </template>
-
-<style lang="scss" scoped>
-@media screen and (width >= 960px) {
-  div#myContainer > div {
-    max-width: 700px;
-    min-height: max-content;
-  }
-}
-@media screen and (width < 960px) {
-  div#myContainer > div {
-    max-width: 450px;
-    min-height: fit-content;
-  }
-}
-p {
-  text-shadow: none;
-}
-dialog#alert {
-  position: absolute;
-  top: calc(50% - 60px);
-  left: calc(50% - 125px);
-  color: unset;
-  button {
-    cursor: default;
-  }
-}
-div#myContainer > div {
-  border: 0 !important;
-  color: var(--ctp-latte-text) !important;
-  p {
-    line-height: 1.5em;
-  }
-  select,
-  label {
-    user-select: none;
-  }
-  div:has(>button.figcopy) {
-    @apply my-0 text-right z-2;
-    position: relative;
-    top: 1.6em;
-    right: 0.2em;
-    user-select: none;
-  }
-  .title-bar-controls > button[aria-label="Help"] {
-    cursor: help;
-  }
-  .title-bar-controls > button[aria-label="Maximize"],
-  .title-bar-controls > button[aria-label="Close"] {
-    cursor: default;
-  }
-  .title-bar,
-  .status-bar-field {
-    user-select: none;
-  }
-  #outputFigDisplay {
-    scrollbar-width: none;
-    pre {
-      overflow-y: scroll;
-      overflow-x: scroll !important;
-      scrollbar-width: none;
-      max-height: 75vh !important;
-    }
-  }
-  .figcopy {
-    position: relative;
-    top: 7px;
-    cursor: default;
-  }
-  .status-bar-field a:after {
-    display: none;
-  }
-}
-.win7 {
-  textarea {
-    margin-left: calc(var(--spacing) * 3);
-  }
-  #outputFigDisplay {
-    background-color: #fff;
-    box-sizing: border-box;
-    transition: border-color 0.5s;
-    border: 1px solid;
-    border-color: #abadb3 #dbdfe6 #e3e9ef #e2e3ea;
-    font-family: var(--default-monoFont-family);
-    &:hover {
-      border-color: #5794bf #b7d5ea #c7e2f1 #c5daed;
-      transition: border-color 0.3s;
-    }
-    > pre {
-      padding-left: 10px;
-      width: 100%;
-      margin:unset;
-      max-height: 95% !important;
-    }
-  }
-  .figcopy, .window-body button {
-    border-radius: 3px !important;
-  }
-  details {
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: calc(var(--spacing) * 2);
-  }
-  .window {
-    border-radius: 6px !important;
-    .title-bar-controls {
-      border-bottom-left-radius: 6px !important;
-      border-bottom-right-radius: 6px !important;
-      button:first-child {
-        border-bottom-left-radius: 6px !important;
-      }
-      button:last-child {
-        border-bottom-right-radius: 6px !important;
-      }
-    }
-  }
-}
-.win98 {
-  label {
-    padding-inline: unset;
-  }
-  label, p, .status-bar-field, .title-bar, select,option {
-    font-size: 11px !important;
-  }
-}
-div#myContainer {
-  overflow-y: scroll;
-
-  &:has(>.win98) {
-    @apply bg-[#008080] bg-hero-texture-black/50;
-  }
-  &:has(>.win7) {
-    @apply bg-[#4580c4];
-  }
-}
-</style>

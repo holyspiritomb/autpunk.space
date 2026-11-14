@@ -77,6 +77,17 @@
       rgb(var(--ctp-mocha-pink-rgb) / 0.5) 80%,
       rgb(var(--ctp-mocha-sky-rgb) / 1) 80%
     );
+  --ctp-mocha-rainbow-bg:
+    -webkit-linear-gradient(
+      0deg,
+      var(--ctp-mocha-pink) 1%,
+      var(--ctp-mocha-peach) 10%,
+      var(--ctp-mocha-yellow) 30%,
+      var(--ctp-mocha-green) 50%,
+      var(--ctp-mocha-teal) 60%,
+      var(--ctp-mocha-sky) 70%,
+      var(--ctp-mocha-lavender)
+    );
 
   @media (width >= 960px) {
     --vp-sidebar-bg-color: transparent;
@@ -151,6 +162,10 @@
   --vp-nav-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
   --vp-local-nav-bg-color: rgb(var(--ctp-mocha-crust-rgb) / 0.75);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--ctp-mocha-sky) 50%, var(--ctp-mocha-pink) 50%);
+
+  img.darkInvert {
+    filter: invert(100);
+  }
 
   body,
   .VPNavScreen {

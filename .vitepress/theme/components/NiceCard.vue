@@ -15,64 +15,29 @@ withDefaults(defineProps<Props>(), {
   extraImgClasses: "",
 })
 
-const { isDark } = useData()
-
 const imgClasses = (s) => {
-  return `no-viewer ${s}`.trim()
+  return `no-viewer p-[1px] hover:p-[0px] w-[100%] h-[125px] ${s}`.trim()
 }
 </script>
 
 <template>
-  <a
-    :href="href"
-  >
-    <div>
-      <div v-if="img">
-        <img
-          :src="img"
-          :alt="altText"
-          :class="imgClasses(extraImgClasses)"
-        />
+  <div class="nicecard my-[20px] defaultBgColor defaultTextColor w-[300px]">
+    <a
+      :href="href"
+      class="defaultTextColor nounderline active:defaultTextColor hover:defaultTextColor focus:defaultTextColor"
+    >
+      <div class="boxPress defaultBgColor">
+        <div v-if="img" class="px-[0] w-[100%] border-b-[1px] border-b-solid">
+          <img
+            :src="img"
+            :alt="altText"
+            :class="imgClasses(extraImgClasses)"
+            style="object-fit: cover !important;"
+          />
+        </div>
+        <h4 class="title px-[1rem] mt-[15px] nounderline no-text-shadow defaultTextColor">{{ title }}</h4>
+        <p class="px-[1rem] mt-[15px] nounderline defaultTextColor">{{ text }}</p>
       </div>
-      <h4 class="title">{{ title }}</h4>
-      <p>{{ text }}</p>
-    </div>
-  </a>
+    </a>
+  </div>
 </template>
-
-<style lang="scss" scoped>
-a {
-  @apply my-3 block whiteBg dark:crustBg w-[300px];
-
-  color: var(--vp-c-text-1);
-  text-decoration: none;
-
-  &:active, &:hover, &:focus {
-    color: inherit;
-  }
-
-  > div {
-    @apply boxPress dark:crustBg;
-
-    > div {
-      @apply px-[0] w-[100%];
-      border-bottom: 1px solid currentColor;
-      width:100%;
-
-      img {
-        @apply p-[1px] hover:p-[0px] w-[100%] h-[125px];
-        object-fit: cover !important;
-      }
-    }
-
-    p, h4 {
-      @apply px-[1rem] mt-[15px];
-    } 
-  }
-}
-html.dark {
-  img.darkInvert {
-    filter: invert(100);
-  }
-}
-</style>

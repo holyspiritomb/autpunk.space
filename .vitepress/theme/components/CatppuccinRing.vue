@@ -6,35 +6,21 @@
       <a
         href="https://ctp-webr.ing/autpunk/previous"
         title="previous"
-        class="mx-[5px] sansFont"
+        class="mx-[5px] sansFont font-size-[20px]"
         style="color: var(--ctp-mocha-pink);"
       >&laquo;</a><a
         href="https://ctp-webr.ing/"
         title="Catppuccin webring"
-        class="gradient-text ringtitle font-size-[16px] sansFont"
+        class="gradient-text ringtitle font-size-[20px] sansFont"
+        style="background-image: var(--ctp-mocha-rainbow-bg);"
       >
         Catppuccin webring
       </a> <a
         href="https://ctp-webr.ing/autpunk/next"
         title="next"
-        class="mx-[5px] sansFont"
+        class="mx-[5px] sansFont font-size-[20px]"
         style="color: var(--ctp-mocha-lavender);"
       >&raquo;</a>
     </span>
   </div>
 </template>
-<style scoped>
-div#catppuccinWebring a.ringtitle {
-  background-image:
-    -webkit-linear-gradient(
-      0deg,
-      var(--ctp-mocha-pink) 1%,
-      var(--ctp-mocha-peach) 10%,
-      var(--ctp-mocha-yellow) 30%,
-      var(--ctp-mocha-green) 50%,
-      var(--ctp-mocha-teal) 60%,
-      var(--ctp-mocha-sky) 70%,
-      var(--ctp-mocha-lavender)
-  );
-}
-</style>
