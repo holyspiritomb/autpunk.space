@@ -399,6 +399,10 @@ html {
   #prospectiveRings {
     width: 342px;
   }
+
+  div.accessibility {
+    @apply w-[200px] mx-a;
+  }
 }
 
 @media screen and (width >= 960) {
@@ -410,6 +414,10 @@ html {
       flex-flow: wrap row;
       justify-content: center;
     }
+  }
+
+  div.accessibility {
+    @apply w-[225px] px-[1em];
   }
 }
 
@@ -445,5 +453,11 @@ html {
     &::after {
       display: none !important;
     }
+  }
+}
+
+div.accessibility {
+  &:has(details[open]) {
+    @apply noBoxShadow;
   }
 }

@@ -25,21 +25,3 @@ const { title } = useData()
     <PauseGifs />
   </div>
 </template>
-<style lang="scss" scoped>
-@media screen and (width < 960px) {
-  div.accessibility {
-    @apply w-[200px] mx-a;
-  }
-}
-@media screen and (width >= 960px) {
-  div.accessibility {
-    @apply w-[225px] px-[1em];
-  }
-}
-
-div.accessibility {
-  &:has(details[open]) {
-    @apply noBoxShadow;
-  }
-}
-</style>
