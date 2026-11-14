@@ -9,17 +9,6 @@ next: false
 ---
 # {{ $frontmatter.title }} <Badge>under construction</Badge>
 
-<!-- ## Digital surveillance -->
-<!---->
-<!-- ### Basics -->
-<!---->
-<!-- The Electronic Frontier Foundation maintains [a very good primer on digital security](https://ssd.eff.org/module-categories/basics). It teaches: -->
-<!---->
-<!-- - How to create good passwords (a good password is strong *and* memorable) -->
-<!-- - How full-disk encryption works on computers and phones -->
-<!-- - How end-to-end message encryption works and how to decide if a program offering it is secure -->
-<!-- - How to develop your personal threat model -->
-
 ## DeFlock
 
 Website: [DeFlock.org](https://deflock.org/)
@@ -84,3 +73,15 @@ Also fun facts: ALPRs might misidentify license plate characters regularly, so y
 2. Talk to friends and neighbors about why ALPRs are bad <Badge>difficulty: medium</Badge>
 
 3. Attend local town council and board of education meetings. [DeFlock has a guide with example speeches and email messages, and also a list of victories.](https://deflock.org/council) <Badge>difficulty: medium to hard</Badge>
+
+## Digital surveillance
+
+### Basics
+
+The Electronic Frontier Foundation maintains [a very good primer on digital security](https://ssd.eff.org/module-categories/basics). It teaches:
+
+- How to create good passwords (a good password is strong *and* memorable)
+- How full-disk encryption works on computers and phones
+- How end-to-end message encryption works and how to decide if a program offering it is secure
+
+<Badge>under construction</Badge>
