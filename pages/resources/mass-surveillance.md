@@ -85,3 +85,7 @@ The Electronic Frontier Foundation maintains [a very good primer on digital secu
 - How end-to-end message encryption works and how to decide if a program offering it is secure
 
 <Badge>under construction</Badge>
+
+### Recommended Resources
+
+- [An Easy (& Bilingual) Guide to Encrypted Messaging](https://lorefiend.itch.io/encrypted-messaging-zine): a nice mini-zine in English and Spanish you can easily print, fold and distribute.
