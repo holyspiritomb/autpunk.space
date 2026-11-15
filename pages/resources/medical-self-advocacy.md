@@ -55,3 +55,7 @@ During the first appointment, the gynecologist told me I was too constipated for
 :::
 
 I told my primary care doctor about this bad experience, being careful to use a lot of "I" statements and to focus on how this gynecologist was a bad fit for me. My PCP had been the one to recommend this gynecologist and I did not want to come across as insulting my PCP's judgment. I asked my PCP to refer me to a different gynecologist for a second opinion. I had a significantly better experience with the second gynecologist.
+
+## Recommended reading
+
+- [Screaming Doctors Zine!](https://lexiconically.itch.io/scream-doctors): a zine illustrating things you can say that will make bad doctors want to scream at you.
