@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import figlet from "figlet";
-import { useClipboard, useStorage } from "@vueuse/core";
+import { useClipboard, useStorage, useNow, useDateFormat } from "@vueuse/core";
 import { ref as deepRef, onMounted } from "vue";
 import { loadFont as loadFontUtil, getAvailableFonts, getLoadedFonts } from "../util/fontLoader";
 import "@vstyler96/7.css/dist/7.scoped.css";
@@ -17,6 +17,7 @@ const vLayout = deepRef("default");
 const width = deepRef("none");
 const textToFiglet = deepRef("be gay\ndo art\ncrimes");
 const figletText = deepRef("");
+const currentTime = useDateFormat(useNow(), 'HH:mm A');
 
 const preferredFont = useStorage("preferredFont", "vector", localStorage, {mergeDefaults: true});
 
@@ -125,9 +126,9 @@ onMounted(() => {
 <template>
   <div
     id="myContainer"
-    class="w-[100%] h-[100vh] m-0 py-[10px]"
+    class="w-[100%] h-[100vh] m-0"
   >
-    <div :class="windowsVersion('mx-a border-0')">
+    <div :class="windowsVersion('mx-a border-0 mt-[10px]')">
       <dialog
         id="alert"
         class="z-999 w-[250px] h-[120px]"
@@ -298,10 +299,17 @@ onMounted(() => {
           <p class="status-bar-field">Powered by <a href="https://www.npmjs.com/package/figlet">figlet.js</a></p>
         </div>
       </div>
-      <CenterDiv class="slotted">
-        <slot />
-      </CenterDiv>
-      <div id="startMenu"></div>
+      <div id="winTaskBar">
+        <div class="taskbar">
+          <button class="start-button"></button>
+          <div class="taskbar-items">
+            <slot />
+          </div>
+          <div class="taskbar-tray">
+            <time class="taskbar-clock px-[0.5em]">{{ currentTime }}</time>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- eslint-enable vue/no-template-shadow -->
   </div>

@@ -20,9 +20,8 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 - [‘Doom Loop’: OpenAI and Microsoft Admits LLMs Are Destroying the Web and Built on Theft](https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft/): AI model training is plagiarizing writers and artists, and churning out slop that makes the internet worse.
 - [Why AI Music on Spotify Matters](https://sloptracker.org/why): AI generated music is flooding Spotify and it's siphoning money and streams away from human artists.
 - [Massive disconnect of power roils largest US electric grid](https://www.reuters.com/business/energy/massive-disconnect-power-roiled-largest-us-electric-grid-2026-07-22/): AI-training data centers are not worth the power consumption they require.
-- [AI Companion Mortality Database](https://aimortality.org): AI chatbots have a death toll.
-- [The AI Doomsday Future Is Not Inevitable](https://theintercept.com/2026/09/14/surveillance-tech-ai-military-flock/): AI is being used to surveil and kill, and humans could choose not to use it this way.
-- If you like longreads, I recommend Ed Zitron's [AI Hater's Manifesto](https://www.wheresyoured.at/the-ai-haters-manifesto/).
+- [AI Companion Mortality Database](https://aimortality.org): A tally of cases of AI use where the chatbot's sycophantic responses contributed to vulnerable users' deaths by suicide.
+- [The AI Doomsday Future Is Not Inevitable](https://theintercept.com/2026/09/14/surveillance-tech-ai-military-flock/): Rocco's basilisk isn't real and can't hurt you.
 :::
 
 ## For webmasters
@@ -36,9 +35,7 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 ### For webmasters who are chaotic: honeypots and tarpits
 
 - [Iocaine](https://iocaine.madhouse-project.org/) poisons crawlers by serving them garbage, preventing scraping of your actual content. Intended to be light on a server's CPU. Written in Rust, can be scripted in Lua, Fennel and Roto.
-
 - [Miasma](https://austin-weeks.github.io/miasma/) poisons AI scrapers' training data by trapping AI crawlers in a slop loop. Written in Rust, Docker image available.
-
 - [Nepenthes](https://zadzmo.org/code/nepenthes/) is a honeypot for AI scrapers that traps them endlessly in markov-chain-generated text that links back to itself. Developer warns of significant CPU load with use, and that any site it's deployed on is likely to disappear from search indices^[Which may be desirable, if you don't want search engines to find your content.]. Written in Lua. Docker image available.
 
 ## Operating systems
@@ -52,13 +49,11 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 ## Browser extensions
 
 - [Slop Evader](https://tegabrain.com/Slop-Evader): Browser extension for date-restricting search results on Google, Reddit, etc to before the release of ChatGPT (November 30, 2022).
-
 - [Slow LLM](https://slowllm.lav.io/): A browser extension that makes LLMs appear to run much more slowly. Useful to install if you want to break your own or a loved one's reliance on AI.
 
 ### Blocklists for adblockers
 
 - [Stevo's AI Blocklist](https://github.com/Stevoisiak/Stevos-AI-Blocklist) is "a filter list that hides website features which use Generative AI & content labeled as AI Generated." Works with uBlock Origin and Adguard.
-
 - [just_a_husk's image-search AI Blocklist](https://codeberg.org/just_a_husk/uBlockOrigin-AI-Blocklist): remove AI generated images from image search results. Includes uBlock Origin syntax files (which are supported in Adguard iirc?) and hosts files.
 
 ## Detecting AI use
@@ -71,4 +66,5 @@ For the purposes of these resources, "AI" refers specifically to LLMs, LLM-power
 - [You Look Like a Thing and I Love You: How Artificial Intelligence Works and Why It’s Making the World a Weirder Place](https://www.janelleshane.com/book-you-look-like-a-thing): a book published in 2019 by AI researcher Janelle Shane about the silly things neural networks produce, and how they work. Good background reading for how generative AI works (and doesn't). Published in a time before LLM chatbots were being forced into everything.
 - [Who's Afraid Of The AI Apocalypse?](https://aylataylor.itch.io/whos-afraid-of-the-ai-apocalypse): a zine about AI doomerism and how it functions as marketing for AI.
 - [Feed](https://mtanderson.com/books/feed): 2002 cyberpunk YA novel by M.T. Anderson that I first read in the aughts and think about a lot. In the near-future capitalist hellscape world of the novel, everyone receives an internet brain implant called a feed that can't be turned off, through which all manner of news reports, social posts and advertisements are pushed.
-- [The A.I. Con: How to Fight Big Tech’s Hype and Create the Future We Want](https://thecon.ai/): a 2026 book about resisting AI hype. I haven't read it yet but I have it on my Kobo and I enjoy the authors' podcast [Mystery AI Hype Theater 3000](https://dair-institute.org/maiht3k/).
+- [The A.I. Con: How to Fight Big Tech’s Hype and Create the Future We Want](https://thecon.ai/): a 2026 book about resisting AI hype. I haven't finished reading it yet but I enjoy the authors' podcast [Mystery AI Hype Theater 3000](https://dair-institute.org/maiht3k/).
+- Ed Zitron's [AI Hater's Manifesto](https://www.wheresyoured.at/the-ai-haters-manifesto/) is a long essay that details many of the problems with AI, including the way it has caused harm to open-source software communities by coding agents rewriting open-source libraries (with no meaningful changes, only enough not to be detected as plagiarism) without credit instead of importing them.

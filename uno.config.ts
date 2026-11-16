@@ -55,7 +55,7 @@ export default defineConfig({
   rules: [
     ["italic", { "font-style": "italic" }],
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
-    ["mspixel", { "font-family": " 'Ari-W9500', 'W95F', 'MS Sans Serif', Cozette, 'Fixedsys Excelsior', Fixedsys !important" }],
+    ["mspixel", { "font-family": "'Pixelated MS Sans Serif', 'Ari-W9500', 'W95F', 'MS Sans Serif', Cozette, 'Fixedsys Excelsior', Fixedsys !important" }],
     ["victor", { "font-family": "var(--default-monoFont-family) !important" }],
     ["victorFont", { "font-family": "'Victor Mono', monospace !important" }],
     ["mono", { "font-family": "var(--vp-font-family-mono) !important" }],
