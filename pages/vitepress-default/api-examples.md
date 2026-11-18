@@ -1,5 +1,7 @@
 ---
 outline: deep
+prev: false
+next: false
 ---
 
 # Runtime API Examples
@@ -52,4 +54,4 @@ const { site, theme, page, frontmatter, isDark } = useData()
 
 ## More
 
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+Check out the documentation for the [full list of runtime APIs](https://vuejs.github.io/vitepress/v1/reference/runtime-api#usedata).

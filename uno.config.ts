@@ -54,6 +54,7 @@ export default defineConfig({
   ],
   rules: [
     ["italic", { "font-style": "italic" }],
+    ["unifont", { "font-family": "Unifont, UnifontEX" }],
     ["jetbrains", { "font-family": "'JetBrains Mono', monospace !important" }],
     ["mspixel", { "font-family": "'Pixelated MS Sans Serif', 'Ari-W9500', 'W95F', 'MS Sans Serif', Cozette, 'Fixedsys Excelsior', Fixedsys !important" }],
     ["victor", { "font-family": "var(--default-monoFont-family) !important" }],

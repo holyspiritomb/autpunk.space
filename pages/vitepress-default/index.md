@@ -1,5 +1,8 @@
 ---
+title: VP Boilerplate
 outline: deep
+prev: false
+next: false
 ---
 
 # Helpful links
@@ -7,18 +10,20 @@ outline: deep
 Primarily for my own reference.
 
 ## Demos
-* <a href="components">Component demos</a>
-* <a href="api-examples">API Example boilerplates</a>
-* <a href="markdown-examples">Markdown Examples</a>
+* [Component demos](./components)
+* [API Example boilerplates](./api-examples)
+* [Markdown Examples](./markdown-examples)
+* [Markdown-it Emoji](./emoji)
 
 ## VitePress Reference
-* <a href="https://vitepress.dev/reference/site-config">Site Config</a>
-* <a href="https://vitepress.dev/reference/default-theme-config">Default Theme Config</a>
-* <a href="https://vitepress.dev/reference/default-theme-home-page">Default Theme Home Page Config</a>
-* <a href="https://vitepress.dev/reference/frontmatter-config">Frontmatter Config</a>
-* <a href="https://vitepress.dev/reference/runtime-api">Runtime API</a>
+* [Site Config](https://vuejs.github.io/vitepress/v1/reference/site-config)
+* [Default Theme Config](https://vuejs.github.io/vitepress/v1/reference/default-theme-config)
+* [Default Theme Home Page Config](https://vuejs.github.io/vitepress/v1/reference/default-theme-home-page)
+* [Frontmatter Config](https://vuejs.github.io/vitepress/v1/reference/frontmatter-config)
+* [Runtime API](https://vuejs.github.io/vitepress/v1/reference/runtime-api)
+* [SSR Compatibility](https://vuejs.github.io/vitepress/v1/guide/ssr-compat)
 
 ## Markdown Reference
-* <a href="https://vitepress.dev/guide/markdown">Markdown Guide</a>
-* <a href="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs">List of Emojis</a>
+* [Markdown Guide](https://vuejs.github.io/vitepress/v1/guide/markdown)
+* [List of Emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs)
 
