@@ -45,6 +45,37 @@ onMounted( () => {
       ></OneLineWebringWidget>
     </div>
     <CatppuccinRing />
+    <div
+      style="width: fit-content;"
+      class="bg-[black]/100 sansFont border-[1px] border-[hotpink] text-[hotpink] px-[10px] boxPress align-center text-center"
+    >
+      <p style="margin: 0; padding: 0.1em;">
+        This site is a member of
+        <a
+          href="https://p-u-n-k.nekoweb.org/"
+          style="color: white;"
+        >
+          P-U-N-K
+        </a>.
+      </p>
+      <div
+        class="flex"
+        style="margin-top: 0; margin-bottom: 4px;"
+      >
+        <a
+          href="https://webri.ng/webring/punk/previous?via=https%3A%2F%2Fautpunk.space"
+          style="flex: 1; margin: 0; padding: 0.1em; color: white;"
+        >⇜</a>
+        <a
+          style="flex: 1; margin: 0; padding: 0.1em; color: white;"
+          href="https://webri.ng/webring/punk/random?via=https%3A%2F%2Fautpunk.space"
+        >Random</a>
+        <a
+          style="flex: 1; margin: 0; padding: 0.1em; color: white;"
+          href="https://webri.ng/webring/punk/next?via=https%3A%2F%2Fautpunk.space"
+        >⇝</a>
+      </div>
+    </div>
   </div>
 
 
