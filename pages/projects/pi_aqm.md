@@ -1,5 +1,6 @@
 ---
 title: Raspberry Pi Air Quality Monitor
+description: Use a Raspberry Pi as an indoor air quality monitor.
 lastUpdated: true
 prev:
     text: 'Projects'

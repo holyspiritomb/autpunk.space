@@ -24,6 +24,8 @@ import YiddishText from "./components/YiddishText.vue";
 import { onDevToolsClientConnected, addCustomTab } from "@vue/devtools-api";
 import AfterActions from "./components/AfterActions.vue";
 import NiceButton from "./components/NiceButton.vue";
+import ButtonImage from "./components/ButtonImage.vue";
+import ButtonImageSwitch from "./components/ButtonImageSwitch.vue";
 import CenterDiv from "./components/CenterDiv.vue";
 import HomeHeroBefore from "./components/HomeHeroBefore.vue";
 import SidebarNavAfter from "./components/SidebarNavAfter.vue";
@@ -102,13 +104,15 @@ export default {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enhanceApp({ app, router, siteData }) {
     BackToTopButton(app, {
-      progressColor: "var(--ctp-mocha-pink)", // default is #42b983
+      progressColor: "var(--ctp-mocha-sky)", // default is #42b983
       textColor: "var(--vp-badge-info-text)",
       // arrowSvg: `string`
     });
     // app.component("VPButton", VPButton).
     app.component("CenterDiv", CenterDiv).
       component("NiceButton", NiceButton).
+      component("ButtonImage", ButtonImage).
+      component("ButtonImageSwitch", ButtonImageSwitch).
       component("Yiddish", YiddishText);
   },
   setup() {

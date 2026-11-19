@@ -5,26 +5,22 @@ title: About
 lastUpdated: true
 prev:
     text: 'Home'
-    link: '/index'
+    link: '/'
 next:
     text: 'Colophon'
     link: './colophon'
 ---
-<script setup>
-import HumanCrafted from "../../src/craftedbyhuman.svg?skipsvgo"
-</script>
-
-
 # {{ $frontmatter.title }}
 
 ![trans rights now](/buttons/transnow2.gif){.no-viewer}
 ![asexuals now](/buttons/asexuals_now.gif){.no-viewer}
 ![long live MSPaint](/buttons/mspaint.gif){.no-viewer}
-![arch linux](/buttons/archlinux.gif){.no-viewer}
+[<ButtonImage src="/buttons/archlinux.gif" alt-text="arch linux" />](https://archlinux.org)
 ![powered by the void](/buttons/thevoid.gif){.no-viewer}
 ![I survived the 2018 tumblr apocalypse](/buttons/tumblr2018.gif){.no-viewer}
 ![I support right to repair](/buttons/right_to_repair_01.jpg){.no-viewer}
-[![Fight Fascism sticker by Angus Johnston](/buttons/fightfascism-trans-88x31-white.png){.no-viewer}](https://fightfascism.neocities.org/)
+[<ButtonImage alt-text="Fight Fascism sticker by Angus Johnston" src="/buttons/fightfascism-trans-88x31-white.png" />](https://fightfascism.neocities.org/)
+[<ButtonImageSwitch src-still="/buttons/stop_omarchy_still.gif" src-animated="/buttons/stop_omarchy.gif" alt-text="Stop Omarchy" />](https://stopomarchy.org/)
 
 ## About me
 

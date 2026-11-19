@@ -1,5 +1,6 @@
 ---
 title: Libby Userscript
+description: A userscript that helps you borrow ebooks amd audiobooks from libraries.
 lastUpdated: true
 prev:
     text: 'Projects'

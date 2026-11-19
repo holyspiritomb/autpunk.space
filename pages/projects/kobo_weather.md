@@ -1,5 +1,6 @@
 ---
 title: weather.koplugin
+description: A weather app for KOReader.
 lastUpdated: true
 prev:
     text: 'Projects'

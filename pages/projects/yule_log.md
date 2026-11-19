@@ -1,5 +1,6 @@
 ---
 title: Yule Log
+description: A cheerful animated yule log for your terminal.
 lastUpdated: true
 prev:
     text: 'Projects'

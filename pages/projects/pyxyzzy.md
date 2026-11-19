@@ -1,5 +1,6 @@
 ---
 title: pyXyzzy
+description: A card game for people with a dark sense of humor.
 lastUpdated: true
 prev:
     text: 'Projects'

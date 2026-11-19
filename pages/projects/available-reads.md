@@ -1,5 +1,6 @@
 ---
 title: Available Reads
+description: A story of the first time I tried to fork a browser extension.
 lastUpdated: true
 prev:
     text: 'Projects'

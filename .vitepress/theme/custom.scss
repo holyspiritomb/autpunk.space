@@ -436,6 +436,10 @@ html {
   div.accessibility {
     @apply w-[200px] mx-a;
   }
+
+  #dateWidget {
+    @apply mx-a;
+  }
 }
 
 @media screen and (width >= 960) {
@@ -493,4 +497,12 @@ div.accessibility {
   &:has(details[open]) {
     @apply noBoxShadow;
   }
+}
+
+#dateWidget {
+  text-shadow:
+    1px 1px 0 var(--vp-c-bg),
+    -1px -1px 0px var(--vp-c-bg),
+    1px -1px 0px var(--vp-c-bg),
+    -1px 1px 0px var(--vp-c-bg);
 }

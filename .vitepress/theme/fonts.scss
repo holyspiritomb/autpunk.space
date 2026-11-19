@@ -330,6 +330,12 @@ html.pixel {
     line-height: 12px !important;
   }
 
+  .VPFeature p.details,
+  #dateWidget {
+    font-family: var(--vp-font-family-mono);
+    font-size: 13px !important;
+  }
+
   textarea.unicodeStyler {
     font-family: Unifont, UnifontEX, monospace;
     line-height: unset !important;
