@@ -7,7 +7,7 @@ interface Props {
   randomLink?: string | null,
   classes: string | null,
   textClasses?: string | null,
-  linkClasses?: string | null,
+  linkClasses: string | null,
   prevLinkText?: string,
   nextLinkText?: string,
   randomLinkText?: string,

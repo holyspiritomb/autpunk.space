@@ -443,27 +443,27 @@ html {
 }
 
 @media screen and (width >= 960) {
-  #inWebrings {
+  .inWebrings {
     width: 100%;
+  }
 
-    #flexRings {
-      display: flex;
-      flex-flow: wrap row;
-      justify-content: center;
-    }
+  .flexRings {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
   }
 
   div.accessibility {
-    @apply w-[225px] px-[1em];
+    @apply w-[225px] px-[16px];
   }
 }
 
-#inWebrings,
-#prospectiveRings {
+.inWebrings,
+.prospectiveRings {
   text-align: center;
 
   div {
-    @apply mx-auto my-[1em] text-center;
+    @apply mx-auto my-[10px] text-center;
   }
 
   map area {
@@ -502,7 +502,7 @@ div.accessibility {
 #dateWidget {
   text-shadow:
     1px 1px 0 var(--vp-c-bg),
-    -1px -1px 0px var(--vp-c-bg),
-    1px -1px 0px var(--vp-c-bg),
-    -1px 1px 0px var(--vp-c-bg);
+    -1px -1px 0 var(--vp-c-bg),
+    1px -1px 0 var(--vp-c-bg),
+    -1px 1px 0 var(--vp-c-bg);
 }
