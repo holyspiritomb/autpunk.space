@@ -1,5 +1,6 @@
 ---
 title: AI Resistance
+description: Resources for opposing generative AI.
 outline: deep
 lastUpdated: true
 prev:

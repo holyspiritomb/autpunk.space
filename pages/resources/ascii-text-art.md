@@ -1,5 +1,6 @@
 ---
 title: ASCII Text Art
+description: An annotated list of tools for making ASCII text art.
 lastUpdated: true
 prev:
     text: 'Resources'
@@ -16,6 +17,8 @@ In order to make ASCII art you will generally^[There are exceptions to this guid
 
 [Programming Fonts](https://www.programmingfonts.org) is a page where you can test-drive a bunch of monospace fonts. If you select "ASCII art" as the sample text, you can see if the font has box-drawing glyphs, which are necessary for correctly displaying a lot of ASCII art.
 
+[FontPixel](https://fontpixel.com/en/) is a gallery of open-source pixel fonts that shows detailed information about their glyph support. Many are monospaced. Downloads are available in bitmap and vector formats.
+
 ## ASCII Text Art Tools
 
 [figlet](https://www.figlet.org/) is the original text art generator on Unix-like systems. It is broadly available in basically every Linux distro's repositories.
@@ -27,6 +30,8 @@ In order to make ASCII art you will generally^[There are exceptions to this guid
 [figlet-cli](https://www.npmjs.com/package/figlet-cli) is a CLI of `figlet.js`.
 
 The developer of `figlet.js` hosts a [Figlet Font Editor](https://patorjk.com/figlet-editor/) that I've found helpful in testing my edits to figlet fonts.
+
+[jave](https://web.archive.org/web/20110902095056/http://wiki.jave.de/index.php/Integrations_build_dowloads) is an old java program that has an ASCII drawing tool, an image to ASCII art converter, a figlet generator and a large amount of figlet fonts distributed with it.
 
 ## Borders
 

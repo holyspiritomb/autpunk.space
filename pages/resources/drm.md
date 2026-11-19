@@ -1,5 +1,6 @@
 ---
 title: DRM
+description: Resources relating to claiming ownership of media you paid for.
 outline: deep
 lastUpdated: true
 prev:

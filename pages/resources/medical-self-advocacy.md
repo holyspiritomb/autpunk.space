@@ -1,5 +1,6 @@
 ---
 title: Medical Self-Advocacy Tips and Tricks
+description: A guide for asserting your needs in medical appointments.
 outline: deep
 lastUpdated: true
 prev:

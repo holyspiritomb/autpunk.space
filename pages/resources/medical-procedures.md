@@ -1,5 +1,6 @@
 ---
-title: Medical Procedures (Making Them Hurt Less)
+title: Medical Procedures
+description: A guide to making various common medical procedures hurt less.
 outline: deep
 lastUpdated: true
 prev:

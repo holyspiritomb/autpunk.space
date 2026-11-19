@@ -1,5 +1,6 @@
 ---
 title: Mass Surveillance
+description: How automatic license plate readers work and what you can do about it.
 outline: deep
 lastUpdated: true
 prev:
