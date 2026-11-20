@@ -1,6 +1,6 @@
 <script setup>
 import { data as resources } from "./resources.data.js";
-import "./Resources.scss"
+import "./Resources.scss";
 
 const myResources = [];
 
@@ -14,13 +14,13 @@ for (const resource of resources) {
 </script>
 
 <template>
-  <ul>
-    <li
-      v-for="resource of myResources"
-      :key="resource"
-      class="resource"
-    >
-      <a :href="resource.url">{{ resource.frontmatter.title }}</a>
-    </li>
-  </ul>
+  <div class="flex flex-wrap gap-[16px]">
+    <NiceCard
+      v-for="d of myResources"
+      :key="d"
+      :title="d.frontmatter.title"
+      :href="d.url"
+      :text="(d.frontmatter.description) ? d.frontmatter.description : '.'"
+    ></NiceCard>
+  </div>
 </template>

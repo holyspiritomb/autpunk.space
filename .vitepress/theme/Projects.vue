@@ -1,4 +1,5 @@
 <script setup>
+import NiceCard from "./components/NiceCard.vue";
 import { data } from "./projects.data.js";
 import "./Projects.scss";
 
@@ -14,13 +15,14 @@ for (const p of data) {
 </script>
 
 <template>
-  <ul>
-    <li
+  <div class="flex flex-wrap gap-[16px]">
+    <NiceCard
       v-for="d of projects"
       :key="d"
-      class="project"
-    >
-      <a :href="d.url">{{ d.frontmatter.title }}</a>
-    </li>
-  </ul>
+      :title="d.frontmatter.title"
+      :href="d.url"
+      :text="(d.frontmatter.description) ? d.frontmatter.description : '.'"
+      :style="(d.frontmatter.title == 'Available Reads') ? 'order: 99' : ' ' "
+    ></NiceCard>
+  </div>
 </template>

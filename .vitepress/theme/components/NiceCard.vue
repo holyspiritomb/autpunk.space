@@ -21,13 +21,16 @@ const imgClasses = (s) => {
 </script>
 
 <template>
-  <div class="nicecard my-[20px] defaultBgColor defaultTextColor w-[300px]">
+  <div class="nicecard my-[20px] defaultTextColor w-[300px]">
     <a
       :href="href"
       class="defaultTextColor nounderline active:defaultTextColor hover:defaultTextColor focus:defaultTextColor"
     >
-      <div class="boxPress defaultBgColor">
-        <div v-if="img" class="px-[0] w-[100%] border-b-[1px] border-b-solid">
+      <div class="boxPress defaultBgColor h-[100%]">
+        <div
+          v-if="img"
+          class="px-[0] w-[100%] border-b-[1px] border-b-solid"
+        >
           <img
             :src="img"
             :alt="altText"
@@ -35,8 +38,8 @@ const imgClasses = (s) => {
             style="object-fit: cover !important;"
           />
         </div>
-        <h4 class="title px-[1rem] mt-[15px] nounderline no-text-shadow defaultTextColor">{{ title }}</h4>
-        <p class="px-[1rem] mt-[15px] nounderline defaultTextColor">{{ text }}</p>
+        <h4 class="title px-[24px] mt-[1em] nounderline no-text-shadow defaultTextColor">{{ title }}</h4>
+        <p class="px-[24px] pb-[8px] nounderline defaultTextColor">{{ text }}</p>
       </div>
     </a>
   </div>
