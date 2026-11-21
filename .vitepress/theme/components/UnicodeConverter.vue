@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { useClipboard } from "@vueuse/core";
 import api from "unicode-font-styles";
+import "./UnicodeConverter.scss";
 
 const { copy, copied, isSupported } = useClipboard({
   legacy: true,
@@ -85,16 +86,16 @@ onMounted( () => {
     v-model="inputText"
     placeholder="put something cool here"
     maxlength="10000"
-    class="ccborder unicodeStyler block w-[380px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]"
+    class="ccborder unicodeStyler block w-[384px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]"
   ></textarea>
-  <div class="flex justify-between w-[380px] mx-a my-[1em]">
+  <div class="flex justify-between w-[384px] mx-a my-[1em]">
     <select
       v-model="conversion"
       class="ccborder px-[0.25em] defaultColors"
     >
       <option
         value="none"
-        class="defaultColors px-[0.25em]"
+        class="defaultColors px-[0.2em]"
       >
         pick a style
       </option>
@@ -102,24 +103,24 @@ onMounted( () => {
         v-for="set of myConversions"
         :key="set.id"
         :value="set.id"
-        class="defaultColors px-[0.25em]"
+        class="defaultColors px-[0.2em]"
       >
         {{ set.label }}
       </option>
       <option
         value="upsideDown"
-        class="defaultColors px-[0.25em]"
+        class="defaultColors px-[0.2em]"
       >
         Upside-Down
       </option>
     </select>
     <select
       v-model="effectRef"
-      class="ccborder px-[0.25em] defaultColors"
+      class="ccborder px-[0.2em] defaultColors"
     >
       <option
         value="none"
-        class="defaultColors px-[0.25em]"
+        class="defaultColors px-[0.2em]"
       >
         pick an effect
       </option>
@@ -127,19 +128,19 @@ onMounted( () => {
         v-for="e of effects"
         :key="e"
         :value="e"
-        class="defaultColors px-[0.25em]"
+        class="defaultColors px-[0.2em]"
       >
         {{ api.EFFECTS[e].label }}
       </option>
     </select>
     <button
-      class="defaultColors boxPress px-[0.4em]"
+      class="defaultColors boxPress px-[0.2em]"
       @click="unstyleInput"
     >
       unstyle
     </button>
     <button
-      class="defaultColors boxPress px-[0.4em]"
+      class="defaultColors boxPress px-[0.2em]"
       @click="processText"
     >
       convert
@@ -147,13 +148,13 @@ onMounted( () => {
   </div>
   <textarea
     readonly
-    class="unicodeStyler ccborder block w-[380px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]"
+    class="unicodeStyler ccborder block w-[384px] mx-a h-[150px] p-[0.5em] defaultColors font-size-[16px]"
     style="line-height: unset !important;"
     v-text="outputText"
   ></textarea>
-  <div class="flex justify-between w-[380px] mx-a my-[1em]">
+  <div class="flex justify-between w-[384px] mx-a my-[1em]">
     <button
-      class="defaultColors boxPress px-[0.4em]"
+      class="defaultColors boxPress px-[0.3em]"
       @click="resetConverter"
     >
       reset
@@ -162,7 +163,8 @@ onMounted( () => {
       v-if="isSupported"
     >
       <button
-        class="defaultColors boxPress px-[0.4em]"
+        class="defaultColors boxPress px-[0.3em]"
+        :style="(outputText) ? 'visibility: visible' : 'visibility: hidden'"
         @click="copy(outputText)"
       >
         <span v-if="!copied">copy</span>

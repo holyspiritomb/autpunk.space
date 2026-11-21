@@ -6,6 +6,13 @@ next: false
 prev:
     link: './'
     text: 'Fun Stuff Index'
+head:
+  - - link
+    - href: "/fonts/unifont/Unifont.css"
+    - rel: "stylesheet"
+  - - link
+    - href: "/fonts/unifont_upper/Unifont-upper.css"
+    - rel: "stylesheet"
 ---
 <script setup>
 import UnicodeConverter from "../../.vitepress/theme/components/UnicodeConverter.vue";

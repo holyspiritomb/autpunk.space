@@ -1,0 +1,1520 @@
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Basic-Latin.woff2) format("woff2");
+  unicode-range: U+20;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Linear-B-Syllabary.woff2) format("woff2");
+  unicode-range: U+10000-1007F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Linear-B-Ideograms.woff2) format("woff2");
+  unicode-range: U+10080-100FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Aegean-Numbers.woff2) format("woff2");
+  unicode-range: U+10100-1013F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ancient-Greek-Numbers.woff2) format("woff2");
+  unicode-range: U+10140-1018F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ancient-Symbols.woff2) format("woff2");
+  unicode-range: U+10190-101CF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Phaistos-Disc.woff2) format("woff2");
+  unicode-range: U+101D0-101FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Lycian.woff2) format("woff2");
+  unicode-range: U+10280-1029F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Carian.woff2) format("woff2");
+  unicode-range: U+102A0-102DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Coptic-Epact-Numbers.woff2) format("woff2");
+  unicode-range: U+102E0-102FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Italic.woff2) format("woff2");
+  unicode-range: U+10300-1032F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Gothic.woff2) format("woff2");
+  unicode-range: U+10330-1034F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Permic.woff2) format("woff2");
+  unicode-range: U+10350-1037F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ugaritic.woff2) format("woff2");
+  unicode-range: U+10380-1039F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Persian.woff2) format("woff2");
+  unicode-range: U+103A0-103DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Deseret.woff2) format("woff2");
+  unicode-range: U+10400-1044F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Shavian.woff2) format("woff2");
+  unicode-range: U+10450-1047F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Osmanya.woff2) format("woff2");
+  unicode-range: U+10480-104AF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Osage.woff2) format("woff2");
+  unicode-range: U+104B0-104FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Elbasan.woff2) format("woff2");
+  unicode-range: U+10500-1052F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Caucasian-Albanian.woff2) format("woff2");
+  unicode-range: U+10530-1056F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Vithkuqi.woff2) format("woff2");
+  unicode-range: U+10570-105BF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Todhri.woff2) format("woff2");
+  unicode-range: U+105C0-105FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Linear-A.woff2) format("woff2");
+  unicode-range: U+10600-1077F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Latin-Extended-F.woff2) format("woff2");
+  unicode-range: U+10780-107BF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Cypriot-Syllabary.woff2) format("woff2");
+  unicode-range: U+10800-1083F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Imperial-Aramaic.woff2) format("woff2");
+  unicode-range: U+10840-1085F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Palmyrene.woff2) format("woff2");
+  unicode-range: U+10860-1087F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Nabataean.woff2) format("woff2");
+  unicode-range: U+10880-108AF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Hatran.woff2) format("woff2");
+  unicode-range: U+108E0-108FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Phoenician.woff2) format("woff2");
+  unicode-range: U+10900-1091F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Lydian.woff2) format("woff2");
+  unicode-range: U+10920-1093F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sidetic.woff2) format("woff2");
+  unicode-range: U+10940-1095F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Meroitic-Hieroglyphs.woff2) format("woff2");
+  unicode-range: U+10980-1099F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Meroitic-Cursive.woff2) format("woff2");
+  unicode-range: U+109A0-109FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kharoshthi.woff2) format("woff2");
+  unicode-range: U+10A00-10A5F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-South-Arabian.woff2) format("woff2");
+  unicode-range: U+10A60-10A7F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-North-Arabian.woff2) format("woff2");
+  unicode-range: U+10A80-10A9F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Manichaean.woff2) format("woff2");
+  unicode-range: U+10AC0-10AFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Avestan.woff2) format("woff2");
+  unicode-range: U+10B00-10B3F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Inscriptional-Parthian.woff2) format("woff2");
+  unicode-range: U+10B40-10B5F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Inscriptional-Pahlavi.woff2) format("woff2");
+  unicode-range: U+10B60-10B7F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Psalter-Pahlavi.woff2) format("woff2");
+  unicode-range: U+10B80-10BAF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Turkic.woff2) format("woff2");
+  unicode-range: U+10C00-10C4F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Hungarian.woff2) format("woff2");
+  unicode-range: U+10C80-10CFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Hanifi-Rohingya.woff2) format("woff2");
+  unicode-range: U+10D00-10D3F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Garay.woff2) format("woff2");
+  unicode-range: U+10D40-10D8F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Rumi-Numeral-Symbols.woff2) format("woff2");
+  unicode-range: U+10E60-10E7F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Yezidi.woff2) format("woff2");
+  unicode-range: U+10E80-10EBF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Arabic-Extended-C.woff2) format("woff2");
+  unicode-range: U+10EC0-10EFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Sogdian.woff2) format("woff2");
+  unicode-range: U+10F00-10F2F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sogdian.woff2) format("woff2");
+  unicode-range: U+10F30-10F6F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Old-Uyghur.woff2) format("woff2");
+  unicode-range: U+10F70-10FAF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Chorasmian.woff2) format("woff2");
+  unicode-range: U+10FB0-10FDF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Elymaic.woff2) format("woff2");
+  unicode-range: U+10FE0-10FFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Brahmi.woff2) format("woff2");
+  unicode-range: U+11000-1107F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kaithi.woff2) format("woff2");
+  unicode-range: U+11080-110CF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sora-Sompeng.woff2) format("woff2");
+  unicode-range: U+110D0-110FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Chakma.woff2) format("woff2");
+  unicode-range: U+11100-1114F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mahajani.woff2) format("woff2");
+  unicode-range: U+11150-1117F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sharada.woff2) format("woff2");
+  unicode-range: U+11180-111DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sinhala-Archaic-Numbers.woff2) format("woff2");
+  unicode-range: U+111E0-111FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Khojki.woff2) format("woff2");
+  unicode-range: U+11200-1124F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Multani.woff2) format("woff2");
+  unicode-range: U+11280-112AF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Khudawadi.woff2) format("woff2");
+  unicode-range: U+112B0-112FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Grantha.woff2) format("woff2");
+  unicode-range: U+11300-1137F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tulu-Tigalari.woff2) format("woff2");
+  unicode-range: U+11380-113FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Newa.woff2) format("woff2");
+  unicode-range: U+11400-1147F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tirhuta.woff2) format("woff2");
+  unicode-range: U+11480-114DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Siddham.woff2) format("woff2");
+  unicode-range: U+11580-115FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Modi.woff2) format("woff2");
+  unicode-range: U+11600-1165F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mongolian-Supplement.woff2) format("woff2");
+  unicode-range: U+11660-1167F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Takri.woff2) format("woff2");
+  unicode-range: U+11680-116CF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Myanmar-Extended-C.woff2) format("woff2");
+  unicode-range: U+116D0-116FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ahom.woff2) format("woff2");
+  unicode-range: U+11700-1174F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Dogra.woff2) format("woff2");
+  unicode-range: U+11800-1184F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Warang-Citi.woff2) format("woff2");
+  unicode-range: U+118A0-118FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Dives-Akuru.woff2) format("woff2");
+  unicode-range: U+11900-1195F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Nandinagari.woff2) format("woff2");
+  unicode-range: U+119A0-119FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Zanabazar-Square.woff2) format("woff2");
+  unicode-range: U+11A00-11A4F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Soyombo.woff2) format("woff2");
+  unicode-range: U+11A50-11AAF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Unified-Canadian-Aboriginal-Syllabics-Extended-A.woff2) format("woff2");
+  unicode-range: U+11AB0-11ABF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Pau-Cin-Hau.woff2) format("woff2");
+  unicode-range: U+11AC0-11AFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Devanagari-Extended-A.woff2) format("woff2");
+  unicode-range: U+11B00-11B5F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sharada-Supplement.woff2) format("woff2");
+  unicode-range: U+11B60-11B7F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sunuwar.woff2) format("woff2");
+  unicode-range: U+11BC0-11BFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Bhaiksuki.woff2) format("woff2");
+  unicode-range: U+11C00-11C6F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Marchen.woff2) format("woff2");
+  unicode-range: U+11C70-11CBF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Masaram-Gondi.woff2) format("woff2");
+  unicode-range: U+11D00-11D5F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Gunjala-Gondi.woff2) format("woff2");
+  unicode-range: U+11D60-11DAF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tolong-Siki.woff2) format("woff2");
+  unicode-range: U+11DB0-11DEF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Bengali-Supplement.woff2) format("woff2");
+  unicode-range: U+11DF0-11DFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Makasar.woff2) format("woff2");
+  unicode-range: U+11EE0-11EFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kawi.woff2) format("woff2");
+  unicode-range: U+11F00-11F5F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Lisu-Supplement.woff2) format("woff2");
+  unicode-range: U+11FB0-11FBF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tamil-Supplement.woff2) format("woff2");
+  unicode-range: U+11FC0-11FFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Cuneiform.woff2) format("woff2");
+  unicode-range: U+1239A-123FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Cuneiform-Numbers-and-Punctuation.woff2) format("woff2");
+  unicode-range: U+1246F, U+12475-1247F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Early-Dynastic-Cuneiform.woff2) format("woff2");
+  unicode-range: U+12544-1254F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Archaic-Cuneiform-Numerals.woff2) format("woff2");
+  unicode-range: U+12687-1268F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Cypro-Minoan.woff2) format("woff2");
+  unicode-range: U+12F90-12FFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Egyptian-Hieroglyphs.woff2) format("woff2");
+  unicode-range: U+1342F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Egyptian-Hieroglyph-Format-Controls.woff2) format("woff2");
+  unicode-range: U+13430-1345F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Egyptian-Hieroglyphs-Extended-A.woff2) format("woff2");
+  unicode-range: U+143FB-143FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Anatolian-Hieroglyphs.woff2) format("woff2");
+  unicode-range: U+14647-1467F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Gurung-Khema.woff2) format("woff2");
+  unicode-range: U+16100-1613F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Bamum-Supplement.woff2) format("woff2");
+  unicode-range: U+16A39-16A3F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mro.woff2) format("woff2");
+  unicode-range: U+16A40-16A6F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tangsa.woff2) format("woff2");
+  unicode-range: U+16A70-16ACF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Bassa-Vah.woff2) format("woff2");
+  unicode-range: U+16AD0-16AFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Pahawh-Hmong.woff2) format("woff2");
+  unicode-range: U+16B00-16B8F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kirat-Rai.woff2) format("woff2");
+  unicode-range: U+16D40-16D7F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Medefaidrin.woff2) format("woff2");
+  unicode-range: U+16E40-16E9F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Beria-Erfe.woff2) format("woff2");
+  unicode-range: U+16EA0-16EDF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Miao.woff2) format("woff2");
+  unicode-range: U+16F00-16F9F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ideographic-Symbols-and-Punctuation.woff2) format("woff2");
+  unicode-range: U+16FE0-16FFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tangut-Components.woff2) format("woff2");
+  unicode-range: U+18800-188FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Khitan-Small-Script.woff2) format("woff2");
+  unicode-range: U+18B00-18CFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tangut-Supplement.woff2) format("woff2");
+  unicode-range: U+18D21-18D7F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tangut-Components-Supplement.woff2) format("woff2");
+  unicode-range: U+18DF3-18DFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Jurchen.woff2) format("woff2");
+  unicode-range: U+19192-1919F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Jurchen-Radicals.woff2) format("woff2");
+  unicode-range: U+191D3-191DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kana-Extended-B.woff2) format("woff2");
+  unicode-range: U+1AFF0-1AFFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kana-Supplement.woff2) format("woff2");
+  unicode-range: U+1B000-1B0FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kana-Extended-A.woff2) format("woff2");
+  unicode-range: U+1B100-1B12F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Small-Kana-Extension.woff2) format("woff2");
+  unicode-range: U+1B130-1B16F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Nushu.woff2) format("woff2");
+  unicode-range: U+1B170-1B2FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Duployan.woff2) format("woff2");
+  unicode-range: U+1BC00-1BC9F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Shorthand-Format-Controls.woff2) format("woff2");
+  unicode-range: U+1BCA0-1BCAF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Symbols-for-Legacy-Computing-Supplement.woff2) format("woff2");
+  unicode-range: U+1CC00-1CEBF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Miscellaneous-Symbols-Supplement.woff2) format("woff2");
+  unicode-range: U+1CEC0-1CEFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Znamenny-Musical-Notation.woff2) format("woff2");
+  unicode-range: U+1CF00-1CFCF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Byzantine-Musical-Symbols.woff2) format("woff2");
+  unicode-range: U+1D000-1D0FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Musical-Symbols.woff2) format("woff2");
+  unicode-range: U+1D100-1D1FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ancient-Greek-Musical-Notation.woff2) format("woff2");
+  unicode-range: U+1D200-1D24F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Musical-Symbols-Supplement.woff2) format("woff2");
+  unicode-range: U+1D250-1D28F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Kaktovik-Numerals.woff2) format("woff2");
+  unicode-range: U+1D2C0-1D2DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mayan-Numerals.woff2) format("woff2");
+  unicode-range: U+1D2E0-1D2FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tai-Xuan-Jing-Symbols.woff2) format("woff2");
+  unicode-range: U+1D300-1D35F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Counting-Rod-Numerals.woff2) format("woff2");
+  unicode-range: U+1D360-1D37F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mathematical-Alphanumeric-Symbols.woff2) format("woff2");
+  unicode-range: U+1D400-1D7FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Sutton-SignWriting.woff2) format("woff2");
+  unicode-range: U+1D800-1DAAF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Miscellaneous-Symbols-and-Arrows-Extended.woff2) format("woff2");
+  unicode-range: U+1DB00-1DBFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Latin-Extended-G.woff2) format("woff2");
+  unicode-range: U+1DF00-1DFCC;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Glagolitic-Supplement.woff2) format("woff2");
+  unicode-range: U+1E000-1E02F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Cyrillic-Extended-D.woff2) format("woff2");
+  unicode-range: U+1E030-1E08F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Nyiakeng-Puachue-Hmong.woff2) format("woff2");
+  unicode-range: U+1E100-1E14F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Toto.woff2) format("woff2");
+  unicode-range: U+1E290-1E2BF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Wancho.woff2) format("woff2");
+  unicode-range: U+1E2C0-1E2FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Nag-Mundari.woff2) format("woff2");
+  unicode-range: U+1E4D0-1E4FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ol-Onal.woff2) format("woff2");
+  unicode-range: U+1E5D0-1E5FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tai-Yo.woff2) format("woff2");
+  unicode-range: U+1E6C0-1E6FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ethiopic-Extended-B.woff2) format("woff2");
+  unicode-range: U+1E7E0-1E7FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mende-Kikakui.woff2) format("woff2");
+  unicode-range: U+1E800-1E8DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Adlam.woff2) format("woff2");
+  unicode-range: U+1E900-1E95F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Indic-Siyaq-Numbers.woff2) format("woff2");
+  unicode-range: U+1EC70-1ECBF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ottoman-Siyaq-Numbers.woff2) format("woff2");
+  unicode-range: U+1ED00-1ED4F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Arabic-Mathematical-Alphabetic-Symbols.woff2) format("woff2");
+  unicode-range: U+1EE00-1EEFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Mahjong-Tiles.woff2) format("woff2");
+  unicode-range: U+1F000-1F02F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Domino-Tiles.woff2) format("woff2");
+  unicode-range: U+1F030-1F09F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Playing-Cards.woff2) format("woff2");
+  unicode-range: U+1F0A0-1F0FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Enclosed-Alphanumeric-Supplement.woff2) format("woff2");
+  unicode-range: U+1F100-1F1FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Enclosed-Ideographic-Supplement.woff2) format("woff2");
+  unicode-range: U+1F200-1F2FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Miscellaneous-Symbols-and-Pictographs.woff2) format("woff2");
+  unicode-range: U+1F300-1F5FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Emoticons.woff2) format("woff2");
+  unicode-range: U+1F600-1F64F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Ornamental-Dingbats.woff2) format("woff2");
+  unicode-range: U+1F650-1F67F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Transport-and-Map-Symbols.woff2) format("woff2");
+  unicode-range: U+1F680-1F6FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Alchemical-Symbols.woff2) format("woff2");
+  unicode-range: U+1F700-1F77F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Geometric-Shapes-Extended.woff2) format("woff2");
+  unicode-range: U+1F780-1F7FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Supplemental-Arrows-C.woff2) format("woff2");
+  unicode-range: U+1F800-1F8FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Supplemental-Symbols-and-Pictographs.woff2) format("woff2");
+  unicode-range: U+1F900-1F9FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Chess-Symbols.woff2) format("woff2");
+  unicode-range: U+1FA00-1FA6F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Symbols-and-Pictographs-Extended-A.woff2) format("woff2");
+  unicode-range: U+1FA70-1FAFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Symbols-for-Legacy-Computing.woff2) format("woff2");
+  unicode-range: U+1FB00-1FBFF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-B-001.woff2) format("woff2");
+  unicode-range: U+20000-203FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-B-002.woff2) format("woff2");
+  unicode-range: U+20400-207FF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-B-003.woff2) format("woff2");
+  unicode-range: U+20800-20837, U+2083A, U+20895, U+208B9, U+208FE, U+20930, U+2097C, U+2099D, U+209AA-209AB, U+209DA, U+209E9, U+20AB1, U+20AD3, U+20B15, U+20B1D, U+20B56, U+20B9F, U+20BB5, U+20BD7-20BD8, U+20BE5, U+20C41, U+20C53, U+20C5B, U+20C78, U+20C8E, U+20C96, U+20CAD, U+20CBF, U+20CC3, U+20CCF-20CD0, U+20CD4-20CD5, U+20D15, U+20D1F, U+20D2B, U+20D30, U+20D45, U+20D5D, U+20D71, U+20D7C, U+20D7F, U+20DA7, U+20DE1, U+20DFA, U+20E01, U+20E0E-20E0F, U+20E64, U+20E6D, U+20E76-20E77, U+20E95, U+20E98, U+20E9D, U+20EA2, U+20ED7-20ED8, U+20EF3, U+20EF9-20EFA, U+20F2D-20F2E, U+20F3B, U+20F4C, U+20F5F, U+20F7E, U+20F90, U+20FB4, U+20FBC, U+20FEA, U+21014, U+2105C, U+2106F, U+21075-21076, U+2107B, U+210AB, U+210BF, U+210C1, U+210C9, U+210F6, U+21145, U+211A2, U+211D9, U+21201, U+2123D, U+21255, U+21265, U+21274, U+2127B, U+212D7, U+212E4, U+212FD, U+2131B, U+21336, U+21344, U+2134C, U+2136A, U+21377, U+2139A, U+213C4, U+213CB, U+21413, U+21428, U+2144D, U+2146D-2146E, U+21483-21484, U+215D7, U+215DC, U+21647, U+21681, U+216A6, U+216B4, U+216DF, U+216F0, U+21706, U+21742, U+21757, U+2176D, U+217D3, U+217DA, U+2180D, U+21883, U+218BD, U+2197C, U+219BC, U+219C3, U+219F3, U+21A25, U+21A4B, U+21B36, U+21C2A, U+21C52, U+21C56, U+21CA2, U+21CDE, U+21D2D, U+21D45, U+21D49, U+21D53, U+21D59, U+21D62, U+21D78, U+21D84, U+21D90, U+21D92, U+21D9C, U+21DA1, U+21DA6, U+21DB7, U+21DD1, U+21DE0, U+21E33-21E34, U+21E8E, U+21EEF, U+21F0F, U+21F1E, U+21F3E, U+21F76, U+21FB2, U+21FFA, U+21FFF, U+22016, U+220C7, U+2217B, U+221A1, U+221C7, U+221F7, U+22218, U+2231E, U+22342, U+22399, U+223A8, U+223AD, U+22488-22489, U+224DC, U+22504, U+2251B, U+225B3, U+2260D, U+22650, U+2265D, U+226C1, U+226F3, U+2272D, U+2275D, U+22775, U+227B5, U+22835, U+22838, U+2285B, U+2289E, U+228AB, U+2298F, U+22A6A, U+22A73, U+22A83, U+22A98, U+22AB1, U+22AB8, U+22ACF, U+22AD5, U+22AE6, U+22AEC, U+22B02, U+22B38, U+22B43, U+22B46, U+22B4F-22B50, U+22BA5-22BA6, U+22BCA, U+22BED, U+22BF9, U+22BFE, U+22C1D, U+22C24, U+22C49, U+22C4B, U+22C51, U+22C55, U+22C62-22C64, U+22CB4, U+22CB8, U+22CC2, U+22CC6, U+22CEA, U+22D08, U+22D4C, U+22D67, U+22D80, U+22D92, U+22DE1, U+22DEC, U+22E84, U+22EB3, U+22F0C, U+22F1B, U+22F42, U+22F7E, U+22FBA, U+23073-23074, U+230DA, U+23119, U+23138, U+23143, U+231B6, U+231C3-231C4, U+231F5, U+23236, U+232DE, U+23350, U+23372, U+23397, U+233B6-233B7, U+233D0, U+233D2-233D3, U+233D5, U+233DA, U+233DF, U+233E2, U+233E4, U+2343F, U+2344A-2344B, U+23451, U+23465, U+234E4, U+23519, U+2355A, U+23594, U+235BE, U+235C4, U+235CB, U+23638-2363B, U+23647, U+2365C, U+236BA, U+236EE, U+2370C, U+2371C, U+2372C, U+2373F, U+23749, U+23763-23764, U+237E7, U+237FF, U+23824, U+2383D, U+23942, U+23965, U+23A3C, U+23A81, U+23A8F, U+23A98, U+23AA0, U+23B02, U+23B20, U+23B36, U+23B72, U+23B88, U+23BAB, U+23C28, U+23C5D, U+23C76, U+23C7C, U+23C7F, U+23C97-23C98, U+23CA9-23CAA, U+23CB7, U+23CFE, U+23D00, U+23D0E, U+23D13, U+23D40, U+23D5A, U+23D66, U+23D7A, U+23DD3, U+23DF9-23DFA, U+23E0E, U+23E23-23E24, U+23E8C, U+23EF5, U+23EF8, U+23F0E, U+23F7D-23F7E, U+24096, U+240D2, U+240EB, U+24103, U+24182, U+2418A, U+241A2, U+241AC, U+241B5, U+241C6, U+241FE, U+2420E, U+24226, U+24259, U+242B6, U+242B9, U+242BB, U+242BF, U+242EE, U+2430D, U+24319, U+24352, U+24364, U+243BC, U+243F6, U+24419, U+24423, U+24430, U+244D3, U+24605, U+24629, U+2462F, U+246A5, U+246DB, U+246DF, U+2473B, U+2474C, U+2479A, U+2479E, U+247A4, U+247B6, U+247E4, U+247EF, U+247F1, U+24822, U+24873, U+24896, U+248E9, U+24950, U+2496D, U+249DB, U+249DF, U+24A01, U+24A0F, U+24A4D, U+24A7D, U+24AC9, U+24B01, U+24B56, U+24B62, U+24B6F, U+24BE5, U+24C00, U+24C16, U+24C1C, U+24C48, U+24C4A, U+24C59, U+24C8D, U+24D14, U+24D25, U+24D2F, U+24D52, U+24D80, U+24D83, U+24DB8, U+24DEA, U+24E01, U+24E0E, U+24E2A, U+24E31, U+24E37, U+24E6A, U+24E85, U+24E8B, U+24EA5, U+24EA7, U+24EAA, U+24EBA, U+24ECA, U+24F42, U+2504A, U+25055, U+25081, U+25122, U+25128, U+2512B, U+25148, U+25160-25161, U+2517E, U+251A7, U+251A9, U+251CD, U+251D2, U+251E5, U+2521E, U+25242, U+2524C, U+25273, U+2531A, U+25349, U+2542E, U+25435, U+2546E, U+2548E, U+254D9, U+25500, U+2550E, U+25532, U+2554D, U+25562, U+25584, U+255A7-255A8, U+255FD, U+25609, U+2560E, U+25611, U+2561E, U+2562F, U+25635, U+2563D, U+2564A, U+2567F, U+2574C, U+25767, U+25771, U+257A9, U+257B4, U+257C7, U+2591A, U+25977, U+25997, U+259C4, U+259D4, U+25A0D-25A0E, U+25A10, U+25AD7, U+25AE3-25AE4, U+25AF1, U+25BB2, U+25BDF, U+25BE5, U+25BE8, U+25C14, U+25C2D, U+25C4B, U+25C64, U+25CBB, U+25CC7, U+25CD4, U+25CE0, U+25D0A, U+25DA1, U+25E2E, U+25E49, U+25E56, U+25E62, U+25E65, U+25E86, U+25EC2, U+25EC5, U+25ED7-25ED8, U+25EE8, U+25EF5, U+25F23, U+25F5C, U+25FBA, U+25FCA, U+25FD4, U+25FE0, U+25FFB, U+2600C, U+26017, U+26060, U+2608C, U+260B3, U+260C2, U+260C4, U+260ED, U+261E7, U+26221-26222, U+26246, U+2624E, U+26258, U+2626C, U+26270, U+26279, U+26286, U+26293, U+262B1, U+262C6, U+2633D, U+2634C, U+26351, U+26393, U+263F4, U+26402, U+2640A, U+26483, U+2648D, U+26548, U+265D2, U+26634, U+26676, U+26678, U+2667E, U+266B0, U+266E8, U+26706, U+2671D, U+2677C, U+26782, U+267A6, U+267CC, U+267EA, U+267EE, U+2683F, U+2688A, U+268DD-268DE, U+268EA, U+2690E, U+26951, U+26954, U+2696F, U+269DD, U+269F2, U+269FA, U+26A1E, U+26A29, U+26A2D, U+26A58, U+26A77, U+26A8C, U+26AAD, U+26AB7, U+26ABD, U+26AF8, U+26AFF, U+26B01, U+26B38, U+26B3A, U+26B4C, U+26B5C, U+26BB4, U+26BBC, U+26C21, U+26C29, U+26C4C, U+26C54, U+26C73, U+26CDD, U+26D4F, U+26D78, U+26D9F, U+26E05, U+26E08, U+26E40, U+26E57, U+26E65, U+26E87, U+26ED8, U+26F09, U+26F4A, U+26F4F, U+26F94, U+26FAE, U+26FF6-26FF8, U+270F0, U+270F4, U+270FD, U+2710D, U+27139, U+2718C, U+27248, U+2725F, U+2726A, U+2727E, U+27285, U+272E5, U+27304, U+2733D, U+27359, U+27371, U+273DA-273DB, U+273FE, U+27410, U+27431, U+27449, U+27486, U+274BD, U+274FD, U+2759A, U+27614-27615, U+27631, U+27684, U+27693, U+2770E, U+27723, U+27741, U+2774E, U+27752, U+2776C, U+277A4, U+277F0, U+278B2, U+27900-27A24;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-B-004.woff2) format("woff2");
+  unicode-range: U+27A25-27BFF, U+27C49, U+27C53, U+27CB8, U+27D03, U+27D10, U+27D65, U+27DA0, U+27E10, U+27E18, U+27E89, U+27EAF, U+27EDE, U+27EF4, U+27F34, U+27FB7, U+27FC1, U+27FD2, U+27FEC, U+27FF3, U+27FF9, U+2805D, U+2808A, U+280BB, U+280BE-280BF, U+280C5, U+280E9, U+280F0, U+2810C, U+28154, U+2815D, U+28207, U+28277, U+28282, U+282BB, U+282CC-282CD, U+282E2, U+282F0, U+282F3, U+28325, U+2834F, U+2837D, U+2838A, U+283CD, U+28408, U+2840C, U+28455, U+28468, U+28473, U+28482, U+28487, U+28523, U+2856B, U+28595, U+285C8-285C9, U+2860C, U+28678, U+2868D, U+28693, U+28695, U+286B2, U+286D7, U+286F3, U+286FA, U+28712, U+28714, U+287AA, U+287E0, U+28891, U+288E7, U+28946, U+28948-28949, U+2894E, U+2896B, U+28987-28988, U+289A1, U+289BA-289BB, U+289C0, U+28A0F, U+28A1E, U+28A29, U+28A43, U+28A71, U+28A99, U+28ACD, U+28ADD, U+28AE4, U+28B46, U+28B49, U+28B4E, U+28BC1, U+28BEF, U+28C3E, U+28C44, U+28C47, U+28C4D-28C4F, U+28C51, U+28C53-28C54, U+28CCA, U+28CCD, U+28CD2, U+28D10, U+28D71, U+28D99, U+28DFB, U+28E0F, U+28E1F, U+28E36, U+28E39, U+28E89, U+28E99, U+28EAD, U+28EE7, U+28EEB, U+28EF6, U+28F32, U+28F4D, U+28F7B, U+28FF8, U+290D9, U+29166, U+291EF, U+2925C, U+29299, U+292A0, U+292B1, U+2935C, U+2937F, U+2945D, U+2947E, U+29490, U+294BA, U+294D0, U+294E5, U+295CF, U+295D7, U+2967F, U+296A8, U+296AC, U+296E9, U+296F0, U+29704, U+29719, U+29730, U+2974E, U+29750-29751, U+2980C-2980D, U+29810, U+29869, U+298B0, U+298C6, U+298E1, U+29944, U+29949, U+29A02, U+29A2C, U+29A38, U+29A70-29A7F, U+29A8B, U+29AA0-29AA8, U+29AB0-29C13;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-B-005.woff2) format("woff2");
+  unicode-range: U+29C14-2A013;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-B-006.woff2) format("woff2");
+  unicode-range: U+2A014-2A0FF, U+2A190, U+2A1BB, U+2A1D8, U+2A1E1, U+2A1F0, U+2A1F7, U+2A248, U+2A38A, U+2A38C, U+2A3BD, U+2A41E, U+2A437, U+2A4A0-2A4A1, U+2A4D0, U+2A590, U+2A5A8, U+2A5F1, U+2A602, U+2A612, U+2A61A, U+2A64A, U+2A6B2, U+2A6D7-2A6DF;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-C.woff2) format("woff2");
+  unicode-range: U+2A736, U+2A79D, U+2A7DD, U+2A838, U+2A83D, U+2A8AE, U+2A8C8, U+2A8DD, U+2A8FB, U+2A917, U+2A970, U+2A9F7, U+2AA07, U+2AA0A, U+2AA30, U+2AA36, U+2AA58, U+2AAC6, U+2AB62, U+2ABB3, U+2ABC8, U+2AE5A, U+2AED0, U+2AF94, U+2AFA2, U+2AFD6, U+2B006, U+2B0D1, U+2B0F5, U+2B124-2B125, U+2B127-2B128, U+2B137-2B138, U+2B1ED, U+2B1F2, U+2B209, U+2B241, U+2B2A5, U+2B2BB, U+2B300, U+2B328, U+2B35A, U+2B35D, U+2B35F, U+2B362-2B363, U+2B36F, U+2B372, U+2B37B, U+2B37D, U+2B404, U+2B410, U+2B413, U+2B461, U+2B4A2, U+2B4E7, U+2B4E9, U+2B4EF, U+2B4F1, U+2B4F6, U+2B4F9, U+2B50D-2B50E, U+2B52D, U+2B536, U+2B583, U+2B594, U+2B598, U+2B5AE-2B5AF, U+2B5B3, U+2B5B5, U+2B5B9, U+2B5E7, U+2B5EB, U+2B5F0, U+2B5F4, U+2B61C-2B61D, U+2B624, U+2B626-2B628, U+2B62A, U+2B62C, U+2B64E, U+2B689, U+2B692, U+2B694-2B696, U+2B6AD, U+2B6DA, U+2B6DE, U+2B6E9, U+2B6ED, U+2B6F6, U+2B728, U+2B735-2B73F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-D.woff2) format("woff2");
+  unicode-range: U+2B740-2B81E;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-E.woff2) format("woff2");
+  unicode-range: U+2B823, U+2B8B8, U+2B8C6, U+2B8CA, U+2B92D, U+2B9C7, U+2B9EF, U+2BA4F, U+2BA51, U+2BA5B, U+2BA73, U+2BA81, U+2BA98, U+2BAC7, U+2BB37, U+2BB5F, U+2BB62, U+2BB6A, U+2BB7C, U+2BB83, U+2BBDC, U+2BC06, U+2BC1B, U+2BC21, U+2BC30, U+2BCA6, U+2BCB7, U+2BD58, U+2BD77, U+2BD7C, U+2BD87, U+2BDAC, U+2BDC0, U+2BDF7, U+2BE29, U+2BE6F, U+2BE75, U+2BF1D, U+2C029-2C02A, U+2C05F, U+2C081, U+2C0A9, U+2C0AD, U+2C0C0, U+2C0CA, U+2C1D5, U+2C1D9, U+2C1DE, U+2C1F9, U+2C27C, U+2C288, U+2C29C, U+2C2A4, U+2C2B6, U+2C317, U+2C329, U+2C35B, U+2C361, U+2C364, U+2C386, U+2C3BF, U+2C457, U+2C488, U+2C494, U+2C497, U+2C4B3, U+2C4BD-2C4BE, U+2C4E0, U+2C542, U+2C58B, U+2C59E, U+2C613, U+2C618, U+2C621-2C622, U+2C629, U+2C62B-2C62D, U+2C62F, U+2C635, U+2C642, U+2C64A-2C64B, U+2C728, U+2C72C, U+2C72F, U+2C79F, U+2C7C1, U+2C7FD, U+2C816, U+2C842, U+2C88A, U+2C8C0, U+2C8D9, U+2C8DE, U+2C8E1, U+2C8F3, U+2C907, U+2C90A, U+2C91D, U+2C94E, U+2C9B0, U+2C9C0, U+2CA02, U+2CA0E, U+2CA7D, U+2CA8D, U+2CAA9, U+2CAD2, U+2CB29, U+2CB2B, U+2CB2D-2CB2E, U+2CB31, U+2CB38-2CB3B, U+2CB3F, U+2CB41, U+2CB4A, U+2CB4E, U+2CB5A-2CB5B, U+2CB63-2CB64, U+2CB69, U+2CB6C, U+2CB6F, U+2CB73, U+2CB76, U+2CB78, U+2CB7C, U+2CBA2, U+2CBA4, U+2CBA6, U+2CBB1, U+2CBB4, U+2CBBF-2CBC0, U+2CBCE, U+2CC56, U+2CC5F, U+2CCB1, U+2CCBD, U+2CCC7, U+2CCF5-2CCF6, U+2CCFD, U+2CCFF, U+2CD02-2CD03, U+2CD0A, U+2CD10, U+2CD88-2CD89, U+2CD8B, U+2CD8D, U+2CD8F-2CD90, U+2CD9F-2CDA0, U+2CDA8, U+2CDAD-2CDAE, U+2CDB3, U+2CDD5, U+2CE05, U+2CE18, U+2CE1A, U+2CE23, U+2CE26, U+2CE2A, U+2CE7A, U+2CE7C, U+2CE88, U+2CE93, U+2CE9E, U+2CEA2-2CEAD;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-F.woff2) format("woff2");
+  unicode-range: U+2CF65, U+2D026, U+2D075, U+2D25D, U+2D382, U+2D544, U+2D64F, U+2D655, U+2D70C, U+2DC4A, U+2DCFF, U+2DD08, U+2DD0A, U+2DDD4, U+2DEFE, U+2E014, U+2E0B9, U+2E1D8, U+2E26B-2E26C, U+2E26F, U+2E41A, U+2E428, U+2E502, U+2E505, U+2E50A, U+2E5B1, U+2E5FB, U+2E64A-2E64B, U+2E774-2E775, U+2E779, U+2E8F2-2E8F3, U+2E932, U+2E9F5, U+2EA3B, U+2EA5D-2EA5E, U+2EAA5, U+2EB1D, U+2EB21, U+2EB66, U+2EB68, U+2EB91, U+2EBD9;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-I.woff2) format("woff2");
+  unicode-range: U+2EBF0-2EE5D;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Compatibility-Ideographs-Supplement.woff2) format("woff2");
+  unicode-range: U+2F884, U+2F8B6;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-G.woff2) format("woff2");
+  unicode-range: U+30000-301FF, U+30270, U+302C0, U+302D9, U+302DB-302DC, U+302DE, U+302F7, U+302FB, U+30300, U+30302, U+30335, U+3033B, U+3034E, U+30370-30371, U+30409, U+30414, U+3043A, U+3043F, U+3044A, U+3044C, U+30450, U+3045D-3045E, U+304BC, U+304CA, U+304CC, U+304E2-304E3, U+304E8, U+304ED, U+3057A, U+305D1, U+305DD, U+305E3, U+305F6, U+3067D, U+306D1, U+306D3, U+306EC, U+30708, U+30776, U+30787, U+307D8, U+30828, U+30831, U+30842, U+30858, U+308F2, U+308FB, U+30915, U+3094C, U+30955, U+30969, U+30993, U+309AA-309AB, U+30A1B, U+30A62, U+30AA9, U+30AB1, U+30ABF, U+30AFE, U+30B04, U+30B0A, U+30B15, U+30B38, U+30B43, U+30B4B, U+30B5D, U+30BF6, U+30BFC, U+30C1F, U+30C21, U+30C24, U+30C2B-30C2C, U+30C72, U+30CBD, U+30CC7, U+30D4B, U+30D55, U+30D5D-30D5F, U+30D67, U+30D74, U+30D7C, U+30D8A, U+30DDF, U+30DE3, U+30DE5, U+30E01, U+30E04, U+30E6C, U+30E70, U+30E77, U+30E79, U+30EDD-30EDE, U+30F03, U+30F57, U+30F59-30F5A, U+30F5F, U+30F62, U+30F64, U+30F74, U+30F7D, U+30F82, U+30F89, U+30FA0, U+30FAB, U+3106C, U+31090, U+310A9-310AA, U+310B1, U+310EA, U+310F1, U+310FA, U+3114B-3114C, U+31151, U+3115B, U+311E3, U+311F1, U+31254, U+312C9, U+3132E;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-H.woff2) format("woff2");
+  unicode-range: U+313BC, U+313FF, U+3158E, U+31592, U+317DB, U+31B92, U+31B9C, U+31C7F, U+31D1F, U+31D31, U+31E07, U+31E4D, U+31E91, U+32003, U+32064, U+3208E, U+32217, U+322A6, U+322E4, U+3235B, U+3236D, U+3237F;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.CJK-Unified-Ideographs-Extension-J.woff2) format("woff2");
+  unicode-range: U+323B0-324A4, U+324D1, U+324DC-324DE, U+324E0, U+3251F-32520, U+3261E, U+32623, U+32629, U+3262C, U+32631-32632, U+32635, U+3263B-3263C, U+3263F-32641, U+32644, U+32646-32647, U+3264F-32650, U+32656-32657, U+3265A, U+3265D-32660, U+32662, U+32669, U+3266F, U+32672, U+32674, U+3267B-3267D, U+32688, U+3268A, U+3268F, U+32694-32695, U+3269A, U+326AD, U+326BD-326BE, U+326C0, U+326F5, U+326FA, U+32709, U+3270B, U+32714, U+32744, U+32748, U+3274B-3274C, U+3274E, U+32755, U+32765, U+32768-32769, U+327C0, U+327C3, U+327F1, U+327FB, U+32800, U+32859-3285A, U+3285F, U+3287C, U+32901, U+32940, U+3295B, U+32972, U+32985, U+32996-32997, U+32A3A-32A3B, U+32A4C, U+32A5A, U+32A72, U+32A98, U+32ACE, U+32AF9, U+32BDD, U+32BE1, U+32BE8, U+32BFF, U+32C0A, U+32C0D-32C0E, U+32C13, U+32C36-32C37, U+32C39, U+32C3B-32C3C, U+32C82, U+32CCA, U+32CCC-32CCD, U+32CD3-32CD4, U+32CD6, U+32CDA, U+32CDC-32CDD, U+32CE4-32CE6, U+32CF3-32CF4, U+32CF7, U+32CFD, U+32D09, U+32D46, U+32D49, U+32D4F-32D50, U+32D79, U+32D89, U+32DAF, U+32DB7, U+32E2F, U+32E31, U+32E34, U+32E8B, U+32EA3, U+32ED0, U+32EF0, U+32EF2, U+32F17, U+32F1D-32F1E, U+32F36, U+32F49, U+32F56, U+32F58-32F59, U+32F6C, U+32F8C, U+32F99, U+32F9D, U+32FF9, U+3301A, U+33056, U+33074, U+33084, U+330AC, U+330D4, U+330F1-330F2, U+33113, U+33157, U+331B2, U+331E7, U+331E9-331EA, U+331EF-331F0, U+331F2, U+33211, U+33213-33217, U+3321B, U+33220, U+3323A, U+33255, U+33257, U+33261, U+33279-3327A, U+3327C, U+33282-33283, U+33287, U+3328B, U+3328E-3328F, U+33291, U+33293-33294, U+332AD, U+332BF, U+332E1, U+3331A, U+3331E, U+33366, U+33397-33398, U+3339A, U+3339D, U+33400, U+3340A, U+33410;
+}
+@font-face {
+  font-family: "Unifont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Unifont Upper"), local("Unifont Upper Regular"), local("UnifontUpper"), url(Unifont-Upper.Tags.woff2) format("woff2");
+  unicode-range: U+E0000-E007F;
+}

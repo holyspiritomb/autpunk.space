@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "UnifontEX";
+  font-family: UnifontEX;
   src:
     url("/fonts/unifontex/UnifontExMono.woff2") format("woff2"),
     url("/fonts/unifontex/UnifontExMono.woff") format("woff"),
     url("/fonts/unifontex/UnifontExMono.ttf") format("truetype");
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
   font-style: normal;
 }
 
 html {
   textarea.unicodeStyler {
-    font-family: "Atkinson Hyperlegible Next", "Noto Sans", Verdana, Tahoma, "Arial Unicode", "Lucida Sans Unicode", Arial, Helvetica, sans-serif, UnifontEX;
+    font-family: "Atkinson Hyperlegible Next", "Arial Unicode", "Noto Sans", "Noto Sans Symbols", "Noto Sans Math", "Open Sans", Roboto, sans-serif;
     line-height: unset !important;
     font-size: 16px !important;
   }
