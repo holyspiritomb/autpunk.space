@@ -2,6 +2,7 @@
 import emojis from "markdown-it-emoji/lib/data/full.mjs";
 import emojisLite from "markdown-it-emoji/lib/data/light.mjs";
 import { useClipboard } from "@vueuse/core";
+import "./UnicodeConverter.scss";
 
 const emoji_array = Object.keys(emojis).map((key) => [key, emojis[key]])
 const emojiLite_array = Object.keys(emojisLite).map((key) => [key, emojisLite[key]])

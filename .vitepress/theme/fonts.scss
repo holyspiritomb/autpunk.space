@@ -72,17 +72,6 @@
 }
 
 @font-face {
-  font-family: "UnifontEX";
-  src:
-    url("/fonts/unifontex/UnifontExMono.woff2") format("woff2"),
-    url("/fonts/unifontex/UnifontExMono.woff") format("woff"),
-    url("/fonts/unifontex/UnifontExMono.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Ari-W9500";
   src:
     url("/fonts/ari-w9500/ari-w9500.woff2") format("woff2"),
@@ -120,7 +109,7 @@ html {
 
 :root {
   --vp-font-family-base: "Atkinson Hyperlegible Next", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  --vp-font-family-mono: "Victor Mono", "Courier New", Courier, monospace;
+  --vp-font-family-mono: "Victor Mono", Menlo, "Courier New", Courier, monospace;
   --default-monoFont-family: "Victor Mono", Menlo, "Courier New", Courier, monospace; /* code font */
   --default-monoFont-featureSettings: "ss06" on, "ss01" off, "ss07" on;
   --vp-code-font-size: 16px;
@@ -211,12 +200,6 @@ pre,
   @apply victor victorFeatures;
 }
 
-textarea.unicodeStyler {
-  font-family: "Atkinson Hyperlegible Next", "Noto Sans", Verdana, Tahoma, "Arial Unicode", "Lucida Sans Unicode", Arial, Helvetica, sans-serif, UnifontEX;
-  line-height: unset !important;
-  font-size: 16px !important;
-}
-
 html.pixel {
   .VPHomeHero {
     .tagline {
@@ -258,6 +241,10 @@ html.pixel {
 
   .vp-doc {
     font-size: 13px;
+
+    .header-anchor {
+      margin-left: -0.3em;
+    }
 
     h1 {
       font-size: 44px;
@@ -330,15 +317,11 @@ html.pixel {
     line-height: 12px !important;
   }
 
+  .vp-code-group .tabs label,
   .VPFeature p.details,
   #dateWidget {
     font-family: var(--vp-font-family-mono);
     font-size: 13px !important;
   }
 
-  textarea.unicodeStyler {
-    font-family: Unifont, UnifontEX, monospace;
-    line-height: unset !important;
-    font-size: 16px !important;
-  }
 }

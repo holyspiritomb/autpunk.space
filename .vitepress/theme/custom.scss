@@ -167,6 +167,18 @@
     filter: invert(100);
   }
 
+  .vp-doc p {
+    text-shadow:
+      1px 0 0 var(--vp-c-bg),
+      -1px 0 0 var(--vp-c-bg),
+      0 1px 0 var(--vp-c-bg),
+      0 -1px 0 var(--vp-c-bg),
+      1px 1px 0 var(--vp-c-bg),
+      -1px -1px 0 var(--vp-c-bg),
+      1px -1px 0 var(--vp-c-bg),
+      -1px 1px 0 var(--vp-c-bg);
+  }
+
   body,
   .VPNavScreen {
     background-image: url("/images/space16.png");
@@ -277,26 +289,32 @@ button.back-to-top-button[style][data-v-8153223c] {
 
 html {
   ul:not(.VPDocOutlineItem) {
-    list-style-type: none;
-
     li {
-      &::before {
-        content: "\25b6"; /* triangle */
+      &::marker {
+        content: "\25b6  "; /* triangle */
         font-family: Dylex, Cozette, monospace;
-        position: relative;
-        right: 0.5em;
+        font-size: 13px;
       }
     }
 
     &.comm {
       li {
-        &::before {
-          content: "\1f150\262d";
+        &::marker {
+          content: "\1f150\262d  ";
           font-family: Dylex, Cozette, monospace;
-          position: relative;
-          right: 0.5em;
+          font-size: 13px;
         }
       }
+    }
+  }
+
+  details {
+    summary::marker {
+      content: "+  ";
+    }
+
+    &[open] summary::marker {
+      content: "–  ";
     }
   }
 
@@ -428,8 +446,8 @@ html {
 }
 
 @media screen and (width < 960) {
-  #inWebrings,
-  #prospectiveRings {
+  .inWebrings,
+  .prospectiveRings {
     width: 342px;
   }
 
@@ -502,6 +520,10 @@ div.accessibility {
 #dateWidget {
   text-shadow:
     1px 1px 0 var(--vp-c-bg),
+    1px 0 0 var(--vp-c-bg),
+    -1px 0 0 var(--vp-c-bg),
+    0 1px 0 var(--vp-c-bg),
+    0 -1px 0 var(--vp-c-bg),
     -1px -1px 0 var(--vp-c-bg),
     1px -1px 0 var(--vp-c-bg),
     -1px 1px 0 var(--vp-c-bg);
