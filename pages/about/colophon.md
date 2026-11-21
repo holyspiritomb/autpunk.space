@@ -82,6 +82,7 @@ I have a lot of opinions about typefaces and I enjoy fonts that come with option
 - [Plain Pixel by  Douglas Vautour (Burpy Fresh)](https://burpyfresh.itch.io/plain-pixel) for Yiddish text and headings. Plain Pixel is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and I made no modifications other than compressing the truetype into `WOFF2` with `fonttools`.
 - [Cozette with crossed 7](https://github.com/the-moonwitch/Cozette/releases) is used in code blocks and the figlet generator input and output.
 - [Ari-W9500](https://www.fontstruct.com/fontstructions/show/2368522/ari-w9500) and [Ari-W9500 Bold](https://www.fontstruct.com/fontstructions/show/2376682/ari-w9500-1) by [Catterio Sylt](https://www.fontstruct.com/fontstructors/2105602/catterio) for figlet generator body text.
+- [Gnu Unifont 18, planes 0 and 1](https://www.unifoundry.com/unifont/index.html): dual licensed under GPL 2 and SIL OFL 1.1, used on the unicode text styler page, split by unicode block and compressed into WOFF2.
 - [UnifontEX](https://stgiga.github.io/UnifontEX/sleek.htm) is used with the unicode text styler in pixel and vector mode.
 
 ### Vector fonts^[Technically all of the fonts used on this site are vector fonts because the pixel fonts have been vectorized for web use.]
